@@ -1,0 +1,26 @@
+name: Publicar en Instagram
+
+on:
+  schedule:
+    # Horario UTC. Chile (UTC-3): 09:00, 15:00, 21:00 y 03:00
+    - cron: "0 0,6,12,18 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publicar siguiente post de la cola
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+        run: python3 scripts/publicar.py

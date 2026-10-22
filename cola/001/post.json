@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Porcentajes",
+ "enunciado": "Una zapatilla cuesta <b>$40.000</b>. En una liquidación se le aplica un <b>descuento del 20%</b> y, a la semana siguiente, el nuevo precio sube un <b>20%</b>.<br><br>¿Cuál es el precio final de la zapatilla?",
+ "alternativas": [
+  "$40.000",
+  "$38.400",
+  "$39.200",
+  "$32.000",
+  "$48.000"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Un descuento del 20% deja el <b>80%</b> del precio: $$40.000 \\cdot 0{,}8 = 32.000$$",
+  "El alza del 20% se calcula sobre el <b>nuevo precio</b> ($32.000), no sobre el original: $$32.000 \\cdot 1{,}2 = 38.400$$",
+  "Atajo: ambos cambios juntos equivalen a multiplicar por $0{,}8 \\cdot 1{,}2 = 0{,}96$, es decir, una <b>baja del 4%</b>."
+ ],
+ "trampa": "Pensar que <strong>−20% y +20% se cancelan</strong> y marcar A. No se cancelan porque cada porcentaje se aplica sobre una base distinta.",
+ "clave": "Porcentajes sucesivos se <b>multiplican</b>, no se suman: aumentar un $p\\%$ es multiplicar por $(1+\\tfrac{p}{100})$ y descontar un $p\\%$ es multiplicar por $(1-\\tfrac{p}{100})$.",
+ "gancho": "¿−20% y luego +20%… vuelve al mismo precio? 🤔",
+ "valores": [
+  "40000",
+  "38400",
+  "39200",
+  "32000",
+  "48000"
+ ],
+ "verificacion": "respuesta = Rational(40000)*Rational(80,100)*Rational(120,100)",
+ "id": "001"
+}
