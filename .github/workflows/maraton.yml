@@ -1,0 +1,80 @@
+name: Maraton de lanzamiento
+
+# Publica un Reel a las :15 y :45 de cada hora (Chile) hasta la hora indicada, en un solo proceso.
+on:
+  workflow_dispatch:
+    inputs:
+      hasta:
+        description: "Ultima publicacion (HH:MM, hora de Chile)"
+        default: "23:45"
+  schedule:
+    # Segunda parte del 22-oct (el primer proceso dura hasta ~22:20). BORRAR despues del 23-oct.
+    - cron: "5 1 23 10 *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Programas del sistema (video, fuentes)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-inter fonts-noto-color-emoji > /dev/null
+
+      - name: Dependencias de render
+        working-directory: render
+        run: npm ci --silent
+
+      - name: Dependencias de Python
+        run: pip install -q piper-tts numpy pillow
+
+      - name: Voz (cache)
+        uses: actions/cache@v4
+        with:
+          path: voces
+          key: voz-es_MX-claude-high-v1
+
+      - name: Descargar voz si falta
+        run: |
+          mkdir -p voces
+          B=https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_MX/claude/high
+          [ -f voces/es_MX-claude-high.onnx ] || curl -sSL -o voces/es_MX-claude-high.onnx $B/es_MX-claude-high.onnx
+          [ -f voces/es_MX-claude-high.onnx.json ] || curl -sSL -o voces/es_MX-claude-high.onnx.json $B/es_MX-claude-high.onnx.json
+
+      - name: Publicar a las :15 y :45
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+          HASTA: ${{ github.event.inputs.hasta || '23:45' }}
+        run: |
+          export CHROME=$(command -v google-chrome || command -v chromium || command -v chromium-browser)
+          export TZ=America/Santiago
+          inicio=$(date +%s)
+          fin=$(date -d "today $HASTA" +%s)
+          while :; do
+            ahora=$(date +%s)
+            m=$(date +%M | sed 's/^0//'); s=$(date +%S | sed 's/^0//')
+            # siguiente :15 o :45 (si pasaron menos de 3 min de una, publica ya)
+            if   [ $m -ge 15 ] && [ $m -lt 18 ]; then espera=0
+            elif [ $m -ge 45 ] && [ $m -lt 48 ]; then espera=0
+            elif [ $m -lt 15 ]; then espera=$(( (15-m)*60 - s ))
+            elif [ $m -lt 45 ]; then espera=$(( (45-m)*60 - s ))
+            else espera=$(( (75-m)*60 - s )); fi
+            objetivo=$(( ahora + espera ))
+            [ $objetivo -gt $(( fin + 120 )) ] && { echo "Fin de la maraton"; break; }
+            [ $(( objetivo - inicio )) -gt 20400 ] && { echo "Se acaba el tiempo del proceso; sigue la segunda parte"; break; }
+            echo "Proxima publicacion: $(date -d @$objetivo +%H:%M)"; sleep $espera
+            git pull -q --rebase origin "$BRANCH" || true
+            python3 scripts/publicar.py || echo "::warning::Fallo una publicacion"
+            sleep 200
+          done

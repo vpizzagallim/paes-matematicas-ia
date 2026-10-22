@@ -4,11 +4,6 @@ on:
   schedule:
     # Horario UTC. Chile (UTC-3): 09:00, 12:00, 15:00, 18:00, 21:00 y 23:00
     - cron: "0 12,15,18,21,0,2 * * *"
-    # Lanzamiento (temporal) 22-oct Chile: cada 30 min de 16:30 a 23:30. BORRAR despues del 23-oct.
-    - cron: "30 19-23 22 10 *"
-    - cron: "0 20-23 22 10 *"
-    - cron: "30 0-2 23 10 *"
-    - cron: "0 1 23 10 *"
   workflow_dispatch: {}
 
 permissions:
@@ -56,5 +51,7 @@ jobs:
           REPO: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
         run: |
+          # El 22-oct manda la maraton (maraton.yml); los horarios normales parten el 23-oct
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=America/Santiago date +%F)" = "2026-10-22" ]; then echo "Hoy publica la maraton"; exit 0; fi
           export CHROME=$(command -v google-chrome || command -v chromium || command -v chromium-browser)
           python3 scripts/publicar.py
