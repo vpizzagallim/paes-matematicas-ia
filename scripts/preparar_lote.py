@@ -60,13 +60,31 @@ def verificar(p):
     return None
 
 
+def surtir(lote):
+    """Ordena el lote alternando ejes (M1) e intercalando un M2 cada 4, para que la cola salga surtida."""
+    from collections import defaultdict, deque
+    ejes = ["Números", "Álgebra y funciones", "Geometría", "Probabilidad y estadística"]
+    m1, m2 = defaultdict(deque), deque()
+    for p in lote:
+        (m2 if p.get("nivel") == "M2" else m1[p.get("eje")]).append(p)
+    otros = [e for e in m1 if e not in ejes]
+    orden = []
+    while any(m1.values()) or m2:
+        for e in ejes + otros:
+            if m1[e]:
+                orden.append(m1[e].popleft())
+        if m2:
+            orden.append(m2.popleft())
+    return orden
+
+
 def siguiente_id():
     usados = [int(d) for base in (COLA, PUB) if os.path.isdir(base) for d in os.listdir(base) if d.isdigit()]
     return max(usados, default=0) + 1
 
 
 def main():
-    lote = json.load(open(sys.argv[1], encoding="utf-8"))
+    lote = surtir(json.load(open(sys.argv[1], encoding="utf-8")))
     os.makedirs(COLA, exist_ok=True)
     aprobados, rechazados = 0, 0
     for p in lote:
