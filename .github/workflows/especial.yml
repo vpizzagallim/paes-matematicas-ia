@@ -1,0 +1,32 @@
+name: Publicar video especial
+
+on:
+  workflow_dispatch:
+    inputs:
+      archivo:
+        description: "Nombre del video en la rama 'especiales'"
+        required: true
+      texto:
+        description: "Texto del post"
+        required: true
+      historia:
+        description: "Publicar tambien como historia (si/no)"
+        default: "si"
+
+concurrency:
+  group: especial
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publicar
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          REPO: ${{ github.repository }}
+          VIDEO_URL: https://raw.githubusercontent.com/${{ github.repository }}/especiales/${{ github.event.inputs.archivo }}
+          TEXTO: ${{ github.event.inputs.texto }}
+          HISTORIA: ${{ github.event.inputs.historia }}
+        run: python3 scripts/publicar_especial.py
