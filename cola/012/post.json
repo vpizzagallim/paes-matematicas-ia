@@ -26,5 +26,26 @@
  "trampa": "Olvidar la bajada de bandera (B) o contar 3 tramos en vez de 15 (D).",
  "clave": "Una función afín $f(x) = mx + n$ tiene un costo fijo $n$ y un costo variable $m$ por unidad.",
  "verificacion": "respuesta = 500 + 150 * (3000 // 200)",
- "id": "012"
+ "id": "012",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "3 km = 15 tramos de 200 m",
+     "$3.000 \\div 200 = 15$"
+    ],
+    "voz": "Tres kilómetros son tres mil metros, o sea quince tramos de doscientos metros."
+   },
+   {
+    "lineas": [
+     "Costo fijo + variable",
+     "$500 + 150 \\cdot 15 = 2.750$"
+    ],
+    "voz": "El costo es quinientos de bajada de bandera, más ciento cincuenta por cada tramo: dos mil setecientos cincuenta pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: dos mil setecientos cincuenta pesos. Función afín: un costo fijo más un costo por unidad. Sigue a math paes punto c, ele."
+  }
+ }
 }

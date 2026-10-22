@@ -26,5 +26,26 @@
  "trampa": "Sumar los números de adentro: $\\sqrt{50} + \\sqrt{18} = \\sqrt{68}$. Eso es <strong>falso</strong>: la raíz no se distribuye en una suma.",
  "clave": "$\\sqrt{a} + \\sqrt{b} \\neq \\sqrt{a+b}$. Solo se suman raíces con el <b>mismo radicando</b>, tras simplificarlas.",
  "verificacion": "respuesta = sqrt(50) + sqrt(18)",
- "id": "005"
+ "id": "005",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Buscamos cuadrados perfectos",
+     "$\\sqrt{50} = 5\\sqrt{2} \\quad \\sqrt{18} = 3\\sqrt{2}$"
+    ],
+    "voz": "Descompón cada raíz buscando un cuadrado perfecto. Raíz de cincuenta es cinco raíz de dos, y raíz de dieciocho es tres raíz de dos."
+   },
+   {
+    "lineas": [
+     "Ahora son semejantes",
+     "$5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$"
+    ],
+    "voz": "Ahora sí se pueden sumar, como términos semejantes: cinco más tres, ocho raíz de dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: ocho raíz de dos. La raíz de una suma no es la suma de las raíces. Sigue a math paes punto c, ele."
+  }
+ }
 }

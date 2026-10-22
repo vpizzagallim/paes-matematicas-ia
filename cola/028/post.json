@@ -27,5 +27,26 @@
  "trampa": "Sumar $25 + 18 = 43$ sin restar la intersección: da más alumnos que el curso y lleva a responder 0.",
  "clave": "$|A \\cup B| = |A| + |B| - |A \\cap B|$. La intersección se resta para no contarla dos veces.",
  "verificacion": "respuesta = Rational(40 - (25+18-8), 40)",
- "id": "028"
+ "id": "028",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Juegan al menos uno",
+     "$25 + 18 - 8 = 35$"
+    ],
+    "voz": "Suma los de fútbol y básquetbol, pero resta los ocho que juegan ambos para no contarlos dos veces: treinta y cinco."
+   },
+   {
+    "lineas": [
+     "No juegan ninguno",
+     "$\\dfrac{40 - 35}{40} = \\dfrac{1}{8}$"
+    ],
+    "voz": "Quedan cinco que no juegan nada. Cinco de cuarenta es un octavo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: un octavo. En la unión, la intersección se resta una vez. Sigue a math paes punto c, ele."
+  }
+ }
 }

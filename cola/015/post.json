@@ -26,5 +26,26 @@
  "trampa": "Restar los cuadrados de los datos ($100 - 16 = 84$) o despejar $a$ y $b$ perdiendo tiempo.",
  "clave": "$a^2 - b^2 = (a+b)(a-b)$. Si te dan la suma y la diferencia, multiplícalas.",
  "verificacion": "a, b = symbols('a b'); s = solve([a+b-10, a-b-4], [a, b]); respuesta = s[a]**2 - s[b]**2",
- "id": "015"
+ "id": "015",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma por diferencia",
+     "$a^2 - b^2 = (a+b)(a-b)$"
+    ],
+    "voz": "No necesitas despejar a ni be. A al cuadrado menos be al cuadrado es la suma por la diferencia."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$10 \\cdot 4 = 40$"
+    ],
+    "voz": "La suma es diez y la diferencia es cuatro. Diez por cuatro, cuarenta."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuarenta. Busca productos notables antes de hacer cuentas largas. Sigue a math paes punto c, ele."
+  }
+ }
 }

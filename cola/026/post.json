@@ -27,5 +27,26 @@
  "trampa": "Contar las sumas posibles (2 a 12, son 11) como si fueran igual de probables y marcar $\\tfrac{1}{11}$.",
  "clave": "Regla de Laplace: casos favorables sobre casos <b>totales igualmente probables</b>.",
  "verificacion": "respuesta = Rational(sum(1 for a in range(1,7) for b in range(1,7) if a+b==7), 36)",
- "id": "026"
+ "id": "026",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "36 casos posibles",
+     "$6 \\cdot 6 = 36$"
+    ],
+    "voz": "Con dos dados hay treinta y seis resultados igual de probables."
+   },
+   {
+    "lineas": [
+     "Suman 7: seis casos",
+     "$\\dfrac{6}{36} = \\dfrac{1}{6}$"
+    ],
+    "voz": "Suman siete: uno seis, dos cinco, tres cuatro, y al revés. Seis casos de treinta y seis: un sexto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: un sexto. Cuenta casos igual de probables, no sumas posibles. Sigue a math paes punto c, ele."
+  }
+ }
 }

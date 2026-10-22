@@ -26,5 +26,26 @@
  "trampa": "Restar el 19% al precio final ($11.900 \\cdot 0{,}81 = 9.639$) y marcar D. El 19% se calcula sobre el precio <strong>neto</strong>, no sobre el final.",
  "clave": "Para \"quitar\" un porcentaje que ya se aplicó, se <b>divide</b> por $(1 + \\tfrac{p}{100})$; no se resta.",
  "verificacion": "respuesta = Rational(11900) / Rational(119, 100)",
- "id": "004"
+ "id": "004",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Con IVA = 119% del neto",
+     "$P \\cdot 1{,}19 = 11.900$"
+    ],
+    "voz": "El precio con IVA es el ciento diecinueve por ciento del precio neto. O sea, el neto por uno coma diecinueve da once mil novecientos."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$P = 11.900 \\div 1{,}19 = 10.000$"
+    ],
+    "voz": "Para despejar, divides once mil novecientos por uno coma diecinueve, y te da diez mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: diez mil pesos. Para quitar un porcentaje ya aplicado, se divide, no se resta. Sigue a math paes punto c, ele."
+  }
+ }
 }

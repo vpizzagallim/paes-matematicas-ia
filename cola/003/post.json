@@ -26,5 +26,26 @@
  "trampa": "Sumar todos los exponentes ($3+5+6=14$) y marcar B, o multiplicarlos.",
  "clave": "$a^m \\cdot a^n = a^{m+n}$ y $\\dfrac{a^m}{a^n} = a^{m-n}$. Solo funciona con la <b>misma base</b>.",
  "verificacion": "respuesta = Integer(2)**3 * Integer(2)**5 / Integer(2)**6",
- "id": "003"
+ "id": "003",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Misma base: se suman los exponentes",
+     "$2^3 \\cdot 2^5 = 2^8$"
+    ],
+    "voz": "Cuando multiplicas potencias de igual base, sumas los exponentes. Dos elevado a tres por dos elevado a cinco es dos elevado a ocho."
+   },
+   {
+    "lineas": [
+     "Al dividir se restan",
+     "$2^8 \\div 2^6 = 2^2 = 4$"
+    ],
+    "voz": "Y al dividir, restas. Ocho menos seis da dos, y dos al cuadrado es cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cuatro. Multiplicar suma exponentes, dividir los resta. Sigue a math paes punto c, ele."
+  }
+ }
 }

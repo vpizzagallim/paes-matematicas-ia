@@ -26,5 +26,26 @@
  "trampa": "Usar variaciones ($7 \\cdot 6 \\cdot 5 = 210$) como si el orden importara (B).",
  "clave": "Si el orden importa → variaciones. Si <b>no</b> importa (grupos, comités) → combinaciones $\\binom{n}{k}$.",
  "verificacion": "respuesta = binomial(7, 3)",
- "id": "032"
+ "id": "032",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Sin cargos: no importa el orden",
+     "$\\binom{7}{3}$"
+    ],
+    "voz": "Como el comité no tiene cargos, el orden no importa. Son combinaciones de siete en tres."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$\\dfrac{7 \\cdot 6 \\cdot 5}{3 \\cdot 2 \\cdot 1} = 35$"
+    ],
+    "voz": "Siete por seis por cinco, dividido por tres factorial: treinta y cinco comités."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: treinta y cinco. Si el orden no importa, son combinaciones. Sigue a math paes punto c, ele."
+  }
+ }
 }

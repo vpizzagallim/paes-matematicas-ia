@@ -27,5 +27,26 @@
  "trampa": "Pensar que \"2 de 4 es la mitad\" y marcar $\\tfrac{1}{2}$, u olvidar el factor $\\binom{4}{2}$ ($\\tfrac{1}{16}$).",
  "clave": "Binomial: $P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}$.",
  "verificacion": "respuesta = binomial(4,2) * Rational(1,2)**4",
- "id": "034"
+ "id": "034",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Formas de ubicar 2 caras",
+     "$\\binom{4}{2} = 6$"
+    ],
+    "voz": "Hay seis formas de ubicar dos caras en cuatro lanzamientos."
+   },
+   {
+    "lineas": [
+     "Cada secuencia vale 1/16",
+     "$6 \\cdot \\dfrac{1}{16} = \\dfrac{3}{8}$"
+    ],
+    "voz": "Cada secuencia tiene probabilidad un dieciseisavo. Seis dieciseisavos es tres octavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: tres octavos. Binomial: combinaciones por probabilidad de cada secuencia. Sigue a math paes punto c, ele."
+  }
+ }
 }

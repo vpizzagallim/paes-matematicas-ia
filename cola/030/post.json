@@ -26,5 +26,26 @@
  "trampa": "Modelar como crecimiento lineal ($500 \\cdot 12 = 6.000$) o contar 12 duplicaciones.",
  "clave": "Si algo se multiplica por $a$ cada $T$ unidades de tiempo: $N(t) = N_0 \\cdot a^{t/T}$.",
  "verificacion": "respuesta = 500 * 2**(12//3)",
- "id": "030"
+ "id": "030",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Duplicaciones",
+     "$12 \\div 3 = 4$"
+    ],
+    "voz": "En doce horas hay cuatro periodos de tres horas, o sea cuatro duplicaciones."
+   },
+   {
+    "lineas": [
+     "Modelo exponencial",
+     "$500 \\cdot 2^4 = 8.000$"
+    ],
+    "voz": "Quinientos por dos a la cuarta, que es dieciséis: ocho mil bacterias."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: ocho mil. Duplicar es multiplicar por dos cada periodo, no sumar. Sigue a math paes punto c, ele."
+  }
+ }
 }

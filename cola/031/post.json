@@ -26,5 +26,26 @@
  "trampa": "Usar coseno en vez de seno: $8 \\cdot \\cos 30^\\circ = 4\\sqrt{3}$ (E), que es la distancia horizontal.",
  "clave": "$\\sin = \\tfrac{\\text{opuesto}}{\\text{hipotenusa}}$, $\\cos = \\tfrac{\\text{adyacente}}{\\text{hipotenusa}}$, $\\tan = \\tfrac{\\text{opuesto}}{\\text{adyacente}}$.",
  "verificacion": "respuesta = 8*sin(pi/6)",
- "id": "031"
+ "id": "031",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Altura = cateto opuesto",
+     "$\\sin 30^\\circ = \\dfrac{h}{8}$"
+    ],
+    "voz": "La rampa es la hipotenusa y la altura es el cateto opuesto al ángulo. Usamos seno."
+   },
+   {
+    "lineas": [
+     "Seno de 30° = 1/2",
+     "$h = 8 \\cdot \\dfrac{1}{2} = 4$"
+    ],
+    "voz": "Seno de treinta grados es un medio. Ocho por un medio: cuatro metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuatro metros. Opuesto con seno, adyacente con coseno. Sigue a math paes punto c, ele."
+  }
+ }
 }

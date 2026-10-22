@@ -38,8 +38,8 @@ def llamar(metodo, ruta, **params):
         sys.exit(f"Error de Instagram en {ruta}: {e.code} {cuerpo}")
 
 
-def esperar(contenedor):
-    for _ in range(30):
+def esperar(contenedor, intentos=30):
+    for _ in range(intentos):
         estado = llamar("GET", contenedor, fields="status_code").get("status_code")
         if estado == "FINISHED":
             return
@@ -47,6 +47,64 @@ def esperar(contenedor):
             sys.exit(f"El contenedor {contenedor} quedo en estado {estado}")
         time.sleep(5)
     sys.exit(f"Tiempo agotado esperando el contenedor {contenedor}")
+
+
+def subir_video(ruta, nombre):
+    """Sube el video a la rama 'media' (un solo commit, se reescribe cada vez) y devuelve su URL publica."""
+    g = lambda *a, **k: subprocess.run(["git", *a], cwd=RAIZ, check=True, capture_output=True, text=True, **k).stdout.strip()
+    blob = g("hash-object", "-w", ruta)
+    tree = g("mktree", input=f"100644 blob {blob}\t{nombre}\n")
+    commit = g("-c", "user.name=publicador-paes", "-c", "user.email=publicador-paes@users.noreply.github.com",
+               "commit-tree", tree, "-m", f"video {nombre}")
+    g("push", "-f", "origin", f"{commit}:refs/heads/media")
+    url = f"https://raw.githubusercontent.com/{REPO}/media/{nombre}"
+    for _ in range(12):  # esperar a que el archivo este disponible
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as r:
+                if r.status == 200:
+                    return url
+        except Exception:
+            pass
+        time.sleep(5)
+    sys.exit("El video no quedo disponible en la URL publica")
+
+
+def cerrar(post, carpeta, registro):
+    with open(os.path.join(carpeta, "publicado.json"), "w") as f:
+        json.dump(registro, f)
+    os.makedirs(PUBLICADOS, exist_ok=True)
+    shutil.move(carpeta, os.path.join(PUBLICADOS, post))
+    subprocess.run(["git", "config", "user.name", "publicador-paes"], check=True, cwd=RAIZ)
+    subprocess.run(["git", "config", "user.email", "publicador-paes@users.noreply.github.com"], check=True, cwd=RAIZ)
+    subprocess.run(["git", "add", "-A", "cola", "publicados"], check=True, cwd=RAIZ)
+    subprocess.run(["git", "commit", "-m", f"Publicado post {post}"], check=True, cwd=RAIZ)
+    subprocess.run(["git", "push", "origin", f"HEAD:{BRANCH}"], check=True, cwd=RAIZ)
+
+
+def publicar_reel(post, carpeta, datos):
+    video = os.path.join("/tmp", f"reel_{post}.mp4")
+    subprocess.run([sys.executable, os.path.join(RAIZ, "scripts", "armar_reel_voz.py"),
+                    os.path.join(carpeta, "post.json"), video], check=True)
+    url = subir_video(video, f"reel_{post}.mp4")
+    with open(os.path.join(carpeta, "caption.txt"), encoding="utf-8") as f:
+        texto = f.read()
+    ig = llamar("GET", "me", fields="user_id,username")
+    usuario = ig["user_id"]
+    print(f"Publicando Reel {post} en @{ig.get('username')}")
+    c = llamar("POST", f"{usuario}/media", media_type="REELS", video_url=url, caption=texto,
+               share_to_feed="true", thumb_offset="9000")
+    esperar(c["id"], intentos=60)
+    publicado = llamar("POST", f"{usuario}/media_publish", creation_id=c["id"])
+    print(f"Reel publicado: id {publicado['id']}")
+    registro = {"media_id": publicado["id"], "tipo": "reel", "fecha_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+    try:
+        h = llamar("POST", f"{usuario}/media", media_type="STORIES", video_url=url)
+        esperar(h["id"], intentos=60)
+        registro["story_id"] = llamar("POST", f"{usuario}/media_publish", creation_id=h["id"])["id"]
+        print(f"Historia publicada: id {registro['story_id']}")
+    except SystemExit as e:
+        print(f"::warning::No se pudo publicar la historia: {e}")
+    cerrar(post, carpeta, registro)
 
 
 def main():
@@ -57,6 +115,14 @@ def main():
         return
     post = pendientes[0]
     carpeta = os.path.join(COLA, post)
+    datos = json.load(open(os.path.join(carpeta, "post.json"), encoding="utf-8"))
+    if datos.get("pizarra"):
+        try:
+            return publicar_reel(post, carpeta, datos)
+        except (Exception, SystemExit) as e:
+            if not os.path.exists(os.path.join(carpeta, "1.jpg")):
+                raise
+            print(f"::warning::Fallo el Reel ({e}); se publica el carrusel de respaldo.")
     imagenes = sorted(f for f in os.listdir(carpeta) if f.endswith(".jpg") and f[0].isdigit())
     with open(os.path.join(carpeta, "caption.txt"), encoding="utf-8") as f:
         texto = f.read()

@@ -26,5 +26,26 @@
  "trampa": "No ordenar y tomar los centrales tal como vienen ($5$ y $10$), o calcular el promedio ($\\approx 5{,}8$).",
  "clave": "Para la mediana, <b>primero se ordena</b>. Con cantidad par de datos, se promedian los dos del centro.",
  "verificacion": "respuesta = median([3,8,5,10,2,7]) if False else (lambda d: (d[2]+d[3])/Integer(2))(sorted([3,8,5,10,2,7]))",
- "id": "025"
+ "id": "025",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ordenamos",
+     "$2, 3, 5, 7, 8, 10$"
+    ],
+    "voz": "Para la mediana, lo primero es ordenar los datos de menor a mayor."
+   },
+   {
+    "lineas": [
+     "Par de datos: promedio central",
+     "$\\dfrac{5 + 7}{2} = 6$"
+    ],
+    "voz": "Hay seis datos, así que promedias los dos del centro: cinco y siete. Da seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: seis. Siempre ordena antes de buscar la mediana. Sigue a math paes punto c, ele."
+  }
+ }
 }

@@ -27,5 +27,26 @@
  "trampa": "Calcular el promedio actual (5,5) y creer que da lo mismo la nota que saque.",
  "clave": "Promedio deseado $\\times$ cantidad de notas = suma necesaria. Lo que falta para esa suma es la nota pedida.",
  "verificacion": "respuesta = Rational(55,10)*5 - (Rational(50,10)+Rational(62,10)+Rational(48,10)+Rational(60,10))",
- "id": "024"
+ "id": "024",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma necesaria",
+     "$5 \\cdot 5{,}5 = 27{,}5$"
+    ],
+    "voz": "Para tener promedio cinco coma cinco con cinco notas, la suma tiene que ser veintisiete coma cinco."
+   },
+   {
+    "lineas": [
+     "Lo que falta",
+     "$27{,}5 - 22{,}0 = 5{,}5$"
+    ],
+    "voz": "Tus cuatro notas suman veintidós. Te falta un cinco coma cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cinco coma cinco. Promedio por cantidad de notas da la suma que necesitas. Sigue a math paes punto c, ele."
+  }
+ }
 }

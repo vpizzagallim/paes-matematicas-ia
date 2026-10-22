@@ -27,5 +27,26 @@
  "trampa": "Creer que $\\log_3 \\tfrac{1}{9} = 2$ (olvidar el signo negativo) y marcar B.",
  "clave": "$\\log_b a = c \\iff b^c = a$. El logaritmo de un número entre 0 y 1 es <b>negativo</b>.",
  "verificacion": "respuesta = log(8, 2) + log(Rational(1,9), 3)",
- "id": "029"
+ "id": "029",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cada logaritmo",
+     "$\\log_2 8 = 3 \\quad \\log_3 \\dfrac{1}{9} = -2$"
+    ],
+    "voz": "Logaritmo en base dos de ocho es tres, porque dos al cubo es ocho. Y logaritmo en base tres de un noveno es menos dos."
+   },
+   {
+    "lineas": [
+     "Sumamos",
+     "$3 + (-2) = 1$"
+    ],
+    "voz": "Tres más menos dos: uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: uno. El logaritmo de un número entre cero y uno es negativo. Sigue a math paes punto c, ele."
+  }
+ }
 }

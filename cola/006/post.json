@@ -26,5 +26,26 @@
  "trampa": "Confundir hombres con mujeres (E = 15) o pensar que 5 partes de 40 es $\\tfrac{5}{40}$ del curso.",
  "clave": "En una razón $a : b$ el total se divide en $a + b$ partes; cada grupo recibe $a$ o $b$ de esas partes.",
  "verificacion": "respuesta = Rational(40, 3+5) * 5",
- "id": "006"
+ "id": "006",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "3 : 5 → 8 partes",
+     "$40 \\div 8 = 5$"
+    ],
+    "voz": "La razón tres es a cinco reparte el curso en ocho partes iguales. Cuarenta dividido en ocho da cinco alumnos por parte."
+   },
+   {
+    "lineas": [
+     "Mujeres = 5 partes",
+     "$5 \\cdot 5 = 25$"
+    ],
+    "voz": "Las mujeres son cinco de esas partes, así que cinco por cinco: veinticinco mujeres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veinticinco. En una razón, el total se reparte en la suma de sus partes. Sigue a math paes punto c, ele."
+  }
+ }
 }

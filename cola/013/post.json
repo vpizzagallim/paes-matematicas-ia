@@ -26,5 +26,26 @@
  "trampa": "Olvidar invertir la desigualdad al multiplicar por un número negativo y marcar D.",
  "clave": "Al multiplicar o dividir una inecuación por un número <b>negativo</b>, el signo de la desigualdad se invierte.",
  "verificacion": "x = symbols('x', real=True); respuesta = solve_univariate_inequality(2*x-5 < 3*x+1, x, relational=False)",
- "id": "013"
+ "id": "013",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Agrupamos las x",
+     "$-x < 6$"
+    ],
+    "voz": "Pasa las equis a un lado: dos equis menos tres equis es menos equis, y menos equis es menor que seis."
+   },
+   {
+    "lineas": [
+     "Multiplicar por −1 invierte",
+     "$x > -6$"
+    ],
+    "voz": "Al multiplicar por menos uno, la desigualdad se da vuelta. Queda equis mayor que menos seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: equis mayor que menos seis. Multiplicar por un negativo invierte la desigualdad. Sigue a math paes punto c, ele."
+  }
+ }
 }

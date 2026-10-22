@@ -26,3 +26,24 @@ Este archivo lo lee la tarea programada semanal de Claude. Objetivo: dejar en `c
 - Decimales con coma (`0{,}8` en LaTeX) y miles con punto, como en Chile.
 - `gancho`: una frase corta para el comienzo del texto del post.
 - Problemas originales: no copiar ítems liberados del DEMRE.
+
+## Reels (desde el 22-oct-2026 se publican Reels con voz, no carruseles)
+
+Cada problema debe traer además el campo `pizarra`, que es el guion del video:
+
+```json
+"pizarra": {
+  "pasos": [
+    {"lineas": ["Texto corto manuscrito", "$formula$"], "voz": "Lo que dice la voz en este paso."},
+    {"lineas": ["...", "$...$"], "voz": "..."}
+  ],
+  "cierre": {"voz": "La respuesta correcta es la be: treinta y ocho mil cuatrocientos pesos. <idea clave en una frase>. Sigue a math paes punto c, ele."}
+}
+```
+
+- 2 o 3 pasos. Cada paso lleva 1 o 2 líneas: un texto corto (hasta ~32 caracteres) y una fórmula que no sea muy ancha. Si una fórmula es larga, se divide en dos líneas. En las fórmulas, usar `\dfrac`, no `\tfrac`.
+- `voz` se escribe **para ser leída en voz alta**: números en palabras ("treinta y dos mil", "cero coma ocho"), sin símbolos, con 1 o 2 frases por paso. Las letras de las alternativas van como "a, be, ce, de, e".
+- Duración: el total hablado debe quedar entre 25 y 35 segundos (unas 70 a 100 palabras sumando pasos y cierre).
+- El cierre siempre nombra la letra correcta tal como quedó después de mezclar las alternativas.
+- `preparar_lote.py` rechaza el problema si la hoja no cabe; en ese caso hay que acortarla.
+- Las láminas de carrusel se siguen generando, porque son el respaldo si el Reel falla.

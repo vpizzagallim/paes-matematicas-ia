@@ -27,5 +27,27 @@
  "trampa": "Responder el valor de la entrada de <strong>niño</strong> (E), que es lo primero que se despeja.",
  "clave": "Antes de marcar, relee qué variable te piden. En los sistemas suele haber una alternativa con la otra incógnita.",
  "verificacion": "a, n = symbols('a n'); respuesta = solve([2*a+3*n-17000, a+n-7000], [a, n])[a]",
- "id": "011"
+ "id": "011",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos el sistema",
+     "$2a + 3n = 17.000$",
+     "$a + n = 7.000$"
+    ],
+    "voz": "Llama a al precio de adulto y ene al de niño. Dos a más tres ene es diecisiete mil, y a más ene es siete mil."
+   },
+   {
+    "lineas": [
+     "Restamos y reemplazamos",
+     "$n = 3.000 \\Rightarrow a = 4.000$"
+    ],
+    "voz": "Multiplica la segunda por dos y resta: ene da tres mil. Entonces el adulto cuesta siete mil menos tres mil, cuatro mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuatro mil pesos. Relee qué te preguntan: adulto o niño. Sigue a math paes punto c, ele."
+  }
+ }
 }

@@ -1,0 +1,738 @@
+{
+ "003": {
+  "pasos": [
+   {
+    "lineas": [
+     "Misma base: se suman los exponentes",
+     "$2^3 \\cdot 2^5 = 2^8$"
+    ],
+    "voz": "Cuando multiplicas potencias de igual base, sumas los exponentes. Dos elevado a tres por dos elevado a cinco es dos elevado a ocho."
+   },
+   {
+    "lineas": [
+     "Al dividir se restan",
+     "$2^8 \\div 2^6 = 2^2 = 4$"
+    ],
+    "voz": "Y al dividir, restas. Ocho menos seis da dos, y dos al cuadrado es cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cuatro. Multiplicar suma exponentes, dividir los resta. Sigue a math paes punto c, ele."
+  }
+ },
+ "004": {
+  "pasos": [
+   {
+    "lineas": [
+     "Con IVA = 119% del neto",
+     "$P \\cdot 1{,}19 = 11.900$"
+    ],
+    "voz": "El precio con IVA es el ciento diecinueve por ciento del precio neto. O sea, el neto por uno coma diecinueve da once mil novecientos."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$P = 11.900 \\div 1{,}19 = 10.000$"
+    ],
+    "voz": "Para despejar, divides once mil novecientos por uno coma diecinueve, y te da diez mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: diez mil pesos. Para quitar un porcentaje ya aplicado, se divide, no se resta. Sigue a math paes punto c, ele."
+  }
+ },
+ "005": {
+  "pasos": [
+   {
+    "lineas": [
+     "Buscamos cuadrados perfectos",
+     "$\\sqrt{50} = 5\\sqrt{2} \\quad \\sqrt{18} = 3\\sqrt{2}$"
+    ],
+    "voz": "Descompón cada raíz buscando un cuadrado perfecto. Raíz de cincuenta es cinco raíz de dos, y raíz de dieciocho es tres raíz de dos."
+   },
+   {
+    "lineas": [
+     "Ahora son semejantes",
+     "$5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$"
+    ],
+    "voz": "Ahora sí se pueden sumar, como términos semejantes: cinco más tres, ocho raíz de dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: ocho raíz de dos. La raíz de una suma no es la suma de las raíces. Sigue a math paes punto c, ele."
+  }
+ },
+ "006": {
+  "pasos": [
+   {
+    "lineas": [
+     "3 : 5 → 8 partes",
+     "$40 \\div 8 = 5$"
+    ],
+    "voz": "La razón tres es a cinco reparte el curso en ocho partes iguales. Cuarenta dividido en ocho da cinco alumnos por parte."
+   },
+   {
+    "lineas": [
+     "Mujeres = 5 partes",
+     "$5 \\cdot 5 = 25$"
+    ],
+    "voz": "Las mujeres son cinco de esas partes, así que cinco por cinco: veinticinco mujeres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veinticinco. En una razón, el total se reparte en la suma de sus partes. Sigue a math paes punto c, ele."
+  }
+ },
+ "007": {
+  "pasos": [
+   {
+    "lineas": [
+     "Parte sobre total",
+     "$12 \\div 80 = 0{,}15$"
+    ],
+    "voz": "Para saber qué porcentaje de ochenta es doce, divides la parte por el total: doce dividido en ochenta da cero coma quince."
+   },
+   {
+    "lineas": [
+     "Por 100",
+     "$0{,}15 \\cdot 100 = 15\\%$"
+    ],
+    "voz": "Lo multiplicas por cien, y te da quince por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: quince por ciento. Siempre es la parte dividida por el total, por cien. Sigue a math paes punto c, ele."
+  }
+ },
+ "008": {
+  "pasos": [
+   {
+    "lineas": [
+     "Primero multiplicar",
+     "$\\dfrac{3}{4} \\cdot \\dfrac{2}{3} = \\dfrac{1}{2}$"
+    ],
+    "voz": "Ojo con el orden: primero va la multiplicación. Tres cuartos por dos tercios da un medio."
+   },
+   {
+    "lineas": [
+     "Después sumar",
+     "$\\dfrac{1}{4} + \\dfrac{1}{2} = \\dfrac{3}{4}$"
+    ],
+    "voz": "Cero coma veinticinco es un cuarto. Un cuarto más un medio da tres cuartos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: tres cuartos. Multiplicación y división van antes que la suma. Sigue a math paes punto c, ele."
+  }
+ },
+ "009": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pasamos a notación científica",
+     "$4{,}2 \\cdot 10^{-4} \\cdot 3 \\cdot 10^{5}$"
+    ],
+    "voz": "Escribe cero coma cero cero cero cuarenta y dos como cuatro coma dos por diez a la menos cuatro."
+   },
+   {
+    "lineas": [
+     "Multiplicamos y ajustamos",
+     "$12{,}6 \\cdot 10^{1} = 1{,}26 \\cdot 10^{2}$"
+    ],
+    "voz": "Cuatro coma dos por tres da doce coma seis, y diez a la menos cuatro por diez a la cinco es diez a la uno. Ajustando, queda uno coma veintiséis por diez al cuadrado."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: uno coma veintiséis por diez al cuadrado. Si achicas el coeficiente, el exponente sube. Sigue a math paes punto c, ele."
+  }
+ },
+ "010": {
+  "pasos": [
+   {
+    "lineas": [
+     "Distribuimos el 3",
+     "$3x - 6 = x + 8$"
+    ],
+    "voz": "Primero distribuye el tres a todo el paréntesis: tres equis menos seis igual equis más ocho."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$2x = 14 \\Rightarrow x = 7$"
+    ],
+    "voz": "Pasamos las equis a un lado y los números al otro: dos equis igual catorce, así que equis vale siete."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: siete. El número fuera del paréntesis multiplica a todo lo de adentro. Sigue a math paes punto c, ele."
+  }
+ },
+ "011": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos el sistema",
+     "$2a + 3n = 17.000$",
+     "$a + n = 7.000$"
+    ],
+    "voz": "Llama a al precio de adulto y ene al de niño. Dos a más tres ene es diecisiete mil, y a más ene es siete mil."
+   },
+   {
+    "lineas": [
+     "Restamos y reemplazamos",
+     "$n = 3.000 \\Rightarrow a = 4.000$"
+    ],
+    "voz": "Multiplica la segunda por dos y resta: ene da tres mil. Entonces el adulto cuesta siete mil menos tres mil, cuatro mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuatro mil pesos. Relee qué te preguntan: adulto o niño. Sigue a math paes punto c, ele."
+  }
+ },
+ "012": {
+  "pasos": [
+   {
+    "lineas": [
+     "3 km = 15 tramos de 200 m",
+     "$3.000 \\div 200 = 15$"
+    ],
+    "voz": "Tres kilómetros son tres mil metros, o sea quince tramos de doscientos metros."
+   },
+   {
+    "lineas": [
+     "Costo fijo + variable",
+     "$500 + 150 \\cdot 15 = 2.750$"
+    ],
+    "voz": "El costo es quinientos de bajada de bandera, más ciento cincuenta por cada tramo: dos mil setecientos cincuenta pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: dos mil setecientos cincuenta pesos. Función afín: un costo fijo más un costo por unidad. Sigue a math paes punto c, ele."
+  }
+ },
+ "013": {
+  "pasos": [
+   {
+    "lineas": [
+     "Agrupamos las x",
+     "$-x < 6$"
+    ],
+    "voz": "Pasa las equis a un lado: dos equis menos tres equis es menos equis, y menos equis es menor que seis."
+   },
+   {
+    "lineas": [
+     "Multiplicar por −1 invierte",
+     "$x > -6$"
+    ],
+    "voz": "Al multiplicar por menos uno, la desigualdad se da vuelta. Queda equis mayor que menos seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: equis mayor que menos seis. Multiplicar por un negativo invierte la desigualdad. Sigue a math paes punto c, ele."
+  }
+ },
+ "014": {
+  "pasos": [
+   {
+    "lineas": [
+     "Vértice",
+     "$x_v = \\dfrac{6}{2} = 3$"
+    ],
+    "voz": "La parábola abre hacia arriba, así que el mínimo está en el vértice. Equis del vértice: menos be partido dos a, seis partido dos, tres."
+   },
+   {
+    "lineas": [
+     "Evaluamos",
+     "$f(3) = 9 - 18 + 5 = -4$"
+    ],
+    "voz": "Ahora evalúa la función en tres: nueve menos dieciocho más cinco, menos cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: menos cuatro. El valor mínimo es la función evaluada en el vértice. Sigue a math paes punto c, ele."
+  }
+ },
+ "015": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma por diferencia",
+     "$a^2 - b^2 = (a+b)(a-b)$"
+    ],
+    "voz": "No necesitas despejar a ni be. A al cuadrado menos be al cuadrado es la suma por la diferencia."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$10 \\cdot 4 = 40$"
+    ],
+    "voz": "La suma es diez y la diferencia es cuatro. Diez por cuatro, cuarenta."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuarenta. Busca productos notables antes de hacer cuentas largas. Sigue a math paes punto c, ele."
+  }
+ },
+ "016": {
+  "pasos": [
+   {
+    "lineas": [
+     "Desarrollamos cada cuadrado",
+     "$x^2 + 6x + 9 \\quad x^2 - 6x + 9$"
+    ],
+    "voz": "Desarrolla cada cuadrado de binomio, sin olvidar el término del medio: más seis equis en uno, menos seis equis en el otro."
+   },
+   {
+    "lineas": [
+     "Restamos",
+     "$6x - (-6x) = 12x$"
+    ],
+    "voz": "Al restar, los equis al cuadrado y los nueves se cancelan, y queda seis equis menos menos seis equis: doce equis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: doce equis. El doble producto es el término que más se olvida. Sigue a math paes punto c, ele."
+  }
+ },
+ "017": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pendiente",
+     "$m = \\dfrac{11 - 5}{3 - 1} = 3$"
+    ],
+    "voz": "Con dos puntos sacas la pendiente: once menos cinco, partido tres menos uno, da tres."
+   },
+   {
+    "lineas": [
+     "Coeficiente de posición",
+     "$3 + n = 5 \\Rightarrow n = 2$"
+    ],
+    "voz": "Usa efe de uno igual cinco: tres más ene es cinco, ene es dos. Y efe de cero es justamente ene."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: dos. Efe de cero es el corte con el eje i griega. Sigue a math paes punto c, ele."
+  }
+ },
+ "018": {
+  "pasos": [
+   {
+    "lineas": [
+     "Escalera = hipotenusa",
+     "$h^2 + 5^2 = 13^2$"
+    ],
+    "voz": "La escalera es la hipotenusa del triángulo rectángulo. Altura al cuadrado más cinco al cuadrado igual trece al cuadrado."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$h^2 = 144 \\Rightarrow h = 12$"
+    ],
+    "voz": "Ciento sesenta y nueve menos veinticinco da ciento cuarenta y cuatro, y su raíz es doce metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: doce metros. La hipotenusa siempre es el lado más largo. Sigue a math paes punto c, ele."
+  }
+ },
+ "019": {
+  "pasos": [
+   {
+    "lineas": [
+     "Áreas",
+     "$20 \\cdot 15 = 300 \\quad 10 \\cdot 8 = 80$"
+    ],
+    "voz": "El terreno mide veinte por quince, trescientos metros cuadrados. La casa, diez por ocho, ochenta."
+   },
+   {
+    "lineas": [
+     "Restamos",
+     "$300 - 80 = 220$"
+    ],
+    "voz": "Lo que queda libre es trescientos menos ochenta: doscientos veinte metros cuadrados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: doscientos veinte metros cuadrados. Área libre: total menos lo ocupado. Sigue a math paes punto c, ele."
+  }
+ },
+ "020": {
+  "pasos": [
+   {
+    "lineas": [
+     "Triángulos semejantes",
+     "$\\dfrac{h}{18} = \\dfrac{3}{2}$"
+    ],
+    "voz": "El sol forma triángulos semejantes. La altura es a su sombra como tres es a dos."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$h = 18 \\cdot 1{,}5 = 27$"
+    ],
+    "voz": "Dieciocho por tres medios da veintisiete metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: veintisiete metros. En semejanza, compara altura con altura y sombra con sombra. Sigue a math paes punto c, ele."
+  }
+ },
+ "021": {
+  "pasos": [
+   {
+    "lineas": [
+     "Volumen del cilindro",
+     "$V = \\pi r^2 h$"
+    ],
+    "voz": "El volumen de un cilindro es pi por radio al cuadrado por altura."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$\\pi \\cdot 9 \\cdot 10 = 90\\pi$"
+    ],
+    "voz": "Tres al cuadrado es nueve, por diez, noventa pi centímetros cúbicos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: noventa pi. No olvides elevar el radio al cuadrado. Sigue a math paes punto c, ele."
+  }
+ },
+ "022": {
+  "pasos": [
+   {
+    "lineas": [
+     "Rotación 90° antihoraria",
+     "$(x, y) \\to (-y, x)$"
+    ],
+    "voz": "Rotar noventa grados en sentido antihorario cambia equis i griega por menos i griega, equis."
+   },
+   {
+    "lineas": [
+     "Aplicamos",
+     "$(2, -3) \\to (3, 2)$"
+    ],
+    "voz": "Con dos, menos tres, queda tres, dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: tres coma dos. Antihorario: menos i griega, equis. Horario: i griega, menos equis. Sigue a math paes punto c, ele."
+  }
+ },
+ "023": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ponderamos u",
+     "$2\\vec{u} = (4, -2)$"
+    ],
+    "voz": "Primero multiplica u por dos: cuatro, menos dos."
+   },
+   {
+    "lineas": [
+     "Sumamos componente a componente",
+     "$(4 - 3,\\; -2 + 4) = (1, 2)$"
+    ],
+    "voz": "Luego suma con ve, componente a componente: uno, dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: uno coma dos. Los vectores se operan componente a componente. Sigue a math paes punto c, ele."
+  }
+ },
+ "024": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma necesaria",
+     "$5 \\cdot 5{,}5 = 27{,}5$"
+    ],
+    "voz": "Para tener promedio cinco coma cinco con cinco notas, la suma tiene que ser veintisiete coma cinco."
+   },
+   {
+    "lineas": [
+     "Lo que falta",
+     "$27{,}5 - 22{,}0 = 5{,}5$"
+    ],
+    "voz": "Tus cuatro notas suman veintidós. Te falta un cinco coma cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cinco coma cinco. Promedio por cantidad de notas da la suma que necesitas. Sigue a math paes punto c, ele."
+  }
+ },
+ "025": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ordenamos",
+     "$2, 3, 5, 7, 8, 10$"
+    ],
+    "voz": "Para la mediana, lo primero es ordenar los datos de menor a mayor."
+   },
+   {
+    "lineas": [
+     "Par de datos: promedio central",
+     "$\\dfrac{5 + 7}{2} = 6$"
+    ],
+    "voz": "Hay seis datos, así que promedias los dos del centro: cinco y siete. Da seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: seis. Siempre ordena antes de buscar la mediana. Sigue a math paes punto c, ele."
+  }
+ },
+ "026": {
+  "pasos": [
+   {
+    "lineas": [
+     "36 casos posibles",
+     "$6 \\cdot 6 = 36$"
+    ],
+    "voz": "Con dos dados hay treinta y seis resultados igual de probables."
+   },
+   {
+    "lineas": [
+     "Suman 7: seis casos",
+     "$\\dfrac{6}{36} = \\dfrac{1}{6}$"
+    ],
+    "voz": "Suman siete: uno seis, dos cinco, tres cuatro, y al revés. Seis casos de treinta y seis: un sexto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: un sexto. Cuenta casos igual de probables, no sumas posibles. Sigue a math paes punto c, ele."
+  }
+ },
+ "027": {
+  "pasos": [
+   {
+    "lineas": [
+     "Primera roja",
+     "$\\dfrac{4}{10}$"
+    ],
+    "voz": "La primera bolita roja tiene probabilidad cuatro de diez."
+   },
+   {
+    "lineas": [
+     "Segunda roja, sin reposición",
+     "$\\dfrac{4}{10} \\cdot \\dfrac{3}{9} = \\dfrac{2}{15}$"
+    ],
+    "voz": "Sin reposición queda una roja menos y una bolita menos: tres de nueve. Multiplicando, dos quinceavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: dos quinceavos. Sin reposición cambian el numerador y el denominador. Sigue a math paes punto c, ele."
+  }
+ },
+ "028": {
+  "pasos": [
+   {
+    "lineas": [
+     "Juegan al menos uno",
+     "$25 + 18 - 8 = 35$"
+    ],
+    "voz": "Suma los de fútbol y básquetbol, pero resta los ocho que juegan ambos para no contarlos dos veces: treinta y cinco."
+   },
+   {
+    "lineas": [
+     "No juegan ninguno",
+     "$\\dfrac{40 - 35}{40} = \\dfrac{1}{8}$"
+    ],
+    "voz": "Quedan cinco que no juegan nada. Cinco de cuarenta es un octavo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: un octavo. En la unión, la intersección se resta una vez. Sigue a math paes punto c, ele."
+  }
+ },
+ "029": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cada logaritmo",
+     "$\\log_2 8 = 3 \\quad \\log_3 \\dfrac{1}{9} = -2$"
+    ],
+    "voz": "Logaritmo en base dos de ocho es tres, porque dos al cubo es ocho. Y logaritmo en base tres de un noveno es menos dos."
+   },
+   {
+    "lineas": [
+     "Sumamos",
+     "$3 + (-2) = 1$"
+    ],
+    "voz": "Tres más menos dos: uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: uno. El logaritmo de un número entre cero y uno es negativo. Sigue a math paes punto c, ele."
+  }
+ },
+ "030": {
+  "pasos": [
+   {
+    "lineas": [
+     "Duplicaciones",
+     "$12 \\div 3 = 4$"
+    ],
+    "voz": "En doce horas hay cuatro periodos de tres horas, o sea cuatro duplicaciones."
+   },
+   {
+    "lineas": [
+     "Modelo exponencial",
+     "$500 \\cdot 2^4 = 8.000$"
+    ],
+    "voz": "Quinientos por dos a la cuarta, que es dieciséis: ocho mil bacterias."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: ocho mil. Duplicar es multiplicar por dos cada periodo, no sumar. Sigue a math paes punto c, ele."
+  }
+ },
+ "031": {
+  "pasos": [
+   {
+    "lineas": [
+     "Altura = cateto opuesto",
+     "$\\sin 30^\\circ = \\dfrac{h}{8}$"
+    ],
+    "voz": "La rampa es la hipotenusa y la altura es el cateto opuesto al ángulo. Usamos seno."
+   },
+   {
+    "lineas": [
+     "Seno de 30° = 1/2",
+     "$h = 8 \\cdot \\dfrac{1}{2} = 4$"
+    ],
+    "voz": "Seno de treinta grados es un medio. Ocho por un medio: cuatro metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuatro metros. Opuesto con seno, adyacente con coseno. Sigue a math paes punto c, ele."
+  }
+ },
+ "032": {
+  "pasos": [
+   {
+    "lineas": [
+     "Sin cargos: no importa el orden",
+     "$\\binom{7}{3}$"
+    ],
+    "voz": "Como el comité no tiene cargos, el orden no importa. Son combinaciones de siete en tres."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$\\dfrac{7 \\cdot 6 \\cdot 5}{3 \\cdot 2 \\cdot 1} = 35$"
+    ],
+    "voz": "Siete por seis por cinco, dividido por tres factorial: treinta y cinco comités."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: treinta y cinco. Si el orden no importa, son combinaciones. Sigue a math paes punto c, ele."
+  }
+ },
+ "033": {
+  "pasos": [
+   {
+    "lineas": [
+     "Con lentes",
+     "$0{,}18 + 0{,}08 = 0{,}26$"
+    ],
+    "voz": "Mujeres con lentes: cero coma seis por cero coma tres, cero coma dieciocho. Hombres con lentes: cero coma cero ocho. En total, cero coma veintiséis."
+   },
+   {
+    "lineas": [
+     "Condicional",
+     "$\\dfrac{0{,}18}{0{,}26} = \\dfrac{9}{13}$"
+    ],
+    "voz": "De los que usan lentes, la fracción de mujeres es cero coma dieciocho partido cero coma veintiséis: nueve treceavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: nueve treceavos. En la condicional, divide por la probabilidad de la condición. Sigue a math paes punto c, ele."
+  }
+ },
+ "034": {
+  "pasos": [
+   {
+    "lineas": [
+     "Formas de ubicar 2 caras",
+     "$\\binom{4}{2} = 6$"
+    ],
+    "voz": "Hay seis formas de ubicar dos caras en cuatro lanzamientos."
+   },
+   {
+    "lineas": [
+     "Cada secuencia vale 1/16",
+     "$6 \\cdot \\dfrac{1}{16} = \\dfrac{3}{8}$"
+    ],
+    "voz": "Cada secuencia tiene probabilidad un dieciseisavo. Seis dieciseisavos es tres octavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: tres octavos. Binomial: combinaciones por probabilidad de cada secuencia. Sigue a math paes punto c, ele."
+  }
+ },
+ "035": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pendiente",
+     "$m = \\dfrac{8 - 2}{3 - 1} = 3$"
+    ],
+    "voz": "La pendiente es ocho menos dos, partido tres menos uno: tres."
+   },
+   {
+    "lineas": [
+     "Ecuación y corte",
+     "$y = 3x - 1 \\Rightarrow n = -1$"
+    ],
+    "voz": "Con el punto uno, dos, la recta es i griega igual tres equis menos uno. Corta al eje i griega en menos uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: menos uno. El corte con el eje i griega es el ene de i griega igual eme equis más ene. Sigue a math paes punto c, ele."
+  }
+ },
+ "036": {
+  "pasos": [
+   {
+    "lineas": [
+     "Media",
+     "$\\bar{x} = \\dfrac{20}{4} = 5$"
+    ],
+    "voz": "La media de dos, cuatro, seis y ocho es cinco."
+   },
+   {
+    "lineas": [
+     "Desviaciones al cuadrado",
+     "$\\dfrac{9 + 1 + 1 + 9}{4} = 5$"
+    ],
+    "voz": "Las desviaciones al cuadrado son nueve, uno, uno y nueve. Suman veinte, y divididas en cuatro dan cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cinco. La desviación estándar es la raíz de la varianza. Sigue a math paes punto c, ele."
+  }
+ },
+ "037": {
+  "pasos": [
+   {
+    "lineas": [
+     "Interés compuesto",
+     "$1.000.000 \\cdot 1{,}1^2$"
+    ],
+    "voz": "Con interés compuesto, cada año ganas sobre lo acumulado. El capital se multiplica por uno coma uno dos veces."
+   },
+   {
+    "lineas": [
+     "Resultado",
+     "$1.000.000 \\cdot 1{,}21 = 1.210.000$"
+    ],
+    "voz": "Uno coma uno al cuadrado es uno coma veintiuno. Te quedan un millón doscientos diez mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: un millón doscientos diez mil pesos. Compuesto multiplica, simple suma. Sigue a math paes punto c, ele."
+  }
+ }
+}

@@ -27,5 +27,26 @@
  "trampa": "Sacar la raíz (E), que es la desviación estándar, o dividir por $n - 1$ (B), que es la varianza muestral.",
  "clave": "Varianza: promedio de las desviaciones al cuadrado. Desviación estándar: su raíz cuadrada.",
  "verificacion": "d = [2,4,6,8]; m = Rational(sum(d), len(d)); respuesta = sum((v-m)**2 for v in d) / len(d)",
- "id": "036"
+ "id": "036",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Media",
+     "$\\bar{x} = \\dfrac{20}{4} = 5$"
+    ],
+    "voz": "La media de dos, cuatro, seis y ocho es cinco."
+   },
+   {
+    "lineas": [
+     "Desviaciones al cuadrado",
+     "$\\dfrac{9 + 1 + 1 + 9}{4} = 5$"
+    ],
+    "voz": "Las desviaciones al cuadrado son nueve, uno, uno y nueve. Suman veinte, y divididas en cuatro dan cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cinco. La desviación estándar es la raíz de la varianza. Sigue a math paes punto c, ele."
+  }
+ }
 }

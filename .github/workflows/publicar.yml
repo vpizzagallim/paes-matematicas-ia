@@ -2,13 +2,13 @@ name: Publicar en Instagram
 
 on:
   schedule:
-    # Horario UTC. Chile (UTC-3): 09:00, 15:00, 21:00 y 03:00
-    - cron: "0 0,6,12,18 * * *"
+    # Horario UTC. Chile (UTC-3): 09:00, 12:00, 15:00, 18:00, 21:00 y 23:00
+    - cron: "0 12,15,18,21,0,2 * * *"
     # Lanzamiento (temporal) 22-oct Chile: cada 30 min de 16:30 a 23:30. BORRAR despues del 23-oct.
     - cron: "30 19-23 22 10 *"
     - cron: "0 20-23 22 10 *"
     - cron: "30 0-2 23 10 *"
-    - cron: "0 1,2 23 10 *"
+    - cron: "0 1 23 10 *"
   workflow_dispatch: {}
 
 permissions:
@@ -21,11 +21,40 @@ concurrency:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+
+      - name: Programas del sistema (video, fuentes)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-inter fonts-noto-color-emoji > /dev/null
+
+      - name: Dependencias de render
+        working-directory: render
+        run: npm ci --silent
+
+      - name: Dependencias de Python
+        run: pip install -q piper-tts numpy pillow
+
+      - name: Voz (cache)
+        uses: actions/cache@v4
+        with:
+          path: voces
+          key: voz-es_MX-claude-high-v1
+
+      - name: Descargar voz si falta
+        run: |
+          mkdir -p voces
+          B=https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_MX/claude/high
+          [ -f voces/es_MX-claude-high.onnx ] || curl -sSL -o voces/es_MX-claude-high.onnx $B/es_MX-claude-high.onnx
+          [ -f voces/es_MX-claude-high.onnx.json ] || curl -sSL -o voces/es_MX-claude-high.onnx.json $B/es_MX-claude-high.onnx.json
+
       - name: Publicar siguiente post de la cola
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           REPO: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
-        run: python3 scripts/publicar.py
+        run: |
+          export CHROME=$(command -v google-chrome || command -v chromium || command -v chromium-browser)
+          python3 scripts/publicar.py

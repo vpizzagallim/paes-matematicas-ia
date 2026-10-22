@@ -27,5 +27,26 @@
  "trampa": "Multiplicar solo la $x$ por 3 ($3x - 2 = x + 8$) y obtener $x = 5$ (D).",
  "clave": "El factor fuera del paréntesis multiplica a <b>todos</b> los términos de adentro.",
  "verificacion": "x = symbols('x'); respuesta = solve(Eq(3*(x-2), x+8), x)[0]",
- "id": "010"
+ "id": "010",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Distribuimos el 3",
+     "$3x - 6 = x + 8$"
+    ],
+    "voz": "Primero distribuye el tres a todo el paréntesis: tres equis menos seis igual equis más ocho."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$2x = 14 \\Rightarrow x = 7$"
+    ],
+    "voz": "Pasamos las equis a un lado y los números al otro: dos equis igual catorce, así que equis vale siete."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: siete. El número fuera del paréntesis multiplica a todo lo de adentro. Sigue a math paes punto c, ele."
+  }
+ }
 }

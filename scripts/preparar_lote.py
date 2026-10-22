@@ -36,7 +36,7 @@ def iguales(a, b):
 
 
 def verificar(p):
-    for campo in ["nivel", "eje", "tema", "enunciado", "alternativas", "correcta", "pasos", "trampa", "clave", "valores", "verificacion"]:
+    for campo in ["nivel", "eje", "tema", "enunciado", "alternativas", "correcta", "pasos", "trampa", "clave", "valores", "verificacion", "pizarra"]:
         if campo not in p:
             return f"falta el campo {campo}"
     if len(p["alternativas"]) != 5 or len(p["valores"]) != 5:
@@ -87,6 +87,14 @@ def main():
             shutil.rmtree(destino, ignore_errors=True)
             rechazados += 1
             print(f"RECHAZADO ({p['tema']}): {res.stderr.strip().splitlines()[-1] if res.stderr.strip() else 'error al renderizar'}")
+            continue
+        res = subprocess.run(["node", os.path.join(RAIZ, "render", "pizarra.js"), os.path.join(destino, "post.json"),
+                              os.path.join("/tmp", "pizarra_" + p["id"])], capture_output=True, text=True)
+        if res.returncode != 0:
+            import shutil
+            shutil.rmtree(destino, ignore_errors=True)
+            rechazados += 1
+            print(f"RECHAZADO ({p['tema']}): la hoja del Reel no cabe")
             continue
         aprobados += 1
         print(f"OK {p['id']} · {p['nivel']} · {p['tema']}")

@@ -27,5 +27,26 @@
  "trampa": "Quedarse con $12{,}6 \\cdot 10^1$ y \"corregir\" el exponente en el sentido equivocado (D).",
  "clave": "En notación científica el coeficiente va entre 1 y 10: si lo divides por 10, el exponente <b>sube</b> en 1.",
  "verificacion": "respuesta = Rational(42, 100000) * 3 * 10**5",
- "id": "009"
+ "id": "009",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pasamos a notación científica",
+     "$4{,}2 \\cdot 10^{-4} \\cdot 3 \\cdot 10^{5}$"
+    ],
+    "voz": "Escribe cero coma cero cero cero cuarenta y dos como cuatro coma dos por diez a la menos cuatro."
+   },
+   {
+    "lineas": [
+     "Multiplicamos y ajustamos",
+     "$12{,}6 \\cdot 10^{1} = 1{,}26 \\cdot 10^{2}$"
+    ],
+    "voz": "Cuatro coma dos por tres da doce coma seis, y diez a la menos cuatro por diez a la cinco es diez a la uno. Ajustando, queda uno coma veintiséis por diez al cuadrado."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: uno coma veintiséis por diez al cuadrado. Si achicas el coeficiente, el exponente sube. Sigue a math paes punto c, ele."
+  }
+ }
 }

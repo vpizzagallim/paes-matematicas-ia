@@ -27,5 +27,26 @@
  "trampa": "Restar perímetros ($70 - 36$) o responder el área total o la de la casa.",
  "clave": "Área de una zona \"con un hueco\": área total menos área de la parte ocupada.",
  "verificacion": "respuesta = 20*15 - 10*8",
- "id": "019"
+ "id": "019",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Áreas",
+     "$20 \\cdot 15 = 300 \\quad 10 \\cdot 8 = 80$"
+    ],
+    "voz": "El terreno mide veinte por quince, trescientos metros cuadrados. La casa, diez por ocho, ochenta."
+   },
+   {
+    "lineas": [
+     "Restamos",
+     "$300 - 80 = 220$"
+    ],
+    "voz": "Lo que queda libre es trescientos menos ochenta: doscientos veinte metros cuadrados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: doscientos veinte metros cuadrados. Área libre: total menos lo ocupado. Sigue a math paes punto c, ele."
+  }
+ }
 }

@@ -26,5 +26,26 @@
  "trampa": "Invertir la razón ($\\tfrac{h}{18} = \\tfrac{2}{3}$) y obtener 12 m (E).",
  "clave": "En triángulos semejantes, los lados correspondientes están en la misma razón: altura con altura, sombra con sombra.",
  "verificacion": "respuesta = Rational(18*3, 2)",
- "id": "020"
+ "id": "020",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Triángulos semejantes",
+     "$\\dfrac{h}{18} = \\dfrac{3}{2}$"
+    ],
+    "voz": "El sol forma triángulos semejantes. La altura es a su sombra como tres es a dos."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$h = 18 \\cdot 1{,}5 = 27$"
+    ],
+    "voz": "Dieciocho por tres medios da veintisiete metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: veintisiete metros. En semejanza, compara altura con altura y sombra con sombra. Sigue a math paes punto c, ele."
+  }
+ }
 }

@@ -26,5 +26,26 @@
  "trampa": "Creer que $(x+3)^2 = x^2 + 9$ (olvidar el término central) y llegar a 18 o a 0.",
  "clave": "$(a \\pm b)^2 = a^2 \\pm 2ab + b^2$. El término $2ab$ es el que más se olvida.",
  "verificacion": "x = symbols('x'); respuesta = expand((x+3)**2 - (x-3)**2)",
- "id": "016"
+ "id": "016",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Desarrollamos cada cuadrado",
+     "$x^2 + 6x + 9 \\quad x^2 - 6x + 9$"
+    ],
+    "voz": "Desarrolla cada cuadrado de binomio, sin olvidar el término del medio: más seis equis en uno, menos seis equis en el otro."
+   },
+   {
+    "lineas": [
+     "Restamos",
+     "$6x - (-6x) = 12x$"
+    ],
+    "voz": "Al restar, los equis al cuadrado y los nueves se cancelan, y queda seis equis menos menos seis equis: doce equis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: doce equis. El doble producto es el término que más se olvida. Sigue a math paes punto c, ele."
+  }
+ }
 }

@@ -27,5 +27,26 @@
  "trampa": "Sumar los cuadrados como si 13 fuera un cateto, obteniendo $\\sqrt{194}$ (B).",
  "clave": "En $a^2 + b^2 = c^2$, $c$ es <b>siempre</b> el lado opuesto al ángulo recto (el más largo).",
  "verificacion": "respuesta = sqrt(13**2 - 5**2)",
- "id": "018"
+ "id": "018",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Escalera = hipotenusa",
+     "$h^2 + 5^2 = 13^2$"
+    ],
+    "voz": "La escalera es la hipotenusa del triángulo rectángulo. Altura al cuadrado más cinco al cuadrado igual trece al cuadrado."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$h^2 = 144 \\Rightarrow h = 12$"
+    ],
+    "voz": "Ciento sesenta y nueve menos veinticinco da ciento cuarenta y cuatro, y su raíz es doce metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la e: doce metros. La hipotenusa siempre es el lado más largo. Sigue a math paes punto c, ele."
+  }
+ }
 }

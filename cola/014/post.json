@@ -26,5 +26,26 @@
  "trampa": "Responder la coordenada $x$ del vértice (D), cuando se pide el <strong>valor</strong> de la función.",
  "clave": "El valor mínimo (o máximo) de una cuadrática es $f(x_v)$, con $x_v = -\\tfrac{b}{2a}$.",
  "verificacion": "x = symbols('x'); f = x**2-6*x+5; respuesta = f.subs(x, solve(diff(f, x), x)[0])",
- "id": "014"
+ "id": "014",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Vértice",
+     "$x_v = \\dfrac{6}{2} = 3$"
+    ],
+    "voz": "La parábola abre hacia arriba, así que el mínimo está en el vértice. Equis del vértice: menos be partido dos a, seis partido dos, tres."
+   },
+   {
+    "lineas": [
+     "Evaluamos",
+     "$f(3) = 9 - 18 + 5 = -4$"
+    ],
+    "voz": "Ahora evalúa la función en tres: nueve menos dieciocho más cinco, menos cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: menos cuatro. El valor mínimo es la función evaluada en el vértice. Sigue a math paes punto c, ele."
+  }
+ }
 }
