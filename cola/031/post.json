@@ -1,0 +1,30 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Trigonometría",
+ "gancho": "Rampas y ángulos 📐",
+ "enunciado": "Una rampa de <b>8 m</b> de largo forma un ángulo de <b>30°</b> con el suelo horizontal. ¿Qué altura alcanza la rampa?",
+ "alternativas": [
+  "$\\dfrac{16}{\\sqrt{3}}$ m",
+  "4 m",
+  "$8\\sqrt{3}$ m",
+  "2 m",
+  "$4\\sqrt{3}$ m"
+ ],
+ "valores": [
+  "16/sqrt(3)",
+  "4",
+  "8*sqrt(3)",
+  "2",
+  "4*sqrt(3)"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "La rampa es la hipotenusa y la altura es el cateto <b>opuesto</b> al ángulo de 30°: $$\\sin 30^\\circ = \\frac{h}{8}$$",
+  "Como $\\sin 30^\\circ = \\tfrac{1}{2}$: $$h = 8 \\cdot \\tfrac{1}{2} = 4 \\text{ m}$$"
+ ],
+ "trampa": "Usar coseno en vez de seno: $8 \\cdot \\cos 30^\\circ = 4\\sqrt{3}$ (E), que es la distancia horizontal.",
+ "clave": "$\\sin = \\tfrac{\\text{opuesto}}{\\text{hipotenusa}}$, $\\cos = \\tfrac{\\text{adyacente}}{\\text{hipotenusa}}$, $\\tan = \\tfrac{\\text{opuesto}}{\\text{adyacente}}$.",
+ "verificacion": "respuesta = 8*sin(pi/6)",
+ "id": "031"
+}

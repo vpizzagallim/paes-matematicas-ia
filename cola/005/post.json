@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Raíces",
+ "gancho": "¿Se pueden sumar raíces? Depende 🤔",
+ "enunciado": "¿Cuál es el resultado de $$\\sqrt{50} + \\sqrt{18}\\,?$$",
+ "alternativas": [
+  "$\\sqrt{68}$",
+  "$6\\sqrt{2}$",
+  "$7\\sqrt{2}$",
+  "$8\\sqrt{2}$",
+  "$15\\sqrt{2}$"
+ ],
+ "valores": [
+  "sqrt(68)",
+  "6*sqrt(2)",
+  "7*sqrt(2)",
+  "8*sqrt(2)",
+  "15*sqrt(2)"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Descomponemos cada raíz buscando cuadrados perfectos: $$\\sqrt{50} = \\sqrt{25 \\cdot 2} = 5\\sqrt{2}$$ $$\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$$",
+  "Ahora son raíces semejantes y se suman: $$5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$$"
+ ],
+ "trampa": "Sumar los números de adentro: $\\sqrt{50} + \\sqrt{18} = \\sqrt{68}$. Eso es <strong>falso</strong>: la raíz no se distribuye en una suma.",
+ "clave": "$\\sqrt{a} + \\sqrt{b} \\neq \\sqrt{a+b}$. Solo se suman raíces con el <b>mismo radicando</b>, tras simplificarlas.",
+ "verificacion": "respuesta = sqrt(50) + sqrt(18)",
+ "id": "005"
+}

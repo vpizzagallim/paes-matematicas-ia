@@ -23,6 +23,9 @@ PUB = os.path.join(RAIZ, "publicados")
 
 
 def iguales(a, b):
+    a, b = sp.sympify(a), sp.sympify(b)
+    if not (isinstance(a, sp.Expr) and isinstance(b, sp.Expr)):
+        return sp.simplify(a) == sp.simplify(b)
     try:
         return sp.simplify(sp.nsimplify(a) - sp.nsimplify(b)) == 0
     except Exception:
@@ -77,8 +80,14 @@ def main():
         destino = os.path.join(COLA, p["id"])
         tmp = os.path.join(RAIZ, "borradores", f"_{p['id']}.json")
         json.dump(p, open(tmp, "w", encoding="utf-8"), ensure_ascii=False)
-        subprocess.run(["node", os.path.join(RAIZ, "render", "render.js"), tmp, destino], check=True)
+        res = subprocess.run(["node", os.path.join(RAIZ, "render", "render.js"), tmp, destino], capture_output=True, text=True)
         os.remove(tmp)
+        if res.returncode != 0:
+            import shutil
+            shutil.rmtree(destino, ignore_errors=True)
+            rechazados += 1
+            print(f"RECHAZADO ({p['tema']}): {res.stderr.strip().splitlines()[-1] if res.stderr.strip() else 'error al renderizar'}")
+            continue
         aprobados += 1
         print(f"OK {p['id']} · {p['nivel']} · {p['tema']}")
     print(f"\nAprobados: {aprobados} · Rechazados: {rechazados} · En cola: {len(os.listdir(COLA))}")

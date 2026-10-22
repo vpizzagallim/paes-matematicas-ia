@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Función afín",
+ "gancho": "¿Cuánto cuesta el taxi? 🚕",
+ "enunciado": "Un taxi cobra <b>\\$500</b> de bajada de bandera más <b>\\$150</b> por cada <b>200 m</b> recorridos. ¿Cuánto cuesta un viaje de <b>3 km</b>?",
+ "alternativas": [
+  "\\$4.500",
+  "\\$2.250",
+  "\\$2.750",
+  "\\$950",
+  "\\$2.600"
+ ],
+ "valores": [
+  "4500",
+  "2250",
+  "2750",
+  "950",
+  "2600"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Pasamos a metros: 3 km = 3.000 m, que son $$3.000 \\div 200 = 15 \\text{ tramos}$$",
+  "El costo es una función afín, $C = 500 + 150t$: $$C = 500 + 150 \\cdot 15 = 2.750$$"
+ ],
+ "trampa": "Olvidar la bajada de bandera (B) o contar 3 tramos en vez de 15 (D).",
+ "clave": "Una función afín $f(x) = mx + n$ tiene un costo fijo $n$ y un costo variable $m$ por unidad.",
+ "verificacion": "respuesta = 500 + 150 * (3000 // 200)",
+ "id": "012"
+}

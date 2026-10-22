@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Sistemas de ecuaciones",
+ "gancho": "Problema de entradas al cine 🎬",
+ "enunciado": "2 entradas de adulto y 3 de niño cuestan <b>\\$17.000</b>. Una de adulto y una de niño cuestan <b>\\$7.000</b>. ¿Cuánto cuesta la entrada de <b>adulto</b>?",
+ "alternativas": [
+  "\\$5.000",
+  "\\$4.000",
+  "\\$4.500",
+  "\\$3.500",
+  "\\$3.000"
+ ],
+ "valores": [
+  "5000",
+  "4000",
+  "4500",
+  "3500",
+  "3000"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Planteamos: $$2a + 3n = 17.000 \\qquad a + n = 7.000$$",
+  "Multiplicamos la segunda por 2 y restamos: $$n = 17.000 - 14.000 = 3.000$$",
+  "Reemplazamos: $$a = 7.000 - 3.000 = 4.000$$"
+ ],
+ "trampa": "Responder el valor de la entrada de <strong>niño</strong> (E), que es lo primero que se despeja.",
+ "clave": "Antes de marcar, relee qué variable te piden. En los sistemas suele haber una alternativa con la otra incógnita.",
+ "verificacion": "a, n = symbols('a n'); respuesta = solve([2*a+3*n-17000, a+n-7000], [a, n])[a]",
+ "id": "011"
+}

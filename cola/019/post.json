@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Áreas",
+ "gancho": "¿Cuánto patio queda? 🏡",
+ "enunciado": "Un terreno rectangular mide <b>20 m × 15 m</b>. En él se construye una casa rectangular de <b>10 m × 8 m</b>. ¿Cuál es el área del terreno que queda libre?",
+ "alternativas": [
+  "80 m²",
+  "300 m²",
+  "220 m²",
+  "140 m²",
+  "52 m²"
+ ],
+ "valores": [
+  "80",
+  "300",
+  "220",
+  "140",
+  "52"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Área del terreno: $$20 \\cdot 15 = 300 \\text{ m}^2$$",
+  "Área de la casa: $$10 \\cdot 8 = 80 \\text{ m}^2$$",
+  "Área libre: $$300 - 80 = 220 \\text{ m}^2$$"
+ ],
+ "trampa": "Restar perímetros ($70 - 36$) o responder el área total o la de la casa.",
+ "clave": "Área de una zona \"con un hueco\": área total menos área de la parte ocupada.",
+ "verificacion": "respuesta = 20*15 - 10*8",
+ "id": "019"
+}

@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuaciones lineales",
+ "gancho": "Ecuación clásica de la PAES ✍️",
+ "enunciado": "¿Cuál es el valor de $x$ en la ecuación $$3(x - 2) = x + 8\\,?$$",
+ "alternativas": [
+  "7",
+  "10",
+  "4",
+  "5",
+  "3"
+ ],
+ "valores": [
+  "7",
+  "10",
+  "4",
+  "5",
+  "3"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Distribuimos el 3: $$3x - 6 = x + 8$$",
+  "Agrupamos: $$3x - x = 8 + 6 \\;\\Rightarrow\\; 2x = 14$$",
+  "$$x = 7$$"
+ ],
+ "trampa": "Multiplicar solo la $x$ por 3 ($3x - 2 = x + 8$) y obtener $x = 5$ (D).",
+ "clave": "El factor fuera del paréntesis multiplica a <b>todos</b> los términos de adentro.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(3*(x-2), x+8), x)[0]",
+ "id": "010"
+}

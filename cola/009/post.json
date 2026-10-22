@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Notación científica",
+ "gancho": "Notación científica sin miedo 🔬",
+ "enunciado": "¿Cuál es el resultado de $$0{,}00042 \\cdot \\left(3 \\cdot 10^{5}\\right)\\,?$$",
+ "alternativas": [
+  "$1{,}26 \\cdot 10^{2}$",
+  "$1{,}26 \\cdot 10^{3}$",
+  "$1{,}26 \\cdot 10^{4}$",
+  "$1{,}26 \\cdot 10^{1}$",
+  "$1{,}26 \\cdot 10^{-2}$"
+ ],
+ "valores": [
+  "126",
+  "1260",
+  "12600",
+  "126/10",
+  "126/10000"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Escribimos $0{,}00042 = 4{,}2 \\cdot 10^{-4}$.",
+  "Multiplicamos coeficientes y sumamos exponentes: $$4{,}2 \\cdot 3 \\cdot 10^{-4+5} = 12{,}6 \\cdot 10^{1}$$",
+  "Ajustamos el coeficiente: $$12{,}6 \\cdot 10^{1} = 1{,}26 \\cdot 10^{2} = 126$$"
+ ],
+ "trampa": "Quedarse con $12{,}6 \\cdot 10^1$ y \"corregir\" el exponente en el sentido equivocado (D).",
+ "clave": "En notación científica el coeficiente va entre 1 y 10: si lo divides por 10, el exponente <b>sube</b> en 1.",
+ "verificacion": "respuesta = Rational(42, 100000) * 3 * 10**5",
+ "id": "009"
+}

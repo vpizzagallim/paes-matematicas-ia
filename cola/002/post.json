@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Proporcionalidad inversa",
+ "gancho": "Más trabajadores, menos días… ¿pero cuántos? 👷",
+ "enunciado": "<b>6 obreros</b> terminan un muro en <b>12 días</b>. Trabajando al mismo ritmo, ¿cuántos días demorarían <b>8 obreros</b>?",
+ "alternativas": [
+  "8 días",
+  "16 días",
+  "9 días",
+  "14 días",
+  "10 días"
+ ],
+ "valores": [
+  "8",
+  "16",
+  "9",
+  "14",
+  "10"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Más obreros implica <b>menos</b> días: es proporcionalidad <b>inversa</b>, el producto se mantiene constante.",
+  "$$6 \\cdot 12 = 72 \\text{ días-obrero}$$",
+  "$$72 \\div 8 = 9 \\text{ días}$$"
+ ],
+ "trampa": "Plantear una regla de tres <strong>directa</strong> ($\\tfrac{12 \\cdot 8}{6} = 16$) y marcar B.",
+ "clave": "Si al aumentar una cantidad la otra disminuye en la misma proporción, su <b>producto</b> es constante: $x \\cdot y = k$.",
+ "verificacion": "respuesta = Rational(6*12, 8)",
+ "id": "002"
+}

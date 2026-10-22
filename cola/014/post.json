@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Función cuadrática",
+ "gancho": "El vértice de la parábola 📈",
+ "enunciado": "¿Cuál es el <b>valor mínimo</b> que alcanza la función $$f(x) = x^2 - 6x + 5\\,?$$",
+ "alternativas": [
+  "$-5$",
+  "$-4$",
+  "5",
+  "3",
+  "4"
+ ],
+ "valores": [
+  "-5",
+  "-4",
+  "5",
+  "3",
+  "4"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Como $a = 1 > 0$, la parábola abre hacia arriba y su mínimo está en el vértice: $$x_v = \\frac{-b}{2a} = \\frac{6}{2} = 3$$",
+  "Evaluamos: $$f(3) = 9 - 18 + 5 = -4$$"
+ ],
+ "trampa": "Responder la coordenada $x$ del vértice (D), cuando se pide el <strong>valor</strong> de la función.",
+ "clave": "El valor mínimo (o máximo) de una cuadrática es $f(x_v)$, con $x_v = -\\tfrac{b}{2a}$.",
+ "verificacion": "x = symbols('x'); f = x**2-6*x+5; respuesta = f.subs(x, solve(diff(f, x), x)[0])",
+ "id": "014"
+}

@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Razones",
+ "gancho": "Razones y proporciones en la sala de clases 🏫",
+ "enunciado": "En un curso de <b>40 estudiantes</b>, la razón entre hombres y mujeres es <b>3 : 5</b>. ¿Cuántas mujeres hay?",
+ "alternativas": [
+  "25",
+  "20",
+  "30",
+  "24",
+  "15"
+ ],
+ "valores": [
+  "25",
+  "20",
+  "30",
+  "24",
+  "15"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "La razón 3 : 5 reparte el curso en $3 + 5 = 8$ partes iguales: $$40 \\div 8 = 5 \\text{ estudiantes por parte}$$",
+  "Las mujeres son 5 partes: $$5 \\cdot 5 = 25$$"
+ ],
+ "trampa": "Confundir hombres con mujeres (E = 15) o pensar que 5 partes de 40 es $\\tfrac{5}{40}$ del curso.",
+ "clave": "En una razón $a : b$ el total se divide en $a + b$ partes; cada grupo recibe $a$ o $b$ de esas partes.",
+ "verificacion": "respuesta = Rational(40, 3+5) * 5",
+ "id": "006"
+}

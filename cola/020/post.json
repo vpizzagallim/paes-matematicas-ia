@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Semejanza",
+ "gancho": "Medir un edificio con su sombra ☀️",
+ "enunciado": "A la misma hora, un poste de <b>3 m</b> proyecta una sombra de <b>2 m</b> y un edificio proyecta una sombra de <b>18 m</b>. ¿Cuál es la altura del edificio?",
+ "alternativas": [
+  "19 m",
+  "27 m",
+  "36 m",
+  "23 m",
+  "12 m"
+ ],
+ "valores": [
+  "19",
+  "27",
+  "36",
+  "23",
+  "12"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Los rayos de sol forman triángulos <b>semejantes</b>, así que altura y sombra son proporcionales: $$\\frac{h}{18} = \\frac{3}{2}$$",
+  "$$h = 18 \\cdot \\frac{3}{2} = 27 \\text{ m}$$"
+ ],
+ "trampa": "Invertir la razón ($\\tfrac{h}{18} = \\tfrac{2}{3}$) y obtener 12 m (E).",
+ "clave": "En triángulos semejantes, los lados correspondientes están en la misma razón: altura con altura, sombra con sombra.",
+ "verificacion": "respuesta = Rational(18*3, 2)",
+ "id": "020"
+}

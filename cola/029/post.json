@@ -1,0 +1,31 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Logaritmos",
+ "gancho": "Logaritmos en 30 segundos ⏱️",
+ "enunciado": "¿Cuál es el valor de $$\\log_2 8 + \\log_3 \\tfrac{1}{9}\\,?$$",
+ "alternativas": [
+  "1",
+  "5",
+  "$-1$",
+  "0",
+  "$-6$"
+ ],
+ "valores": [
+  "1",
+  "5",
+  "-1",
+  "0",
+  "-6"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "$\\log_2 8 = 3$, porque $2^3 = 8$.",
+  "$\\log_3 \\tfrac{1}{9} = -2$, porque $3^{-2} = \\tfrac{1}{9}$.",
+  "$$3 + (-2) = 1$$"
+ ],
+ "trampa": "Creer que $\\log_3 \\tfrac{1}{9} = 2$ (olvidar el signo negativo) y marcar B.",
+ "clave": "$\\log_b a = c \\iff b^c = a$. El logaritmo de un número entre 0 y 1 es <b>negativo</b>.",
+ "verificacion": "respuesta = log(8, 2) + log(Rational(1,9), 3)",
+ "id": "029"
+}

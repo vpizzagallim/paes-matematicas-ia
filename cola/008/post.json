@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Fracciones",
+ "gancho": "El orden de las operaciones decide todo 🧮",
+ "enunciado": "¿Cuál es el valor de $$0{,}25 + \\frac{3}{4} \\cdot \\frac{2}{3}\\,?$$",
+ "alternativas": [
+  "$\\dfrac{3}{4}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{5}{12}$",
+  "$\\dfrac{2}{3}$",
+  "1"
+ ],
+ "valores": [
+  "3/4",
+  "1/2",
+  "5/12",
+  "2/3",
+  "1"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Primero la multiplicación: $$\\frac{3}{4} \\cdot \\frac{2}{3} = \\frac{6}{12} = \\frac{1}{2}$$",
+  "Luego la suma, con $0{,}25 = \\tfrac{1}{4}$: $$\\frac{1}{4} + \\frac{1}{2} = \\frac{3}{4}$$"
+ ],
+ "trampa": "Sumar primero $0{,}25 + \\tfrac{3}{4} = 1$ y luego multiplicar por $\\tfrac{2}{3}$, marcando D.",
+ "clave": "Prioridad: paréntesis, potencias, <b>multiplicación y división</b>, y al final suma y resta.",
+ "verificacion": "respuesta = Rational(1,4) + Rational(3,4)*Rational(2,3)",
+ "id": "008"
+}

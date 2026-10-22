@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Teorema de Pitágoras",
+ "gancho": "La escalera y la pared 🪜",
+ "enunciado": "Una escalera de <b>13 m</b> está apoyada en una pared vertical. Su pie está a <b>5 m</b> de la pared. ¿A qué altura toca la pared?",
+ "alternativas": [
+  "18 m",
+  "$\\sqrt{194}$ m",
+  "10 m",
+  "8 m",
+  "12 m"
+ ],
+ "valores": [
+  "18",
+  "sqrt(194)",
+  "10",
+  "8",
+  "12"
+ ],
+ "correcta": 4,
+ "pasos": [
+  "Pared, suelo y escalera forman un triángulo rectángulo; la escalera es la <b>hipotenusa</b>.",
+  "$$h^2 + 5^2 = 13^2 \\;\\Rightarrow\\; h^2 = 169 - 25 = 144$$",
+  "$$h = 12 \\text{ m}$$"
+ ],
+ "trampa": "Sumar los cuadrados como si 13 fuera un cateto, obteniendo $\\sqrt{194}$ (B).",
+ "clave": "En $a^2 + b^2 = c^2$, $c$ es <b>siempre</b> el lado opuesto al ángulo recto (el más largo).",
+ "verificacion": "respuesta = sqrt(13**2 - 5**2)",
+ "id": "018"
+}

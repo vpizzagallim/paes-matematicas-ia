@@ -50,6 +50,7 @@ def esperar(contenedor):
 
 
 def main():
+    os.makedirs(COLA, exist_ok=True)
     pendientes = sorted(d for d in os.listdir(COLA) if os.path.isdir(os.path.join(COLA, d)))
     if not pendientes:
         print("::warning::La cola esta vacia, no hay nada que publicar.")

@@ -1,0 +1,30 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Función exponencial",
+ "gancho": "Crecimiento de bacterias 🦠",
+ "enunciado": "Una población de <b>500 bacterias</b> se <b>duplica cada 3 horas</b>. ¿Cuántas bacterias habrá después de <b>12 horas</b>?",
+ "alternativas": [
+  "2.000",
+  "16.000",
+  "8.000",
+  "4.000",
+  "6.000"
+ ],
+ "valores": [
+  "2000",
+  "16000",
+  "8000",
+  "4000",
+  "6000"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "En 12 horas hay $12 \\div 3 = 4$ duplicaciones.",
+  "El modelo es exponencial: $$N = 500 \\cdot 2^{4} = 500 \\cdot 16 = 8.000$$"
+ ],
+ "trampa": "Modelar como crecimiento lineal ($500 \\cdot 12 = 6.000$) o contar 12 duplicaciones.",
+ "clave": "Si algo se multiplica por $a$ cada $T$ unidades de tiempo: $N(t) = N_0 \\cdot a^{t/T}$.",
+ "verificacion": "respuesta = 500 * 2**(12//3)",
+ "id": "030"
+}

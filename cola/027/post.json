@@ -1,0 +1,31 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad",
+ "gancho": "Extracción sin reposición 🔴🔵",
+ "enunciado": "Una urna tiene <b>4 bolitas rojas</b> y <b>6 azules</b>. Se sacan <b>2</b> al azar, <b>sin reposición</b>. ¿Cuál es la probabilidad de que ambas sean rojas?",
+ "alternativas": [
+  "$\\dfrac{4}{25}$",
+  "$\\dfrac{1}{5}$",
+  "$\\dfrac{3}{25}$",
+  "$\\dfrac{2}{15}$",
+  "$\\dfrac{2}{5}$"
+ ],
+ "valores": [
+  "4/25",
+  "1/5",
+  "3/25",
+  "2/15",
+  "2/5"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Primera roja: $\\tfrac{4}{10}$. Queda una roja menos y una bolita menos.",
+  "Segunda roja: $\\tfrac{3}{9}$.",
+  "$$P = \\frac{4}{10} \\cdot \\frac{3}{9} = \\frac{12}{90} = \\frac{2}{15}$$"
+ ],
+ "trampa": "Calcular como si hubiera reposición: $\\tfrac{4}{10} \\cdot \\tfrac{4}{10} = \\tfrac{4}{25}$ (A).",
+ "clave": "Sin reposición, la segunda extracción cambia el numerador <b>y</b> el denominador.",
+ "verificacion": "respuesta = Rational(4,10)*Rational(3,9)",
+ "id": "027"
+}

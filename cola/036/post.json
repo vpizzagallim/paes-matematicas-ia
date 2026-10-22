@@ -1,0 +1,31 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Medidas de dispersión",
+ "gancho": "Varianza paso a paso 📉",
+ "enunciado": "¿Cuál es la <b>varianza</b> (poblacional) del conjunto de datos $$2,\\; 4,\\; 6,\\; 8\\,?$$",
+ "alternativas": [
+  "$\\dfrac{5}{2}$",
+  "$\\dfrac{20}{3}$",
+  "6",
+  "5",
+  "$\\sqrt{5}$"
+ ],
+ "valores": [
+  "5/2",
+  "20/3",
+  "6",
+  "5",
+  "sqrt(5)"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Media: $\\bar{x} = \\tfrac{2 + 4 + 6 + 8}{4} = 5$.",
+  "Desviaciones al cuadrado: $9,\\; 1,\\; 1,\\; 9$, que suman 20.",
+  "$$\\sigma^2 = \\frac{20}{4} = 5$$"
+ ],
+ "trampa": "Sacar la raíz (E), que es la desviación estándar, o dividir por $n - 1$ (B), que es la varianza muestral.",
+ "clave": "Varianza: promedio de las desviaciones al cuadrado. Desviación estándar: su raíz cuadrada.",
+ "verificacion": "d = [2,4,6,8]; m = Rational(sum(d), len(d)); respuesta = sum((v-m)**2 for v in d) / len(d)",
+ "id": "036"
+}

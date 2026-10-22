@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Porcentajes",
+ "gancho": "El error más común con el IVA 🧾",
+ "enunciado": "Un producto cuesta <b>\\$11.900</b> con IVA incluido (19%). ¿Cuál es su precio <b>sin</b> IVA?",
+ "alternativas": [
+  "\\$9.990",
+  "\\$10.000",
+  "\\$9.500",
+  "\\$9.639",
+  "\\$10.190"
+ ],
+ "valores": [
+  "9990",
+  "10000",
+  "9500",
+  "9639",
+  "10190"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "El precio con IVA es el <b>119%</b> del precio neto: $$P \\cdot 1{,}19 = 11.900$$",
+  "Despejando: $$P = \\frac{11.900}{1{,}19} = 10.000$$"
+ ],
+ "trampa": "Restar el 19% al precio final ($11.900 \\cdot 0{,}81 = 9.639$) y marcar D. El 19% se calcula sobre el precio <strong>neto</strong>, no sobre el final.",
+ "clave": "Para \"quitar\" un porcentaje que ya se aplicó, se <b>divide</b> por $(1 + \\tfrac{p}{100})$; no se resta.",
+ "verificacion": "respuesta = Rational(11900) / Rational(119, 100)",
+ "id": "004"
+}

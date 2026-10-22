@@ -7,10 +7,11 @@ const { chromium } = require('playwright-core');
 const KATEX_CSS = path.join(__dirname, 'node_modules/katex/dist/katex.min.css');
 
 function tex(s) {
-  // $$...$$ display, $...$ inline
-  return s
+  // $$...$$ display, $...$ inline. Un signo peso literal se escribe \\$
+  return s.replace(/\\\$/g, '\u0000')
     .replace(/\$\$([\s\S]+?)\$\$/g, (_, m) => katex.renderToString(m, { displayMode: true, throwOnError: true }))
-    .replace(/\$([^$]+?)\$/g, (_, m) => katex.renderToString(m, { throwOnError: true }));
+    .replace(/\$([^$]+?)\$/g, (_, m) => katex.renderToString(m, { throwOnError: true }))
+    .replace(/\u0000/g, '$');
 }
 
 const CSS = `
@@ -23,26 +24,27 @@ body{width:1080px;height:1350px;background:#0F1B2D;color:#F4F1EA;font-family:'In
 .chip{font-size:26px;font-weight:600;letter-spacing:.04em;padding:10px 22px;border-radius:999px;background:rgba(255,255,255,.08);color:#C9D3E3}
 .chip.lvl{background:#F5B83D;color:#0F1B2D}
 .num{font-size:26px;color:#7F8DA6;font-weight:500}
-h1{font-size:30px;font-weight:700;letter-spacing:.18em;color:#F5B83D;margin:64px 0 26px;position:relative}
-.stmt{font-size:44px;line-height:1.38;font-weight:450;position:relative}
+h1{font-size:30px;font-weight:700;letter-spacing:.18em;color:#F5B83D;margin:calc(56px*var(--k)) 0 22px;position:relative}
+.page{--k:1}
+.stmt{font-size:calc(44px*var(--k));line-height:1.38;font-weight:450;position:relative}
 .stmt .katex{font-size:1.05em}
 .katex{white-space:nowrap}
 .opts{padding-top:40px}
-.opts{margin-top:auto;display:flex;flex-direction:column;gap:20px;position:relative}
-.opt{display:flex;align-items:center;gap:28px;padding:22px 30px;border-radius:22px;background:rgba(255,255,255,.055);border:2px solid rgba(255,255,255,.07);font-size:40px}
+.opts{margin-top:auto;display:flex;flex-direction:column;gap:calc(20px*var(--k));position:relative}
+.opt{display:flex;align-items:center;gap:28px;padding:calc(20px*var(--k)) 30px;border-radius:22px;background:rgba(255,255,255,.055);border:2px solid rgba(255,255,255,.07);font-size:calc(40px*var(--k))}
 .opt b{width:62px;height:62px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#1E2E47;color:#F5B83D;font-size:32px}
 .opt.ok{border-color:#4ED39A;background:rgba(78,211,154,.12)}
 .opt.ok b{background:#4ED39A;color:#0F1B2D}
 .foot{display:flex;justify-content:space-between;align-items:center;margin-top:46px;font-size:26px;color:#7F8DA6;position:relative}
 .foot .h{color:#C9D3E3;font-weight:600}
 .swipe{color:#F5B83D;font-weight:600}
-.steps{display:flex;flex-direction:column;gap:30px;position:relative}
+.steps{display:flex;flex-direction:column;gap:calc(30px*var(--k));position:relative}
 .step{display:flex;gap:28px}
 .step i{font-style:normal;flex:none;width:54px;height:54px;border-radius:14px;background:#F5B83D;color:#0F1B2D;font-weight:800;font-size:28px;display:flex;align-items:center;justify-content:center;margin-top:4px}
-.step div{font-size:37px;line-height:1.42}
+.step div{font-size:calc(37px*var(--k));line-height:1.42}
 .ans{margin-top:auto;padding:34px 38px;border-radius:24px;background:rgba(78,211,154,.12);border:2px solid #4ED39A;font-size:42px;font-weight:600;position:relative}
 .ans span{color:#4ED39A}
-.trap{padding:34px 38px;border-radius:24px;background:rgba(245,184,61,.1);border:2px solid rgba(245,184,61,.5);font-size:37px;line-height:1.42;position:relative}
+.trap{padding:34px 38px;border-radius:24px;background:rgba(245,184,61,.1);border:2px solid rgba(245,184,61,.5);font-size:calc(37px*var(--k));line-height:1.42;position:relative}
 .trap strong{color:#F5B83D}
 .cta{margin-top:auto;text-align:center;position:relative}
 .cta p{font-size:40px;font-weight:600;line-height:1.35}
@@ -100,6 +102,23 @@ function caption(post) {
     fs.writeFileSync(f, html);
     await page.goto('file://' + f);
     await page.evaluate(() => document.fonts.ready);
+    const prob = await page.evaluate(() => {
+      const pg = document.querySelector('.page');
+      const revisar = () => {
+      const r = s => { const e = document.querySelector(s); return e ? e.getBoundingClientRect() : null; };
+      const out = [];
+      const foot = r('.foot');
+      if (foot && foot.bottom > 1350 - 30) out.push('el pie se sale de la lámina');
+      const pares = [['.stmt', '.opts'], ['.steps', '.ans'], ['.stmt', '.cta']];
+      for (const [a, b] of pares) { const A = r(a), B = r(b); if (A && B && A.bottom > B.top - 8) out.push(`${a} se monta sobre ${b}`); }
+      document.querySelectorAll('.stmt, .opt, .step div, .trap, .ans').forEach(e => { if (e.scrollWidth > e.clientWidth + 2) out.push('texto se sale a lo ancho'); });
+      return out;
+      };
+      let out = revisar();
+      for (let k = 0.96; out.length && k >= 0.7; k -= 0.04) { pg.style.setProperty('--k', k.toFixed(2)); out = revisar(); }
+      return out;
+    });
+    if (prob.length) { console.error(`DESBORDE en lámina ${i + 1}: ${prob.join('; ')}`); await browser.close(); process.exit(2); }
     const png = path.join(outDir, `${i + 1}.jpg`);
     await page.screenshot({ path: png, type: 'jpeg', quality: 92 });
     fs.unlinkSync(f);

@@ -1,0 +1,30 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Productos notables",
+ "gancho": "Un atajo que ahorra tiempo en la PAES ⏱️",
+ "enunciado": "Si $a + b = 10$ y $a - b = 4$, ¿cuál es el valor de $a^2 - b^2$?",
+ "alternativas": [
+  "6",
+  "40",
+  "100",
+  "16",
+  "14"
+ ],
+ "valores": [
+  "6",
+  "40",
+  "100",
+  "16",
+  "14"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Usamos la suma por diferencia: $$a^2 - b^2 = (a + b)(a - b)$$",
+  "Reemplazamos directo: $$10 \\cdot 4 = 40$$"
+ ],
+ "trampa": "Restar los cuadrados de los datos ($100 - 16 = 84$) o despejar $a$ y $b$ perdiendo tiempo.",
+ "clave": "$a^2 - b^2 = (a+b)(a-b)$. Si te dan la suma y la diferencia, multiplícalas.",
+ "verificacion": "a, b = symbols('a b'); s = solve([a+b-10, a-b-4], [a, b]); respuesta = s[a]**2 - s[b]**2",
+ "id": "015"
+}
