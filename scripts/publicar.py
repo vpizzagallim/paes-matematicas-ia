@@ -57,7 +57,7 @@ def main():
         return
     post = pendientes[0]
     carpeta = os.path.join(COLA, post)
-    imagenes = sorted(f for f in os.listdir(carpeta) if f.endswith(".jpg"))
+    imagenes = sorted(f for f in os.listdir(carpeta) if f.endswith(".jpg") and f[0].isdigit())
     with open(os.path.join(carpeta, "caption.txt"), encoding="utf-8") as f:
         texto = f.read()
 
@@ -78,8 +78,21 @@ def main():
     publicado = llamar("POST", f"{usuario}/media_publish", creation_id=carrusel["id"])
     print(f"Publicado: id {publicado['id']}")
 
+    registro = {"media_id": publicado["id"], "fecha_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+
+    # Historia: la lamina del problema en formato vertical. Si falla, no detiene nada.
+    if os.path.exists(os.path.join(carpeta, "historia.jpg")):
+        try:
+            url = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/cola/{post}/historia.jpg"
+            h = llamar("POST", f"{usuario}/media", image_url=url, media_type="STORIES")
+            esperar(h["id"])
+            registro["story_id"] = llamar("POST", f"{usuario}/media_publish", creation_id=h["id"])["id"]
+            print(f"Historia publicada: id {registro['story_id']}")
+        except SystemExit as e:
+            print(f"::warning::No se pudo publicar la historia: {e}")
+
     with open(os.path.join(carpeta, "publicado.json"), "w") as f:
-        json.dump({"media_id": publicado["id"], "fecha_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}, f)
+        json.dump(registro, f)
     os.makedirs(PUBLICADOS, exist_ok=True)
     shutil.move(carpeta, os.path.join(PUBLICADOS, post))
 

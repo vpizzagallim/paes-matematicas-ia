@@ -1,6 +1,6 @@
 # paes-matematicas-ia
 
-Publicación automática de problemas PAES (M1 y M2) en Instagram, en la cuenta [@paes_matematicas_ia](https://www.instagram.com/paes_matematicas_ia/).
+Publicación automática de problemas PAES (M1 y M2) en Instagram, en la cuenta [@mathpaes.cl](https://www.instagram.com/mathpaes.cl/).
 
 - `cola/`: posts listos para publicar (3 imágenes + texto). Se publican en orden.
 - `publicados/`: posts ya publicados.

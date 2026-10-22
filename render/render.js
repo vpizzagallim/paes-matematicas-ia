@@ -4,6 +4,8 @@ const path = require('path');
 const katex = require('katex');
 const { chromium } = require('playwright-core');
 
+const CONFIG = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config.json'), 'utf8'));
+const HANDLE = '@' + CONFIG.handle;
 const KATEX_CSS = path.join(__dirname, 'node_modules/katex/dist/katex.min.css');
 
 function tex(s) {
@@ -56,7 +58,7 @@ function shell(post, idx, total, body) {
 <body><div class="page"><div class="grid"></div>
 <div class="top"><div class="chips"><span class="chip lvl">${post.nivel}</span><span class="chip">${post.eje}</span></div><span class="num">#${post.id}</span></div>
 ${body}
-<div class="foot"><span class="h">@paes_matematicas_ia</span><span>${idx}/${total}</span>${idx < total ? '<span class="swipe">Desliza →</span>' : '<span></span>'}</div>
+<div class="foot"><span class="h">${HANDLE}</span><span>${idx}/${total}</span>${idx < total ? '<span class="swipe">Desliza →</span>' : '<span></span>'}</div>
 </div></body></html>`;
 }
 
@@ -124,6 +126,28 @@ function caption(post) {
     fs.unlinkSync(f);
     out.push(png);
   }
+  // Historia vertical 1080x1920 con la lamina del problema
+  const story = `<!doctype html><html><head><meta charset="utf-8"><style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{width:1080px;height:1920px;background:#0F1B2D;font-family:'Inter',sans-serif;color:#F4F1EA;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:56px}
+    .t{font-size:54px;font-weight:800;text-align:center;line-height:1.2}
+    .t span{color:#F5B83D}
+    img{width:960px;border-radius:36px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+    .b{font-size:46px;font-weight:700;text-align:center;line-height:1.3;background:#F5B83D;color:#0F1B2D;padding:28px 48px;border-radius:999px}
+    .h{font-size:34px;color:#C9D3E3;font-weight:600}
+  </style></head><body>
+    <div class="t">🧠 Problema PAES <span>${post.nivel}</span><br>¿Te atreves?</div>
+    <img src="file://${path.resolve(outDir, '1.jpg')}">
+    <div class="b">Solución en el último post 👆</div>
+    <div class="h">${HANDLE}</div>
+  </body></html>`;
+  const sf = path.join(outDir, 'historia.html');
+  fs.writeFileSync(sf, story);
+  await page.setViewportSize({ width: 1080, height: 1920 });
+  await page.goto('file://' + path.resolve(sf));
+  await page.evaluate(() => document.fonts.ready);
+  await page.screenshot({ path: path.join(outDir, 'historia.jpg'), type: 'jpeg', quality: 90 });
+  fs.unlinkSync(sf);
   await browser.close();
   fs.writeFileSync(path.join(outDir, 'caption.txt'), caption(post));
   fs.writeFileSync(path.join(outDir, 'post.json'), JSON.stringify(post, null, 1));
