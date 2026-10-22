@@ -1,52 +1,52 @@
 {
- "nivel": "M1",
+ "nivel": "M2",
  "eje": "Números",
- "tema": "Notación científica",
- "gancho": "Notación científica sin miedo 🔬",
- "enunciado": "¿Cuál es el resultado de $$0{,}00042 \\cdot \\left(3 \\cdot 10^{5}\\right)\\,?$$",
+ "tema": "Logaritmos",
+ "gancho": "Logaritmos en 30 segundos ⏱️",
+ "enunciado": "¿Cuál es el valor de $$\\log_2 8 + \\log_3 \\tfrac{1}{9}\\,?$$",
  "alternativas": [
-  "$1{,}26 \\cdot 10^{2}$",
-  "$1{,}26 \\cdot 10^{3}$",
-  "$1{,}26 \\cdot 10^{4}$",
-  "$1{,}26 \\cdot 10^{1}$",
-  "$1{,}26 \\cdot 10^{-2}$"
+  "1",
+  "5",
+  "$-1$",
+  "0",
+  "$-6$"
  ],
  "valores": [
-  "126",
-  "1260",
-  "12600",
-  "126/10",
-  "126/10000"
+  "1",
+  "5",
+  "-1",
+  "0",
+  "-6"
  ],
  "correcta": 0,
  "pasos": [
-  "Escribimos $0{,}00042 = 4{,}2 \\cdot 10^{-4}$.",
-  "Multiplicamos coeficientes y sumamos exponentes: $$4{,}2 \\cdot 3 \\cdot 10^{-4+5} = 12{,}6 \\cdot 10^{1}$$",
-  "Ajustamos el coeficiente: $$12{,}6 \\cdot 10^{1} = 1{,}26 \\cdot 10^{2} = 126$$"
+  "$\\log_2 8 = 3$, porque $2^3 = 8$.",
+  "$\\log_3 \\tfrac{1}{9} = -2$, porque $3^{-2} = \\tfrac{1}{9}$.",
+  "$$3 + (-2) = 1$$"
  ],
- "trampa": "Quedarse con $12{,}6 \\cdot 10^1$ y \"corregir\" el exponente en el sentido equivocado (D).",
- "clave": "En notación científica el coeficiente va entre 1 y 10: si lo divides por 10, el exponente <b>sube</b> en 1.",
- "verificacion": "respuesta = Rational(42, 100000) * 3 * 10**5",
+ "trampa": "Creer que $\\log_3 \\tfrac{1}{9} = 2$ (olvidar el signo negativo) y marcar B.",
+ "clave": "$\\log_b a = c \\iff b^c = a$. El logaritmo de un número entre 0 y 1 es <b>negativo</b>.",
+ "verificacion": "respuesta = log(8, 2) + log(Rational(1,9), 3)",
  "id": "009",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Pasamos a notación científica",
-     "$4{,}2 \\cdot 10^{-4} \\cdot 3 \\cdot 10^{5}$"
+     "Cada logaritmo",
+     "$\\log_2 8 = 3 \\quad \\log_3 \\dfrac{1}{9} = -2$"
     ],
-    "voz": "Escribe cero coma cero cero cero cuarenta y dos como cuatro coma dos por diez a la menos cuatro."
+    "voz": "Logaritmo en base dos de ocho es tres, porque dos al cubo es ocho. Y logaritmo en base tres de un noveno es menos dos."
    },
    {
     "lineas": [
-     "Multiplicamos y ajustamos",
-     "$12{,}6 \\cdot 10^{1} = 1{,}26 \\cdot 10^{2}$"
+     "Sumamos",
+     "$3 + (-2) = 1$"
     ],
-    "voz": "Cuatro coma dos por tres da doce coma seis, y diez a la menos cuatro por diez a la cinco es diez a la uno. Ajustando, queda uno coma veintiséis por diez al cuadrado."
+    "voz": "Tres más menos dos: uno."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la a: uno coma veintiséis por diez al cuadrado. Si achicas el coeficiente, el exponente sube. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la a: uno. El logaritmo de un número entre cero y uno es negativo. Sigue a math paes punto c, ele."
   }
  }
 }

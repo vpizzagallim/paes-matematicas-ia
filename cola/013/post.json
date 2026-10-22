@@ -1,51 +1,51 @@
 {
  "nivel": "M1",
- "eje": "Álgebra y funciones",
- "tema": "Inecuaciones",
- "gancho": "Cuidado con el signo de la desigualdad ⚠️",
- "enunciado": "¿Cuál es el conjunto solución de la inecuación $$2x - 5 < 3x + 1\\,?$$",
+ "eje": "Probabilidad y estadística",
+ "tema": "Mediana",
+ "gancho": "Mediana ≠ promedio 📊",
+ "enunciado": "¿Cuál es la <b>mediana</b> del siguiente conjunto de datos? $$3,\\; 8,\\; 5,\\; 10,\\; 2,\\; 7$$",
  "alternativas": [
-  "$x < 6$",
-  "$x > -4$",
-  "$x > 6$",
-  "$x < -6$",
-  "$x > -6$"
+  "5",
+  "7",
+  "8",
+  "5,8",
+  "6"
  ],
  "valores": [
-  "Interval.open(-oo, 6)",
-  "Interval.open(-4, oo)",
-  "Interval.open(6, oo)",
-  "Interval.open(-oo, -6)",
-  "Interval.open(-6, oo)"
+  "5",
+  "7",
+  "8",
+  "29/5",
+  "6"
  ],
  "correcta": 4,
  "pasos": [
-  "Agrupamos las $x$ a un lado: $$2x - 3x < 1 + 5 \\;\\Rightarrow\\; -x < 6$$",
-  "Multiplicamos por $-1$ e <b>invertimos</b> el signo: $$x > -6$$"
+  "Ordenamos los datos: $$2,\\; 3,\\; 5,\\; 7,\\; 8,\\; 10$$",
+  "Hay 6 datos (cantidad par): la mediana es el promedio de los dos centrales: $$\\frac{5 + 7}{2} = 6$$"
  ],
- "trampa": "Olvidar invertir la desigualdad al multiplicar por un número negativo y marcar D.",
- "clave": "Al multiplicar o dividir una inecuación por un número <b>negativo</b>, el signo de la desigualdad se invierte.",
- "verificacion": "x = symbols('x', real=True); respuesta = solve_univariate_inequality(2*x-5 < 3*x+1, x, relational=False)",
+ "trampa": "No ordenar y tomar los centrales tal como vienen ($5$ y $10$), o calcular el promedio ($\\approx 5{,}8$).",
+ "clave": "Para la mediana, <b>primero se ordena</b>. Con cantidad par de datos, se promedian los dos del centro.",
+ "verificacion": "respuesta = median([3,8,5,10,2,7]) if False else (lambda d: (d[2]+d[3])/Integer(2))(sorted([3,8,5,10,2,7]))",
  "id": "013",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Agrupamos las x",
-     "$-x < 6$"
+     "Ordenamos",
+     "$2, 3, 5, 7, 8, 10$"
     ],
-    "voz": "Pasa las equis a un lado: dos equis menos tres equis es menos equis, y menos equis es menor que seis."
+    "voz": "Para la mediana, lo primero es ordenar los datos de menor a mayor."
    },
    {
     "lineas": [
-     "Multiplicar por −1 invierte",
-     "$x > -6$"
+     "Par de datos: promedio central",
+     "$\\dfrac{5 + 7}{2} = 6$"
     ],
-    "voz": "Al multiplicar por menos uno, la desigualdad se da vuelta. Queda equis mayor que menos seis."
+    "voz": "Hay seis datos, así que promedias los dos del centro: cinco y siete. Da seis."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la e: equis mayor que menos seis. Multiplicar por un negativo invierte la desigualdad. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la e: seis. Siempre ordena antes de buscar la mediana. Sigue a math paes punto c, ele."
   }
  }
 }

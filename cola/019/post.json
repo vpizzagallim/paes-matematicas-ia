@@ -1,52 +1,51 @@
 {
- "nivel": "M1",
+ "nivel": "M2",
  "eje": "Geometría",
- "tema": "Áreas",
- "gancho": "¿Cuánto patio queda? 🏡",
- "enunciado": "Un terreno rectangular mide <b>20 m × 15 m</b>. En él se construye una casa rectangular de <b>10 m × 8 m</b>. ¿Cuál es el área del terreno que queda libre?",
+ "tema": "Trigonometría",
+ "gancho": "Rampas y ángulos 📐",
+ "enunciado": "Una rampa de <b>8 m</b> de largo forma un ángulo de <b>30°</b> con el suelo horizontal. ¿Qué altura alcanza la rampa?",
  "alternativas": [
-  "80 m²",
-  "300 m²",
-  "220 m²",
-  "140 m²",
-  "52 m²"
+  "$\\dfrac{16}{\\sqrt{3}}$ m",
+  "4 m",
+  "$8\\sqrt{3}$ m",
+  "2 m",
+  "$4\\sqrt{3}$ m"
  ],
  "valores": [
-  "80",
-  "300",
-  "220",
-  "140",
-  "52"
+  "16/sqrt(3)",
+  "4",
+  "8*sqrt(3)",
+  "2",
+  "4*sqrt(3)"
  ],
- "correcta": 2,
+ "correcta": 1,
  "pasos": [
-  "Área del terreno: $$20 \\cdot 15 = 300 \\text{ m}^2$$",
-  "Área de la casa: $$10 \\cdot 8 = 80 \\text{ m}^2$$",
-  "Área libre: $$300 - 80 = 220 \\text{ m}^2$$"
+  "La rampa es la hipotenusa y la altura es el cateto <b>opuesto</b> al ángulo de 30°: $$\\sin 30^\\circ = \\frac{h}{8}$$",
+  "Como $\\sin 30^\\circ = \\tfrac{1}{2}$: $$h = 8 \\cdot \\tfrac{1}{2} = 4 \\text{ m}$$"
  ],
- "trampa": "Restar perímetros ($70 - 36$) o responder el área total o la de la casa.",
- "clave": "Área de una zona \"con un hueco\": área total menos área de la parte ocupada.",
- "verificacion": "respuesta = 20*15 - 10*8",
+ "trampa": "Usar coseno en vez de seno: $8 \\cdot \\cos 30^\\circ = 4\\sqrt{3}$ (E), que es la distancia horizontal.",
+ "clave": "$\\sin = \\tfrac{\\text{opuesto}}{\\text{hipotenusa}}$, $\\cos = \\tfrac{\\text{adyacente}}{\\text{hipotenusa}}$, $\\tan = \\tfrac{\\text{opuesto}}{\\text{adyacente}}$.",
+ "verificacion": "respuesta = 8*sin(pi/6)",
  "id": "019",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Áreas",
-     "$20 \\cdot 15 = 300 \\quad 10 \\cdot 8 = 80$"
+     "Altura = cateto opuesto",
+     "$\\sin 30^\\circ = \\dfrac{h}{8}$"
     ],
-    "voz": "El terreno mide veinte por quince, trescientos metros cuadrados. La casa, diez por ocho, ochenta."
+    "voz": "La rampa es la hipotenusa y la altura es el cateto opuesto al ángulo. Usamos seno."
    },
    {
     "lineas": [
-     "Restamos",
-     "$300 - 80 = 220$"
+     "Seno de 30° = 1/2",
+     "$h = 8 \\cdot \\dfrac{1}{2} = 4$"
     ],
-    "voz": "Lo que queda libre es trescientos menos ochenta: doscientos veinte metros cuadrados."
+    "voz": "Seno de treinta grados es un medio. Ocho por un medio: cuatro metros."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la ce: doscientos veinte metros cuadrados. Área libre: total menos lo ocupado. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la be: cuatro metros. Opuesto con seno, adyacente con coseno. Sigue a math paes punto c, ele."
   }
  }
 }

@@ -1,52 +1,52 @@
 {
  "nivel": "M2",
- "eje": "Probabilidad y estadística",
- "tema": "Modelo binomial",
- "gancho": "Monedas y el modelo binomial 🪙",
- "enunciado": "Se lanza una moneda equilibrada <b>4 veces</b>. ¿Cuál es la probabilidad de obtener <b>exactamente 2 caras</b>?",
+ "eje": "Geometría",
+ "tema": "Ecuación de la recta",
+ "gancho": "¿Dónde corta la recta al eje Y? 📏",
+ "enunciado": "Una recta pasa por los puntos $A(1, 2)$ y $B(3, 8)$. ¿En qué valor corta al <b>eje $Y$</b>?",
  "alternativas": [
-  "$\\dfrac{1}{4}$",
-  "$\\dfrac{1}{2}$",
-  "$\\dfrac{1}{16}$",
-  "$\\dfrac{3}{8}$",
-  "$\\dfrac{1}{8}$"
+  "$-1$",
+  "1",
+  "2",
+  "$-3$",
+  "3"
  ],
  "valores": [
-  "1/4",
-  "1/2",
-  "1/16",
-  "3/8",
-  "1/8"
+  "-1",
+  "1",
+  "2",
+  "-3",
+  "3"
  ],
- "correcta": 3,
+ "correcta": 0,
  "pasos": [
-  "Hay $\\binom{4}{2} = 6$ formas de ubicar las 2 caras entre los 4 lanzamientos.",
-  "Cada secuencia tiene probabilidad $\\left(\\tfrac{1}{2}\\right)^4 = \\tfrac{1}{16}$.",
-  "$$P = 6 \\cdot \\frac{1}{16} = \\frac{3}{8}$$"
+  "Pendiente: $$m = \\frac{8 - 2}{3 - 1} = 3$$",
+  "Con el punto $A$: $y - 2 = 3(x - 1)$, es decir, $$y = 3x - 1$$",
+  "Corte con el eje $Y$ (cuando $x = 0$): $y = -1$."
  ],
- "trampa": "Pensar que \"2 de 4 es la mitad\" y marcar $\\tfrac{1}{2}$, u olvidar el factor $\\binom{4}{2}$ ($\\tfrac{1}{16}$).",
- "clave": "Binomial: $P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}$.",
- "verificacion": "respuesta = binomial(4,2) * Rational(1,2)**4",
+ "trampa": "Responder la pendiente (E) o la ordenada del punto $A$ (C).",
+ "clave": "Ecuación punto-pendiente: $y - y_1 = m(x - x_1)$. El corte con el eje $Y$ es el $n$ de $y = mx + n$.",
+ "verificacion": "x = symbols('x'); m = Rational(8-2, 3-1); respuesta = (m*(x-1)+2).subs(x, 0)",
  "id": "034",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Formas de ubicar 2 caras",
-     "$\\binom{4}{2} = 6$"
+     "Pendiente",
+     "$m = \\dfrac{8 - 2}{3 - 1} = 3$"
     ],
-    "voz": "Hay seis formas de ubicar dos caras en cuatro lanzamientos."
+    "voz": "La pendiente es ocho menos dos, partido tres menos uno: tres."
    },
    {
     "lineas": [
-     "Cada secuencia vale 1/16",
-     "$6 \\cdot \\dfrac{1}{16} = \\dfrac{3}{8}$"
+     "Ecuación y corte",
+     "$y = 3x - 1 \\Rightarrow n = -1$"
     ],
-    "voz": "Cada secuencia tiene probabilidad un dieciseisavo. Seis dieciseisavos es tres octavos."
+    "voz": "Con el punto uno, dos, la recta es i griega igual tres equis menos uno. Corta al eje i griega en menos uno."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la de: tres octavos. Binomial: combinaciones por probabilidad de cada secuencia. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la a: menos uno. El corte con el eje i griega es el ene de i griega igual eme equis más ene. Sigue a math paes punto c, ele."
   }
  }
 }

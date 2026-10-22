@@ -1,51 +1,51 @@
 {
- "nivel": "M1",
+ "nivel": "M2",
  "eje": "Álgebra y funciones",
- "tema": "Función cuadrática",
- "gancho": "El vértice de la parábola 📈",
- "enunciado": "¿Cuál es el <b>valor mínimo</b> que alcanza la función $$f(x) = x^2 - 6x + 5\\,?$$",
+ "tema": "Función exponencial",
+ "gancho": "Crecimiento de bacterias 🦠",
+ "enunciado": "Una población de <b>500 bacterias</b> se <b>duplica cada 3 horas</b>. ¿Cuántas bacterias habrá después de <b>12 horas</b>?",
  "alternativas": [
-  "$-5$",
-  "$-4$",
-  "5",
-  "3",
-  "4"
+  "2.000",
+  "16.000",
+  "8.000",
+  "4.000",
+  "6.000"
  ],
  "valores": [
-  "-5",
-  "-4",
-  "5",
-  "3",
-  "4"
+  "2000",
+  "16000",
+  "8000",
+  "4000",
+  "6000"
  ],
- "correcta": 1,
+ "correcta": 2,
  "pasos": [
-  "Como $a = 1 > 0$, la parábola abre hacia arriba y su mínimo está en el vértice: $$x_v = \\frac{-b}{2a} = \\frac{6}{2} = 3$$",
-  "Evaluamos: $$f(3) = 9 - 18 + 5 = -4$$"
+  "En 12 horas hay $12 \\div 3 = 4$ duplicaciones.",
+  "El modelo es exponencial: $$N = 500 \\cdot 2^{4} = 500 \\cdot 16 = 8.000$$"
  ],
- "trampa": "Responder la coordenada $x$ del vértice (D), cuando se pide el <strong>valor</strong> de la función.",
- "clave": "El valor mínimo (o máximo) de una cuadrática es $f(x_v)$, con $x_v = -\\tfrac{b}{2a}$.",
- "verificacion": "x = symbols('x'); f = x**2-6*x+5; respuesta = f.subs(x, solve(diff(f, x), x)[0])",
+ "trampa": "Modelar como crecimiento lineal ($500 \\cdot 12 = 6.000$) o contar 12 duplicaciones.",
+ "clave": "Si algo se multiplica por $a$ cada $T$ unidades de tiempo: $N(t) = N_0 \\cdot a^{t/T}$.",
+ "verificacion": "respuesta = 500 * 2**(12//3)",
  "id": "014",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Vértice",
-     "$x_v = \\dfrac{6}{2} = 3$"
+     "Duplicaciones",
+     "$12 \\div 3 = 4$"
     ],
-    "voz": "La parábola abre hacia arriba, así que el mínimo está en el vértice. Equis del vértice: menos be partido dos a, seis partido dos, tres."
+    "voz": "En doce horas hay cuatro periodos de tres horas, o sea cuatro duplicaciones."
    },
    {
     "lineas": [
-     "Evaluamos",
-     "$f(3) = 9 - 18 + 5 = -4$"
+     "Modelo exponencial",
+     "$500 \\cdot 2^4 = 8.000$"
     ],
-    "voz": "Ahora evalúa la función en tres: nueve menos dieciocho más cinco, menos cuatro."
+    "voz": "Quinientos por dos a la cuarta, que es dieciséis: ocho mil bacterias."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la be: menos cuatro. El valor mínimo es la función evaluada en el vértice. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la ce: ocho mil. Duplicar es multiplicar por dos cada periodo, no sumar. Sigue a math paes punto c, ele."
   }
  }
 }

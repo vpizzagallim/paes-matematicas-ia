@@ -1,52 +1,52 @@
 {
  "nivel": "M2",
- "eje": "Números",
- "tema": "Logaritmos",
- "gancho": "Logaritmos en 30 segundos ⏱️",
- "enunciado": "¿Cuál es el valor de $$\\log_2 8 + \\log_3 \\tfrac{1}{9}\\,?$$",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad condicional",
+ "gancho": "Probabilidad condicional en una encuesta 📋",
+ "enunciado": "En una empresa, el <b>60%</b> son mujeres. De ellas, el <b>30%</b> usa lentes; de los hombres, el <b>20%</b>. Si se elige al azar una persona que <b>usa lentes</b>, ¿cuál es la probabilidad de que sea mujer?",
  "alternativas": [
-  "1",
-  "5",
-  "$-1$",
-  "0",
-  "$-6$"
+  "$\\dfrac{3}{5}$",
+  "$\\dfrac{9}{50}$",
+  "$\\dfrac{13}{50}$",
+  "$\\dfrac{3}{10}$",
+  "$\\dfrac{9}{13}$"
  ],
  "valores": [
-  "1",
-  "5",
-  "-1",
-  "0",
-  "-6"
+  "3/5",
+  "9/50",
+  "13/50",
+  "3/10",
+  "9/13"
  ],
- "correcta": 0,
+ "correcta": 4,
  "pasos": [
-  "$\\log_2 8 = 3$, porque $2^3 = 8$.",
-  "$\\log_3 \\tfrac{1}{9} = -2$, porque $3^{-2} = \\tfrac{1}{9}$.",
-  "$$3 + (-2) = 1$$"
+  "Mujeres con lentes: $0{,}6 \\cdot 0{,}3 = 0{,}18$. Hombres con lentes: $0{,}4 \\cdot 0{,}2 = 0{,}08$.",
+  "Total con lentes: $0{,}18 + 0{,}08 = 0{,}26$.",
+  "$$P(M \\mid L) = \\frac{0{,}18}{0{,}26} = \\frac{9}{13}$$"
  ],
- "trampa": "Creer que $\\log_3 \\tfrac{1}{9} = 2$ (olvidar el signo negativo) y marcar B.",
- "clave": "$\\log_b a = c \\iff b^c = a$. El logaritmo de un número entre 0 y 1 es <b>negativo</b>.",
- "verificacion": "respuesta = log(8, 2) + log(Rational(1,9), 3)",
+ "trampa": "Responder $P(L \\mid M) = 0{,}3$ (D): es la condicional al revés.",
+ "clave": "$P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$. Fíjate bien en cuál es la condición.",
+ "verificacion": "pm = Rational(6,10); respuesta = (pm*Rational(3,10)) / (pm*Rational(3,10) + (1-pm)*Rational(2,10))",
  "id": "029",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Cada logaritmo",
-     "$\\log_2 8 = 3 \\quad \\log_3 \\dfrac{1}{9} = -2$"
+     "Con lentes",
+     "$0{,}18 + 0{,}08 = 0{,}26$"
     ],
-    "voz": "Logaritmo en base dos de ocho es tres, porque dos al cubo es ocho. Y logaritmo en base tres de un noveno es menos dos."
+    "voz": "Mujeres con lentes: cero coma seis por cero coma tres, cero coma dieciocho. Hombres con lentes: cero coma cero ocho. En total, cero coma veintiséis."
    },
    {
     "lineas": [
-     "Sumamos",
-     "$3 + (-2) = 1$"
+     "Condicional",
+     "$\\dfrac{0{,}18}{0{,}26} = \\dfrac{9}{13}$"
     ],
-    "voz": "Tres más menos dos: uno."
+    "voz": "De los que usan lentes, la fracción de mujeres es cero coma dieciocho partido cero coma veintiséis: nueve treceavos."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la a: uno. El logaritmo de un número entre cero y uno es negativo. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la e: nueve treceavos. En la condicional, divide por la probabilidad de la condición. Sigue a math paes punto c, ele."
   }
  }
 }

@@ -1,51 +1,51 @@
 {
  "nivel": "M1",
- "eje": "Álgebra y funciones",
- "tema": "Productos notables",
- "gancho": "Un atajo que ahorra tiempo en la PAES ⏱️",
- "enunciado": "Si $a + b = 10$ y $a - b = 4$, ¿cuál es el valor de $a^2 - b^2$?",
+ "eje": "Números",
+ "tema": "Porcentajes",
+ "gancho": "Pregunta rápida de porcentajes ⚡",
+ "enunciado": "¿Qué porcentaje de <b>80</b> es <b>12</b>?",
  "alternativas": [
-  "6",
-  "40",
-  "100",
-  "16",
-  "14"
+  "18%",
+  "$6{,}\\overline{6}\\%$",
+  "15%",
+  "20%",
+  "12%"
  ],
  "valores": [
-  "6",
-  "40",
-  "100",
-  "16",
-  "14"
+  "18",
+  "20/3",
+  "15",
+  "20",
+  "12"
  ],
- "correcta": 1,
+ "correcta": 2,
  "pasos": [
-  "Usamos la suma por diferencia: $$a^2 - b^2 = (a + b)(a - b)$$",
-  "Reemplazamos directo: $$10 \\cdot 4 = 40$$"
+  "Se plantea la parte sobre el total: $$\\frac{12}{80} = 0{,}15$$",
+  "Multiplicando por 100: $$0{,}15 \\cdot 100 = 15\\%$$"
  ],
- "trampa": "Restar los cuadrados de los datos ($100 - 16 = 84$) o despejar $a$ y $b$ perdiendo tiempo.",
- "clave": "$a^2 - b^2 = (a+b)(a-b)$. Si te dan la suma y la diferencia, multiplícalas.",
- "verificacion": "a, b = symbols('a b'); s = solve([a+b-10, a-b-4], [a, b]); respuesta = s[a]**2 - s[b]**2",
+ "trampa": "Invertir la división ($\\tfrac{80}{12} = 6{,}\\overline{6}$) y marcar B.",
+ "clave": "\"¿Qué porcentaje de $T$ es $P$?\" se calcula siempre como $\\dfrac{P}{T} \\cdot 100$.",
+ "verificacion": "respuesta = Rational(12, 80) * 100",
  "id": "015",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Suma por diferencia",
-     "$a^2 - b^2 = (a+b)(a-b)$"
+     "Parte sobre total",
+     "$12 \\div 80 = 0{,}15$"
     ],
-    "voz": "No necesitas despejar a ni be. A al cuadrado menos be al cuadrado es la suma por la diferencia."
+    "voz": "Para saber qué porcentaje de ochenta es doce, divides la parte por el total: doce dividido en ochenta da cero coma quince."
    },
    {
     "lineas": [
-     "Reemplazamos",
-     "$10 \\cdot 4 = 40$"
+     "Por 100",
+     "$0{,}15 \\cdot 100 = 15\\%$"
     ],
-    "voz": "La suma es diez y la diferencia es cuatro. Diez por cuatro, cuarenta."
+    "voz": "Lo multiplicas por cien, y te da quince por ciento."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la be: cuarenta. Busca productos notables antes de hacer cuentas largas. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la ce: quince por ciento. Siempre es la parte dividida por el total, por cien. Sigue a math paes punto c, ele."
   }
  }
 }

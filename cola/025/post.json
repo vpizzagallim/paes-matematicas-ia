@@ -1,51 +1,52 @@
 {
  "nivel": "M1",
- "eje": "Probabilidad y estadística",
- "tema": "Mediana",
- "gancho": "Mediana ≠ promedio 📊",
- "enunciado": "¿Cuál es la <b>mediana</b> del siguiente conjunto de datos? $$3,\\; 8,\\; 5,\\; 10,\\; 2,\\; 7$$",
+ "eje": "Números",
+ "tema": "Notación científica",
+ "gancho": "Notación científica sin miedo 🔬",
+ "enunciado": "¿Cuál es el resultado de $$0{,}00042 \\cdot \\left(3 \\cdot 10^{5}\\right)\\,?$$",
  "alternativas": [
-  "5",
-  "7",
-  "8",
-  "5,8",
-  "6"
+  "$1{,}26 \\cdot 10^{2}$",
+  "$1{,}26 \\cdot 10^{3}$",
+  "$1{,}26 \\cdot 10^{4}$",
+  "$1{,}26 \\cdot 10^{1}$",
+  "$1{,}26 \\cdot 10^{-2}$"
  ],
  "valores": [
-  "5",
-  "7",
-  "8",
-  "29/5",
-  "6"
+  "126",
+  "1260",
+  "12600",
+  "126/10",
+  "126/10000"
  ],
- "correcta": 4,
+ "correcta": 0,
  "pasos": [
-  "Ordenamos los datos: $$2,\\; 3,\\; 5,\\; 7,\\; 8,\\; 10$$",
-  "Hay 6 datos (cantidad par): la mediana es el promedio de los dos centrales: $$\\frac{5 + 7}{2} = 6$$"
+  "Escribimos $0{,}00042 = 4{,}2 \\cdot 10^{-4}$.",
+  "Multiplicamos coeficientes y sumamos exponentes: $$4{,}2 \\cdot 3 \\cdot 10^{-4+5} = 12{,}6 \\cdot 10^{1}$$",
+  "Ajustamos el coeficiente: $$12{,}6 \\cdot 10^{1} = 1{,}26 \\cdot 10^{2} = 126$$"
  ],
- "trampa": "No ordenar y tomar los centrales tal como vienen ($5$ y $10$), o calcular el promedio ($\\approx 5{,}8$).",
- "clave": "Para la mediana, <b>primero se ordena</b>. Con cantidad par de datos, se promedian los dos del centro.",
- "verificacion": "respuesta = median([3,8,5,10,2,7]) if False else (lambda d: (d[2]+d[3])/Integer(2))(sorted([3,8,5,10,2,7]))",
+ "trampa": "Quedarse con $12{,}6 \\cdot 10^1$ y \"corregir\" el exponente en el sentido equivocado (D).",
+ "clave": "En notación científica el coeficiente va entre 1 y 10: si lo divides por 10, el exponente <b>sube</b> en 1.",
+ "verificacion": "respuesta = Rational(42, 100000) * 3 * 10**5",
  "id": "025",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Ordenamos",
-     "$2, 3, 5, 7, 8, 10$"
+     "Pasamos a notación científica",
+     "$4{,}2 \\cdot 10^{-4} \\cdot 3 \\cdot 10^{5}$"
     ],
-    "voz": "Para la mediana, lo primero es ordenar los datos de menor a mayor."
+    "voz": "Escribe cero coma cero cero cero cuarenta y dos como cuatro coma dos por diez a la menos cuatro."
    },
    {
     "lineas": [
-     "Par de datos: promedio central",
-     "$\\dfrac{5 + 7}{2} = 6$"
+     "Multiplicamos y ajustamos",
+     "$12{,}6 \\cdot 10^{1} = 1{,}26 \\cdot 10^{2}$"
     ],
-    "voz": "Hay seis datos, así que promedias los dos del centro: cinco y siete. Da seis."
+    "voz": "Cuatro coma dos por tres da doce coma seis, y diez a la menos cuatro por diez a la cinco es diez a la uno. Ajustando, queda uno coma veintiséis por diez al cuadrado."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la e: seis. Siempre ordena antes de buscar la mediana. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la a: uno coma veintiséis por diez al cuadrado. Si achicas el coeficiente, el exponente sube. Sigue a math paes punto c, ele."
   }
  }
 }

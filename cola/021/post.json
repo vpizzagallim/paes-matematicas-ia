@@ -1,51 +1,51 @@
 {
  "nivel": "M1",
- "eje": "Geometría",
- "tema": "Volumen",
- "gancho": "¿Cuánto le cabe al vaso? 🥤",
- "enunciado": "¿Cuál es el volumen de un cilindro de <b>radio 3 cm</b> y <b>altura 10 cm</b>?",
+ "eje": "Álgebra y funciones",
+ "tema": "Inecuaciones",
+ "gancho": "Cuidado con el signo de la desigualdad ⚠️",
+ "enunciado": "¿Cuál es el conjunto solución de la inecuación $$2x - 5 < 3x + 1\\,?$$",
  "alternativas": [
-  "$30\\pi$ cm³",
-  "$60\\pi$ cm³",
-  "$180\\pi$ cm³",
-  "$900\\pi$ cm³",
-  "$90\\pi$ cm³"
+  "$x < 6$",
+  "$x > -4$",
+  "$x > 6$",
+  "$x < -6$",
+  "$x > -6$"
  ],
  "valores": [
-  "30*pi",
-  "60*pi",
-  "180*pi",
-  "900*pi",
-  "90*pi"
+  "Interval.open(-oo, 6)",
+  "Interval.open(-4, oo)",
+  "Interval.open(6, oo)",
+  "Interval.open(-oo, -6)",
+  "Interval.open(-6, oo)"
  ],
  "correcta": 4,
  "pasos": [
-  "El volumen de un cilindro es el área de la base por la altura: $$V = \\pi r^2 h$$",
-  "$$V = \\pi \\cdot 3^2 \\cdot 10 = 90\\pi \\text{ cm}^3$$"
+  "Agrupamos las $x$ a un lado: $$2x - 3x < 1 + 5 \\;\\Rightarrow\\; -x < 6$$",
+  "Multiplicamos por $-1$ e <b>invertimos</b> el signo: $$x > -6$$"
  ],
- "trampa": "No elevar el radio al cuadrado ($\\pi \\cdot 3 \\cdot 10 = 30\\pi$) o usar el diámetro como radio.",
- "clave": "Cilindro: $V = \\pi r^2 h$. Prisma: $V = A_{base} \\cdot h$. La idea es la misma.",
- "verificacion": "respuesta = pi * 3**2 * 10",
+ "trampa": "Olvidar invertir la desigualdad al multiplicar por un número negativo y marcar D.",
+ "clave": "Al multiplicar o dividir una inecuación por un número <b>negativo</b>, el signo de la desigualdad se invierte.",
+ "verificacion": "x = symbols('x', real=True); respuesta = solve_univariate_inequality(2*x-5 < 3*x+1, x, relational=False)",
  "id": "021",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Volumen del cilindro",
-     "$V = \\pi r^2 h$"
+     "Agrupamos las x",
+     "$-x < 6$"
     ],
-    "voz": "El volumen de un cilindro es pi por radio al cuadrado por altura."
+    "voz": "Pasa las equis a un lado: dos equis menos tres equis es menos equis, y menos equis es menor que seis."
    },
    {
     "lineas": [
-     "Reemplazamos",
-     "$\\pi \\cdot 9 \\cdot 10 = 90\\pi$"
+     "Multiplicar por −1 invierte",
+     "$x > -6$"
     ],
-    "voz": "Tres al cuadrado es nueve, por diez, noventa pi centímetros cúbicos."
+    "voz": "Al multiplicar por menos uno, la desigualdad se da vuelta. Queda equis mayor que menos seis."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la e: noventa pi. No olvides elevar el radio al cuadrado. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la e: equis mayor que menos seis. Multiplicar por un negativo invierte la desigualdad. Sigue a math paes punto c, ele."
   }
  }
 }

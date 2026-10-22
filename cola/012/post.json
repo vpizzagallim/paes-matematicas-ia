@@ -1,51 +1,52 @@
 {
  "nivel": "M1",
- "eje": "Álgebra y funciones",
- "tema": "Función afín",
- "gancho": "¿Cuánto cuesta el taxi? 🚕",
- "enunciado": "Un taxi cobra <b>\\$500</b> de bajada de bandera más <b>\\$150</b> por cada <b>200 m</b> recorridos. ¿Cuánto cuesta un viaje de <b>3 km</b>?",
+ "eje": "Geometría",
+ "tema": "Áreas",
+ "gancho": "¿Cuánto patio queda? 🏡",
+ "enunciado": "Un terreno rectangular mide <b>20 m × 15 m</b>. En él se construye una casa rectangular de <b>10 m × 8 m</b>. ¿Cuál es el área del terreno que queda libre?",
  "alternativas": [
-  "\\$4.500",
-  "\\$2.250",
-  "\\$2.750",
-  "\\$950",
-  "\\$2.600"
+  "80 m²",
+  "300 m²",
+  "220 m²",
+  "140 m²",
+  "52 m²"
  ],
  "valores": [
-  "4500",
-  "2250",
-  "2750",
-  "950",
-  "2600"
+  "80",
+  "300",
+  "220",
+  "140",
+  "52"
  ],
  "correcta": 2,
  "pasos": [
-  "Pasamos a metros: 3 km = 3.000 m, que son $$3.000 \\div 200 = 15 \\text{ tramos}$$",
-  "El costo es una función afín, $C = 500 + 150t$: $$C = 500 + 150 \\cdot 15 = 2.750$$"
+  "Área del terreno: $$20 \\cdot 15 = 300 \\text{ m}^2$$",
+  "Área de la casa: $$10 \\cdot 8 = 80 \\text{ m}^2$$",
+  "Área libre: $$300 - 80 = 220 \\text{ m}^2$$"
  ],
- "trampa": "Olvidar la bajada de bandera (B) o contar 3 tramos en vez de 15 (D).",
- "clave": "Una función afín $f(x) = mx + n$ tiene un costo fijo $n$ y un costo variable $m$ por unidad.",
- "verificacion": "respuesta = 500 + 150 * (3000 // 200)",
+ "trampa": "Restar perímetros ($70 - 36$) o responder el área total o la de la casa.",
+ "clave": "Área de una zona \"con un hueco\": área total menos área de la parte ocupada.",
+ "verificacion": "respuesta = 20*15 - 10*8",
  "id": "012",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "3 km = 15 tramos de 200 m",
-     "$3.000 \\div 200 = 15$"
+     "Áreas",
+     "$20 \\cdot 15 = 300 \\quad 10 \\cdot 8 = 80$"
     ],
-    "voz": "Tres kilómetros son tres mil metros, o sea quince tramos de doscientos metros."
+    "voz": "El terreno mide veinte por quince, trescientos metros cuadrados. La casa, diez por ocho, ochenta."
    },
    {
     "lineas": [
-     "Costo fijo + variable",
-     "$500 + 150 \\cdot 15 = 2.750$"
+     "Restamos",
+     "$300 - 80 = 220$"
     ],
-    "voz": "El costo es quinientos de bajada de bandera, más ciento cincuenta por cada tramo: dos mil setecientos cincuenta pesos."
+    "voz": "Lo que queda libre es trescientos menos ochenta: doscientos veinte metros cuadrados."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la ce: dos mil setecientos cincuenta pesos. Función afín: un costo fijo más un costo por unidad. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la ce: doscientos veinte metros cuadrados. Área libre: total menos lo ocupado. Sigue a math paes punto c, ele."
   }
  }
 }

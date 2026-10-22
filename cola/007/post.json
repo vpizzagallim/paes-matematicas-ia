@@ -1,51 +1,52 @@
 {
  "nivel": "M1",
- "eje": "Números",
- "tema": "Porcentajes",
- "gancho": "Pregunta rápida de porcentajes ⚡",
- "enunciado": "¿Qué porcentaje de <b>80</b> es <b>12</b>?",
+ "eje": "Geometría",
+ "tema": "Teorema de Pitágoras",
+ "gancho": "La escalera y la pared 🪜",
+ "enunciado": "Una escalera de <b>13 m</b> está apoyada en una pared vertical. Su pie está a <b>5 m</b> de la pared. ¿A qué altura toca la pared?",
  "alternativas": [
-  "18%",
-  "$6{,}\\overline{6}\\%$",
-  "15%",
-  "20%",
-  "12%"
+  "18 m",
+  "$\\sqrt{194}$ m",
+  "10 m",
+  "8 m",
+  "12 m"
  ],
  "valores": [
   "18",
-  "20/3",
-  "15",
-  "20",
+  "sqrt(194)",
+  "10",
+  "8",
   "12"
  ],
- "correcta": 2,
+ "correcta": 4,
  "pasos": [
-  "Se plantea la parte sobre el total: $$\\frac{12}{80} = 0{,}15$$",
-  "Multiplicando por 100: $$0{,}15 \\cdot 100 = 15\\%$$"
+  "Pared, suelo y escalera forman un triángulo rectángulo; la escalera es la <b>hipotenusa</b>.",
+  "$$h^2 + 5^2 = 13^2 \\;\\Rightarrow\\; h^2 = 169 - 25 = 144$$",
+  "$$h = 12 \\text{ m}$$"
  ],
- "trampa": "Invertir la división ($\\tfrac{80}{12} = 6{,}\\overline{6}$) y marcar B.",
- "clave": "\"¿Qué porcentaje de $T$ es $P$?\" se calcula siempre como $\\dfrac{P}{T} \\cdot 100$.",
- "verificacion": "respuesta = Rational(12, 80) * 100",
+ "trampa": "Sumar los cuadrados como si 13 fuera un cateto, obteniendo $\\sqrt{194}$ (B).",
+ "clave": "En $a^2 + b^2 = c^2$, $c$ es <b>siempre</b> el lado opuesto al ángulo recto (el más largo).",
+ "verificacion": "respuesta = sqrt(13**2 - 5**2)",
  "id": "007",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Parte sobre total",
-     "$12 \\div 80 = 0{,}15$"
+     "Escalera = hipotenusa",
+     "$h^2 + 5^2 = 13^2$"
     ],
-    "voz": "Para saber qué porcentaje de ochenta es doce, divides la parte por el total: doce dividido en ochenta da cero coma quince."
+    "voz": "La escalera es la hipotenusa del triángulo rectángulo. Altura al cuadrado más cinco al cuadrado igual trece al cuadrado."
    },
    {
     "lineas": [
-     "Por 100",
-     "$0{,}15 \\cdot 100 = 15\\%$"
+     "Despejamos",
+     "$h^2 = 144 \\Rightarrow h = 12$"
     ],
-    "voz": "Lo multiplicas por cien, y te da quince por ciento."
+    "voz": "Ciento sesenta y nueve menos veinticinco da ciento cuarenta y cuatro, y su raíz es doce metros."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la ce: quince por ciento. Siempre es la parte dividida por el total, por cien. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la e: doce metros. La hipotenusa siempre es el lado más largo. Sigue a math paes punto c, ele."
   }
  }
 }

@@ -1,51 +1,51 @@
 {
  "nivel": "M1",
  "eje": "Álgebra y funciones",
- "tema": "Productos notables",
- "gancho": "Desarrolla antes de restar 🧠",
- "enunciado": "Al reducir la expresión $$(x + 3)^2 - (x - 3)^2$$ se obtiene:",
+ "tema": "Función afín",
+ "gancho": "¿Cuánto cuesta el taxi? 🚕",
+ "enunciado": "Un taxi cobra <b>\\$500</b> de bajada de bandera más <b>\\$150</b> por cada <b>200 m</b> recorridos. ¿Cuánto cuesta un viaje de <b>3 km</b>?",
  "alternativas": [
-  "18",
-  "0",
-  "$12x$",
-  "$2x^2 + 18$",
-  "$6x$"
+  "\\$4.500",
+  "\\$2.250",
+  "\\$2.750",
+  "\\$950",
+  "\\$2.600"
  ],
  "valores": [
-  "18",
-  "0",
-  "12*x",
-  "2*x**2+18",
-  "6*x"
+  "4500",
+  "2250",
+  "2750",
+  "950",
+  "2600"
  ],
  "correcta": 2,
  "pasos": [
-  "Desarrollamos cada cuadrado de binomio: $$(x+3)^2 = x^2 + 6x + 9$$ $$(x-3)^2 = x^2 - 6x + 9$$",
-  "Restamos cuidando los signos: $$(x^2 + 6x + 9) - (x^2 - 6x + 9) = 12x$$"
+  "Pasamos a metros: 3 km = 3.000 m, que son $$3.000 \\div 200 = 15 \\text{ tramos}$$",
+  "El costo es una función afín, $C = 500 + 150t$: $$C = 500 + 150 \\cdot 15 = 2.750$$"
  ],
- "trampa": "Creer que $(x+3)^2 = x^2 + 9$ (olvidar el término central) y llegar a 18 o a 0.",
- "clave": "$(a \\pm b)^2 = a^2 \\pm 2ab + b^2$. El término $2ab$ es el que más se olvida.",
- "verificacion": "x = symbols('x'); respuesta = expand((x+3)**2 - (x-3)**2)",
+ "trampa": "Olvidar la bajada de bandera (B) o contar 3 tramos en vez de 15 (D).",
+ "clave": "Una función afín $f(x) = mx + n$ tiene un costo fijo $n$ y un costo variable $m$ por unidad.",
+ "verificacion": "respuesta = 500 + 150 * (3000 // 200)",
  "id": "016",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Desarrollamos cada cuadrado",
-     "$x^2 + 6x + 9 \\quad x^2 - 6x + 9$"
+     "3 km = 15 tramos de 200 m",
+     "$3.000 \\div 200 = 15$"
     ],
-    "voz": "Desarrolla cada cuadrado de binomio, sin olvidar el término del medio: más seis equis en uno, menos seis equis en el otro."
+    "voz": "Tres kilómetros son tres mil metros, o sea quince tramos de doscientos metros."
    },
    {
     "lineas": [
-     "Restamos",
-     "$6x - (-6x) = 12x$"
+     "Costo fijo + variable",
+     "$500 + 150 \\cdot 15 = 2.750$"
     ],
-    "voz": "Al restar, los equis al cuadrado y los nueves se cancelan, y queda seis equis menos menos seis equis: doce equis."
+    "voz": "El costo es quinientos de bajada de bandera, más ciento cincuenta por cada tramo: dos mil setecientos cincuenta pesos."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la ce: doce equis. El doble producto es el término que más se olvida. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la ce: dos mil setecientos cincuenta pesos. Función afín: un costo fijo más un costo por unidad. Sigue a math paes punto c, ele."
   }
  }
 }

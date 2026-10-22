@@ -1,52 +1,51 @@
 {
  "nivel": "M1",
- "eje": "Probabilidad y estadística",
- "tema": "Probabilidad",
- "gancho": "Dos dados y la suma más probable 🎲",
- "enunciado": "Se lanzan <b>dos dados</b> comunes. ¿Cuál es la probabilidad de que la suma de los puntos sea <b>7</b>?",
+ "eje": "Álgebra y funciones",
+ "tema": "Función cuadrática",
+ "gancho": "El vértice de la parábola 📈",
+ "enunciado": "¿Cuál es el <b>valor mínimo</b> que alcanza la función $$f(x) = x^2 - 6x + 5\\,?$$",
  "alternativas": [
-  "$\\dfrac{7}{36}$",
-  "$\\dfrac{1}{12}$",
-  "$\\dfrac{7}{12}$",
-  "$\\dfrac{1}{6}$",
-  "$\\dfrac{1}{11}$"
+  "$-5$",
+  "$-4$",
+  "5",
+  "3",
+  "4"
  ],
  "valores": [
-  "7/36",
-  "1/12",
-  "7/12",
-  "1/6",
-  "1/11"
+  "-5",
+  "-4",
+  "5",
+  "3",
+  "4"
  ],
- "correcta": 3,
+ "correcta": 1,
  "pasos": [
-  "Hay $6 \\cdot 6 = 36$ resultados igualmente probables.",
-  "Casos favorables: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) → 6 casos.",
-  "$$P = \\frac{6}{36} = \\frac{1}{6}$$"
+  "Como $a = 1 > 0$, la parábola abre hacia arriba y su mínimo está en el vértice: $$x_v = \\frac{-b}{2a} = \\frac{6}{2} = 3$$",
+  "Evaluamos: $$f(3) = 9 - 18 + 5 = -4$$"
  ],
- "trampa": "Contar las sumas posibles (2 a 12, son 11) como si fueran igual de probables y marcar $\\tfrac{1}{11}$.",
- "clave": "Regla de Laplace: casos favorables sobre casos <b>totales igualmente probables</b>.",
- "verificacion": "respuesta = Rational(sum(1 for a in range(1,7) for b in range(1,7) if a+b==7), 36)",
+ "trampa": "Responder la coordenada $x$ del vértice (D), cuando se pide el <strong>valor</strong> de la función.",
+ "clave": "El valor mínimo (o máximo) de una cuadrática es $f(x_v)$, con $x_v = -\\tfrac{b}{2a}$.",
+ "verificacion": "x = symbols('x'); f = x**2-6*x+5; respuesta = f.subs(x, solve(diff(f, x), x)[0])",
  "id": "026",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "36 casos posibles",
-     "$6 \\cdot 6 = 36$"
+     "Vértice",
+     "$x_v = \\dfrac{6}{2} = 3$"
     ],
-    "voz": "Con dos dados hay treinta y seis resultados igual de probables."
+    "voz": "La parábola abre hacia arriba, así que el mínimo está en el vértice. Equis del vértice: menos be partido dos a, seis partido dos, tres."
    },
    {
     "lineas": [
-     "Suman 7: seis casos",
-     "$\\dfrac{6}{36} = \\dfrac{1}{6}$"
+     "Evaluamos",
+     "$f(3) = 9 - 18 + 5 = -4$"
     ],
-    "voz": "Suman siete: uno seis, dos cinco, tres cuatro, y al revés. Seis casos de treinta y seis: un sexto."
+    "voz": "Ahora evalúa la función en tres: nueve menos dieciocho más cinco, menos cuatro."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la de: un sexto. Cuenta casos igual de probables, no sumas posibles. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la be: menos cuatro. El valor mínimo es la función evaluada en el vértice. Sigue a math paes punto c, ele."
   }
  }
 }

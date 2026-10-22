@@ -1,51 +1,51 @@
 {
- "nivel": "M2",
+ "nivel": "M1",
  "eje": "Álgebra y funciones",
- "tema": "Función exponencial",
- "gancho": "Crecimiento de bacterias 🦠",
- "enunciado": "Una población de <b>500 bacterias</b> se <b>duplica cada 3 horas</b>. ¿Cuántas bacterias habrá después de <b>12 horas</b>?",
+ "tema": "Productos notables",
+ "gancho": "Un atajo que ahorra tiempo en la PAES ⏱️",
+ "enunciado": "Si $a + b = 10$ y $a - b = 4$, ¿cuál es el valor de $a^2 - b^2$?",
  "alternativas": [
-  "2.000",
-  "16.000",
-  "8.000",
-  "4.000",
-  "6.000"
+  "6",
+  "40",
+  "100",
+  "16",
+  "14"
  ],
  "valores": [
-  "2000",
-  "16000",
-  "8000",
-  "4000",
-  "6000"
+  "6",
+  "40",
+  "100",
+  "16",
+  "14"
  ],
- "correcta": 2,
+ "correcta": 1,
  "pasos": [
-  "En 12 horas hay $12 \\div 3 = 4$ duplicaciones.",
-  "El modelo es exponencial: $$N = 500 \\cdot 2^{4} = 500 \\cdot 16 = 8.000$$"
+  "Usamos la suma por diferencia: $$a^2 - b^2 = (a + b)(a - b)$$",
+  "Reemplazamos directo: $$10 \\cdot 4 = 40$$"
  ],
- "trampa": "Modelar como crecimiento lineal ($500 \\cdot 12 = 6.000$) o contar 12 duplicaciones.",
- "clave": "Si algo se multiplica por $a$ cada $T$ unidades de tiempo: $N(t) = N_0 \\cdot a^{t/T}$.",
- "verificacion": "respuesta = 500 * 2**(12//3)",
+ "trampa": "Restar los cuadrados de los datos ($100 - 16 = 84$) o despejar $a$ y $b$ perdiendo tiempo.",
+ "clave": "$a^2 - b^2 = (a+b)(a-b)$. Si te dan la suma y la diferencia, multiplícalas.",
+ "verificacion": "a, b = symbols('a b'); s = solve([a+b-10, a-b-4], [a, b]); respuesta = s[a]**2 - s[b]**2",
  "id": "030",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Duplicaciones",
-     "$12 \\div 3 = 4$"
+     "Suma por diferencia",
+     "$a^2 - b^2 = (a+b)(a-b)$"
     ],
-    "voz": "En doce horas hay cuatro periodos de tres horas, o sea cuatro duplicaciones."
+    "voz": "No necesitas despejar a ni be. A al cuadrado menos be al cuadrado es la suma por la diferencia."
    },
    {
     "lineas": [
-     "Modelo exponencial",
-     "$500 \\cdot 2^4 = 8.000$"
+     "Reemplazamos",
+     "$10 \\cdot 4 = 40$"
     ],
-    "voz": "Quinientos por dos a la cuarta, que es dieciséis: ocho mil bacterias."
+    "voz": "La suma es diez y la diferencia es cuatro. Diez por cuatro, cuarenta."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la ce: ocho mil. Duplicar es multiplicar por dos cada periodo, no sumar. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la be: cuarenta. Busca productos notables antes de hacer cuentas largas. Sigue a math paes punto c, ele."
   }
  }
 }

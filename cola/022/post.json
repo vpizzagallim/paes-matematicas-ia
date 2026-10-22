@@ -1,51 +1,51 @@
 {
  "nivel": "M1",
  "eje": "Geometría",
- "tema": "Transformaciones isométricas",
- "gancho": "Rotaciones en el plano cartesiano 🔄",
- "enunciado": "El punto $P(2, -3)$ se rota en <b>90°</b> en sentido <b>antihorario</b> con centro en el origen. ¿Cuáles son las coordenadas de su imagen?",
+ "tema": "Volumen",
+ "gancho": "¿Cuánto le cabe al vaso? 🥤",
+ "enunciado": "¿Cuál es el volumen de un cilindro de <b>radio 3 cm</b> y <b>altura 10 cm</b>?",
  "alternativas": [
-  "$(2, 3)$",
-  "$(-2, 3)$",
-  "$(-3, -2)$",
-  "$(-3, 2)$",
-  "$(3, 2)$"
+  "$30\\pi$ cm³",
+  "$60\\pi$ cm³",
+  "$180\\pi$ cm³",
+  "$900\\pi$ cm³",
+  "$90\\pi$ cm³"
  ],
  "valores": [
-  "(2, 3)",
-  "(-2, 3)",
-  "(-3, -2)",
-  "(-3, 2)",
-  "(3, 2)"
+  "30*pi",
+  "60*pi",
+  "180*pi",
+  "900*pi",
+  "90*pi"
  ],
  "correcta": 4,
  "pasos": [
-  "Una rotación de 90° antihoraria en torno al origen transforma $$(x, y) \\;\\to\\; (-y, x)$$",
-  "Con $x = 2$, $y = -3$: $$(-(-3),\\, 2) = (3, 2)$$"
+  "El volumen de un cilindro es el área de la base por la altura: $$V = \\pi r^2 h$$",
+  "$$V = \\pi \\cdot 3^2 \\cdot 10 = 90\\pi \\text{ cm}^3$$"
  ],
- "trampa": "Aplicar la regla de la rotación <strong>horaria</strong>, $(y, -x)$, y obtener $(-3, -2)$.",
- "clave": "Rotación de 90° antihoraria: $(x, y) \\to (-y, x)$. Rotación de 180°: $(x, y) \\to (-x, -y)$.",
- "verificacion": "x, y = 2, -3; respuesta = Tuple(-y, x)",
+ "trampa": "No elevar el radio al cuadrado ($\\pi \\cdot 3 \\cdot 10 = 30\\pi$) o usar el diámetro como radio.",
+ "clave": "Cilindro: $V = \\pi r^2 h$. Prisma: $V = A_{base} \\cdot h$. La idea es la misma.",
+ "verificacion": "respuesta = pi * 3**2 * 10",
  "id": "022",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Rotación 90° antihoraria",
-     "$(x, y) \\to (-y, x)$"
+     "Volumen del cilindro",
+     "$V = \\pi r^2 h$"
     ],
-    "voz": "Rotar noventa grados en sentido antihorario cambia equis i griega por menos i griega, equis."
+    "voz": "El volumen de un cilindro es pi por radio al cuadrado por altura."
    },
    {
     "lineas": [
-     "Aplicamos",
-     "$(2, -3) \\to (3, 2)$"
+     "Reemplazamos",
+     "$\\pi \\cdot 9 \\cdot 10 = 90\\pi$"
     ],
-    "voz": "Con dos, menos tres, queda tres, dos."
+    "voz": "Tres al cuadrado es nueve, por diez, noventa pi centímetros cúbicos."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la e: tres coma dos. Antihorario: menos i griega, equis. Horario: i griega, menos equis. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la e: noventa pi. No olvides elevar el radio al cuadrado. Sigue a math paes punto c, ele."
   }
  }
 }

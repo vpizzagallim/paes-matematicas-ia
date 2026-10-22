@@ -1,52 +1,51 @@
 {
  "nivel": "M1",
- "eje": "Probabilidad y estadística",
- "tema": "Probabilidad",
- "gancho": "Extracción sin reposición 🔴🔵",
- "enunciado": "Una urna tiene <b>4 bolitas rojas</b> y <b>6 azules</b>. Se sacan <b>2</b> al azar, <b>sin reposición</b>. ¿Cuál es la probabilidad de que ambas sean rojas?",
+ "eje": "Geometría",
+ "tema": "Transformaciones isométricas",
+ "gancho": "Rotaciones en el plano cartesiano 🔄",
+ "enunciado": "El punto $P(2, -3)$ se rota en <b>90°</b> en sentido <b>antihorario</b> con centro en el origen. ¿Cuáles son las coordenadas de su imagen?",
  "alternativas": [
-  "$\\dfrac{4}{25}$",
-  "$\\dfrac{1}{5}$",
-  "$\\dfrac{3}{25}$",
-  "$\\dfrac{2}{15}$",
-  "$\\dfrac{2}{5}$"
+  "$(2, 3)$",
+  "$(-2, 3)$",
+  "$(-3, -2)$",
+  "$(-3, 2)$",
+  "$(3, 2)$"
  ],
  "valores": [
-  "4/25",
-  "1/5",
-  "3/25",
-  "2/15",
-  "2/5"
+  "(2, 3)",
+  "(-2, 3)",
+  "(-3, -2)",
+  "(-3, 2)",
+  "(3, 2)"
  ],
- "correcta": 3,
+ "correcta": 4,
  "pasos": [
-  "Primera roja: $\\tfrac{4}{10}$. Queda una roja menos y una bolita menos.",
-  "Segunda roja: $\\tfrac{3}{9}$.",
-  "$$P = \\frac{4}{10} \\cdot \\frac{3}{9} = \\frac{12}{90} = \\frac{2}{15}$$"
+  "Una rotación de 90° antihoraria en torno al origen transforma $$(x, y) \\;\\to\\; (-y, x)$$",
+  "Con $x = 2$, $y = -3$: $$(-(-3),\\, 2) = (3, 2)$$"
  ],
- "trampa": "Calcular como si hubiera reposición: $\\tfrac{4}{10} \\cdot \\tfrac{4}{10} = \\tfrac{4}{25}$ (A).",
- "clave": "Sin reposición, la segunda extracción cambia el numerador <b>y</b> el denominador.",
- "verificacion": "respuesta = Rational(4,10)*Rational(3,9)",
+ "trampa": "Aplicar la regla de la rotación <strong>horaria</strong>, $(y, -x)$, y obtener $(-3, -2)$.",
+ "clave": "Rotación de 90° antihoraria: $(x, y) \\to (-y, x)$. Rotación de 180°: $(x, y) \\to (-x, -y)$.",
+ "verificacion": "x, y = 2, -3; respuesta = Tuple(-y, x)",
  "id": "027",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Primera roja",
-     "$\\dfrac{4}{10}$"
+     "Rotación 90° antihoraria",
+     "$(x, y) \\to (-y, x)$"
     ],
-    "voz": "La primera bolita roja tiene probabilidad cuatro de diez."
+    "voz": "Rotar noventa grados en sentido antihorario cambia equis i griega por menos i griega, equis."
    },
    {
     "lineas": [
-     "Segunda roja, sin reposición",
-     "$\\dfrac{4}{10} \\cdot \\dfrac{3}{9} = \\dfrac{2}{15}$"
+     "Aplicamos",
+     "$(2, -3) \\to (3, 2)$"
     ],
-    "voz": "Sin reposición queda una roja menos y una bolita menos: tres de nueve. Multiplicando, dos quinceavos."
+    "voz": "Con dos, menos tres, queda tres, dos."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la de: dos quinceavos. Sin reposición cambian el numerador y el denominador. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la e: tres coma dos. Antihorario: menos i griega, equis. Horario: i griega, menos equis. Sigue a math paes punto c, ele."
   }
  }
 }

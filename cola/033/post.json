@@ -1,52 +1,51 @@
 {
- "nivel": "M2",
- "eje": "Probabilidad y estadística",
- "tema": "Probabilidad condicional",
- "gancho": "Probabilidad condicional en una encuesta 📋",
- "enunciado": "En una empresa, el <b>60%</b> son mujeres. De ellas, el <b>30%</b> usa lentes; de los hombres, el <b>20%</b>. Si se elige al azar una persona que <b>usa lentes</b>, ¿cuál es la probabilidad de que sea mujer?",
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Productos notables",
+ "gancho": "Desarrolla antes de restar 🧠",
+ "enunciado": "Al reducir la expresión $$(x + 3)^2 - (x - 3)^2$$ se obtiene:",
  "alternativas": [
-  "$\\dfrac{3}{5}$",
-  "$\\dfrac{9}{50}$",
-  "$\\dfrac{13}{50}$",
-  "$\\dfrac{3}{10}$",
-  "$\\dfrac{9}{13}$"
+  "18",
+  "0",
+  "$12x$",
+  "$2x^2 + 18$",
+  "$6x$"
  ],
  "valores": [
-  "3/5",
-  "9/50",
-  "13/50",
-  "3/10",
-  "9/13"
+  "18",
+  "0",
+  "12*x",
+  "2*x**2+18",
+  "6*x"
  ],
- "correcta": 4,
+ "correcta": 2,
  "pasos": [
-  "Mujeres con lentes: $0{,}6 \\cdot 0{,}3 = 0{,}18$. Hombres con lentes: $0{,}4 \\cdot 0{,}2 = 0{,}08$.",
-  "Total con lentes: $0{,}18 + 0{,}08 = 0{,}26$.",
-  "$$P(M \\mid L) = \\frac{0{,}18}{0{,}26} = \\frac{9}{13}$$"
+  "Desarrollamos cada cuadrado de binomio: $$(x+3)^2 = x^2 + 6x + 9$$ $$(x-3)^2 = x^2 - 6x + 9$$",
+  "Restamos cuidando los signos: $$(x^2 + 6x + 9) - (x^2 - 6x + 9) = 12x$$"
  ],
- "trampa": "Responder $P(L \\mid M) = 0{,}3$ (D): es la condicional al revés.",
- "clave": "$P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$. Fíjate bien en cuál es la condición.",
- "verificacion": "pm = Rational(6,10); respuesta = (pm*Rational(3,10)) / (pm*Rational(3,10) + (1-pm)*Rational(2,10))",
+ "trampa": "Creer que $(x+3)^2 = x^2 + 9$ (olvidar el término central) y llegar a 18 o a 0.",
+ "clave": "$(a \\pm b)^2 = a^2 \\pm 2ab + b^2$. El término $2ab$ es el que más se olvida.",
+ "verificacion": "x = symbols('x'); respuesta = expand((x+3)**2 - (x-3)**2)",
  "id": "033",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Con lentes",
-     "$0{,}18 + 0{,}08 = 0{,}26$"
+     "Desarrollamos cada cuadrado",
+     "$x^2 + 6x + 9 \\quad x^2 - 6x + 9$"
     ],
-    "voz": "Mujeres con lentes: cero coma seis por cero coma tres, cero coma dieciocho. Hombres con lentes: cero coma cero ocho. En total, cero coma veintiséis."
+    "voz": "Desarrolla cada cuadrado de binomio, sin olvidar el término del medio: más seis equis en uno, menos seis equis en el otro."
    },
    {
     "lineas": [
-     "Condicional",
-     "$\\dfrac{0{,}18}{0{,}26} = \\dfrac{9}{13}$"
+     "Restamos",
+     "$6x - (-6x) = 12x$"
     ],
-    "voz": "De los que usan lentes, la fracción de mujeres es cero coma dieciocho partido cero coma veintiséis: nueve treceavos."
+    "voz": "Al restar, los equis al cuadrado y los nueves se cancelan, y queda seis equis menos menos seis equis: doce equis."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la e: nueve treceavos. En la condicional, divide por la probabilidad de la condición. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la ce: doce equis. El doble producto es el término que más se olvida. Sigue a math paes punto c, ele."
   }
  }
 }

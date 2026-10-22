@@ -1,52 +1,52 @@
 {
  "nivel": "M1",
- "eje": "Geometría",
- "tema": "Teorema de Pitágoras",
- "gancho": "La escalera y la pared 🪜",
- "enunciado": "Una escalera de <b>13 m</b> está apoyada en una pared vertical. Su pie está a <b>5 m</b> de la pared. ¿A qué altura toca la pared?",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad",
+ "gancho": "Dos dados y la suma más probable 🎲",
+ "enunciado": "Se lanzan <b>dos dados</b> comunes. ¿Cuál es la probabilidad de que la suma de los puntos sea <b>7</b>?",
  "alternativas": [
-  "18 m",
-  "$\\sqrt{194}$ m",
-  "10 m",
-  "8 m",
-  "12 m"
+  "$\\dfrac{7}{36}$",
+  "$\\dfrac{1}{12}$",
+  "$\\dfrac{7}{12}$",
+  "$\\dfrac{1}{6}$",
+  "$\\dfrac{1}{11}$"
  ],
  "valores": [
-  "18",
-  "sqrt(194)",
-  "10",
-  "8",
-  "12"
+  "7/36",
+  "1/12",
+  "7/12",
+  "1/6",
+  "1/11"
  ],
- "correcta": 4,
+ "correcta": 3,
  "pasos": [
-  "Pared, suelo y escalera forman un triángulo rectángulo; la escalera es la <b>hipotenusa</b>.",
-  "$$h^2 + 5^2 = 13^2 \\;\\Rightarrow\\; h^2 = 169 - 25 = 144$$",
-  "$$h = 12 \\text{ m}$$"
+  "Hay $6 \\cdot 6 = 36$ resultados igualmente probables.",
+  "Casos favorables: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) → 6 casos.",
+  "$$P = \\frac{6}{36} = \\frac{1}{6}$$"
  ],
- "trampa": "Sumar los cuadrados como si 13 fuera un cateto, obteniendo $\\sqrt{194}$ (B).",
- "clave": "En $a^2 + b^2 = c^2$, $c$ es <b>siempre</b> el lado opuesto al ángulo recto (el más largo).",
- "verificacion": "respuesta = sqrt(13**2 - 5**2)",
+ "trampa": "Contar las sumas posibles (2 a 12, son 11) como si fueran igual de probables y marcar $\\tfrac{1}{11}$.",
+ "clave": "Regla de Laplace: casos favorables sobre casos <b>totales igualmente probables</b>.",
+ "verificacion": "respuesta = Rational(sum(1 for a in range(1,7) for b in range(1,7) if a+b==7), 36)",
  "id": "018",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Escalera = hipotenusa",
-     "$h^2 + 5^2 = 13^2$"
+     "36 casos posibles",
+     "$6 \\cdot 6 = 36$"
     ],
-    "voz": "La escalera es la hipotenusa del triángulo rectángulo. Altura al cuadrado más cinco al cuadrado igual trece al cuadrado."
+    "voz": "Con dos dados hay treinta y seis resultados igual de probables."
    },
    {
     "lineas": [
-     "Despejamos",
-     "$h^2 = 144 \\Rightarrow h = 12$"
+     "Suman 7: seis casos",
+     "$\\dfrac{6}{36} = \\dfrac{1}{6}$"
     ],
-    "voz": "Ciento sesenta y nueve menos veinticinco da ciento cuarenta y cuatro, y su raíz es doce metros."
+    "voz": "Suman siete: uno seis, dos cinco, tres cuatro, y al revés. Seis casos de treinta y seis: un sexto."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la e: doce metros. La hipotenusa siempre es el lado más largo. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la de: un sexto. Cuenta casos igual de probables, no sumas posibles. Sigue a math paes punto c, ele."
   }
  }
 }

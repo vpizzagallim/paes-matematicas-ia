@@ -1,51 +1,52 @@
 {
  "nivel": "M1",
- "eje": "Números",
- "tema": "Fracciones",
- "gancho": "El orden de las operaciones decide todo 🧮",
- "enunciado": "¿Cuál es el valor de $$0{,}25 + \\frac{3}{4} \\cdot \\frac{2}{3}\\,?$$",
+ "eje": "Probabilidad y estadística",
+ "tema": "Promedio",
+ "gancho": "¿Qué nota necesito para aprobar con 5,5? 📚",
+ "enunciado": "Mis cuatro primeras notas son 5,0; 6,2; 4,8 y 6,0. ¿Qué nota necesito en la <b>quinta</b> evaluación para terminar con promedio <b>5,5</b>?",
  "alternativas": [
-  "$\\dfrac{3}{4}$",
-  "$\\dfrac{1}{2}$",
-  "$\\dfrac{5}{12}$",
-  "$\\dfrac{2}{3}$",
-  "1"
+  "5,5",
+  "5,0",
+  "6,0",
+  "6,5",
+  "4,5"
  ],
  "valores": [
-  "3/4",
-  "1/2",
-  "5/12",
-  "2/3",
-  "1"
+  "11/2",
+  "5",
+  "6",
+  "13/2",
+  "9/2"
  ],
  "correcta": 0,
  "pasos": [
-  "Primero la multiplicación: $$\\frac{3}{4} \\cdot \\frac{2}{3} = \\frac{6}{12} = \\frac{1}{2}$$",
-  "Luego la suma, con $0{,}25 = \\tfrac{1}{4}$: $$\\frac{1}{4} + \\frac{1}{2} = \\frac{3}{4}$$"
+  "Para promediar 5,5 en 5 notas, la suma debe ser $$5 \\cdot 5{,}5 = 27{,}5$$",
+  "Llevo $5{,}0 + 6{,}2 + 4{,}8 + 6{,}0 = 22{,}0$.",
+  "Me falta: $$27{,}5 - 22{,}0 = 5{,}5$$"
  ],
- "trampa": "Sumar primero $0{,}25 + \\tfrac{3}{4} = 1$ y luego multiplicar por $\\tfrac{2}{3}$, marcando D.",
- "clave": "Prioridad: paréntesis, potencias, <b>multiplicación y división</b>, y al final suma y resta.",
- "verificacion": "respuesta = Rational(1,4) + Rational(3,4)*Rational(2,3)",
+ "trampa": "Calcular el promedio actual (5,5) y creer que da lo mismo la nota que saque.",
+ "clave": "Promedio deseado $\\times$ cantidad de notas = suma necesaria. Lo que falta para esa suma es la nota pedida.",
+ "verificacion": "respuesta = Rational(55,10)*5 - (Rational(50,10)+Rational(62,10)+Rational(48,10)+Rational(60,10))",
  "id": "008",
  "pizarra": {
   "pasos": [
    {
     "lineas": [
-     "Primero multiplicar",
-     "$\\dfrac{3}{4} \\cdot \\dfrac{2}{3} = \\dfrac{1}{2}$"
+     "Suma necesaria",
+     "$5 \\cdot 5{,}5 = 27{,}5$"
     ],
-    "voz": "Ojo con el orden: primero va la multiplicación. Tres cuartos por dos tercios da un medio."
+    "voz": "Para tener promedio cinco coma cinco con cinco notas, la suma tiene que ser veintisiete coma cinco."
    },
    {
     "lineas": [
-     "Después sumar",
-     "$\\dfrac{1}{4} + \\dfrac{1}{2} = \\dfrac{3}{4}$"
+     "Lo que falta",
+     "$27{,}5 - 22{,}0 = 5{,}5$"
     ],
-    "voz": "Cero coma veinticinco es un cuarto. Un cuarto más un medio da tres cuartos."
+    "voz": "Tus cuatro notas suman veintidós. Te falta un cinco coma cinco."
    }
   ],
   "cierre": {
-   "voz": "La respuesta correcta es la a: tres cuartos. Multiplicación y división van antes que la suma. Sigue a math paes punto c, ele."
+   "voz": "La respuesta correcta es la a: cinco coma cinco. Promedio por cantidad de notas da la suma que necesitas. Sigue a math paes punto c, ele."
   }
  }
 }
