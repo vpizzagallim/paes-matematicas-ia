@@ -7,7 +7,9 @@ Imprime 'saltar=true' o 'saltar=false' (formato de GITHUB_OUTPUT).
 import glob, json, os, sys
 from datetime import datetime, timezone
 
-MINUTOS = int(os.environ.get("MINUTOS", "50"))
+# El reloj externo (workflow_dispatch) llega puntual: solo se frena si hubo un post hace <30 min.
+# El respaldo de GitHub (schedule) llega tarde: se frena si hubo un post hace <55 min.
+MINUTOS = 55 if os.environ.get("EVENTO") == "schedule" else 30
 if os.environ.get("FORZAR") == "true":
     print("saltar=false"); sys.exit()
 ultimo = None

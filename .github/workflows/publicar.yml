@@ -13,7 +13,7 @@ on:
     # Viernes, sabado y domingo (Chile): 21:07, 22:07 y 23:07 -> en UTC sabado, domingo y lunes
     - cron: "7 0-2 * * 6,0,1"
   # Reloj principal: cron-job.org llama a la API (workflow_dispatch) a la hora exacta.
-  # Los horarios de arriba quedan de respaldo; si ya salio un post hace <50 min, no se repite.
+  # Los horarios de arriba quedan de respaldo; si ya salio un post hace poco (30 min reloj / 55 min respaldo), no se repite.
   workflow_dispatch:
     inputs:
       forzar:
@@ -39,6 +39,7 @@ jobs:
         id: chk
         env:
           FORZAR: ${{ inputs.forzar }}
+          EVENTO: ${{ github.event_name }}
         run: python3 scripts/ya_publicado.py >> "$GITHUB_OUTPUT"
 
       # ffmpeg y fuentes se bajan directo (sin apt: los espejos de Ubuntu a veces se cuelgan) y quedan en cache
