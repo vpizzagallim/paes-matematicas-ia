@@ -12,7 +12,14 @@ on:
     - cron: "7 12-23 * * 5,6,0"
     # Viernes, sabado y domingo (Chile): 21:07, 22:07 y 23:07 -> en UTC sabado, domingo y lunes
     - cron: "7 0-2 * * 6,0,1"
-  workflow_dispatch: {}
+  # Reloj principal: cron-job.org llama a la API (workflow_dispatch) a la hora exacta.
+  # Los horarios de arriba quedan de respaldo; si ya salio un post hace <50 min, no se repite.
+  workflow_dispatch:
+    inputs:
+      forzar:
+        description: "Publicar aunque haya salido un post hace poco"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -28,25 +35,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Revisar si ya salio un post reciente
+        id: chk
+        env:
+          FORZAR: ${{ inputs.forzar }}
+        run: python3 scripts/ya_publicado.py >> "$GITHUB_OUTPUT"
+
       - name: Programas del sistema (video, fuentes)
+        if: steps.chk.outputs.saltar != 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-inter fonts-noto-color-emoji > /dev/null
 
       - name: Dependencias de render
+        if: steps.chk.outputs.saltar != 'true'
         working-directory: render
         run: npm ci --silent
 
       - name: Dependencias de Python
+        if: steps.chk.outputs.saltar != 'true'
         run: pip install -q piper-tts numpy pillow scipy kokoro-onnx
 
       - name: Voces (cache)
+        if: steps.chk.outputs.saltar != 'true'
         uses: actions/cache@v4
         with:
           path: voces
           key: voces-piper-kokoro-v1
 
       - name: Descargar voces si faltan
+        if: steps.chk.outputs.saltar != 'true'
         run: |
           mkdir -p voces
           B=https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_MX/claude/high
@@ -57,6 +75,7 @@ jobs:
           [ -f voces/voices-v1.0.bin ] || curl -sSL -o voces/voices-v1.0.bin $K/voices-v1.0.bin
 
       - name: Publicar siguiente post de la cola
+        if: steps.chk.outputs.saltar != 'true'
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           REPO: ${{ github.repository }}
