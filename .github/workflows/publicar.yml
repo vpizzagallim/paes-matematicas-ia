@@ -41,11 +41,35 @@ jobs:
           FORZAR: ${{ inputs.forzar }}
         run: python3 scripts/ya_publicado.py >> "$GITHUB_OUTPUT"
 
+      # ffmpeg y fuentes se bajan directo (sin apt: los espejos de Ubuntu a veces se cuelgan) y quedan en cache
+      - name: Programas del sistema (cache)
+        if: steps.chk.outputs.saltar != 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/sysdeps
+          key: sysdeps-ffmpeg-fuentes-v1
+
       - name: Programas del sistema (video, fuentes)
         if: steps.chk.outputs.saltar != 'true'
+        timeout-minutes: 8
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-inter fonts-noto-color-emoji > /dev/null
+          mkdir -p ~/sysdeps ~/.local/share/fonts && cd ~/sysdeps
+          bajar() {
+            [ -x ffmpeg ] || curl -sSL --retry 3 --max-time 180 https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz \
+              | tar xJ --strip-components=1 --wildcards '*/ffmpeg' '*/ffprobe' || return 1
+            [ -f InterVariable.ttf ] || { curl -sSL --retry 3 --max-time 60 -o inter.zip https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip \
+              && unzip -oq inter.zip InterVariable.ttf InterVariable-Italic.ttf && rm inter.zip; } || return 1
+            [ -f NotoColorEmoji.ttf ] || curl -sSL --retry 3 --max-time 60 -o NotoColorEmoji.ttf \
+              https://raw.githubusercontent.com/google/fonts/main/ofl/notocoloremoji/NotoColorEmoji-Regular.ttf || return 1
+          }
+          if bajar; then
+            cp *.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+            sudo ln -sf "$PWD/ffmpeg" /usr/local/bin/ffmpeg && sudo ln -sf "$PWD/ffprobe" /usr/local/bin/ffprobe
+          else
+            echo "::warning::Descarga directa fallo; se intenta con apt"
+            timeout 300 sudo apt-get update -qq && timeout 300 sudo apt-get install -y -qq ffmpeg fonts-inter fonts-noto-color-emoji > /dev/null
+          fi
+          ffmpeg -version | head -1
 
       - name: Dependencias de render
         if: steps.chk.outputs.saltar != 'true'
