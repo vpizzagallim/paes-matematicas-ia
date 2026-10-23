@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja estudió 6 horas… de TikTok 📱😅 Mejor un ejercicio al día. ¿Lo sacas en 15 segundos? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TikTok",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Ayer estudié seis horas seguidas.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "📱 6 horas de TikTok<br>0 ejercicios",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "Bueno… técnicamente vi videos de matemática.",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Mejor veinte minutos al día. A ver este.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Si estudias <b>20 minutos</b> diarios durante <b>30 días</b>, ¿cuántas <b>horas</b> estudias en total?",
+  "alternativas": [
+   "6",
+   "10",
+   "60",
+   "600"
+  ],
+  "valores": [
+   "6",
+   "10",
+   "60",
+   "600"
+  ],
+  "correcta": 1,
+  "verificacion": "respuesta = Rational(20*30, 60)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Minutos totales",
+      "$20 \\cdot 30 = 600\\ \\text{min}$"
+     ],
+     "voz": "Veinte minutos por treinta días son seiscientos minutos."
+    },
+    {
+     "lineas": [
+      "A horas: dividir por 60",
+      "$600 \\div 60 = 10\\ \\text{h}$"
+     ],
+     "voz": "Y seiscientos minutos son diez horas."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: diez horas. Poquito cada día suma un montón."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s23-S02",
+ "id": "115"
+}

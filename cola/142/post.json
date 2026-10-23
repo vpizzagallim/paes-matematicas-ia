@@ -1,0 +1,50 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Trigonometría",
+ "gancho": "La altura del árbol con un ángulo 🌳",
+ "enunciado": "Desde <b>10 m</b> de la base de un árbol, se ve su punta con un ángulo de elevación de <b>60°</b>. ¿Cuál es la altura del árbol?",
+ "alternativas": [
+  "$10\\sqrt{3}$ m",
+  "10 m",
+  "$5\\sqrt{3}$ m",
+  "20 m"
+ ],
+ "valores": [
+  "10*sqrt(3)",
+  "10",
+  "5*sqrt(3)",
+  "20"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "La altura es el cateto opuesto y los 10 m el adyacente: $$\\tan 60^\\circ = \\frac{h}{10}$$",
+  "Como $\\tan 60^\\circ = \\sqrt{3}$: $$h = 10\\sqrt{3} \\text{ m}$$"
+ ],
+ "trampa": "Usar seno o coseno con los 10 m como si fueran la hipotenusa.",
+ "clave": "Opuesto y adyacente: tangente. $\\tan 30^\\circ = \\tfrac{\\sqrt3}{3}$, $\\tan 45^\\circ = 1$, $\\tan 60^\\circ = \\sqrt3$.",
+ "verificacion": "respuesta = 10*tan(pi/3)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Opuesto / adyacente = tangente",
+     "$\\tan 60^\\circ = \\dfrac{h}{10}$"
+    ],
+    "voz": "La altura es el cateto opuesto al ángulo y los diez metros son el adyacente. Eso es tangente."
+   },
+   {
+    "lineas": [
+     "tan 60° = √3",
+     "$h = 10\\sqrt{3}$"
+    ],
+    "voz": "Tangente de sesenta grados es raíz de tres, así que la altura es diez raíz de tres metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: diez raíz de tres metros. Con opuesto y adyacente se usa la tangente. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-14",
+ "id": "142"
+}

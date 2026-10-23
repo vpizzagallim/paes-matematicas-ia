@@ -81,29 +81,55 @@ def cerrar(post, carpeta, registro):
     subprocess.run(["git", "push", "origin", f"HEAD:{BRANCH}"], check=True, cwd=RAIZ)
 
 
-def publicar_reel(post, carpeta, datos):
-    video = os.path.join("/tmp", f"reel_{post}.mp4")
-    subprocess.run([sys.executable, os.path.join(RAIZ, "scripts", "armar_reel_voz.py"),
-                    os.path.join(carpeta, "post.json"), video], check=True)
+def duracion(ruta):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", ruta], capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip())
+    except ValueError:
+        return 0.0
+
+
+def publicar_video(post, carpeta, video, texto, thumb_ms):
     url = subir_video(video, f"reel_{post}.mp4")
-    with open(os.path.join(carpeta, "caption.txt"), encoding="utf-8") as f:
-        texto = f.read()
     ig = llamar("GET", "me", fields="user_id,username")
     usuario = ig["user_id"]
     print(f"Publicando Reel {post} en @{ig.get('username')}")
     c = llamar("POST", f"{usuario}/media", media_type="REELS", video_url=url, caption=texto,
-               share_to_feed="true", thumb_offset="9000")
+               share_to_feed="true", thumb_offset=str(thumb_ms))
     esperar(c["id"], intentos=60)
     publicado = llamar("POST", f"{usuario}/media_publish", creation_id=c["id"])
     print(f"Reel publicado: id {publicado['id']}")
     registro = {"media_id": publicado["id"], "tipo": "reel", "fecha_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
     try:
-        h = llamar("POST", f"{usuario}/media", media_type="STORIES", video_url=url)
+        url_h = url
+        if duracion(video) > 59:  # las historias admiten hasta 60 s: se sube recortada
+            corto = video.replace(".mp4", "_historia.mp4")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-t", "59", "-c", "copy", corto], check=True)
+            url_h = subir_video(corto, f"historia_{post}.mp4")
+        h = llamar("POST", f"{usuario}/media", media_type="STORIES", video_url=url_h)
         esperar(h["id"], intentos=60)
         registro["story_id"] = llamar("POST", f"{usuario}/media_publish", creation_id=h["id"])["id"]
         print(f"Historia publicada: id {registro['story_id']}")
-    except SystemExit as e:
+    except (SystemExit, Exception) as e:
         print(f"::warning::No se pudo publicar la historia: {e}")
+    return registro
+
+
+def publicar_reel(post, carpeta, datos):
+    video = os.path.join("/tmp", f"reel_{post}.mp4")
+    subprocess.run([sys.executable, os.path.join(RAIZ, "scripts", "armar_reel_voz.py"),
+                    os.path.join(carpeta, "post.json"), video], check=True)
+    with open(os.path.join(carpeta, "caption.txt"), encoding="utf-8") as f:
+        texto = f.read()
+    cerrar(post, carpeta, publicar_video(post, carpeta, video, texto, 9000))
+
+
+def publicar_especial(post, carpeta, datos):
+    video = os.path.join("/tmp", f"reel_{post}.mp4")
+    subprocess.run([sys.executable, os.path.join(RAIZ, "scripts", "armar_especial.py"),
+                    os.path.join(carpeta, "post.json"), video], check=True)
+    registro = publicar_video(post, carpeta, video, datos.get("texto_post", ""), datos.get("portada_ms", 1500))
+    registro["especial"] = datos.get("formato")
     cerrar(post, carpeta, registro)
 
 
@@ -116,6 +142,18 @@ def main():
     post = pendientes[0]
     carpeta = os.path.join(COLA, post)
     datos = json.load(open(os.path.join(carpeta, "post.json"), encoding="utf-8"))
+    if datos.get("tipo") == "especial":
+        try:
+            return publicar_especial(post, carpeta, datos)
+        except (Exception, SystemExit) as e:
+            # no trabar la cola: se aparta el especial fallido y se publica el siguiente
+            print(f"::warning::Fallo el especial {post} ({e}); se aparta a fallidos/ y sigue la cola")
+            os.makedirs(os.path.join(RAIZ, "fallidos"), exist_ok=True)
+            shutil.move(carpeta, os.path.join(RAIZ, "fallidos", post))
+            subprocess.run(["git", "add", "-A", "cola", "fallidos"], check=True, cwd=RAIZ)
+            subprocess.run(["git", "-c", "user.name=publicador-paes", "-c", "user.email=publicador-paes@users.noreply.github.com",
+                            "commit", "-m", f"Especial {post} fallido"], check=True, cwd=RAIZ)
+            return main()
     if datos.get("pizarra"):
         try:
             return publicar_reel(post, carpeta, datos)

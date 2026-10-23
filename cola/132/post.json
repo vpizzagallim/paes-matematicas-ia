@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuación cuadrática",
+ "gancho": "Sin fórmula, con un atajo ⚡",
+ "enunciado": "¿Cuál es la <b>suma</b> de las soluciones de la ecuación $$x^2 - 5x + 6 = 0\\,?$$",
+ "alternativas": [
+  "6",
+  "5",
+  "1",
+  "$-5$"
+ ],
+ "valores": [
+  "6",
+  "5",
+  "1",
+  "-5"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Factorizamos: $(x - 2)(x - 3) = 0$, así que $x = 2$ o $x = 3$.",
+  "$$2 + 3 = 5$$"
+ ],
+ "trampa": "Confundir la suma con el producto de las soluciones (6) o tomar $b = -5$ sin cambiar el signo.",
+ "clave": "En $x^2 + bx + c = 0$: suma de soluciones $= -b$, producto $= c$.",
+ "verificacion": "x = symbols('x'); respuesta = sum(solve(x**2 - 5*x + 6, x))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Factorizamos",
+     "$(x-2)(x-3) = 0$"
+    ],
+    "voz": "Busca dos números que multiplicados den seis y sumados den cinco: dos y tres."
+   },
+   {
+    "lineas": [
+     "Sumamos las soluciones",
+     "$2 + 3 = 5$"
+    ],
+    "voz": "Las soluciones son dos y tres, y su suma es cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cinco. La suma de las soluciones es menos be, y el producto es ce. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-06",
+ "id": "132"
+}

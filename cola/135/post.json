@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Truco: saber si un número es divisible por 3 en un segundo 🤯 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Divisibilidad #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "¿Divisible por 3?",
+  "intro_voz": "Truco rápido: saber si un número es divisible por tres sin dividir.",
+  "titulo": "Divisible por 3",
+  "pasos": [
+   {
+    "lineas": [
+     "Suma sus dígitos",
+     "$4.872 \\to 4+8+7+2 = 21$"
+    ],
+    "voz": "Suma los dígitos del número. Cuatro mil ochocientos setenta y dos: cuatro más ocho más siete más dos, veintiuno."
+   },
+   {
+    "lineas": [
+     "¿La suma es múltiplo de 3?",
+     "$21 = 3 \\cdot 7$"
+    ],
+    "voz": "Si esa suma es múltiplo de tres, el número también lo es. Veintiuno sí es múltiplo de tres."
+   },
+   {
+    "lineas": [
+     "Entonces sí es divisible",
+     "$4.872 \\div 3 = 1.624$"
+    ],
+    "voz": "Así que cuatro mil ochocientos setenta y dos es divisible por tres."
+   }
+  ],
+  "remate": "Suma de dígitos ÷ 3",
+  "cierre": {
+   "voz": "Sirve también para el nueve: si la suma de dígitos es múltiplo de nueve, el número también."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s23-D04",
+ "id": "135"
+}

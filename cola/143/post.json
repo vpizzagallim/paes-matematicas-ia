@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: no te pierdas los puntos fáciles 🎯 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: no regales los puntos fáciles.",
+  "titulo": "Tip: puntos fáciles",
+  "pasos": [
+   {
+    "lineas": [
+     "Lee la pregunta dos veces"
+    ],
+    "voz": "Lee cada pregunta dos veces. Muchos errores son por leer rápido."
+   },
+   {
+    "lineas": [
+     "Subraya lo que te piden"
+    ],
+    "voz": "Subraya qué te piden: ¿el precio final, el porcentaje, el ángulo?"
+   },
+   {
+    "lineas": [
+     "Revisa las unidades"
+    ],
+    "voz": "Y revisa las unidades: centímetros, metros, minutos u horas."
+   }
+  ],
+  "remate": "¡Lee, subraya, revisa!",
+  "cierre": {
+   "voz": "Lee, subraya y revisa. Así no regalas puntos."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s23-C03",
+ "id": "143"
+}

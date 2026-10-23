@@ -1,0 +1,37 @@
+{
+ "id": "111",
+ "tipo": "especial",
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: no se descuenta puntaje por respuestas erradas, ¡no dejes ninguna en blanco! #PAES #PAES2027 #CuentaRegresivaPAES #TipsPAES #Chile",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día.",
+  "titulo": "Tip: responde todas",
+  "pasos": [
+   {
+    "lineas": [
+     "No hay descuento por errores"
+    ],
+    "voz": "En la PAES no se descuenta puntaje por respuestas erradas."
+   },
+   {
+    "lineas": [
+     "Nunca dejes en blanco"
+    ],
+    "voz": "Así que nunca dejes una pregunta en blanco."
+   },
+   {
+    "lineas": [
+     "Si dudas: descarta y elige"
+    ],
+    "voz": "Si dudas, descarta las alternativas imposibles y elige entre las que quedan."
+   }
+  ],
+  "remate": "¡Responde TODAS!",
+  "cierre": {
+   "voz": "Responde todas. Sigue a math paes punto c, ele para más tips."
+  }
+ },
+ "uid": "s23-C01"
+}

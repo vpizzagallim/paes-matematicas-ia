@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Moda",
+ "gancho": "La moda no es el promedio 📊",
+ "enunciado": "¿Cuál es la <b>moda</b> del conjunto de datos $$2,\\; 3,\\; 3,\\; 5,\\; 7,\\; 3,\\; 5\\,?$$",
+ "alternativas": [
+  "5",
+  "3",
+  "4",
+  "7"
+ ],
+ "valores": [
+  "5",
+  "3",
+  "4",
+  "7"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "La moda es el dato que más se repite.",
+  "El 3 aparece 3 veces; el 5, dos veces. La moda es 3."
+ ],
+ "trampa": "Calcular el promedio (4) o la mediana en vez de la moda.",
+ "clave": "Moda: el más repetido. Mediana: el del centro (ordenado). Media: el promedio.",
+ "verificacion": "from collections import Counter; respuesta = Counter([2,3,3,5,7,3,5]).most_common(1)[0][0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Moda = el más repetido",
+     "$3 \\to 3\\ \\text{veces}$"
+    ],
+    "voz": "La moda es el dato que más se repite."
+   },
+   {
+    "lineas": [
+     "Comparamos",
+     "$5 \\to 2\\ \\text{veces}$"
+    ],
+    "voz": "El tres aparece tres veces y el cinco solo dos. La moda es tres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: tres. Moda es el más repetido, mediana el del centro y media el promedio. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-08",
+ "id": "134"
+}

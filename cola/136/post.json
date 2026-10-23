@@ -1,0 +1,50 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Decaimiento exponencial",
+ "gancho": "¿Cuánto vale tu auto en 2 años? 🚗",
+ "enunciado": "Un auto vale <b>\\$10.000.000</b> y pierde el <b>20%</b> de su valor cada año. ¿Cuánto valdrá en <b>2 años</b>?",
+ "alternativas": [
+  "\\$6.400.000",
+  "\\$3.600.000",
+  "\\$6.000.000",
+  "\\$8.000.000"
+ ],
+ "valores": [
+  "6400000",
+  "3600000",
+  "6000000",
+  "8000000"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Cada año conserva el 80%: se multiplica por 0,8.",
+  "$$10.000.000 \\cdot 0{,}8^2 = 6.400.000$$"
+ ],
+ "trampa": "Restar 20% dos veces sobre el valor inicial (40%) y marcar C.",
+ "clave": "Disminuir un $p\\%$ cada periodo: $V = V_0 \\,(1 - p)^n$.",
+ "verificacion": "respuesta = 10000000 * Rational(8,10)**2",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cada año conserva el 80%",
+     "$\\times\\, 0{,}8$ por año"
+    ],
+    "voz": "Perder el veinte por ciento es quedarse con el ochenta: multiplicar por cero coma ocho."
+   },
+   {
+    "lineas": [
+     "Dos años",
+     "$10.000.000 \\cdot 0{,}8^2 = 6.400.000$"
+    ],
+    "voz": "Dos años: diez millones por cero coma ocho al cuadrado, seis millones cuatrocientos mil."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: seis millones cuatrocientos mil pesos. Una baja porcentual repetida es exponencial, no se resta dos veces. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-09",
+ "id": "136"
+}

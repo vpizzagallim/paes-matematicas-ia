@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Regla de los signos: la que más se equivoca en la PAES. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "La regla de los signos",
+  "intro_voz": "Dato PAES: la regla de los signos, sin enredos.",
+  "titulo": "Regla de los signos",
+  "pasos": [
+   {
+    "lineas": [
+     "Signos iguales: positivo",
+     "$(-3)(-4) = +12$"
+    ],
+    "voz": "Si multiplicas o divides dos números con el mismo signo, el resultado es positivo."
+   },
+   {
+    "lineas": [
+     "Signos distintos: negativo",
+     "$(-3)(4) = -12$"
+    ],
+    "voz": "Si los signos son distintos, el resultado es negativo."
+   },
+   {
+    "lineas": [
+     "Ojo con las potencias",
+     "$(-2)^2 = 4 \\quad -2^2 = -4$"
+    ],
+    "voz": "Y ojo: menos dos, entre paréntesis, al cuadrado es cuatro. Pero menos dos al cuadrado, sin paréntesis, es menos cuatro."
+   }
+  ],
+  "remate": "Iguales (+) · Distintos (−)",
+  "cierre": {
+   "voz": "Iguales, positivo. Distintos, negativo. Y cuidado con los paréntesis."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s23-D02",
+ "id": "119"
+}

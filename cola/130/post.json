@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Porcentaje de variación",
+ "gancho": "¿Cuánto subió tu sueldo? 💸",
+ "enunciado": "Un sueldo sube de <b>\\$500.000</b> a <b>\\$575.000</b>. ¿En qué porcentaje aumentó?",
+ "alternativas": [
+  "7,5%",
+  "≈ 13%",
+  "15%",
+  "75%"
+ ],
+ "valores": [
+  "15/2",
+  "75/575*100",
+  "15",
+  "75"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Aumento: $575.000 - 500.000 = 75.000$.",
+  "Se compara con el valor <b>inicial</b>: $$\\frac{75.000}{500.000} = 0{,}15 = 15\\%$$"
+ ],
+ "trampa": "Dividir el aumento por el sueldo nuevo ($\\tfrac{75.000}{575.000} \\approx 13\\%$) y marcar B.",
+ "clave": "Variación porcentual $= \\dfrac{\\text{final} - \\text{inicial}}{\\text{inicial}} \\cdot 100$.",
+ "verificacion": "respuesta = Rational(575000-500000, 500000)*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cuánto subió",
+     "$575.000 - 500.000 = 75.000$"
+    ],
+    "voz": "Primero, cuánto subió: setenta y cinco mil pesos."
+   },
+   {
+    "lineas": [
+     "Se divide por el valor inicial",
+     "$\\dfrac{75.000}{500.000} = 15\\%$"
+    ],
+    "voz": "Ese aumento se compara con el sueldo inicial: setenta y cinco mil dividido en quinientos mil, quince por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: quince por ciento. El porcentaje de variación siempre se calcula sobre el valor inicial. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-05",
+ "id": "130"
+}

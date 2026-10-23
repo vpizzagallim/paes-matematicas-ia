@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Potencias de exponente negativo",
+ "gancho": "El exponente negativo no hace negativo 🤯",
+ "enunciado": "¿Cuál es el valor de $2^{-3}$?",
+ "alternativas": [
+  "$-8$",
+  "$-6$",
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{1}{6}$"
+ ],
+ "valores": [
+  "-8",
+  "-6",
+  "1/8",
+  "1/6"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Un exponente negativo invierte la base: $$2^{-3} = \\frac{1}{2^3}$$",
+  "$$\\frac{1}{2^3} = \\frac{1}{8}$$"
+ ],
+ "trampa": "Pensar que el exponente negativo hace negativo el resultado y marcar A.",
+ "clave": "$a^{-n} = \\dfrac{1}{a^n}$: el signo menos del exponente invierte, no cambia el signo.",
+ "verificacion": "respuesta = Integer(2)**-3",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Negativo: se invierte",
+     "$2^{-3} = \\dfrac{1}{2^3}$"
+    ],
+    "voz": "Un exponente negativo no hace negativo el resultado: lo invierte."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$\\dfrac{1}{2^3} = \\dfrac{1}{8}$"
+    ],
+    "voz": "Dos al cubo es ocho, así que el resultado es un octavo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: un octavo. Exponente negativo significa inverso. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-10",
+ "id": "137"
+}

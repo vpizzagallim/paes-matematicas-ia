@@ -1,0 +1,50 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Permutaciones",
+ "gancho": "¿De cuántas formas ordenas tus libros? 📚",
+ "enunciado": "¿De cuántas formas distintas se pueden ordenar <b>4 libros diferentes</b> en una repisa?",
+ "alternativas": [
+  "24",
+  "12",
+  "16",
+  "256"
+ ],
+ "valores": [
+  "24",
+  "12",
+  "16",
+  "256"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Para el primer lugar hay 4 opciones, luego 3, luego 2 y luego 1.",
+  "$$4! = 4 \\cdot 3 \\cdot 2 \\cdot 1 = 24$$"
+ ],
+ "trampa": "Multiplicar $4 \\cdot 4 = 16$ como si se pudiera repetir el mismo libro.",
+ "clave": "Ordenar $n$ objetos distintos: $n!$ formas.",
+ "verificacion": "respuesta = factorial(4)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Opciones por lugar",
+     "$4 \\cdot 3 \\cdot 2 \\cdot 1$"
+    ],
+    "voz": "Para el primer lugar hay cuatro libros, para el segundo quedan tres, después dos y al final uno."
+   },
+   {
+    "lineas": [
+     "Factorial",
+     "$4! = 24$"
+    ],
+    "voz": "Cuatro factorial: veinticuatro formas."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veinticuatro. Ordenar ene objetos distintos se hace de ene factorial formas. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-12",
+ "id": "140"
+}

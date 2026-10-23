@@ -39,11 +39,12 @@ def verificar(p):
     for campo in ["nivel", "eje", "tema", "enunciado", "alternativas", "correcta", "pasos", "trampa", "clave", "valores", "verificacion", "pizarra"]:
         if campo not in p:
             return f"falta el campo {campo}"
-    if len(p["alternativas"]) != 5 or len(p["valores"]) != 5:
-        return "debe haber 5 alternativas y 5 valores"
+    n_alt = len(p["alternativas"])
+    if n_alt != 4 or len(p["valores"]) != 4:
+        return "debe haber 4 alternativas (A-D) y 4 valores, como en la PAES"
     vals = [sp.sympify(v) for v in p["valores"]]
-    for i in range(5):
-        for j in range(i + 1, 5):
+    for i in range(n_alt):
+        for j in range(i + 1, n_alt):
             if iguales(vals[i], vals[j]):
                 return f"alternativas {i} y {j} tienen el mismo valor"
     ns = {"sp": sp, **{k: getattr(sp, k) for k in dir(sp) if not k.startswith("_")}}

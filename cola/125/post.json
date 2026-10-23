@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuaciones con fracciones",
+ "gancho": "Fracciones sin miedo ✍️",
+ "enunciado": "¿Cuál es el valor de $x$ en la ecuación $$\\frac{x}{3} + \\frac{x}{6} = 5\\,?$$",
+ "alternativas": [
+  "5",
+  "30",
+  "15",
+  "10"
+ ],
+ "valores": [
+  "5",
+  "30",
+  "15",
+  "10"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Sumamos las fracciones con denominador 6: $$\\frac{2x}{6} + \\frac{x}{6} = \\frac{3x}{6} = \\frac{x}{2}$$",
+  "$$\\frac{x}{2} = 5 \\;\\Rightarrow\\; x = 10$$"
+ ],
+ "trampa": "Sumar los denominadores ($\\tfrac{2x}{9} = 5$) o multiplicar todo por 3 y olvidar un término.",
+ "clave": "Para sumar fracciones algebraicas, iguala denominadores; nunca sumes denominadores.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(x/3 + x/6, 5), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Igualamos denominadores",
+     "$\\dfrac{2x}{6} + \\dfrac{x}{6} = \\dfrac{x}{2}$"
+    ],
+    "voz": "Escribe equis tercios como dos equis sextos. Sumando, tres equis sextos, que es equis medios."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$\\dfrac{x}{2} = 5 \\Rightarrow x = 10$"
+    ],
+    "voz": "Equis medios igual cinco, entonces equis vale diez."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: diez. Para sumar fracciones se igualan los denominadores. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-01",
+ "id": "125"
+}

@@ -1,0 +1,41 @@
+{
+ "id": "107",
+ "tipo": "especial",
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Atajo PAES: el 10% de cualquier número en un segundo. Guárdalo para la prueba 📌 #PAES #PAES2027 #PAESMatematica #Porcentajes #TipsPAES #Chile",
+ "pizarra_dato": {
+  "cartel": "💡 ATAJO PAES",
+  "subtitulo": "El 10% en 1 segundo",
+  "intro_voz": "Atajo para la PAES: el diez por ciento de cualquier número en un segundo.",
+  "titulo": "El atajo del 10%",
+  "pasos": [
+   {
+    "lineas": [
+     "10%: corre la coma un lugar",
+     "$10\\%\\ \\text{de}\\ 3.450 = 345$"
+    ],
+    "voz": "Para sacar el diez por ciento, corres la coma un lugar a la izquierda. El diez por ciento de tres mil cuatrocientos cincuenta es trescientos cuarenta y cinco."
+   },
+   {
+    "lineas": [
+     "5% es la mitad del 10%",
+     "$5\\% = 345 \\div 2 = 172{,}5$"
+    ],
+    "voz": "El cinco por ciento es la mitad: ciento setenta y dos coma cinco."
+   },
+   {
+    "lineas": [
+     "20% es el doble",
+     "$20\\% = 345 \\cdot 2 = 690$"
+    ],
+    "voz": "Y el veinte por ciento es el doble: seiscientos noventa."
+   }
+  ],
+  "remate": "10% → corre la coma",
+  "cierre": {
+   "voz": "Con el diez por ciento armas casi cualquier porcentaje. Guárdalo para la PAES."
+  }
+ },
+ "uid": "s23-D01"
+}

@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Ángulos",
+ "gancho": "Triángulo isósceles en 20 segundos 📐",
+ "enunciado": "En un triángulo <b>isósceles</b>, el ángulo distinto mide <b>40°</b>. ¿Cuánto mide cada uno de los otros dos ángulos?",
+ "alternativas": [
+  "40°",
+  "70°",
+  "50°",
+  "140°"
+ ],
+ "valores": [
+  "40",
+  "70",
+  "50",
+  "140"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Los ángulos interiores suman $180^\\circ$: quedan $180^\\circ - 40^\\circ = 140^\\circ$.",
+  "Los otros dos son iguales: $$140^\\circ \\div 2 = 70^\\circ$$"
+ ],
+ "trampa": "Quedarse con los 140° (D) y olvidar repartirlos entre los dos ángulos iguales.",
+ "clave": "Suma de ángulos interiores de un triángulo: $180^\\circ$. Isósceles: dos ángulos iguales.",
+ "verificacion": "respuesta = Rational(180-40, 2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suman 180°",
+     "$180^\\circ - 40^\\circ = 140^\\circ$"
+    ],
+    "voz": "Los ángulos de un triángulo suman ciento ochenta grados. Quitando los cuarenta, quedan ciento cuarenta."
+   },
+   {
+    "lineas": [
+     "Isósceles: dos iguales",
+     "$140^\\circ \\div 2 = 70^\\circ$"
+    ],
+    "voz": "Como es isósceles, los otros dos son iguales: ciento cuarenta dividido en dos, setenta grados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: setenta grados. En un isósceles, los dos ángulos basales son iguales. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-07",
+ "id": "133"
+}

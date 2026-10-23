@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Proporcionalidad directa",
+ "gancho": "La receta no se arma sumando 🥞",
+ "enunciado": "Para <b>10 panqueques</b> se usan <b>4 huevos</b>. Manteniendo la receta, ¿cuántos huevos se necesitan para <b>25 panqueques</b>?",
+ "alternativas": [
+  "19",
+  "12",
+  "8",
+  "10"
+ ],
+ "valores": [
+  "19",
+  "12",
+  "8",
+  "10"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Es proporcionalidad directa: $$\\frac{4}{10} = \\frac{x}{25}$$",
+  "$$x = \\frac{4 \\cdot 25}{10} = 10$$"
+ ],
+ "trampa": "Sumar: \"son 15 panqueques más, entonces 15 huevos más\" y marcar A (19).",
+ "clave": "En proporcionalidad directa el <b>cociente</b> se mantiene; no se suman diferencias.",
+ "verificacion": "respuesta = Rational(4*25, 10)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Directa: el cociente se mantiene",
+     "$\\dfrac{4}{10} = \\dfrac{x}{25}$"
+    ],
+    "voz": "Más panqueques, más huevos en la misma proporción. Cuatro es a diez como equis es a veinticinco."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$x = \\dfrac{4 \\cdot 25}{10} = 10$"
+    ],
+    "voz": "Cuatro por veinticinco, dividido en diez: diez huevos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: diez huevos. En proporcionalidad directa se multiplica, no se suman diferencias. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-00",
+ "id": "124"
+}

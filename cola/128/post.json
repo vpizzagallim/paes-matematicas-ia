@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad del complemento",
+ "gancho": "Al menos una cara 🪙",
+ "enunciado": "Se lanzan <b>3 monedas</b>. ¿Cuál es la probabilidad de obtener <b>al menos una cara</b>?",
+ "alternativas": [
+  "$\\dfrac{3}{8}$",
+  "$\\dfrac{7}{8}$",
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{1}{2}$"
+ ],
+ "valores": [
+  "3/8",
+  "7/8",
+  "1/8",
+  "1/2"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Es más fácil calcular lo contrario: ninguna cara (tres sellos): $\\left(\\tfrac{1}{2}\\right)^3 = \\tfrac{1}{8}$.",
+  "$$P = 1 - \\frac{1}{8} = \\frac{7}{8}$$"
+ ],
+ "trampa": "Calcular solo la probabilidad de tres sellos y marcar C, o contar \"exactamente una cara\" (A).",
+ "clave": "\"Al menos uno\" se resuelve rápido con el complemento: $P(A) = 1 - P(\\text{no } A)$.",
+ "verificacion": "respuesta = 1 - Rational(1,2)**3",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Usamos el complemento",
+     "$P(\\text{ninguna}) = \\left(\\dfrac{1}{2}\\right)^3 = \\dfrac{1}{8}$"
+    ],
+    "voz": "Al menos una cara es lo contrario de cero caras. Tres sellos tiene probabilidad un octavo."
+   },
+   {
+    "lineas": [
+     "Restamos de 1",
+     "$1 - \\dfrac{1}{8} = \\dfrac{7}{8}$"
+    ],
+    "voz": "Uno menos un octavo: siete octavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: siete octavos. Para al menos uno, usa uno menos la probabilidad de ninguno. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-03",
+ "id": "128"
+}

@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Área del círculo",
+ "gancho": "La pizza y el área 🍕",
+ "enunciado": "Una pizza circular tiene <b>radio 5 cm</b>. Usando $\\pi \\approx 3{,}14$, ¿cuál es su área?",
+ "alternativas": [
+  "31,4 cm²",
+  "157 cm²",
+  "78,5 cm²",
+  "15,7 cm²"
+ ],
+ "valores": [
+  "314/10",
+  "157",
+  "785/10",
+  "157/10"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "$A = \\pi r^2$",
+  "$$A = 3{,}14 \\cdot 5^2 = 3{,}14 \\cdot 25 = 78{,}5 \\text{ cm}^2$$"
+ ],
+ "trampa": "Usar la fórmula del perímetro, $2\\pi r = 31{,}4$, y marcar A.",
+ "clave": "Área del círculo: $\\pi r^2$. Perímetro: $2\\pi r$. No las confundas.",
+ "verificacion": "respuesta = Rational(314,100)*5**2",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Área = π · r²",
+     "$3{,}14 \\cdot 5^2$"
+    ],
+    "voz": "El área del círculo es pi por radio al cuadrado."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$3{,}14 \\cdot 25 = 78{,}5$"
+    ],
+    "voz": "Cinco al cuadrado es veinticinco, por tres coma catorce: setenta y ocho coma cinco centímetros cuadrados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: setenta y ocho coma cinco centímetros cuadrados. Área es pi erre cuadrado; dos pi erre es el perímetro. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-11",
+ "id": "138"
+}

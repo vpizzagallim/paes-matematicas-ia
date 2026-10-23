@@ -1,0 +1,38 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: administra tu tiempo ⏱️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: administra tu tiempo.",
+  "titulo": "Tip: el tiempo",
+  "pasos": [
+   {
+    "lineas": [
+     "M1: 65 preguntas en 2 h 20 min"
+    ],
+    "voz": "La prueba de matemática uno tiene sesenta y cinco preguntas y dura dos horas y veinte minutos."
+   },
+   {
+    "lineas": [
+     "Unos 2 minutos por pregunta",
+     "$140 \\div 65 \\approx 2{,}2\\ \\text{min}$"
+    ],
+    "voz": "Eso da poco más de dos minutos por pregunta."
+   },
+   {
+    "lineas": [
+     "Si te atrapa, salta y vuelve"
+    ],
+    "voz": "Si una pregunta te atrapa, márcala, sigue y vuelve al final."
+   }
+  ],
+  "remate": "~2 min por pregunta",
+  "cierre": {
+   "voz": "Practica con reloj. Sigue a math paes punto c, ele para más tips."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s23-C02",
+ "id": "131"
+}

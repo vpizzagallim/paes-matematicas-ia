@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Perímetro y área",
+ "gancho": "Del área al perímetro 🟦",
+ "enunciado": "Un cuadrado tiene un área de <b>49 cm²</b>. ¿Cuál es su perímetro?",
+ "alternativas": [
+  "14 cm",
+  "196 cm",
+  "49 cm",
+  "28 cm"
+ ],
+ "valores": [
+  "14",
+  "196",
+  "49",
+  "28"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "El lado es la raíz del área: $\\sqrt{49} = 7$ cm.",
+  "$$P = 4 \\cdot 7 = 28 \\text{ cm}$$"
+ ],
+ "trampa": "Confundir área con perímetro o sumar solo dos lados (14 cm).",
+ "clave": "En un cuadrado: área $= a^2$ y perímetro $= 4a$.",
+ "verificacion": "respuesta = 4*sqrt(49)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Lado = raíz del área",
+     "$\\sqrt{49} = 7$"
+    ],
+    "voz": "Si el área es cuarenta y nueve, el lado es la raíz: siete centímetros."
+   },
+   {
+    "lineas": [
+     "Perímetro: 4 lados",
+     "$4 \\cdot 7 = 28$"
+    ],
+    "voz": "El perímetro son cuatro lados: veintiocho centímetros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: veintiocho centímetros. Del área sacas el lado con la raíz; después multiplicas por cuatro. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-15",
+ "id": "144"
+}

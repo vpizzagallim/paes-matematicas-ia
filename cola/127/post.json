@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Las 3 áreas que más aparecen en la PAES. Guárdalas para la prueba 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Geometria #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "3 áreas que debes saber",
+  "intro_voz": "Tres áreas que tienes que saber sí o sí para la PAES.",
+  "titulo": "Áreas clave",
+  "pasos": [
+   {
+    "lineas": [
+     "Triángulo",
+     "$A = \\dfrac{b \\cdot h}{2}$"
+    ],
+    "voz": "Triángulo: base por altura, dividido en dos."
+   },
+   {
+    "lineas": [
+     "Círculo",
+     "$A = \\pi r^2$"
+    ],
+    "voz": "Círculo: pi por radio al cuadrado."
+   },
+   {
+    "lineas": [
+     "Trapecio",
+     "$A = \\dfrac{(B + b)\\,h}{2}$"
+    ],
+    "voz": "Trapecio: base mayor más base menor, por la altura, dividido en dos."
+   }
+  ],
+  "remate": "¡Guárdalas! 📌",
+  "cierre": {
+   "voz": "Guárdalas y repásalas antes de la prueba."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s23-D03",
+ "id": "127"
+}

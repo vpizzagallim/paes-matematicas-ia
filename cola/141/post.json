@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Semejanza",
+ "gancho": "Agrandar una foto sin deformarla 🖼️",
+ "enunciado": "Una foto de <b>10 cm × 15 cm</b> se amplía para que el lado de 10 cm mida <b>20 cm</b>, sin deformarla. ¿Cuánto medirá el otro lado?",
+ "alternativas": [
+  "30 cm",
+  "35 cm",
+  "25 cm",
+  "20 cm"
+ ],
+ "valores": [
+  "30",
+  "35",
+  "25",
+  "20"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "La razón de ampliación es $\\dfrac{20}{10} = 2$.",
+  "$$15 \\cdot 2 = 30 \\text{ cm}$$"
+ ],
+ "trampa": "Sumar 10 cm a cada lado y marcar C (25 cm): eso deforma la foto.",
+ "clave": "Ampliar sin deformar es multiplicar <b>todos</b> los lados por la misma razón.",
+ "verificacion": "respuesta = 15 * Rational(20, 10)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Razón de ampliación",
+     "$20 \\div 10 = 2$"
+    ],
+    "voz": "El lado de diez pasa a veinte: la foto se amplía al doble."
+   },
+   {
+    "lineas": [
+     "El otro lado también",
+     "$15 \\cdot 2 = 30$"
+    ],
+    "voz": "Entonces el otro lado también se duplica: treinta centímetros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: treinta centímetros. Ampliar es multiplicar todos los lados por la misma razón, no sumar. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-13",
+ "id": "141"
+}

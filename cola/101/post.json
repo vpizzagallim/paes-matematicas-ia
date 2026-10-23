@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Inecuaciones",
+ "gancho": "Cuidado con el signo de la desigualdad ⚠️",
+ "enunciado": "¿Cuál es el conjunto solución de la inecuación $$2x - 5 < 3x + 1\\,?$$",
+ "alternativas": [
+  "$x > -4$",
+  "$x > 6$",
+  "$x < -6$",
+  "$x > -6$"
+ ],
+ "valores": [
+  "Interval.open(-4, oo)",
+  "Interval.open(6, oo)",
+  "Interval.open(-oo, -6)",
+  "Interval.open(-6, oo)"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Agrupamos las $x$ a un lado: $$2x - 3x < 1 + 5 \\;\\Rightarrow\\; -x < 6$$",
+  "Multiplicamos por $-1$ e <b>invertimos</b> el signo: $$x > -6$$"
+ ],
+ "trampa": "Olvidar invertir la desigualdad al multiplicar por un número negativo y marcar C.",
+ "clave": "Al multiplicar o dividir una inecuación por un número <b>negativo</b>, el signo de la desigualdad se invierte.",
+ "verificacion": "x = symbols('x', real=True); respuesta = solve_univariate_inequality(2*x-5 < 3*x+1, x, relational=False)",
+ "id": "101",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Agrupamos las x",
+     "$-x < 6$"
+    ],
+    "voz": "Pasa las equis a un lado: dos equis menos tres equis es menos equis, y menos equis es menor que seis."
+   },
+   {
+    "lineas": [
+     "Multiplicar por −1 invierte",
+     "$x > -6$"
+    ],
+    "voz": "Al multiplicar por menos uno, la desigualdad se da vuelta. Queda equis mayor que menos seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: equis mayor que menos seis. Multiplicar por un negativo invierte la desigualdad. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "orig-021"
+}

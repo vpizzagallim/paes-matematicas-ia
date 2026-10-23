@@ -19,7 +19,7 @@ Este archivo lo lee la tarea programada semanal de Claude. Objetivo: dejar en `c
 
 ## Reglas de calidad
 
-- 5 alternativas, una sola correcta. Los distractores deben salir de errores típicos reales, no ser números al azar.
+- **4 alternativas (A, B, C y D), igual que la PAES real** (instrucciones oficiales DEMRE), una sola correcta. Los distractores deben salir de errores típicos reales, no ser números al azar.
 - `verificacion` resuelve el problema **de forma independiente**, desde los datos del enunciado. No basta con copiar el valor correcto.
 - `pasos`: entre 2 y 4 pasos cortos. `trampa`: el error más común. `clave`: la idea general reutilizable.
 - **Espacio en las láminas:** enunciado de hasta ~45 palabras; cada paso de hasta ~30 palabras más una fórmula.
@@ -47,3 +47,16 @@ Cada problema debe traer además el campo `pizarra`, que es el guion del video:
 - El cierre siempre nombra la letra correcta tal como quedó después de mezclar las alternativas.
 - `preparar_lote.py` rechaza el problema si la hoja no cabe; en ese caso hay que acortarla.
 - Las láminas de carrusel se siguen generando, porque son el respaldo si el Reel falla.
+
+
+## Cada 3 videos normales, 1 especial (desde el 23-oct-2026)
+
+En la cola, después de cada 3 problemas normales va 1 video especial (`"tipo": "especial"`), que GitHub arma al publicar con `scripts/armar_especial.py`. Modelo: `borradores/especiales_2026-10-23.py`. Hay tres formatos, y conviene rotarlos:
+
+- **sketch** (música de payaso): 3 o 4 escenas cómicas cortas con Benja (estudiante) y/o la Profe Pi (`personaje`: benja o profe; `expresion`: feliz, nervioso, llora o sorpresa; `fondo`: aula, pieza o pizarra; `entrada`: caminando o derecha; `cartel`; `efecto`: boing, trombon, redoble, tictac, bocina o ding). Termina con un `problema` de 4 alternativas, con `verificacion` y `pizarra`.
+- **dato**: la Profe explica una propiedad, un atajo o un truco útil (`pizarra_dato`: cartel, subtítulo, intro_voz, título, 2 o 3 pasos con líneas y voz, remate y cierre).
+- **cuenta**: "Faltan N días para la PAES" (N se calcula al publicar; la PAES regular es el 30-nov-2026) + tip del día en `pizarra_dato`.
+- **Duración:** menos de 59 segundos (la historia de Instagram admite 60). El campo `texto_post` es el texto del Reel, con hashtags.
+- **Datos factuales** (reglas de la prueba, fechas): solo los confirmados en fuentes oficiales del DEMRE.
+- **Horario:** lunes a jueves, 6 publicaciones al día; viernes a domingo, cada hora de 9 a 23 (15 al día). Unas 69 publicaciones por semana, de las cuales cerca de 17 son especiales.
+- **Nombres de carpeta en la cola:** números de 3 cifras correlativos, mayores al máximo de cola/ y publicados/.

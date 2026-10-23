@@ -1,0 +1,86 @@
+{
+ "id": "103",
+ "tipo": "especial",
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja descubrió que en la PAES no hay calculadora 😱 ¿Tú lo sacas sin calculadora en 15 segundos? Comenta 👇 #PAES #PAES2027 #PAESMatematica #CalculoMental #Chile #ProfePi",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Mañana es la PAES. Llevo mi calculadora y listo.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🚫 En la PAES NO se permite calculadora",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "¿Queé? ¿Y ahora cómo saco los porcentajes?",
+   "efecto": "trombon",
+   "t_efecto": 0.0
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Tranquilo, Benja. Prueba este sin calculadora.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "¿Cuánto es el <b>25%</b> de <b>360</b>?",
+  "alternativas": [
+   "72",
+   "90",
+   "80",
+   "100"
+  ],
+  "valores": [
+   "72",
+   "90",
+   "80",
+   "100"
+  ],
+  "correcta": 1,
+  "verificacion": "respuesta = Rational(25,100)*360",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "25% es un cuarto",
+      "$25\\% = \\dfrac{1}{4}$"
+     ],
+     "voz": "El veinticinco por ciento es lo mismo que un cuarto."
+    },
+    {
+     "lineas": [
+      "Dividimos por 4",
+      "$360 \\div 4 = 90$"
+     ],
+     "voz": "Entonces divides trescientos sesenta en cuatro: noventa."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: noventa. Sin calculadora y en dos segundos."
+   }
+  }
+ },
+ "uid": "s23-S01"
+}

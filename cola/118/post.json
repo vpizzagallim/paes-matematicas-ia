@@ -1,0 +1,51 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Ecuación de la recta",
+ "gancho": "¿Dónde corta la recta al eje Y? 📏",
+ "enunciado": "Una recta pasa por los puntos $A(1, 2)$ y $B(3, 8)$. ¿En qué valor corta al <b>eje $Y$</b>?",
+ "alternativas": [
+  "$-1$",
+  "2",
+  "$-3$",
+  "3"
+ ],
+ "valores": [
+  "-1",
+  "2",
+  "-3",
+  "3"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Pendiente: $$m = \\frac{8 - 2}{3 - 1} = 3$$",
+  "Con el punto $A$: $y - 2 = 3(x - 1)$, es decir, $$y = 3x - 1$$",
+  "Corte con el eje $Y$ (cuando $x = 0$): $y = -1$."
+ ],
+ "trampa": "Responder la pendiente (D) o la ordenada del punto $A$ (B).",
+ "clave": "Ecuación punto-pendiente: $y - y_1 = m(x - x_1)$. El corte con el eje $Y$ es el $n$ de $y = mx + n$.",
+ "verificacion": "x = symbols('x'); m = Rational(8-2, 3-1); respuesta = (m*(x-1)+2).subs(x, 0)",
+ "id": "118",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pendiente",
+     "$m = \\dfrac{8 - 2}{3 - 1} = 3$"
+    ],
+    "voz": "La pendiente es ocho menos dos, partido tres menos uno: tres."
+   },
+   {
+    "lineas": [
+     "Ecuación y corte",
+     "$y = 3x - 1 \\Rightarrow n = -1$"
+    ],
+    "voz": "Con el punto uno, dos, la recta es i griega igual tres equis menos uno. Corta al eje i griega en menos uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: menos uno. El corte con el eje i griega es el ene de i griega igual eme equis más ene. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "orig-034"
+}

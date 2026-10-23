@@ -1,0 +1,82 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja se quedó pegado en una pregunta y le quedan 10 minutos ⏰😰 ¿Cuánto tiempo tiene por pregunta? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TiempoPAES",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Llevo media hora en la pregunta tres.",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "⏰ Quedan 10 minutos<br>y 20 preguntas",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.0
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "¡No alcanzo!",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Por eso hay que controlar el tiempo. Calcula.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Quedan <b>10 minutos</b> y <b>20 preguntas</b>. Si repartes el tiempo en partes iguales, ¿cuánto tiempo tienes por pregunta?",
+  "alternativas": [
+   "30 segundos",
+   "2 minutos",
+   "20 segundos",
+   "50 segundos"
+  ],
+  "valores": [
+   "30",
+   "120",
+   "20",
+   "50"
+  ],
+  "correcta": 0,
+  "verificacion": "respuesta = Rational(10*60, 20)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Pasamos a segundos",
+      "$10\\ \\text{min} = 600\\ \\text{s}$"
+     ],
+     "voz": "Diez minutos son seiscientos segundos."
+    },
+    {
+     "lineas": [
+      "Repartimos",
+      "$600 \\div 20 = 30\\ \\text{s}$"
+     ],
+     "voz": "Divididos en veinte preguntas: treinta segundos para cada una."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la a: treinta segundos. Si una pregunta te atrapa, sáltala y vuelve después."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s23-S04",
+ "id": "139"
+}

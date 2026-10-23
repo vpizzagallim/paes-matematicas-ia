@@ -1,0 +1,50 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Propiedades de logaritmos",
+ "gancho": "El logaritmo que da 1 🔢",
+ "enunciado": "¿Cuál es el valor de $$\\log 2 + \\log 5\\,?$$ (logaritmos en base 10)",
+ "alternativas": [
+  "$\\log 7$",
+  "10",
+  "7",
+  "1"
+ ],
+ "valores": [
+  "log(7,10)",
+  "10",
+  "7",
+  "1"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "La suma de logaritmos de igual base es el logaritmo del producto: $$\\log 2 + \\log 5 = \\log(2 \\cdot 5)$$",
+  "$$\\log 10 = 1$$"
+ ],
+ "trampa": "Sumar los argumentos: $\\log 2 + \\log 5 = \\log 7$, y marcar A.",
+ "clave": "$\\log a + \\log b = \\log(ab)$ y $\\log a - \\log b = \\log\\!\\left(\\tfrac{a}{b}\\right)$.",
+ "verificacion": "respuesta = simplify(log(2,10) + log(5,10))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma de logs = log del producto",
+     "$\\log 2 + \\log 5 = \\log 10$"
+    ],
+    "voz": "Sumar logaritmos de igual base es el logaritmo del producto: logaritmo de diez."
+   },
+   {
+    "lineas": [
+     "Base 10",
+     "$\\log 10 = 1$"
+    ],
+    "voz": "Y el logaritmo en base diez de diez es uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: uno. Logaritmo de a más logaritmo de be es logaritmo de a por be. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-04",
+ "id": "129"
+}

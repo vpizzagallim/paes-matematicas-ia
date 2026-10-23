@@ -1,0 +1,770 @@
+[
+ {
+  "nivel": "M1",
+  "eje": "Números",
+  "tema": "Proporcionalidad directa",
+  "gancho": "La receta no se arma sumando 🥞",
+  "enunciado": "Para <b>10 panqueques</b> se usan <b>4 huevos</b>. Manteniendo la receta, ¿cuántos huevos se necesitan para <b>25 panqueques</b>?",
+  "alternativas": [
+   "19",
+   "12",
+   "8",
+   "10"
+  ],
+  "valores": [
+   "19",
+   "12",
+   "8",
+   "10"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "Es proporcionalidad directa: $$\\frac{4}{10} = \\frac{x}{25}$$",
+   "$$x = \\frac{4 \\cdot 25}{10} = 10$$"
+  ],
+  "trampa": "Sumar: \"son 15 panqueques más, entonces 15 huevos más\" y marcar A (19).",
+  "clave": "En proporcionalidad directa el <b>cociente</b> se mantiene; no se suman diferencias.",
+  "verificacion": "respuesta = Rational(4*25, 10)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Directa: el cociente se mantiene",
+      "$\\dfrac{4}{10} = \\dfrac{x}{25}$"
+     ],
+     "voz": "Más panqueques, más huevos en la misma proporción. Cuatro es a diez como equis es a veinticinco."
+    },
+    {
+     "lineas": [
+      "Despejamos",
+      "$x = \\dfrac{4 \\cdot 25}{10} = 10$"
+     ],
+     "voz": "Cuatro por veinticinco, dividido en diez: diez huevos."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: diez huevos. En proporcionalidad directa se multiplica, no se suman diferencias. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Escalas",
+  "gancho": "¿Cuánto mide en la realidad? 🗺️",
+  "enunciado": "En un mapa a escala <b>1 : 50.000</b>, dos plazas están a <b>6 cm</b>. ¿Cuál es la distancia real entre ellas?",
+  "alternativas": [
+   "30 km",
+   "300 km",
+   "3 km",
+   "0,3 km"
+  ],
+  "valores": [
+   "30",
+   "300",
+   "3",
+   "3/10"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Cada cm del mapa son 50.000 cm reales: $$6 \\cdot 50.000 = 300.000 \\text{ cm}$$",
+   "$$300.000 \\text{ cm} = 3.000 \\text{ m} = 3 \\text{ km}$$"
+  ],
+  "trampa": "Equivocarse al pasar de centímetros a kilómetros y marcar A.",
+  "clave": "Escala 1 : $k$ significa que 1 unidad del mapa son $k$ unidades reales. Después convierte unidades con calma.",
+  "verificacion": "respuesta = Rational(6*50000, 100000)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Multiplicamos por la escala",
+      "$6 \\cdot 50.000 = 300.000\\ \\text{cm}$"
+     ],
+     "voz": "Cada centímetro del mapa son cincuenta mil centímetros reales. Seis por cincuenta mil: trescientos mil centímetros."
+    },
+    {
+     "lineas": [
+      "Convertimos",
+      "$300.000\\ \\text{cm} = 3\\ \\text{km}$"
+     ],
+     "voz": "Trescientos mil centímetros son tres mil metros, o sea tres kilómetros."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: tres kilómetros. Primero multiplica por la escala y después convierte unidades. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Números",
+  "tema": "Porcentaje de variación",
+  "gancho": "¿Cuánto subió tu sueldo? 💸",
+  "enunciado": "Un sueldo sube de <b>\\$500.000</b> a <b>\\$575.000</b>. ¿En qué porcentaje aumentó?",
+  "alternativas": [
+   "7,5%",
+   "≈ 13%",
+   "15%",
+   "75%"
+  ],
+  "valores": [
+   "15/2",
+   "75/575*100",
+   "15",
+   "75"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Aumento: $575.000 - 500.000 = 75.000$.",
+   "Se compara con el valor <b>inicial</b>: $$\\frac{75.000}{500.000} = 0{,}15 = 15\\%$$"
+  ],
+  "trampa": "Dividir el aumento por el sueldo nuevo ($\\tfrac{75.000}{575.000} \\approx 13\\%$) y marcar B.",
+  "clave": "Variación porcentual $= \\dfrac{\\text{final} - \\text{inicial}}{\\text{inicial}} \\cdot 100$.",
+  "verificacion": "respuesta = Rational(575000-500000, 500000)*100",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Cuánto subió",
+      "$575.000 - 500.000 = 75.000$"
+     ],
+     "voz": "Primero, cuánto subió: setenta y cinco mil pesos."
+    },
+    {
+     "lineas": [
+      "Se divide por el valor inicial",
+      "$\\dfrac{75.000}{500.000} = 15\\%$"
+     ],
+     "voz": "Ese aumento se compara con el sueldo inicial: setenta y cinco mil dividido en quinientos mil, quince por ciento."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: quince por ciento. El porcentaje de variación siempre se calcula sobre el valor inicial. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Ángulos",
+  "gancho": "Triángulo isósceles en 20 segundos 📐",
+  "enunciado": "En un triángulo <b>isósceles</b>, el ángulo distinto mide <b>40°</b>. ¿Cuánto mide cada uno de los otros dos ángulos?",
+  "alternativas": [
+   "40°",
+   "70°",
+   "50°",
+   "140°"
+  ],
+  "valores": [
+   "40",
+   "70",
+   "50",
+   "140"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "Los ángulos interiores suman $180^\\circ$: quedan $180^\\circ - 40^\\circ = 140^\\circ$.",
+   "Los otros dos son iguales: $$140^\\circ \\div 2 = 70^\\circ$$"
+  ],
+  "trampa": "Quedarse con los 140° (D) y olvidar repartirlos entre los dos ángulos iguales.",
+  "clave": "Suma de ángulos interiores de un triángulo: $180^\\circ$. Isósceles: dos ángulos iguales.",
+  "verificacion": "respuesta = Rational(180-40, 2)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Suman 180°",
+      "$180^\\circ - 40^\\circ = 140^\\circ$"
+     ],
+     "voz": "Los ángulos de un triángulo suman ciento ochenta grados. Quitando los cuarenta, quedan ciento cuarenta."
+    },
+    {
+     "lineas": [
+      "Isósceles: dos iguales",
+      "$140^\\circ \\div 2 = 70^\\circ$"
+     ],
+     "voz": "Como es isósceles, los otros dos son iguales: ciento cuarenta dividido en dos, setenta grados."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: setenta grados. En un isósceles, los dos ángulos basales son iguales. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Área del círculo",
+  "gancho": "La pizza y el área 🍕",
+  "enunciado": "Una pizza circular tiene <b>radio 5 cm</b>. Usando $\\pi \\approx 3{,}14$, ¿cuál es su área?",
+  "alternativas": [
+   "31,4 cm²",
+   "157 cm²",
+   "78,5 cm²",
+   "15,7 cm²"
+  ],
+  "valores": [
+   "314/10",
+   "157",
+   "785/10",
+   "157/10"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "$A = \\pi r^2$",
+   "$$A = 3{,}14 \\cdot 5^2 = 3{,}14 \\cdot 25 = 78{,}5 \\text{ cm}^2$$"
+  ],
+  "trampa": "Usar la fórmula del perímetro, $2\\pi r = 31{,}4$, y marcar A.",
+  "clave": "Área del círculo: $\\pi r^2$. Perímetro: $2\\pi r$. No las confundas.",
+  "verificacion": "respuesta = Rational(314,100)*5**2",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Área = π · r²",
+      "$3{,}14 \\cdot 5^2$"
+     ],
+     "voz": "El área del círculo es pi por radio al cuadrado."
+    },
+    {
+     "lineas": [
+      "Calculamos",
+      "$3{,}14 \\cdot 25 = 78{,}5$"
+     ],
+     "voz": "Cinco al cuadrado es veinticinco, por tres coma catorce: setenta y ocho coma cinco centímetros cuadrados."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: setenta y ocho coma cinco centímetros cuadrados. Área es pi erre cuadrado; dos pi erre es el perímetro. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Álgebra y funciones",
+  "tema": "Ecuaciones con fracciones",
+  "gancho": "Fracciones sin miedo ✍️",
+  "enunciado": "¿Cuál es el valor de $x$ en la ecuación $$\\frac{x}{3} + \\frac{x}{6} = 5\\,?$$",
+  "alternativas": [
+   "5",
+   "30",
+   "15",
+   "10"
+  ],
+  "valores": [
+   "5",
+   "30",
+   "15",
+   "10"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "Sumamos las fracciones con denominador 6: $$\\frac{2x}{6} + \\frac{x}{6} = \\frac{3x}{6} = \\frac{x}{2}$$",
+   "$$\\frac{x}{2} = 5 \\;\\Rightarrow\\; x = 10$$"
+  ],
+  "trampa": "Sumar los denominadores ($\\tfrac{2x}{9} = 5$) o multiplicar todo por 3 y olvidar un término.",
+  "clave": "Para sumar fracciones algebraicas, iguala denominadores; nunca sumes denominadores.",
+  "verificacion": "x = symbols('x'); respuesta = solve(Eq(x/3 + x/6, 5), x)[0]",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Igualamos denominadores",
+      "$\\dfrac{2x}{6} + \\dfrac{x}{6} = \\dfrac{x}{2}$"
+     ],
+     "voz": "Escribe equis tercios como dos equis sextos. Sumando, tres equis sextos, que es equis medios."
+    },
+    {
+     "lineas": [
+      "Despejamos",
+      "$\\dfrac{x}{2} = 5 \\Rightarrow x = 10$"
+     ],
+     "voz": "Equis medios igual cinco, entonces equis vale diez."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: diez. Para sumar fracciones se igualan los denominadores. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Probabilidad y estadística",
+  "tema": "Probabilidad del complemento",
+  "gancho": "Al menos una cara 🪙",
+  "enunciado": "Se lanzan <b>3 monedas</b>. ¿Cuál es la probabilidad de obtener <b>al menos una cara</b>?",
+  "alternativas": [
+   "$\\dfrac{3}{8}$",
+   "$\\dfrac{7}{8}$",
+   "$\\dfrac{1}{8}$",
+   "$\\dfrac{1}{2}$"
+  ],
+  "valores": [
+   "3/8",
+   "7/8",
+   "1/8",
+   "1/2"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "Es más fácil calcular lo contrario: ninguna cara (tres sellos): $\\left(\\tfrac{1}{2}\\right)^3 = \\tfrac{1}{8}$.",
+   "$$P = 1 - \\frac{1}{8} = \\frac{7}{8}$$"
+  ],
+  "trampa": "Calcular solo la probabilidad de tres sellos y marcar C, o contar \"exactamente una cara\" (A).",
+  "clave": "\"Al menos uno\" se resuelve rápido con el complemento: $P(A) = 1 - P(\\text{no } A)$.",
+  "verificacion": "respuesta = 1 - Rational(1,2)**3",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Usamos el complemento",
+      "$P(\\text{ninguna}) = \\left(\\dfrac{1}{2}\\right)^3 = \\dfrac{1}{8}$"
+     ],
+     "voz": "Al menos una cara es lo contrario de cero caras. Tres sellos tiene probabilidad un octavo."
+    },
+    {
+     "lineas": [
+      "Restamos de 1",
+      "$1 - \\dfrac{1}{8} = \\dfrac{7}{8}$"
+     ],
+     "voz": "Uno menos un octavo: siete octavos."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: siete octavos. Para al menos uno, usa uno menos la probabilidad de ninguno. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Semejanza",
+  "gancho": "Agrandar una foto sin deformarla 🖼️",
+  "enunciado": "Una foto de <b>10 cm × 15 cm</b> se amplía para que el lado de 10 cm mida <b>20 cm</b>, sin deformarla. ¿Cuánto medirá el otro lado?",
+  "alternativas": [
+   "30 cm",
+   "35 cm",
+   "25 cm",
+   "20 cm"
+  ],
+  "valores": [
+   "30",
+   "35",
+   "25",
+   "20"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "La razón de ampliación es $\\dfrac{20}{10} = 2$.",
+   "$$15 \\cdot 2 = 30 \\text{ cm}$$"
+  ],
+  "trampa": "Sumar 10 cm a cada lado y marcar C (25 cm): eso deforma la foto.",
+  "clave": "Ampliar sin deformar es multiplicar <b>todos</b> los lados por la misma razón.",
+  "verificacion": "respuesta = 15 * Rational(20, 10)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Razón de ampliación",
+      "$20 \\div 10 = 2$"
+     ],
+     "voz": "El lado de diez pasa a veinte: la foto se amplía al doble."
+    },
+    {
+     "lineas": [
+      "El otro lado también",
+      "$15 \\cdot 2 = 30$"
+     ],
+     "voz": "Entonces el otro lado también se duplica: treinta centímetros."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: treinta centímetros. Ampliar es multiplicar todos los lados por la misma razón, no sumar. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Números",
+  "tema": "Potencias de exponente negativo",
+  "gancho": "El exponente negativo no hace negativo 🤯",
+  "enunciado": "¿Cuál es el valor de $2^{-3}$?",
+  "alternativas": [
+   "$-8$",
+   "$-6$",
+   "$\\dfrac{1}{8}$",
+   "$\\dfrac{1}{6}$"
+  ],
+  "valores": [
+   "-8",
+   "-6",
+   "1/8",
+   "1/6"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Un exponente negativo invierte la base: $$2^{-3} = \\frac{1}{2^3}$$",
+   "$$\\frac{1}{2^3} = \\frac{1}{8}$$"
+  ],
+  "trampa": "Pensar que el exponente negativo hace negativo el resultado y marcar A.",
+  "clave": "$a^{-n} = \\dfrac{1}{a^n}$: el signo menos del exponente invierte, no cambia el signo.",
+  "verificacion": "respuesta = Integer(2)**-3",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Negativo: se invierte",
+      "$2^{-3} = \\dfrac{1}{2^3}$"
+     ],
+     "voz": "Un exponente negativo no hace negativo el resultado: lo invierte."
+    },
+    {
+     "lineas": [
+      "Calculamos",
+      "$\\dfrac{1}{2^3} = \\dfrac{1}{8}$"
+     ],
+     "voz": "Dos al cubo es ocho, así que el resultado es un octavo."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: un octavo. Exponente negativo significa inverso. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Álgebra y funciones",
+  "tema": "Ecuación cuadrática",
+  "gancho": "Sin fórmula, con un atajo ⚡",
+  "enunciado": "¿Cuál es la <b>suma</b> de las soluciones de la ecuación $$x^2 - 5x + 6 = 0\\,?$$",
+  "alternativas": [
+   "6",
+   "5",
+   "1",
+   "$-5$"
+  ],
+  "valores": [
+   "6",
+   "5",
+   "1",
+   "-5"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "Factorizamos: $(x - 2)(x - 3) = 0$, así que $x = 2$ o $x = 3$.",
+   "$$2 + 3 = 5$$"
+  ],
+  "trampa": "Confundir la suma con el producto de las soluciones (6) o tomar $b = -5$ sin cambiar el signo.",
+  "clave": "En $x^2 + bx + c = 0$: suma de soluciones $= -b$, producto $= c$.",
+  "verificacion": "x = symbols('x'); respuesta = sum(solve(x**2 - 5*x + 6, x))",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Factorizamos",
+      "$(x-2)(x-3) = 0$"
+     ],
+     "voz": "Busca dos números que multiplicados den seis y sumados den cinco: dos y tres."
+    },
+    {
+     "lineas": [
+      "Sumamos las soluciones",
+      "$2 + 3 = 5$"
+     ],
+     "voz": "Las soluciones son dos y tres, y su suma es cinco."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: cinco. La suma de las soluciones es menos be, y el producto es ce. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Probabilidad y estadística",
+  "tema": "Moda",
+  "gancho": "La moda no es el promedio 📊",
+  "enunciado": "¿Cuál es la <b>moda</b> del conjunto de datos $$2,\\; 3,\\; 3,\\; 5,\\; 7,\\; 3,\\; 5\\,?$$",
+  "alternativas": [
+   "5",
+   "3",
+   "4",
+   "7"
+  ],
+  "valores": [
+   "5",
+   "3",
+   "4",
+   "7"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "La moda es el dato que más se repite.",
+   "El 3 aparece 3 veces; el 5, dos veces. La moda es 3."
+  ],
+  "trampa": "Calcular el promedio (4) o la mediana en vez de la moda.",
+  "clave": "Moda: el más repetido. Mediana: el del centro (ordenado). Media: el promedio.",
+  "verificacion": "from collections import Counter; respuesta = Counter([2,3,3,5,7,3,5]).most_common(1)[0][0]",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Moda = el más repetido",
+      "$3 \\to 3\\ \\text{veces}$"
+     ],
+     "voz": "La moda es el dato que más se repite."
+    },
+    {
+     "lineas": [
+      "Comparamos",
+      "$5 \\to 2\\ \\text{veces}$"
+     ],
+     "voz": "El tres aparece tres veces y el cinco solo dos. La moda es tres."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: tres. Moda es el más repetido, mediana el del centro y media el promedio. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Perímetro y área",
+  "gancho": "Del área al perímetro 🟦",
+  "enunciado": "Un cuadrado tiene un área de <b>49 cm²</b>. ¿Cuál es su perímetro?",
+  "alternativas": [
+   "14 cm",
+   "196 cm",
+   "49 cm",
+   "28 cm"
+  ],
+  "valores": [
+   "14",
+   "196",
+   "49",
+   "28"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "El lado es la raíz del área: $\\sqrt{49} = 7$ cm.",
+   "$$P = 4 \\cdot 7 = 28 \\text{ cm}$$"
+  ],
+  "trampa": "Confundir área con perímetro o sumar solo dos lados (14 cm).",
+  "clave": "En un cuadrado: área $= a^2$ y perímetro $= 4a$.",
+  "verificacion": "respuesta = 4*sqrt(49)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Lado = raíz del área",
+      "$\\sqrt{49} = 7$"
+     ],
+     "voz": "Si el área es cuarenta y nueve, el lado es la raíz: siete centímetros."
+    },
+    {
+     "lineas": [
+      "Perímetro: 4 lados",
+      "$4 \\cdot 7 = 28$"
+     ],
+     "voz": "El perímetro son cuatro lados: veintiocho centímetros."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: veintiocho centímetros. Del área sacas el lado con la raíz; después multiplicas por cuatro. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Números",
+  "tema": "Propiedades de logaritmos",
+  "gancho": "El logaritmo que da 1 🔢",
+  "enunciado": "¿Cuál es el valor de $$\\log 2 + \\log 5\\,?$$ (logaritmos en base 10)",
+  "alternativas": [
+   "$\\log 7$",
+   "10",
+   "7",
+   "1"
+  ],
+  "valores": [
+   "log(7,10)",
+   "10",
+   "7",
+   "1"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "La suma de logaritmos de igual base es el logaritmo del producto: $$\\log 2 + \\log 5 = \\log(2 \\cdot 5)$$",
+   "$$\\log 10 = 1$$"
+  ],
+  "trampa": "Sumar los argumentos: $\\log 2 + \\log 5 = \\log 7$, y marcar A.",
+  "clave": "$\\log a + \\log b = \\log(ab)$ y $\\log a - \\log b = \\log\\!\\left(\\tfrac{a}{b}\\right)$.",
+  "verificacion": "respuesta = simplify(log(2,10) + log(5,10))",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Suma de logs = log del producto",
+      "$\\log 2 + \\log 5 = \\log 10$"
+     ],
+     "voz": "Sumar logaritmos de igual base es el logaritmo del producto: logaritmo de diez."
+    },
+    {
+     "lineas": [
+      "Base 10",
+      "$\\log 10 = 1$"
+     ],
+     "voz": "Y el logaritmo en base diez de diez es uno."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: uno. Logaritmo de a más logaritmo de be es logaritmo de a por be. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Álgebra y funciones",
+  "tema": "Decaimiento exponencial",
+  "gancho": "¿Cuánto vale tu auto en 2 años? 🚗",
+  "enunciado": "Un auto vale <b>\\$10.000.000</b> y pierde el <b>20%</b> de su valor cada año. ¿Cuánto valdrá en <b>2 años</b>?",
+  "alternativas": [
+   "\\$6.400.000",
+   "\\$3.600.000",
+   "\\$6.000.000",
+   "\\$8.000.000"
+  ],
+  "valores": [
+   "6400000",
+   "3600000",
+   "6000000",
+   "8000000"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "Cada año conserva el 80%: se multiplica por 0,8.",
+   "$$10.000.000 \\cdot 0{,}8^2 = 6.400.000$$"
+  ],
+  "trampa": "Restar 20% dos veces sobre el valor inicial (40%) y marcar C.",
+  "clave": "Disminuir un $p\\%$ cada periodo: $V = V_0 \\,(1 - p)^n$.",
+  "verificacion": "respuesta = 10000000 * Rational(8,10)**2",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Cada año conserva el 80%",
+      "$\\times\\, 0{,}8$ por año"
+     ],
+     "voz": "Perder el veinte por ciento es quedarse con el ochenta: multiplicar por cero coma ocho."
+    },
+    {
+     "lineas": [
+      "Dos años",
+      "$10.000.000 \\cdot 0{,}8^2 = 6.400.000$"
+     ],
+     "voz": "Dos años: diez millones por cero coma ocho al cuadrado, seis millones cuatrocientos mil."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: seis millones cuatrocientos mil pesos. Una baja porcentual repetida es exponencial, no se resta dos veces. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Probabilidad y estadística",
+  "tema": "Permutaciones",
+  "gancho": "¿De cuántas formas ordenas tus libros? 📚",
+  "enunciado": "¿De cuántas formas distintas se pueden ordenar <b>4 libros diferentes</b> en una repisa?",
+  "alternativas": [
+   "24",
+   "12",
+   "16",
+   "256"
+  ],
+  "valores": [
+   "24",
+   "12",
+   "16",
+   "256"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "Para el primer lugar hay 4 opciones, luego 3, luego 2 y luego 1.",
+   "$$4! = 4 \\cdot 3 \\cdot 2 \\cdot 1 = 24$$"
+  ],
+  "trampa": "Multiplicar $4 \\cdot 4 = 16$ como si se pudiera repetir el mismo libro.",
+  "clave": "Ordenar $n$ objetos distintos: $n!$ formas.",
+  "verificacion": "respuesta = factorial(4)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Opciones por lugar",
+      "$4 \\cdot 3 \\cdot 2 \\cdot 1$"
+     ],
+     "voz": "Para el primer lugar hay cuatro libros, para el segundo quedan tres, después dos y al final uno."
+    },
+    {
+     "lineas": [
+      "Factorial",
+      "$4! = 24$"
+     ],
+     "voz": "Cuatro factorial: veinticuatro formas."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: veinticuatro. Ordenar ene objetos distintos se hace de ene factorial formas. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Geometría",
+  "tema": "Trigonometría",
+  "gancho": "La altura del árbol con un ángulo 🌳",
+  "enunciado": "Desde <b>10 m</b> de la base de un árbol, se ve su punta con un ángulo de elevación de <b>60°</b>. ¿Cuál es la altura del árbol?",
+  "alternativas": [
+   "$10\\sqrt{3}$ m",
+   "10 m",
+   "$5\\sqrt{3}$ m",
+   "20 m"
+  ],
+  "valores": [
+   "10*sqrt(3)",
+   "10",
+   "5*sqrt(3)",
+   "20"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "La altura es el cateto opuesto y los 10 m el adyacente: $$\\tan 60^\\circ = \\frac{h}{10}$$",
+   "Como $\\tan 60^\\circ = \\sqrt{3}$: $$h = 10\\sqrt{3} \\text{ m}$$"
+  ],
+  "trampa": "Usar seno o coseno con los 10 m como si fueran la hipotenusa.",
+  "clave": "Opuesto y adyacente: tangente. $\\tan 30^\\circ = \\tfrac{\\sqrt3}{3}$, $\\tan 45^\\circ = 1$, $\\tan 60^\\circ = \\sqrt3$.",
+  "verificacion": "respuesta = 10*tan(pi/3)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Opuesto / adyacente = tangente",
+      "$\\tan 60^\\circ = \\dfrac{h}{10}$"
+     ],
+     "voz": "La altura es el cateto opuesto al ángulo y los diez metros son el adyacente. Eso es tangente."
+    },
+    {
+     "lineas": [
+      "tan 60° = √3",
+      "$h = 10\\sqrt{3}$"
+     ],
+     "voz": "Tangente de sesenta grados es raíz de tres, así que la altura es diez raíz de tres metros."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: diez raíz de tres metros. Con opuesto y adyacente se usa la tangente. Sigue a math paes punto c, ele."
+   }
+  }
+ }
+]

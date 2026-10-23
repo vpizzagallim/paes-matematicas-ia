@@ -175,7 +175,13 @@ def main():
     # 5) Audio: rock fuerte en el problema, luego bajo; voz encima
     X = 0.4  # transicion
     total = t_prob + t_hoja - X
-    musica = rock(total)
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from musica_rock import rock_variado
+        musica = rock_variado(total, post.get("id", "x"))  # riff distinto en cada video
+    except Exception as e:
+        print(f"Musica variada no disponible ({e}); se usa la clasica")
+        musica = rock(total)
     tt = np.arange(len(musica)) / SR
     vol = np.where(tt < t_prob - X, 0.85, 0.85 - (0.85 - 0.10) * np.clip((tt - (t_prob - X)) / 0.8, 0, 1))
     mezcla = musica * vol

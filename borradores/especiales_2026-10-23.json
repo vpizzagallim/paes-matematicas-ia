@@ -1,0 +1,421 @@
+[
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja estudió 6 horas… de TikTok 📱😅 Mejor un ejercicio al día. ¿Lo sacas en 15 segundos? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TikTok",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Ayer estudié seis horas seguidas.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "📱 6 horas de TikTok<br>0 ejercicios",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "Bueno… técnicamente vi videos de matemática.",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Mejor veinte minutos al día. A ver este.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Si estudias <b>20 minutos</b> diarios durante <b>30 días</b>, ¿cuántas <b>horas</b> estudias en total?",
+   "alternativas": [
+    "6",
+    "10",
+    "60",
+    "600"
+   ],
+   "valores": [
+    "6",
+    "10",
+    "60",
+    "600"
+   ],
+   "correcta": 1,
+   "verificacion": "respuesta = Rational(20*30, 60)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Minutos totales",
+       "$20 \\cdot 30 = 600\\ \\text{min}$"
+      ],
+      "voz": "Veinte minutos por treinta días son seiscientos minutos."
+     },
+     {
+      "lineas": [
+       "A horas: dividir por 60",
+       "$600 \\div 60 = 10\\ \\text{h}$"
+      ],
+      "voz": "Y seiscientos minutos son diez horas."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la be: diez horas. Poquito cada día suma un montón."
+    }
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "El \"método\" de Benja: marcar siempre la C 🎲 Spoiler: no funciona. ¿Cuántas acertarías al azar? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Probabilidad",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Tengo un método infalible: marco siempre la ce.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🎲 Al azar aciertas<br>1 de cada 4",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Benja, mejor aprende a descartar. Calcula esto.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M2",
+   "enunciado": "Si respondes <b>60 preguntas</b> totalmente <b>al azar</b> y cada una tiene <b>4 alternativas</b>, ¿cuántas respuestas correctas se esperan?",
+   "alternativas": [
+    "15",
+    "4",
+    "30",
+    "20"
+   ],
+   "valores": [
+    "15",
+    "4",
+    "30",
+    "20"
+   ],
+   "correcta": 0,
+   "verificacion": "respuesta = 60 * Rational(1, 4)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Probabilidad de acertar una",
+       "$p = \\dfrac{1}{4}$"
+      ],
+      "voz": "Con cuatro alternativas, la probabilidad de acertar una al azar es un cuarto."
+     },
+     {
+      "lineas": [
+       "Valor esperado",
+       "$60 \\cdot \\dfrac{1}{4} = 15$"
+      ],
+      "voz": "Por sesenta preguntas, se esperan quince correctas. Muy poco."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la a: quince. Descartar alternativas sube mucho tus chances."
+    }
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja se quedó pegado en una pregunta y le quedan 10 minutos ⏰😰 ¿Cuánto tiempo tiene por pregunta? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TiempoPAES",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "Llevo media hora en la pregunta tres.",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "⏰ Quedan 10 minutos<br>y 20 preguntas",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.0
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "¡No alcanzo!",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Por eso hay que controlar el tiempo. Calcula.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Quedan <b>10 minutos</b> y <b>20 preguntas</b>. Si repartes el tiempo en partes iguales, ¿cuánto tiempo tienes por pregunta?",
+   "alternativas": [
+    "30 segundos",
+    "2 minutos",
+    "20 segundos",
+    "50 segundos"
+   ],
+   "valores": [
+    "30",
+    "120",
+    "20",
+    "50"
+   ],
+   "correcta": 0,
+   "verificacion": "respuesta = Rational(10*60, 20)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Pasamos a segundos",
+       "$10\\ \\text{min} = 600\\ \\text{s}$"
+      ],
+      "voz": "Diez minutos son seiscientos segundos."
+     },
+     {
+      "lineas": [
+       "Repartimos",
+       "$600 \\div 20 = 30\\ \\text{s}$"
+      ],
+      "voz": "Divididos en veinte preguntas: treinta segundos para cada una."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la a: treinta segundos. Si una pregunta te atrapa, sáltala y vuelve después."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Regla de los signos: la que más se equivoca en la PAES. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "La regla de los signos",
+   "intro_voz": "Dato PAES: la regla de los signos, sin enredos.",
+   "titulo": "Regla de los signos",
+   "pasos": [
+    {
+     "lineas": [
+      "Signos iguales: positivo",
+      "$(-3)(-4) = +12$"
+     ],
+     "voz": "Si multiplicas o divides dos números con el mismo signo, el resultado es positivo."
+    },
+    {
+     "lineas": [
+      "Signos distintos: negativo",
+      "$(-3)(4) = -12$"
+     ],
+     "voz": "Si los signos son distintos, el resultado es negativo."
+    },
+    {
+     "lineas": [
+      "Ojo con las potencias",
+      "$(-2)^2 = 4 \\quad -2^2 = -4$"
+     ],
+     "voz": "Y ojo: menos dos, entre paréntesis, al cuadrado es cuatro. Pero menos dos al cuadrado, sin paréntesis, es menos cuatro."
+    }
+   ],
+   "remate": "Iguales (+) · Distintos (−)",
+   "cierre": {
+    "voz": "Iguales, positivo. Distintos, negativo. Y cuidado con los paréntesis."
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Las 3 áreas que más aparecen en la PAES. Guárdalas para la prueba 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Geometria #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "3 áreas que debes saber",
+   "intro_voz": "Tres áreas que tienes que saber sí o sí para la PAES.",
+   "titulo": "Áreas clave",
+   "pasos": [
+    {
+     "lineas": [
+      "Triángulo",
+      "$A = \\dfrac{b \\cdot h}{2}$"
+     ],
+     "voz": "Triángulo: base por altura, dividido en dos."
+    },
+    {
+     "lineas": [
+      "Círculo",
+      "$A = \\pi r^2$"
+     ],
+     "voz": "Círculo: pi por radio al cuadrado."
+    },
+    {
+     "lineas": [
+      "Trapecio",
+      "$A = \\dfrac{(B + b)\\,h}{2}$"
+     ],
+     "voz": "Trapecio: base mayor más base menor, por la altura, dividido en dos."
+    }
+   ],
+   "remate": "¡Guárdalas! 📌",
+   "cierre": {
+    "voz": "Guárdalas y repásalas antes de la prueba."
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Truco: saber si un número es divisible por 3 en un segundo 🤯 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Divisibilidad #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "¿Divisible por 3?",
+   "intro_voz": "Truco rápido: saber si un número es divisible por tres sin dividir.",
+   "titulo": "Divisible por 3",
+   "pasos": [
+    {
+     "lineas": [
+      "Suma sus dígitos",
+      "$4.872 \\to 4+8+7+2 = 21$"
+     ],
+     "voz": "Suma los dígitos del número. Cuatro mil ochocientos setenta y dos: cuatro más ocho más siete más dos, veintiuno."
+    },
+    {
+     "lineas": [
+      "¿La suma es múltiplo de 3?",
+      "$21 = 3 \\cdot 7$"
+     ],
+     "voz": "Si esa suma es múltiplo de tres, el número también lo es. Veintiuno sí es múltiplo de tres."
+    },
+    {
+     "lineas": [
+      "Entonces sí es divisible",
+      "$4.872 \\div 3 = 1.624$"
+     ],
+     "voz": "Así que cuatro mil ochocientos setenta y dos es divisible por tres."
+    }
+   ],
+   "remate": "Suma de dígitos ÷ 3",
+   "cierre": {
+    "voz": "Sirve también para el nueve: si la suma de dígitos es múltiplo de nueve, el número también."
+   }
+  }
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: administra tu tiempo ⏱️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: administra tu tiempo.",
+   "titulo": "Tip: el tiempo",
+   "pasos": [
+    {
+     "lineas": [
+      "M1: 65 preguntas en 2 h 20 min"
+     ],
+     "voz": "La prueba de matemática uno tiene sesenta y cinco preguntas y dura dos horas y veinte minutos."
+    },
+    {
+     "lineas": [
+      "Unos 2 minutos por pregunta",
+      "$140 \\div 65 \\approx 2{,}2\\ \\text{min}$"
+     ],
+     "voz": "Eso da poco más de dos minutos por pregunta."
+    },
+    {
+     "lineas": [
+      "Si te atrapa, salta y vuelve"
+     ],
+     "voz": "Si una pregunta te atrapa, márcala, sigue y vuelve al final."
+    }
+   ],
+   "remate": "~2 min por pregunta",
+   "cierre": {
+    "voz": "Practica con reloj. Sigue a math paes punto c, ele para más tips."
+   }
+  }
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: no te pierdas los puntos fáciles 🎯 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: no regales los puntos fáciles.",
+   "titulo": "Tip: puntos fáciles",
+   "pasos": [
+    {
+     "lineas": [
+      "Lee la pregunta dos veces"
+     ],
+     "voz": "Lee cada pregunta dos veces. Muchos errores son por leer rápido."
+    },
+    {
+     "lineas": [
+      "Subraya lo que te piden"
+     ],
+     "voz": "Subraya qué te piden: ¿el precio final, el porcentaje, el ángulo?"
+    },
+    {
+     "lineas": [
+      "Revisa las unidades"
+     ],
+     "voz": "Y revisa las unidades: centímetros, metros, minutos u horas."
+    }
+   ],
+   "remate": "¡Lee, subraya, revisa!",
+   "cierre": {
+    "voz": "Lee, subraya y revisa. Así no regalas puntos."
+   }
+  }
+ }
+]

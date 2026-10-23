@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Vectores",
+ "gancho": "Operaciones con vectores ➡️",
+ "enunciado": "Si $\\vec{u} = (2, -1)$ y $\\vec{v} = (-3, 4)$, ¿cuál es el vector $2\\vec{u} + \\vec{v}$?",
+ "alternativas": [
+  "$(4, -2)$",
+  "$(1, 2)$",
+  "$(-1, 3)$",
+  "$(-1, 2)$"
+ ],
+ "valores": [
+  "(4, -2)",
+  "(1, 2)",
+  "(-1, 3)",
+  "(-1, 2)"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Multiplicamos $\\vec{u}$ por 2: $$2\\vec{u} = (4, -2)$$",
+  "Sumamos componente a componente: $$(4 + (-3),\\; -2 + 4) = (1, 2)$$"
+ ],
+ "trampa": "Olvidar multiplicar $\\vec{u}$ por 2 y sumar directo: $(-1, 3)$ (C).",
+ "clave": "Los vectores se suman y se ponderan <b>componente a componente</b>.",
+ "verificacion": "u = Matrix([2,-1]); v = Matrix([-3,4]); w = 2*u+v; respuesta = Tuple(w[0], w[1])",
+ "id": "114",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ponderamos u",
+     "$2\\vec{u} = (4, -2)$"
+    ],
+    "voz": "Primero multiplica u por dos: cuatro, menos dos."
+   },
+   {
+    "lineas": [
+     "Sumamos componente a componente",
+     "$(4 - 3,\\; -2 + 4) = (1, 2)$"
+    ],
+    "voz": "Luego suma con ve, componente a componente: uno, dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: uno coma dos. Los vectores se operan componente a componente. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "orig-031"
+}

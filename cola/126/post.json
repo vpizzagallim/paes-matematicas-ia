@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Escalas",
+ "gancho": "¿Cuánto mide en la realidad? 🗺️",
+ "enunciado": "En un mapa a escala <b>1 : 50.000</b>, dos plazas están a <b>6 cm</b>. ¿Cuál es la distancia real entre ellas?",
+ "alternativas": [
+  "30 km",
+  "300 km",
+  "3 km",
+  "0,3 km"
+ ],
+ "valores": [
+  "30",
+  "300",
+  "3",
+  "3/10"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Cada cm del mapa son 50.000 cm reales: $$6 \\cdot 50.000 = 300.000 \\text{ cm}$$",
+  "$$300.000 \\text{ cm} = 3.000 \\text{ m} = 3 \\text{ km}$$"
+ ],
+ "trampa": "Equivocarse al pasar de centímetros a kilómetros y marcar A.",
+ "clave": "Escala 1 : $k$ significa que 1 unidad del mapa son $k$ unidades reales. Después convierte unidades con calma.",
+ "verificacion": "respuesta = Rational(6*50000, 100000)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Multiplicamos por la escala",
+     "$6 \\cdot 50.000 = 300.000\\ \\text{cm}$"
+    ],
+    "voz": "Cada centímetro del mapa son cincuenta mil centímetros reales. Seis por cincuenta mil: trescientos mil centímetros."
+   },
+   {
+    "lineas": [
+     "Convertimos",
+     "$300.000\\ \\text{cm} = 3\\ \\text{km}$"
+    ],
+    "voz": "Trescientos mil centímetros son tres mil metros, o sea tres kilómetros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: tres kilómetros. Primero multiplica por la escala y después convierte unidades. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "n23-02",
+ "id": "126"
+}

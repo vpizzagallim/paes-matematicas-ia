@@ -1,0 +1,50 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Matemática financiera",
+ "gancho": "Interés compuesto vs simple 💰",
+ "enunciado": "Se invierten <b>\\$1.000.000</b> a un interés <b>compuesto</b> del <b>10% anual</b>. ¿Cuánto dinero habrá al cabo de <b>2 años</b>?",
+ "alternativas": [
+  "\\$1.210.000",
+  "\\$1.020.000",
+  "\\$1.200.000",
+  "\\$210.000"
+ ],
+ "valores": [
+  "1210000",
+  "1020000",
+  "1200000",
+  "210000"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Con interés compuesto, cada año se gana sobre el capital acumulado: $$C = 1.000.000 \\cdot (1{,}1)^2$$",
+  "$$C = 1.000.000 \\cdot 1{,}21 = 1.210.000$$"
+ ],
+ "trampa": "Usar interés simple ($10\\% \\cdot 2 = 20\\%$) y marcar C, o responder solo los intereses (D).",
+ "clave": "Compuesto: $C_f = C_0 (1 + i)^n$. Simple: $C_f = C_0 (1 + i \\cdot n)$.",
+ "verificacion": "respuesta = 1000000 * Rational(11,10)**2",
+ "id": "122",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Interés compuesto",
+     "$1.000.000 \\cdot 1{,}1^2$"
+    ],
+    "voz": "Con interés compuesto, cada año ganas sobre lo acumulado. El capital se multiplica por uno coma uno dos veces."
+   },
+   {
+    "lineas": [
+     "Resultado",
+     "$1.000.000 \\cdot 1{,}21 = 1.210.000$"
+    ],
+    "voz": "Uno coma uno al cuadrado es uno coma veintiuno. Te quedan un millón doscientos diez mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: un millón doscientos diez mil pesos. Compuesto multiplica, simple suma. Sigue a math paes punto c, ele."
+  }
+ },
+ "uid": "orig-037"
+}
