@@ -7,9 +7,6 @@ on:
       hasta:
         description: "Ultima publicacion (HH:MM, hora de Chile)"
         default: "23:45"
-  schedule:
-    # Segunda parte del 22-oct (el primer proceso dura hasta ~22:20). BORRAR despues del 23-oct.
-    - cron: "5 1 23 10 *"
 
 permissions:
   contents: write

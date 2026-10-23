@@ -2,8 +2,9 @@ name: Publicar en Instagram
 
 on:
   schedule:
-    # Horario UTC. Chile (UTC-3): 09:00, 12:00, 15:00, 18:00, 21:00 y 23:00
-    - cron: "0 12,15,18,21,0,2 * * *"
+    # Horario UTC. Chile (UTC-3): 09:07, 12:07, 15:07, 18:07, 21:07 y 23:07
+    # (minuto 7: las horas en punto son las mas congestionadas en GitHub y se atrasan o se saltan)
+    - cron: "7 12,15,18,21,0,2 * * *"
   workflow_dispatch: {}
 
 permissions:
