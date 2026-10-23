@@ -49,6 +49,26 @@ def esperar(contenedor, intentos=30):
     sys.exit(f"Tiempo agotado esperando el contenedor {contenedor}")
 
 
+LIMITE = ("2207042", "Media Publish Limit")  # Instagram: maximo de publicaciones por API en 24 h moviles
+
+
+def es_limite(e):
+    return any(x in str(e) for x in LIMITE)
+
+
+def cupo():
+    """Publicaciones que quedan en las ultimas 24 h (Instagram permite ~50 por API, Reels e historias cuentan)."""
+    try:
+        usuario = llamar("GET", "me", fields="user_id")["user_id"]
+        d = llamar("GET", f"{usuario}/content_publishing_limit", fields="quota_usage,config")["data"][0]
+        uso, total = int(d.get("quota_usage", 0)), int(d.get("config", {}).get("quota_total", 50))
+        print(f"Cupo de Instagram: {uso}/{total} usados en 24 h")
+        return total - uso
+    except (SystemExit, Exception) as e:
+        print(f"::warning::No se pudo leer el cupo de Instagram ({e}); se intenta igual")
+        return None
+
+
 def subir_video(ruta, nombre):
     """Sube el video a la rama 'media' (un solo commit, se reescribe cada vez) y devuelve su URL publica."""
     g = lambda *a, **k: subprocess.run(["git", *a], cwd=RAIZ, check=True, capture_output=True, text=True, **k).stdout.strip()
@@ -101,6 +121,9 @@ def publicar_video(post, carpeta, video, texto, thumb_ms):
     print(f"Reel publicado: id {publicado['id']}")
     registro = {"media_id": publicado["id"], "tipo": "reel", "fecha_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
     try:
+        quedan = cupo()
+        if quedan is not None and quedan < 1:
+            raise RuntimeError("no queda cupo en Instagram para la historia (se publica solo el Reel)")
         url_h = url
         if duracion(video) > 59:  # las historias admiten hasta 60 s: se sube recortada
             corto = video.replace(".mp4", "_historia.mp4")
@@ -139,6 +162,10 @@ def main():
     if not pendientes:
         print("::warning::La cola esta vacia, no hay nada que publicar.")
         return
+    quedan = cupo()
+    if quedan is not None and quedan < 1:
+        print("::notice::Instagram no deja publicar mas por ahora (limite de 24 h). Este horario se salta; el post sigue primero en la cola.")
+        return
     post = pendientes[0]
     carpeta = os.path.join(COLA, post)
     datos = json.load(open(os.path.join(carpeta, "post.json"), encoding="utf-8"))
@@ -146,6 +173,9 @@ def main():
         try:
             return publicar_especial(post, carpeta, datos)
         except (Exception, SystemExit) as e:
+            if es_limite(e):
+                print("::notice::Instagram no deja publicar mas por ahora (limite de 24 h); el especial sigue en la cola.")
+                return
             # no trabar la cola: se aparta el especial fallido y se publica el siguiente
             print(f"::warning::Fallo el especial {post} ({e}); se aparta a fallidos/ y sigue la cola")
             os.makedirs(os.path.join(RAIZ, "fallidos"), exist_ok=True)
@@ -158,6 +188,9 @@ def main():
         try:
             return publicar_reel(post, carpeta, datos)
         except (Exception, SystemExit) as e:
+            if es_limite(e):
+                print("::notice::Instagram no deja publicar mas por ahora (limite de 24 h); el post sigue en la cola.")
+                return
             if not os.path.exists(os.path.join(carpeta, "1.jpg")):
                 raise
             print(f"::warning::Fallo el Reel ({e}); se publica el carrusel de respaldo.")
