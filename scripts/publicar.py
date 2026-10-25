@@ -14,6 +14,9 @@ import time
 import urllib.parse
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import promo_pdf  # promocion del PDF PAES M1 (franja, tarjeta final, videos programados)
+
 API = "https://graph.instagram.com/v22.0"
 TOKEN = os.environ["IG_TOKEN"]
 REPO = os.environ["REPO"]
@@ -143,7 +146,8 @@ def publicar_reel(post, carpeta, datos):
     subprocess.run([sys.executable, os.path.join(RAIZ, "scripts", "armar_reel_voz.py"),
                     os.path.join(carpeta, "post.json"), video], check=True)
     with open(os.path.join(carpeta, "caption.txt"), encoding="utf-8") as f:
-        texto = f.read()
+        texto = promo_pdf.promo_texto() + f.read()
+    video = promo_pdf.decorar(video, video.replace(".mp4", "_promo.mp4"))
     cerrar(post, carpeta, publicar_video(post, carpeta, video, texto, 9000))
 
 
@@ -151,20 +155,44 @@ def publicar_especial(post, carpeta, datos):
     video = os.path.join("/tmp", f"reel_{post}.mp4")
     subprocess.run([sys.executable, os.path.join(RAIZ, "scripts", "armar_especial.py"),
                     os.path.join(carpeta, "post.json"), video], check=True)
-    registro = publicar_video(post, carpeta, video, datos.get("texto_post", ""), datos.get("portada_ms", 1500))
+    video = promo_pdf.decorar(video, video.replace(".mp4", "_promo.mp4"))
+    texto = promo_pdf.promo_texto() + datos.get("texto_post", "")
+    registro = publicar_video(post, carpeta, video, texto, datos.get("portada_ms", 1500))
     registro["especial"] = datos.get("formato")
     cerrar(post, carpeta, registro)
 
 
+def publicar_promo(e):
+    """Video promocional del PDF ya armado (rama 'promo' del repo), programado en promo/plan.json."""
+    url = f"https://raw.githubusercontent.com/{REPO}/promo/{e['video']}"
+    local = os.path.join("/tmp", e["video"])
+    urllib.request.urlretrieve(url, local)
+    print(f"Video promocional del PDF: {e['video']}")
+    registro = publicar_video("promo_" + e["fecha"] + "_" + str(e["hora"]), None, local, e["texto"], 1000)
+    promo_pdf.marcar_publicado(e, registro["media_id"])
+    subprocess.run(["git", "add", "-A", "promo"], check=True, cwd=RAIZ)
+    subprocess.run(["git", "-c", "user.name=publicador-paes", "-c", "user.email=publicador-paes@users.noreply.github.com",
+                    "commit", "-m", f"Publicado promo {e['video']}"], check=True, cwd=RAIZ)
+    subprocess.run(["git", "push", "origin", f"HEAD:{BRANCH}"], check=True, cwd=RAIZ)
+
+
 def main():
     os.makedirs(COLA, exist_ok=True)
-    pendientes = sorted(d for d in os.listdir(COLA) if os.path.isdir(os.path.join(COLA, d)))
-    if not pendientes:
-        print("::warning::La cola esta vacia, no hay nada que publicar.")
-        return
     quedan = cupo()
     if quedan is not None and quedan < 1:
         print("::notice::Instagram no deja publicar mas por ahora (limite de 24 h). Este horario se salta; el post sigue primero en la cola.")
+        return
+    e = promo_pdf.promo_pendiente()
+    if e:  # en su horario, el video del PDF va en lugar del post de la cola (que espera al siguiente horario)
+        try:
+            return publicar_promo(e)
+        except (Exception, SystemExit) as err:
+            if es_limite(err):
+                print("::notice::Sin cupo de Instagram; el video del PDF se intenta en el próximo horario."); return
+            print(f"::warning::Fallo el video del PDF ({err}); se publica el post normal de la cola")
+    pendientes = sorted(d for d in os.listdir(COLA) if os.path.isdir(os.path.join(COLA, d)))
+    if not pendientes:
+        print("::warning::La cola esta vacia, no hay nada que publicar.")
         return
     post = pendientes[0]
     carpeta = os.path.join(COLA, post)

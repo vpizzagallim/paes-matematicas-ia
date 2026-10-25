@@ -13,11 +13,17 @@ MINUTOS = 55 if os.environ.get("EVENTO") == "schedule" else 20
 if os.environ.get("FORZAR") == "true":
     print("saltar=false"); sys.exit()
 ultimo = None
-for f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "publicados", "*", "publicado.json")):
-    try:
-        t = datetime.strptime(json.load(open(f))["fecha_utc"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-    except Exception:
-        continue
+RAIZ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+fechas = []
+for f in glob.glob(os.path.join(RAIZ, "publicados", "*", "publicado.json")):
+    try: fechas.append(json.load(open(f))["fecha_utc"])
+    except Exception: pass
+try:  # videos promocionales del PDF
+    fechas += [r["fecha_utc"] for r in json.load(open(os.path.join(RAIZ, "promo", "registro.json")))]
+except Exception:
+    pass
+for fu in fechas:
+    t = datetime.strptime(fu, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
     ultimo = t if ultimo is None or t > ultimo else ultimo
 if ultimo:
     hace = (datetime.now(timezone.utc) - ultimo).total_seconds() / 60

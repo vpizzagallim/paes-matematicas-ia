@@ -1,0 +1,45 @@
+name: Historia diaria del PDF
+
+# Una historia al día con la cuenta regresiva a la PAES y el PDF (10:37 Chile; 13:37 de respaldo si GitHub se salta la primera).
+on:
+  schedule:
+    - cron: "37 13 * * *"
+    - cron: "37 16 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  historia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fuentes (cache)
+        uses: actions/cache@v4
+        with:
+          path: ~/sysdeps
+          key: sysdeps-ffmpeg-fuentes-v1
+      - name: Fuentes
+        run: |
+          mkdir -p ~/sysdeps ~/.local/share/fonts && cd ~/sysdeps
+          [ -f InterVariable.ttf ] || { curl -sSL --retry 3 -o inter.zip https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip && unzip -oq inter.zip InterVariable.ttf InterVariable-Italic.ttf && rm inter.zip; }
+          [ -f NotoColorEmoji.ttf ] || curl -sSL --retry 3 -o NotoColorEmoji.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/notocoloremoji/NotoColorEmoji-Regular.ttf
+          cp *.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+      - name: Dependencias
+        run: |
+          cd render && npm ci --silent && cd ..
+          pip install -q pillow
+      - name: Publicar historia
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          export CHROME=$(command -v google-chrome || command -v chromium || command -v chromium-browser)
+          python3 scripts/historia_pdf.py
