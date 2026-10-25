@@ -14,21 +14,11 @@ if not promo_pdf.activo() or hoy.isoformat() in reg:
 import publicar  # usa IG_TOKEN y REPO del entorno
 
 n = promo_pdf.dias_para_paes()
-k = -(-500 // max(1, n - 1))
-FRASES = [f"Si haces <b>{k} preguntas al día</b>, terminas las 500 justo antes de la PAES",
-          "Formulario completo + <b>500 preguntas</b> con pauta paso a paso",
-          "<b>155 gráficos</b> y figuras, como en la prueba real",
-          "Todo el <b>temario oficial M1</b> en un solo PDF"]
-frase = FRASES[hoy.toordinal() % len(FRASES)]
-dias = "¡Mañana es la PAES!" if n == 1 else ("¡Hoy es la PAES! 💪" if n <= 0 else f"Faltan {n} días<br>para la PAES")
-html = f"""<!doctype html><html><head><meta charset="utf-8"><style>*{{margin:0;box-sizing:border-box}}body{{width:1080px;height:1920px;background:#0f1b2d;color:#fff;
-font-family:Inter,'Noto Color Emoji',sans-serif;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:72px 72px;
-display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 70px}}</style></head><body>
-<div style="font-size:120px">⏳</div><div style="font-size:104px;font-weight:900;line-height:1.05">{dias}</div>
-<img src="file://{PROMO}/portada.jpg" style="width:460px;margin:60px 0 50px;border-radius:12px;box-shadow:0 30px 80px #000a;transform:rotate(-3deg)">
-<div style="font-size:52px;line-height:1.3;color:#e2e8f0">{frase}</div>
-<div style="margin-top:60px;background:#F6B83C;color:#0f1b2d;font-size:60px;font-weight:900;padding:30px 66px;border-radius:80px">📘 PDF PAES M1 · $5.000</div>
-<div style="margin-top:40px;font-size:56px;font-weight:800;color:#F6B83C">👆 Link en la bio · @mathpaes.cl</div></body></html>"""
+# Diseno de la historia: promo/historia.html (__N__ = dias que faltan, __PORTADA__ = imagen de la portada del PDF)
+aviso = "⏳ ¡Mañana es la PAES!" if n == 1 else ("💪 ¡Hoy es la PAES!" if n <= 0 else None)
+html = open(os.path.join(PROMO, "historia.html"), encoding="utf-8").read()
+html = html.replace("__PORTADA__", os.path.join(PROMO, "portada.jpg"))
+html = html.replace("⏳ Faltan __N__ días para la PAES", aviso) if aviso else html.replace("__N__", str(n))
 png = "/tmp/historia_pdf.png"; jpg = f"/tmp/historia_pdf_{hoy.isoformat()}.jpg"
 json.dump([{"html": html, "out": png, "w": 1080, "h": 1920}], open("/tmp/hist_job.json", "w"))
 subprocess.run(["node", os.path.join(RAIZ, "render", "html2png.js"), "/tmp/hist_job.json"], check=True,
