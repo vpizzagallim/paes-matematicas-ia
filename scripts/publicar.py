@@ -33,12 +33,19 @@ def llamar(metodo, ruta, **params):
         req = urllib.request.Request(f"{API}/{ruta}?{datos.decode()}")
     else:
         req = urllib.request.Request(f"{API}/{ruta}", data=datos, method="POST")
-    try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        cuerpo = e.read().decode(errors="replace")
-        sys.exit(f"Error de Instagram en {ruta}: {e.code} {cuerpo}")
+    intentos = 1 if ruta.endswith("media_publish") else 4  # publicar no se reintenta (podria duplicar el post)
+    for i in range(intentos):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            cuerpo = e.read().decode(errors="replace")
+            sys.exit(f"Error de Instagram en {ruta}: {e.code} {cuerpo}")
+        except (urllib.error.URLError, ConnectionError, TimeoutError, OSError) as e:
+            if i == intentos - 1:
+                raise
+            print(f"::warning::Falla de conexion con Instagram en {ruta} ({e}); reintento en {10 * (i + 1)} s", flush=True)
+            time.sleep(10 * (i + 1))
 
 
 def esperar(contenedor, intentos=30):
