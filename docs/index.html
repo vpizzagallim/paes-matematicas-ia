@@ -220,7 +220,7 @@
     <h2>Preguntas frecuentes</h2>
     <details><summary>¿Sirve para M2?</summary><p>El Método 500 es para la PAES de Competencia Matemática 1 (M1), que es obligatoria. Igual te sirve como base para M2, porque M2 supone que dominas los contenidos de M1.</p></details>
     <details><summary>¿Las preguntas son copiadas del DEMRE?</summary><p>No. Son preguntas originales de MathPaes, hechas a partir del temario oficial de la PAES M1 y de los tipos de pregunta que se repiten año a año.</p></details>
-    <details><summary>¿Me sirve si me quedan pocas semanas?</summary><p>Sí. Está ordenado por tema para que vayas directo a lo que más te cuesta, y con unas 15 preguntas al día lo terminas antes de la prueba.</p></details>
+    <details><summary>¿Me sirve si me quedan pocas semanas?</summary><p>Sí. Está ordenado por tema para que vayas directo a lo que más te cuesta, y con unas <span id="k_faq">15</span> preguntas al día lo terminas antes de la prueba.</p></details>
     <details><summary>¿Lo puedo imprimir?</summary><p>Sí. Es un PDF tamaño A4 pensado para imprimir y para leer en el celular.</p></details>
     <details><summary>¿El pago es seguro?</summary><p>Sí. El pago lo procesa Mercado Pago; nosotros nunca vemos los datos de tu tarjeta.</p></details>
     <details><summary>¿Puedo pagar por transferencia?</summary><p>Sí. Escríbenos por mensaje directo a @mathpaes.cl en Instagram, te mandamos los datos de la cuenta y, cuando nos envíes el comprobante, te llega el PDF.</p></details>
@@ -244,6 +244,7 @@
     if (d > 1) {
       document.getElementById('cuenta').textContent = '⏳ Faltan ' + d + ' días para la PAES';
       var k = Math.ceil(500 / Math.max(1, d - 1));
+      document.getElementById('k_faq').textContent = k;
       document.getElementById('plan').innerHTML = '📅 Con unas <b>' + k + ' preguntas al día</b> terminas las 500 justo antes de la PAES y llegas preparado para responder cualquier pregunta.';
     }
   })();
