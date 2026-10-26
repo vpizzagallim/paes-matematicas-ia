@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método 500 · PAES M1 | MathPaes</title>
+<meta name="description" content="500 preguntas seleccionadas con pinzas para dominar toda la materia de la PAES M1. Formulario completo y pauta paso a paso de cada pregunta.">
+<meta property="og:title" content="Método 500 · PAES M1">
+<meta property="og:description" content="500 preguntas seleccionadas con pinzas, 100% del temario oficial M1, pauta paso a paso y formulario completo.">
+<meta property="og:image" content="img/portada.jpg">
+<link rel="icon" href="img/icono.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --azul: #0f1b2d; --azul2: #16243a; --amar: #F6B83C; --texto: #1b2433; --gris: #55607a; --claro: #f5f7fb; }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, system-ui, sans-serif; color: var(--texto); background: #fff; line-height: 1.5; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  .btn { display: inline-block; background: var(--amar); color: var(--azul); font-weight: 900; font-size: 19px; padding: 17px 30px; border-radius: 60px;
+         text-decoration: none; box-shadow: 0 10px 30px #F6B83C55; transition: transform .15s; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn small { display: block; font-size: 13px; font-weight: 700; opacity: .75; }
+  header.hero { background: var(--azul); color: #fff; padding: 22px 0 64px;
+    background-image: linear-gradient(#ffffff08 1px, transparent 1px), linear-gradient(90deg, #ffffff08 1px, transparent 1px); background-size: 40px 40px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+  .logo { font-weight: 900; color: var(--amar); font-size: 20px; text-decoration: none; }
+  .nav a.ig { color: #cbd5e1; font-weight: 600; font-size: 15px; text-decoration: none; }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; }
+  .pill { display: inline-block; background: #e4572e; color: #fff; font-weight: 800; font-size: 14px; padding: 7px 16px; border-radius: 30px; }
+  h1 { font-size: 54px; line-height: 1.02; font-weight: 900; margin: 18px 0 16px; letter-spacing: -1px; }
+  h1 span { color: var(--amar); }
+  .hero p.lead { font-size: 19px; color: #dbe3ee; max-width: 520px; }
+  .hero ul { list-style: none; padding: 0; margin: 22px 0 28px; }
+  .hero li { padding-left: 32px; position: relative; margin: 8px 0; font-weight: 600; color: #e9eef6; }
+  .hero li:before { content: "✅"; position: absolute; left: 0; }
+  .portada { width: 100%; max-width: 360px; justify-self: center; border-radius: 14px; transform: rotate(-3deg);
+    box-shadow: 0 0 0 3px var(--amar), 0 30px 90px #F6B83C40; }
+  .precio-mini { margin-top: 14px; color: #94a3b8; font-size: 14px; }
+  section { padding: 64px 0; }
+  section.gris { background: var(--claro); }
+  h2 { font-size: 36px; line-height: 1.1; font-weight: 900; color: var(--azul); margin-bottom: 14px; letter-spacing: -.5px; }
+  .sub { color: var(--gris); font-size: 18px; max-width: 720px; margin-bottom: 30px; }
+  .dolor { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .dolor div { background: #fff; border: 1px solid #e3e7ee; border-radius: 16px; padding: 20px; font-weight: 600; }
+  .dolor b { display: block; font-size: 28px; margin-bottom: 6px; }
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .card { background: #fff; border-radius: 18px; padding: 24px; border: 1px solid #e3e7ee; }
+  .card .n { font-size: 40px; font-weight: 900; color: var(--amar); line-height: 1; }
+  .card h3 { font-size: 20px; color: var(--azul); margin: 8px 0 6px; }
+  .card p { color: var(--gris); }
+  .pasos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: p; }
+  .paso { background: var(--azul); color: #fff; border-radius: 18px; padding: 24px; position: relative; }
+  .paso:before { counter-increment: p; content: counter(p); position: absolute; top: -16px; left: 20px; background: var(--amar); color: var(--azul);
+    width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; }
+  .paso h3 { margin: 8px 0 6px; font-size: 19px; }
+  .paso p { color: #cbd5e1; font-size: 15px; }
+  .plan { margin-top: 26px; background: #fff8e8; border-radius: 18px; padding: 22px 24px; font-size: 18px; font-weight: 700; color: var(--azul); }
+  .plan b { color: #c2412d; }
+  .galeria { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .galeria figure { margin: 0; }
+  .galeria img { width: 100%; border-radius: 10px; border: 1px solid #dfe4ec; box-shadow: 0 10px 30px #0f1b2d1a; }
+  .galeria figcaption { text-align: center; font-weight: 700; font-size: 14px; color: var(--gris); margin-top: 8px; }
+  .temario { columns: 2; column-gap: 30px; }
+  .temario div { break-inside: avoid; margin-bottom: 18px; }
+  .temario h4 { color: var(--azul); font-size: 16px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .temario span { display: inline-block; background: #fff; border: 1px solid #e3e7ee; border-radius: 20px; padding: 4px 12px; margin: 3px 4px 3px 0; font-size: 14px; font-weight: 600; }
+  .promesa { background: #ffffff14; border: 2px solid var(--amar); border-radius: 16px; padding: 16px 20px; margin: 0 0 26px; max-width: 540px; }
+  .promesa b.t { display:block; color: var(--amar); font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
+  .promesa p { margin: 0; font-size: 19px; line-height: 1.35; font-weight: 800; color: #fff; }
+  .oferta .promesa { margin: 0 auto 24px; text-align: left; }
+  .oferta { background: var(--azul); color: #fff; border-radius: 26px; padding: 40px 30px; text-align: center; max-width: 640px; margin: 0 auto; }
+  .oferta .tachado { color: #94a3b8; font-weight: 700; }
+  .oferta .grande { font-size: 64px; font-weight: 900; color: var(--amar); line-height: 1.05; margin: 6px 0; }
+  .oferta ul { list-style: none; padding: 0; margin: 18px auto 26px; text-align: left; max-width: 380px; }
+  .oferta li { padding-left: 30px; position: relative; margin: 8px 0; color: #e2e8f0; font-weight: 600; }
+  .oferta li:before { content: "✔"; color: var(--amar); position: absolute; left: 4px; font-weight: 900; }
+  .btn2 { display: inline-block; margin-top: 14px; border: 2px solid #ffffff55; color: #fff; font-weight: 800; font-size: 16px; padding: 12px 24px; border-radius: 60px; text-decoration: none; }
+  .btn2:hover { border-color: var(--amar); color: var(--amar); }
+  .seguro { margin-top: 16px; color: #94a3b8; font-size: 14px; }
+  .como { margin: 26px auto 0; max-width: 640px; background: var(--claro); border-radius: 18px; padding: 22px 24px; }
+  .como ol { padding-left: 20px; } .como li { margin: 6px 0; }
+  details { background: #fff; border: 1px solid #e3e7ee; border-radius: 14px; padding: 16px 20px; margin-bottom: 12px; }
+  summary { font-weight: 800; color: var(--azul); cursor: pointer; font-size: 17px; }
+  details p { margin-top: 10px; color: var(--gris); }
+  footer { background: var(--azul); color: #94a3b8; padding: 30px 0; font-size: 14px; text-align: center; }
+  footer a { color: var(--amar); font-weight: 700; }
+  .flotante { position: fixed; left: 0; right: 0; bottom: 0; background: var(--azul); padding: 12px 16px; display: none; justify-content: center; z-index: 10; box-shadow: 0 -6px 20px #0005; }
+  .flotante .btn { font-size: 17px; padding: 13px 26px; width: 100%; max-width: 420px; text-align: center; }
+  @media (max-width: 820px) {
+    .hero-grid { grid-template-columns: 1fr; } .portada { max-width: 260px; order: -1; margin-bottom: 10px; }
+    h1 { font-size: 40px; } h2 { font-size: 29px; }
+    .dolor, .pasos, .cards { grid-template-columns: 1fr; } .pasos { gap: 28px; }
+    .galeria { grid-template-columns: repeat(2, 1fr); } .temario { columns: 1; }
+    .flotante { display: flex; } body { padding-bottom: 76px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="nav"><a class="logo" href="#">🎓 mathpaes.cl</a><a class="ig" href="https://instagram.com/mathpaes.cl" target="_blank" rel="noopener">@mathpaes.cl</a></div>
+    <div class="hero-grid">
+      <div>
+        <span class="pill" id="cuenta">⏳ La PAES es el 30 de noviembre</span>
+        <h1>Método <span>500</span><br>para la PAES M1</h1>
+        <p class="lead">No hagas mil ejercicios al azar: haz los correctos. <b>500 preguntas seleccionadas con pinzas</b> que cubren toda la materia de la PAES de Matemática 1.</p>
+        <ul>
+          <li>100% del temario oficial M1 (Admisión 2027)</li>
+          <li>Todos los tipos de pregunta que se repiten cada año</li>
+          <li>Pauta paso a paso de cada una de las 500</li>
+          <li>Formulario completo con 45 fórmulas explicadas</li>
+        </ul>
+        <div class="promesa"><b class="t">⭐ Nuestra promesa</b><p>Haz las 500 a conciencia y llegarás a la PAES habiendo resuelto todos los tipos de pregunta que te pueden tomar. Ninguna pregunta te va a pillar desprevenido.</p></div>
+        <a class="btn" href="#comprar">Quiero el Método 500<small>$5.000 · acceso inmediato</small></a>
+        <p class="precio-mini">PDF de 105 páginas · listo para imprimir o estudiar en el celular</p>
+      </div>
+      <img class="portada" src="img/portada.jpg" alt="Portada del Método 500 PAES M1">
+    </div>
+  </div>
+</header>
+
+<section class="gris">
+  <div class="wrap">
+    <h2>¿Te suena familiar?</h2>
+    <p class="sub">Quedan pocas semanas, hay miles de ejercicios en internet y no sabes cuáles hacer ni si estás cubriendo todo.</p>
+    <div class="dolor">
+      <div><b>😵</b>Estudias harto, pero sin saber si estás practicando lo que de verdad sale en la PAES.</div>
+      <div><b>⏰</b>No tienes tiempo para revisar libros enteros ni ensayos de 65 preguntas cada día.</div>
+      <div><b>🤷</b>Te equivocas y no sabes por qué: los solucionarios solo te dan la letra.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Qué trae el Método 500</h2>
+    <p class="sub">Todo lo que necesitas para la PAES M1, ordenado para que avances sin perder tiempo.</p>
+    <div class="cards">
+      <div class="card"><div class="n">500</div><h3>Preguntas seleccionadas con pinzas</h3><p>Ordenadas por tema y dificultad, con 4 alternativas como en la PAES real, gráficos y figuras donde la prueba los usa.</p></div>
+      <div class="card"><div class="n">100%</div><h3>Del temario oficial</h3><p>Las 16 unidades del temario M1 publicado por el DEMRE para la Admisión 2027, con un mapa que muestra qué preguntas trabajan cada contenido.</p></div>
+      <div class="card"><div class="n">1 x 1</div><h3>Pauta paso a paso</h3><p>Cada pregunta trae su desarrollo explicado, las fórmulas que usa y la trampa típica en la que cae la mayoría.</p></div>
+      <div class="card"><div class="n">45</div><h3>Fórmulas explicadas</h3><p>Formulario completo de M1 con una explicación breve y un ejemplo para cada fórmula.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <h2>Cómo funciona el método</h2>
+    <p class="sub">Simple y constante. Unos 30 minutos al día.</p>
+    <div class="pasos">
+      <div class="paso"><h3>Repasa la fórmula</h3><p>Antes de cada tema, revisa en el formulario las fórmulas que vas a usar.</p></div>
+      <div class="paso"><h3>Resuelve tus preguntas del día</h3><p>Con lápiz, sin calculadora y con reloj, como en la PAES. Marca las que dudaste.</p></div>
+      <div class="paso"><h3>Corrige con la pauta</h3><p>Lee el desarrollo de las que fallaste o dudaste y fíjate en la trampa de cada una.</p></div>
+    </div>
+    <div class="plan" id="plan">📅 Con unas <b>15 preguntas al día</b> terminas las 500 justo antes de la PAES y llegas preparado para responder cualquier pregunta.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Míralo por dentro</h2>
+    <p class="sub">Páginas reales del Método 500.</p>
+    <div class="galeria">
+      <figure><img src="img/formulario.jpg" alt="Formulario" loading="lazy"><figcaption>Formulario</figcaption></figure>
+      <figure><img src="img/preguntas.jpg" alt="Preguntas de geometría" loading="lazy"><figcaption>Preguntas por tema</figcaption></figure>
+      <figure><img src="img/graficos.jpg" alt="Preguntas de datos" loading="lazy"><figcaption>Gráficos y tablas</figcaption></figure>
+      <figure><img src="img/pauta.jpg" alt="Pauta explicativa" loading="lazy"><figcaption>Pauta paso a paso</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <h2>Toda la materia de la PAES M1</h2>
+    <p class="sub">Los 4 ejes y las 16 unidades del temario oficial.</p>
+    <div class="temario">
+      <div><h4>Números · 110 preguntas</h4><span>Enteros y racionales</span><span>Porcentaje</span><span>Potencias y raíces</span></div>
+      <div><h4>Álgebra y funciones · 165</h4><span>Expresiones algebraicas</span><span>Proporcionalidad</span><span>Ecuaciones e inecuaciones</span><span>Sistemas 2x2</span><span>Función lineal y afín</span><span>Función cuadrática</span></div>
+      <div><h4>Geometría · 105</h4><span>Figuras geométricas</span><span>Cuerpos geométricos</span><span>Transformaciones isométricas</span><span>Semejanza</span></div>
+      <div><h4>Probabilidad y estadística · 120</h4><span>Tablas y gráficos</span><span>Medidas de posición</span><span>Reglas de las probabilidades</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="comprar">
+  <div class="wrap">
+    <div class="oferta">
+      <div class="tachado">Todo lo que necesitas para la PAES M1</div>
+      <div class="grande">$5.000</div>
+      <div>Pago único · Menos que una pizza 🍕</div>
+      <ul>
+        <li>500 preguntas seleccionadas con pinzas</li>
+        <li>Pauta paso a paso de cada una</li>
+        <li>Formulario completo de M1</li>
+        <li>Mapa de cobertura del temario oficial</li>
+        <li>Plan de estudio hasta la PAES</li>
+      </ul>
+      <div class="promesa"><b class="t">⭐ Nuestra promesa</b><p>Haz las 500 a conciencia y llegarás a la PAES habiendo resuelto todos los tipos de pregunta que te pueden tomar. Ninguna pregunta te va a pillar desprevenido.</p></div>
+      <a class="btn" href="https://mpago.la/2nKb1gQ" target="_blank" rel="noopener">Comprar con Mercado Pago</a>
+      <div class="seguro">🔒 Pago seguro procesado por Mercado Pago (tarjeta de crédito o débito)</div>
+      <a class="btn2" href="https://ig.me/m/mathpaes.cl" target="_blank" rel="noopener">🏦 ¿Prefieres transferencia? Pídenos los datos por DM</a>
+    </div>
+    <div class="como">
+      <b>¿Cómo recibo el Método 500?</b>
+      <ol>
+        <li>Paga con el botón de arriba, o escríbenos por mensaje directo a <a href="https://ig.me/m/mathpaes.cl" target="_blank" rel="noopener"><b>@mathpaes.cl</b></a> y te enviamos los datos para pagar por transferencia.</li>
+        <li>Envíanos el comprobante por mensaje directo a <a href="https://ig.me/m/mathpaes.cl" target="_blank" rel="noopener"><b>@mathpaes.cl</b></a> en Instagram.</li>
+        <li>Te enviamos el PDF del Método 500 al tiro.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap" style="max-width:760px">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Sirve para M2?</summary><p>El Método 500 es para la PAES de Competencia Matemática 1 (M1), que es obligatoria. Igual te sirve como base para M2, porque M2 supone que dominas los contenidos de M1.</p></details>
+    <details><summary>¿Las preguntas son copiadas del DEMRE?</summary><p>No. Son preguntas originales de MathPaes, hechas a partir del temario oficial de la PAES M1 y de los tipos de pregunta que se repiten año a año.</p></details>
+    <details><summary>¿Me sirve si me quedan pocas semanas?</summary><p>Sí. Está ordenado por tema para que vayas directo a lo que más te cuesta, y con unas 15 preguntas al día lo terminas antes de la prueba.</p></details>
+    <details><summary>¿Lo puedo imprimir?</summary><p>Sí. Es un PDF tamaño A4 pensado para imprimir y para leer en el celular.</p></details>
+    <details><summary>¿El pago es seguro?</summary><p>Sí. El pago lo procesa Mercado Pago; nosotros nunca vemos los datos de tu tarjeta.</p></details>
+    <details><summary>¿Puedo pagar por transferencia?</summary><p>Sí. Escríbenos por mensaje directo a @mathpaes.cl en Instagram, te mandamos los datos de la cuenta y, cuando nos envíes el comprobante, te llega el PDF.</p></details>
+    <details><summary>¿Cuándo me llega?</summary><p>Apenas recibimos tu comprobante por mensaje directo en Instagram, te enviamos el PDF.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    🎓 MathPaes · <a href="https://instagram.com/mathpaes.cl" target="_blank" rel="noopener">@mathpaes.cl</a><br>
+    <span style="font-size:12px">MathPaes es un proyecto independiente y no está afiliado al DEMRE ni a la Universidad de Chile.</span>
+  </div>
+</footer>
+
+<div class="flotante"><a class="btn" href="#comprar">Quiero el Método 500 · $5.000</a></div>
+
+<script>
+  (function () {
+    var hoy = new Date(); var paes = new Date(2026, 10, 30);
+    var d = Math.ceil((paes - new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate())) / 86400000);
+    if (d > 1) {
+      document.getElementById('cuenta').textContent = '⏳ Faltan ' + d + ' días para la PAES';
+      var k = Math.ceil(500 / Math.max(1, d - 1));
+      document.getElementById('plan').innerHTML = '📅 Con unas <b>' + k + ' preguntas al día</b> terminas las 500 justo antes de la PAES y llegas preparado para responder cualquier pregunta.';
+    }
+  })();
+</script>
+</body>
+</html>
