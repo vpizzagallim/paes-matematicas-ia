@@ -9,9 +9,10 @@ RAIZ, PROMO = promo_pdf.RAIZ, promo_pdf.PROMO
 hoy = datetime.datetime.now(promo_pdf.CHILE).date()
 reg_f = os.path.join(PROMO, "historias.json")
 reg = json.load(open(reg_f)) if os.path.exists(reg_f) else []
-if not promo_pdf.activo() or hoy.isoformat() in reg:
+PRUEBA = os.environ.get("PRUEBA") == "true"  # solo genera la imagen y la guarda en promo/prueba_historia.jpg
+if not PRUEBA and (not promo_pdf.activo() or hoy.isoformat() in reg):
     print("Nada que hacer (promoción apagada o la historia de hoy ya salió)."); sys.exit(0)
-import publicar  # usa IG_TOKEN y REPO del entorno
+
 
 n = promo_pdf.dias_para_paes()
 # Diseno de la historia: promo/historia.html (__N__ = dias que faltan, __PORTADA__ = imagen de la portada del PDF)
@@ -28,6 +29,15 @@ json.dump([{"html": html, "out": png, "w": 1080, "h": 1920}], open("/tmp/hist_jo
 subprocess.run(["node", os.path.join(RAIZ, "render", "html2png.js"), "/tmp/hist_job.json"], check=True,
                env={**os.environ, "RENDER_DIR": os.path.join(RAIZ, "render")})
 Image.open(png).convert("RGB").save(jpg, quality=90)
+if PRUEBA:
+    import shutil
+    shutil.copy(jpg, os.path.join(PROMO, "prueba_historia.jpg"))
+    subprocess.run(["git", "add", os.path.join(PROMO, "prueba_historia.jpg")], cwd=RAIZ, check=True)
+    subprocess.run(["git", "-c", "user.name=publicador-paes", "-c", "user.email=publicador-paes@users.noreply.github.com",
+                    "commit", "-qm", "Prueba historia PDF"], cwd=RAIZ, check=True)
+    subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=RAIZ, check=True)
+    print("Prueba lista: promo/prueba_historia.jpg"); sys.exit(0)
+import publicar  # usa IG_TOKEN y REPO del entorno
 quedan = publicar.cupo()
 if quedan is not None and quedan < 1:
     print("::notice::Sin cupo de Instagram por ahora; la historia se intenta en la próxima ejecución."); sys.exit(0)

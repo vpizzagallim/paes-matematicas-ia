@@ -5,7 +5,12 @@ on:
   schedule:
     - cron: "37 13 * * *"
     - cron: "37 16 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      prueba:
+        description: "Solo generar la imagen (no publicar)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -40,6 +45,7 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           REPO: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
+          PRUEBA: ${{ inputs.prueba }}
         run: |
           export CHROME=$(command -v google-chrome || command -v chromium || command -v chromium-browser)
           python3 scripts/historia_pdf.py
