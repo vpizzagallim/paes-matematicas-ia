@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuaciones lineales con contexto",
+ "gancho": "¿Cuánta plata tenía Tomás? 💰",
+ "enunciado": "Camila tiene el <b>triple</b> de dinero que Tomás. Si Camila le da <b>\\$4.000</b> a Tomás, ambos quedan con lo mismo. ¿Cuánto dinero tenía Tomás?",
+ "alternativas": [
+  "\\$2.000",
+  "\\$12.000",
+  "\\$8.000",
+  "\\$4.000"
+ ],
+ "valores": [
+  "2000",
+  "12000",
+  "8000",
+  "4000"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Tomás: $x$. Camila: $3x$. Después del traspaso: $$3x - 4.000 = x + 4.000$$",
+  "$$2x = 8.000 \\Rightarrow x = 4.000$$"
+ ],
+ "trampa": "Restarle a Camila pero no sumarle a Tomás ($3x - 4.000 = x$) y marcar A.",
+ "clave": "Si alguien entrega dinero, uno pierde y el otro <b>gana</b>: cambian ambos lados de la ecuación.",
+ "verificacion": "x = symbols('x')\nrespuesta = solve(Eq(3*x - 4000, x + 4000), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$3x - 4.000 = x + 4.000$"
+    ],
+    "voz": "Llamemos equis a lo que tenía Tomás. Tomás tiene equis y Camila tres equis. Ella pierde cuatro mil y él gana cuatro mil, y quedan iguales."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$2x = 8.000 \\Rightarrow x = 4.000$"
+    ],
+    "voz": "Dos equis igual a ocho mil, entonces equis es cuatro mil pesos. Comprobemos: Camila tenía doce mil, le quedan ocho mil, y Tomás también llega a ocho mil."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cuatro mil pesos. Cuando uno entrega dinero, uno pierde y el otro gana. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "166"
+}

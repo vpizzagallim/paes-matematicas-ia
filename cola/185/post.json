@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Función afín: planes de celular",
+ "gancho": "¿Cuál plan te conviene? 📱",
+ "enunciado": "El plan A cobra <b>\\$6.000</b> fijos más <b>\\$60</b> por minuto. El plan B cobra <b>\\$12.000</b> fijos más <b>\\$20</b> por minuto. ¿Con cuántos minutos ambos planes cuestan lo mismo?",
+ "alternativas": [
+  "100",
+  "150",
+  "300",
+  "75"
+ ],
+ "valores": [
+  "100",
+  "150",
+  "300",
+  "75"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Igualamos los costos: $$6.000 + 60m = 12.000 + 20m$$",
+  "$$40m = 6.000 \\Rightarrow m = 150$$"
+ ],
+ "trampa": "Sumar las tarifas por minuto ($60 + 20 = 80$) en vez de restarlas y marcar D (75).",
+ "clave": "Dos funciones afines valen lo mismo donde se <b>igualan</b>: se restan las pendientes y los valores fijos.",
+ "verificacion": "m = symbols('m')\nrespuesta = solve(Eq(6000 + 60*m, 12000 + 20*m), m)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Igualamos los planes",
+     "$6.000 + 60m = 12.000 + 20m$"
+    ],
+    "voz": "Cada plan es una función afín: un cargo fijo más un cobro por minuto. Igualamos el costo de los dos planes."
+   },
+   {
+    "lineas": [
+     "Restamos",
+     "$40m = 6.000 \\Rightarrow m = 150$"
+    ],
+    "voz": "Sesenta menos veinte, cuarenta por eme. Doce mil menos seis mil, seis mil. Seis mil dividido en cuarenta: ciento cincuenta minutos. Comprobemos: los dos planes cuestan quince mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: ciento cincuenta minutos. Para comparar planes se igualan las dos funciones y se restan las pendientes. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "185"
+}

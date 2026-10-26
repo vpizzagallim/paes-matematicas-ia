@@ -1,0 +1,83 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja preguntó en el grupo del curso… y le llegaron puros stickers 💬🐱 ¿Cuántos mensajes llegan en media hora? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Proporcionalidad",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Pregunté en el grupo del curso cómo se hacía el ejercicio.",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "💬 240 mensajes<br>0 respuestas útiles",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "Puros stickers de gatitos.",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Mejor pregúntame a mí. Y calcula esto.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "El grupo del curso recibió <b>240 mensajes</b> en <b>4 horas</b>. Al mismo ritmo, ¿cuántos mensajes llegan en <b>30 minutos</b>?",
+  "alternativas": [
+   "60",
+   "120",
+   "30",
+   "20"
+  ],
+  "valores": [
+   "60",
+   "120",
+   "30",
+   "20"
+  ],
+  "correcta": 2,
+  "verificacion": "respuesta = Rational(240, 4)*Rational(30, 60)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Mensajes por hora",
+      "$240 \\div 4 = 60$"
+     ],
+     "voz": "Doscientos cuarenta mensajes en cuatro horas son sesenta por hora."
+    },
+    {
+     "lineas": [
+      "Media hora es la mitad",
+      "$60 \\div 2 = 30$"
+     ],
+     "voz": "En media hora llega la mitad: treinta mensajes."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la ce: treinta. Silencia el grupo mientras estudias."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-11",
+ "id": "187"
+}

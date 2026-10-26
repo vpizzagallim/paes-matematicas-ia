@@ -1,0 +1,56 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Valor esperado",
+ "gancho": "¿Conviene este juego de la kermés? 🎪",
+ "enunciado": "En un juego de la kermés se paga <b>\\$1.000</b> por lanzar un dado. Si sale 6, se reciben <b>\\$4.800</b>; si no, nada. ¿Cuál es la ganancia esperada por jugada?",
+ "alternativas": [
+  "\\$800",
+  "−\\$200",
+  "\\$3.800",
+  "−\\$1.000"
+ ],
+ "valores": [
+  "800",
+  "-200",
+  "3800",
+  "-1000"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Ganancia neta: si sale 6, $4.800 - 1.000 = 3.800$; si no, $-1.000$.",
+  "$$E = \\frac{1}{6} \\cdot 3.800 + \\frac{5}{6} \\cdot (-1.000) = \\frac{-1.200}{6} = -200$$"
+ ],
+ "trampa": "Calcular $\\tfrac{4.800}{6} = 800$ (A) sin descontar lo que se paga por jugar.",
+ "clave": "Valor esperado $= \\sum (\\text{ganancia neta} \\cdot \\text{probabilidad})$.",
+ "verificacion": "costo, premio = 1000, 4800\nrespuesta = sum(Rational(1, 6) * ((premio if cara == 6 else 0) - costo) for cara in range(1, 7))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ganancia neta de cada caso",
+     "$+3.800 \\ \\text{o} \\ -1.000$"
+    ],
+    "voz": "Si sale seis, ganas tres mil ochocientos netos. Si no, pierdes los mil pesos. Lo que se paga por jugar se descuenta siempre."
+   },
+   {
+    "lineas": [
+     "Ponderamos por la probabilidad",
+     "$\\dfrac{3.800}{6} - \\dfrac{5 \\cdot 1.000}{6}$"
+    ],
+    "voz": "Se pondera: un sexto de tres mil ochocientos, menos cinco sextos de mil."
+   },
+   {
+    "lineas": [
+     "Resultado",
+     "$\\dfrac{-1.200}{6} = -200$"
+    ],
+    "voz": "Eso da menos mil doscientos sextos: menos doscientos pesos por jugada."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: menos doscientos pesos. El valor esperado pondera cada ganancia neta por su probabilidad. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "215"
+}

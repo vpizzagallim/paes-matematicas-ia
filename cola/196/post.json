@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Decaimiento exponencial: vida media",
+ "gancho": "¿Cuánto remedio queda en la sangre? 💊",
+ "enunciado": "En la sangre de un paciente hay <b>400 mg</b> de un medicamento, y la cantidad se reduce <b>a la mitad cada 6 horas</b>. ¿Cuántos mg quedan después de <b>24 horas</b>?",
+ "alternativas": [
+  "25 mg",
+  "50 mg",
+  "100 mg",
+  "12,5 mg"
+ ],
+ "valores": [
+  "25",
+  "50",
+  "100",
+  "25/2"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "En 24 horas hay $24 \\div 6 = 4$ períodos de 6 horas.",
+  "$$400 \\cdot \\left(\\frac{1}{2}\\right)^4 = \\frac{400}{16} = 25$$"
+ ],
+ "trampa": "Contar mal los períodos (por ejemplo, 3 en vez de 4) y marcar B (50 mg).",
+ "clave": "Con vida media $T$, la cantidad es $C_0 \\cdot \\left(\\dfrac{1}{2}\\right)^{t/T}$.",
+ "verificacion": "t = 24\nrespuesta = 400*Rational(1, 2)**Rational(t, 6)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Contamos los períodos",
+     "$24 \\div 6 = 4$"
+    ],
+    "voz": "Cada seis horas la cantidad se divide por dos. Veinticuatro horas son cuatro períodos de seis horas. Si cuentas tres, te quedas en cincuenta, y esa es la trampa."
+   },
+   {
+    "lineas": [
+     "Cuatro veces la mitad",
+     "$400 \\cdot \\left(\\dfrac{1}{2}\\right)^4 = 25$"
+    ],
+    "voz": "Vamos dividiendo por dos cuatro veces: cuatrocientos, doscientos, cien, cincuenta y, al final, veinticinco miligramos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veinticinco miligramos. Cuenta cuántas vidas medias pasan y divide por dos esa cantidad de veces. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "196"
+}

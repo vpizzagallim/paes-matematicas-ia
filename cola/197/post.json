@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Orden de números racionales",
+ "gancho": "¿Cuál es mayor? Pásalos a decimal 🔢",
+ "enunciado": "Sean $p = \\dfrac{5}{8}$, $q = 0{,}62$ y $r = \\dfrac{2}{3}$. ¿Cuál de las siguientes opciones los ordena de <b>menor a mayor</b>?",
+ "alternativas": [
+  "$p < q < r$",
+  "$q < p < r$",
+  "$q < r < p$",
+  "$r < p < q$"
+ ],
+ "valores": [
+  "1",
+  "2",
+  "3",
+  "4"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "$p = 5 : 8 = 0{,}625$ y $r = 2 : 3 = 0{,}666\\ldots$",
+  "Comparando decimales: $$0{,}62 < 0{,}625 < 0{,}666\\ldots$$"
+ ],
+ "trampa": "Creer que $0{,}62$ es mayor que $0{,}625$ \\\"porque 62 &gt; 6\\\" o comparar solo numeradores, y marcar A.",
+ "clave": "Para comparar fracciones y decimales, pásalos todos a decimal con la misma cantidad de cifras.",
+ "verificacion": "nums = {'p': Rational(5,8), 'q': Rational(62,100), 'r': Rational(2,3)}\norden = ''.join(sorted(nums, key=lambda k: nums[k]))\nrespuesta = {'pqr': 1, 'qpr': 2, 'qrp': 3, 'rpq': 4}[orden]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Todo a decimal",
+     "$\\dfrac{5}{8} = 0{,}625 \\quad \\dfrac{2}{3} = 0{,}666\\ldots$"
+    ],
+    "voz": "Pasamos todo a decimal. Cinco octavos es cero coma seiscientos veinticinco y dos tercios es cero coma seis periódico."
+   },
+   {
+    "lineas": [
+     "Comparamos",
+     "$0{,}620 < 0{,}625 < 0{,}666$"
+    ],
+    "voz": "Cero coma sesenta y dos es lo mismo que cero coma seiscientos veinte, así que es el menor. Queda cu, luego pe, luego erre."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cu menor que pe menor que erre. Para comparar, completa los decimales con la misma cantidad de cifras. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "197"
+}

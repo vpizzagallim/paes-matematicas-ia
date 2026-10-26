@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "MCM en contexto",
+ "gancho": "¿Cuándo vuelven a coincidir los buses? 🚌",
+ "enunciado": "Dos buses del Transantiago salen juntos de un terminal a las <b>7:00</b>. Uno vuelve a salir cada <b>12 minutos</b> y el otro cada <b>18 minutos</b>. ¿A qué hora vuelven a salir juntos por primera vez?",
+ "alternativas": [
+  "7:06",
+  "7:30",
+  "7:36",
+  "10:36"
+ ],
+ "valores": [
+  "6",
+  "30",
+  "36",
+  "216"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Buscamos el primer múltiplo común: el MCM. $$12 = 2^2 \\cdot 3, \\quad 18 = 2 \\cdot 3^2$$",
+  "$$\\text{MCM} = 2^2 \\cdot 3^2 = 36 \\text{ min} \\;\\Rightarrow\\; 7:36$$"
+ ],
+ "trampa": "Calcular el MCD (6 minutos) en vez del MCM y marcar A.",
+ "clave": "\\\"¿Cuándo vuelven a coincidir?\\\" se resuelve con el <b>MCM</b>; \\\"¿en cuántos grupos iguales reparto?\\\" con el MCD.",
+ "verificacion": "respuesta = ilcm(12, 18)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Coincidir es un múltiplo común",
+     "$12 = 2^2 \\cdot 3 \\quad 18 = 2 \\cdot 3^2$"
+    ],
+    "voz": "Volver a coincidir es buscar el mínimo común múltiplo de doce y dieciocho. Primero descomponemos en factores primos."
+   },
+   {
+    "lineas": [
+     "Mínimo común múltiplo",
+     "$2^2 \\cdot 3^2 = 36$"
+    ],
+    "voz": "Tomamos cada factor con su mayor exponente: cuatro por nueve, treinta y seis minutos. Salen juntos a las siete y treinta y seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: a las siete y treinta y seis. Cuando algo se repite y preguntan cuándo coincide, usa el mínimo común múltiplo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "204"
+}

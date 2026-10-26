@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Fracciones de lo que queda",
+ "gancho": "¿Fracción del total o de lo que queda? 🧮",
+ "enunciado": "Camila gasta <b>$\\dfrac{1}{3}$</b> de su mesada en transporte y <b>$\\dfrac{2}{5}$ de lo que le queda</b> en colaciones. Si le sobran <b>\\$16.000</b>, ¿cuál es su mesada?",
+ "alternativas": [
+  "\\$60.000",
+  "\\$24.000",
+  "\\$40.000",
+  "\\$48.000"
+ ],
+ "valores": [
+  "60000",
+  "24000",
+  "40000",
+  "48000"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Tras el transporte le quedan $\\frac{2}{3}$ de la mesada.",
+  "De eso gasta $\\frac{2}{5}$ y conserva $\\frac{3}{5}$: $$\\frac{3}{5} \\cdot \\frac{2}{3} = \\frac{2}{5}$$",
+  "$$\\frac{2}{5}\\,M = 16.000 \\;\\Rightarrow\\; M = 40.000$$"
+ ],
+ "trampa": "Tomar los 2/5 sobre el total (1 − 1/3 − 2/5 = 4/15) y marcar A (\\$60.000).",
+ "clave": "\\\"Una fracción de lo que queda\\\" se multiplica por lo que queda, no por el total.",
+ "verificacion": "M = symbols('M')\nqueda = (1-Rational(1,3))*M\nqueda = queda*(1-Rational(2,5))\nrespuesta = solve(Eq(queda, 16000), M)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Le quedan dos tercios",
+     "$\\dfrac{3}{5} \\cdot \\dfrac{2}{3} = \\dfrac{2}{5}$"
+    ],
+    "voz": "Después del transporte le quedan dos tercios. De eso conserva tres quintos, y tres quintos de dos tercios son dos quintos de la mesada."
+   },
+   {
+    "lineas": [
+     "Despejamos la mesada",
+     "$\\dfrac{2}{5}\\,M = 16.000 \\Rightarrow M = 40.000$"
+    ],
+    "voz": "Dos quintos de la mesada son dieciséis mil, así que la mesada es cuarenta mil."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cuarenta mil pesos. Una fracción de lo que queda se calcula sobre lo que queda, no sobre el total. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "184"
+}

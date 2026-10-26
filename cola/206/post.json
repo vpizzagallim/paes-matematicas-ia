@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Reflexión y traslación",
+ "gancho": "¿Qué signo cambia? 🪞",
+ "enunciado": "El punto $A(3, -5)$ se refleja respecto del <b>eje Y</b> y, a continuación, la imagen se traslada según el vector $(2, 4)$. ¿Cuáles son las coordenadas del punto final?",
+ "alternativas": [
+  "$(5, 9)$",
+  "$(-1, -1)$",
+  "$(-1, 9)$",
+  "$(-5, -1)$"
+ ],
+ "valores": [
+  "(5,9)",
+  "(-1,-1)",
+  "(-1,9)",
+  "(-5,-1)"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Reflexión respecto del eje Y: cambia el signo de la <b>abscisa</b>: $$(3, -5) \\to (-3, -5)$$",
+  "Traslación: $$(-3, -5) + (2, 4) = (-1, -1)$$"
+ ],
+ "trampa": "Cambiar el signo de la ordenada (eso es reflejar en el eje X) y llegar a $(5, 9)$.",
+ "clave": "Eje Y: $(x, y) \\to (-x, y)$. Eje X: $(x, y) \\to (x, -y)$. Respeta el orden de las transformaciones.",
+ "verificacion": "x, y = 3, -5; x, y = -x, y; respuesta = Tuple(x + 2, y + 4)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Reflejo en el eje Y",
+     "$(3, -5) \\to (-3, -5)$"
+    ],
+    "voz": "Al reflejar en el eje ye, solo cambia de signo la primera coordenada: queda menos tres, menos cinco."
+   },
+   {
+    "lineas": [
+     "Trasladamos",
+     "$(-3, -5) + (2, 4) = (-1, -1)$"
+    ],
+    "voz": "Sumamos el vector: menos tres más dos da menos uno, y menos cinco más cuatro da menos uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: el punto menos uno, menos uno. Reflejar en el eje ye cambia el signo de la equis, no el de la ye. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "206"
+}

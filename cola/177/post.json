@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Función exponencial",
+ "gancho": "¿Cuándo explota el video? 📈",
+ "enunciado": "Un video tiene <b>200 visitas</b> y la cantidad se <b>triplica cada día</b>. ¿Después de cuántos días tendrá <b>16.200 visitas</b>?",
+ "alternativas": [
+  "27",
+  "4",
+  "5",
+  "81"
+ ],
+ "valores": [
+  "27",
+  "4",
+  "5",
+  "81"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Modelo: $$V(n) = 200 \\cdot 3^n = 16.200$$",
+  "$$3^n = 81 = 3^4 \\Rightarrow n = 4$$"
+ ],
+ "trampa": "Tratarlo como crecimiento lineal ($200 \\cdot 3n = 16.200$) y marcar A (27).",
+ "clave": "Si algo se multiplica por $b$ en cada período, el modelo es $C \\cdot b^n$, no $C \\cdot b \\cdot n$.",
+ "verificacion": "n = symbols('n', positive=True)\nrespuesta = solve(Eq(200*3**n, 16200), n)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Modelo exponencial",
+     "$200 \\cdot 3^n = 16.200$"
+    ],
+    "voz": "No es lineal, es exponencial. Triplicar cada día es multiplicar por tres una y otra vez: doscientos por tres elevado a ene."
+   },
+   {
+    "lineas": [
+     "Dividimos por doscientos",
+     "$3^n = 81 = 3^4$"
+    ],
+    "voz": "Dividiendo queda tres elevado a ene igual a ochenta y uno, que es tres a la cuatro. Entonces ene es cuatro. Comprobemos: seiscientos, mil ochocientos, cinco mil cuatrocientos y dieciséis mil doscientos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuatro días. Si se multiplica cada día, el tiempo va en el exponente. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "177"
+}

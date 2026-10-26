@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Rango",
+ "gancho": "Ojo con los grados bajo cero 🥶",
+ "enunciado": "Las temperaturas mínimas de una semana en Santiago fueron: $-2$, 3, 5, $-1$, 4, 6 y 0 °C. ¿Cuál es el <b>rango</b> de estos datos?",
+ "alternativas": [
+  "4 °C",
+  "6 °C",
+  "7 °C",
+  "8 °C"
+ ],
+ "valores": [
+  "4",
+  "6",
+  "7",
+  "8"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Dato mayor: $6$. Dato menor: $-2$.",
+  "$$\\text{Rango} = 6 - (-2) = 6 + 2 = 8$$"
+ ],
+ "trampa": "Restar $6 - 2 = 4$ olvidando el signo negativo y marcar A.",
+ "clave": "Rango $=$ máximo $-$ mínimo. Restar un negativo equivale a sumar.",
+ "verificacion": "d = [-2, 3, 5, -1, 4, 6, 0]\nrespuesta = max(d) - min(d)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Mayor y menor",
+     "$\\text{máx} = 6 \\quad \\text{mín} = -2$"
+    ],
+    "voz": "El mayor dato es seis y el menor es menos dos, no cero. Esa es la trampa: el menor no es el cero, porque menos dos es más frío."
+   },
+   {
+    "lineas": [
+     "Rango: máx menos mín",
+     "$6 - (-2) = 8$"
+    ],
+    "voz": "El rango es la resta: seis menos menos dos, o sea seis más dos, ocho grados. Si restas seis menos dos, te da cuatro, y eso está mal."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: ocho grados. Al restar un número negativo, el signo cambia y se suma. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "162"
+}

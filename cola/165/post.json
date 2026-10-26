@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Reparto proporcional",
+ "gancho": "Repartir según lo trabajado 🤝",
+ "enunciado": "Ana y Bruno ganan <b>\\$90.000</b> en una feria y se los reparten en la razón <b>4 : 5</b>, según las horas que trabajó cada uno. ¿Cuánto dinero <b>más</b> recibe Bruno que Ana?",
+ "alternativas": [
+  "\\$50.000",
+  "\\$40.000",
+  "\\$18.000",
+  "\\$10.000"
+ ],
+ "valores": [
+  "50000",
+  "40000",
+  "18000",
+  "10000"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Total de partes: $4 + 5 = 9$. Cada parte vale $$\\frac{90.000}{9} = 10.000$$",
+  "Bruno tiene una parte más que Ana: $5 - 4 = 1$ parte, es decir, \\$10.000."
+ ],
+ "trampa": "Responder lo que recibe Bruno (\\$50.000) sin restar lo de Ana, y marcar A.",
+ "clave": "En una razón $a : b$, divide el total en $a + b$ partes iguales y trabaja con el valor de una parte.",
+ "verificacion": "a, b = 4, 5\nparte = Rational(90000, a+b)\nrespuesta = b*parte - a*parte",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Nueve partes en total",
+     "$\\dfrac{90.000}{9} = 10.000$"
+    ],
+    "voz": "Cuatro más cinco son nueve partes. Noventa mil dividido en nueve: cada parte vale diez mil. Ojo, la razón cuatro es a cinco no significa cuatro y cinco pesos."
+   },
+   {
+    "lineas": [
+     "Bruno tiene una parte más",
+     "$5 - 4 = 1 \\text{ parte}$"
+    ],
+    "voz": "Bruno recibe cinco partes y Ana cuatro, así que la diferencia es una parte."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: diez mil pesos. Primero calcula cuánto vale una parte y lee bien qué te preguntan. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "165"
+}

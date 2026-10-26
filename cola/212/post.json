@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Desviación estándar",
+ "gancho": "¿Qué le pasa a la desviación si suben todas las notas? 📈",
+ "enunciado": "Las notas de un curso tienen <b>desviación estándar</b> $0{,}8$. La profesora multiplica cada nota por $1{,}1$ y luego le suma $0{,}2$. ¿Cuál es la nueva desviación estándar?",
+ "alternativas": [
+  "1,08",
+  "1,0",
+  "0,88",
+  "0,968"
+ ],
+ "valores": [
+  "27/25",
+  "1",
+  "22/25",
+  "121/125"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Sumar una constante desplaza los datos, pero no cambia su dispersión.",
+  "Multiplicar por $1{,}1$ multiplica la desviación por $1{,}1$: $$0{,}8 \\cdot 1{,}1 = 0{,}88$$"
+ ],
+ "trampa": "Aplicar también la suma a la desviación ($0{,}8 \\cdot 1{,}1 + 0{,}2 = 1{,}08$, A).",
+ "clave": "Si $y = ax + b$, entonces $\\sigma_y = |a|\\,\\sigma_x$: la suma no afecta la dispersión.",
+ "verificacion": "x = [Rational(40, 10), Rational(56, 10)]  # dos notas con desviación estándar 0,8\nsd = lambda d: sqrt(sum((v - sum(d)/len(d))**2 for v in d) / len(d))\nassert sd(x) == Rational(8, 10)\ny = [Rational(11, 10)*v + Rational(2, 10) for v in x]\nrespuesta = sd(y)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Sumar no cambia la dispersión",
+     "$+0{,}2 \\Rightarrow \\sigma \\text{ igual}$"
+    ],
+    "voz": "Sumar cero coma dos a todas las notas las desplaza, pero no cambia qué tan separadas están. Es como mover a todo el curso dos décimas hacia arriba."
+   },
+   {
+    "lineas": [
+     "Multiplicar sí la cambia",
+     "$0{,}8 \\cdot 1{,}1 = 0{,}88$"
+    ],
+    "voz": "Multiplicar por uno coma uno estira las distancias: la desviación queda en cero coma ochenta y ocho. Ojo, la suma de cero coma dos no se aplica a la desviación."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cero coma ochenta y ocho. La desviación estándar se multiplica por el factor, pero la suma no la afecta. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "212"
+}

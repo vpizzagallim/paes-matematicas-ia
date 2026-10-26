@@ -1,0 +1,50 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Ángulo de depresión",
+ "gancho": "Mirando hacia abajo desde el faro 🌊",
+ "enunciado": "Desde lo alto de un faro de <b>40 m</b> en la costa de Valparaíso, se observa un bote con un ángulo de depresión de <b>30°</b>. ¿A qué distancia de la base del faro está el bote?",
+ "alternativas": [
+  "20 m",
+  "$\\dfrac{40\\sqrt{3}}{3}$ m",
+  "$40\\sqrt{3}$ m",
+  "80 m"
+ ],
+ "valores": [
+  "20",
+  "40*sqrt(3)/3",
+  "40*sqrt(3)",
+  "80"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "El ángulo de depresión es igual al ángulo de elevación desde el bote: 30°.",
+  "Desde el bote: $$\\tan 30° = \\frac{40}{d}$$",
+  "$$d = \\frac{40}{\\tan 30°} = \\frac{40}{\\sqrt{3}/3} = 40\\sqrt{3}\\text{ m}$$"
+ ],
+ "trampa": "Plantear $d = 40 \\cdot \\tan 30°$, invirtiendo el cociente, y marcar B.",
+ "clave": "El ángulo de depresión desde arriba es igual al de elevación desde abajo (son alternos internos).",
+ "verificacion": "h = 40; ang = pi/6; respuesta = h/tan(ang)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Depresión = elevación",
+     "$\\tan 30° = \\dfrac{40}{d}$"
+    ],
+    "voz": "El ángulo de depresión es igual al de elevación desde el bote. La tangente de treinta grados es cuarenta dividido por la distancia."
+   },
+   {
+    "lineas": [
+     "Despejamos d",
+     "$d = \\dfrac{40}{\\sqrt{3}/3} = 40\\sqrt{3}$"
+    ],
+    "voz": "Despejando, la distancia es cuarenta dividido por raíz de tres tercios, o sea cuarenta raíz de tres metros. Recuerda que la tangente de treinta grados vale raíz de tres tercios."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cuarenta raíz de tres metros. El ángulo de depresión desde arriba es igual al de elevación desde abajo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "202"
+}

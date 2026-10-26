@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Función lineal con contexto",
+ "gancho": "¿Cuándo se vacía el estanque? 💧",
+ "enunciado": "Un estanque tiene <b>1.200 litros</b> y se vacía a ritmo constante. A las <b>2 horas</b> le quedan <b>900 litros</b>. ¿En cuántas horas, desde el inicio, queda vacío?",
+ "alternativas": [
+  "6",
+  "4",
+  "8",
+  "10"
+ ],
+ "valores": [
+  "6",
+  "4",
+  "8",
+  "10"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Pierde $1.200 - 900 = 300$ litros en 2 horas: $$150 \\text{ L por hora}$$",
+  "$$V(t) = 1.200 - 150t = 0 \\Rightarrow t = 8$$"
+ ],
+ "trampa": "Dividir los 900 litros restantes por 150 y marcar A (6), que es lo que falta desde las 2 horas, no desde el inicio.",
+ "clave": "En una función afín la <b>pendiente</b> es el cambio por unidad de tiempo; con ella se arma la fórmula completa.",
+ "verificacion": "t = symbols('t')\nr = Rational(1200 - 900, 2)\nrespuesta = solve(Eq(1200 - r*t, 0), t)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ritmo de vaciado",
+     "$\\dfrac{300}{2} = 150$ L por hora"
+    ],
+    "voz": "Primero calculamos la pendiente, o sea, cuánto baja por hora. En dos horas perdió trescientos litros: ciento cincuenta litros por hora."
+   },
+   {
+    "lineas": [
+     "Cuándo llega a cero",
+     "$1.200 - 150t = 0 \\Rightarrow t = 8$"
+    ],
+    "voz": "Mil doscientos dividido en ciento cincuenta: ocho horas desde el inicio. Ojo, no son seis horas: hay que contar desde el inicio, no desde las dos horas."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: ocho horas. Calcula el ritmo de cambio y luego cuenta desde el inicio. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "205"
+}

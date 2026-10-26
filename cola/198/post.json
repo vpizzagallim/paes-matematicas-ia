@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuación cuadrática con contexto",
+ "gancho": "El terreno y su ecuación cuadrática 🏡",
+ "enunciado": "Un terreno rectangular tiene <b>108 m²</b> de área y su largo mide <b>3 m más</b> que su ancho. ¿Cuánto mide el <b>ancho</b>?",
+ "alternativas": [
+  "9 m",
+  "12 m",
+  "36 m",
+  "54 m"
+ ],
+ "valores": [
+  "9",
+  "12",
+  "36",
+  "54"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Ancho $x$, largo $x + 3$: $$x(x + 3) = 108 \\Rightarrow x^2 + 3x - 108 = 0$$",
+  "$$(x + 12)(x - 9) = 0 \\Rightarrow x = 9$$ (la solución $-12$ no sirve para una medida)."
+ ],
+ "trampa": "Calcular bien y responder el largo (12 m), o dividir 108 por 3 y marcar C.",
+ "clave": "En problemas geométricos se descarta la solución <b>negativa</b> de la ecuación cuadrática.",
+ "verificacion": "x = symbols('x', positive=True)\nrespuesta = solve(Eq(x*(x + 3), 108), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos la ecuación",
+     "$x^2 + 3x - 108 = 0$"
+    ],
+    "voz": "Llamemos equis al ancho del terreno. El ancho es equis y el largo equis más tres. Su producto es ciento ocho."
+   },
+   {
+    "lineas": [
+     "Factorizamos",
+     "$(x + 12)(x - 9) = 0$"
+    ],
+    "voz": "Dos números que multiplicados den menos ciento ocho y sumen tres: doce y menos nueve. La medida positiva es nueve. El largo mide doce metros, pero preguntan por el ancho."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: nueve metros. En una medida se descarta la solución negativa. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "198"
+}

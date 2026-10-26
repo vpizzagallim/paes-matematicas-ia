@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Dos alzas del 20% NO son un 40% 🤯 El error más común con porcentajes. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Porcentajes #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "Aumentos sucesivos",
+  "intro_voz": "Dato PAES: dos aumentos seguidos no se suman.",
+  "titulo": "Aumentos sucesivos",
+  "pasos": [
+   {
+    "lineas": [
+     "Subir 20% es multiplicar",
+     "$\\times\\, 1{,}2$"
+    ],
+    "voz": "Subir un veinte por ciento es multiplicar por uno coma dos."
+   },
+   {
+    "lineas": [
+     "Dos alzas de 20%",
+     "$1{,}2 \\cdot 1{,}2 = 1{,}44$"
+    ],
+    "voz": "Dos alzas seguidas del veinte por ciento: uno coma dos por uno coma dos, uno coma cuarenta y cuatro."
+   },
+   {
+    "lineas": [
+     "Subió 44%, no 40%",
+     "$100 \\to 120 \\to 144$"
+    ],
+    "voz": "O sea, subió un cuarenta y cuatro por ciento, no un cuarenta. Cien pasa a ciento veinte, y luego a ciento cuarenta y cuatro."
+   }
+  ],
+  "remate": "Se multiplican, no se suman",
+  "cierre": {
+   "voz": "Y ojo: subir y después bajar un veinte por ciento no te deja igual. Te deja en el noventa y seis por ciento."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-04",
+ "id": "160"
+}

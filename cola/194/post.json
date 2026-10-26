@@ -1,0 +1,57 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Principio multiplicativo",
+ "gancho": "¿Cuántas claves puede tener tu casillero? 🔐",
+ "enunciado": "La clave de un casillero del liceo tiene <b>2 letras</b> (de la A a la E, pueden repetirse) seguidas de <b>2 dígitos distintos</b> (del 0 al 9). ¿Cuántas claves distintas hay?",
+ "alternativas": [
+  "29",
+  "2.500",
+  "1.800",
+  "2.250"
+ ],
+ "valores": [
+  "29",
+  "2500",
+  "1800",
+  "2250"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Letras: $5 \\cdot 5 = 25$ opciones.",
+  "Dígitos sin repetir: $10 \\cdot 9 = 90$ opciones.",
+  "$$25 \\cdot 90 = 2.250$$"
+ ],
+ "trampa": "Permitir que los dígitos se repitan ($5 \\cdot 5 \\cdot 10 \\cdot 10 = 2.500$, B) o sumar las opciones en vez de multiplicarlas (A).",
+ "clave": "Principio multiplicativo: si una tarea se hace en etapas, se multiplican las opciones de cada etapa.",
+ "verificacion": "from itertools import product\nL = 'ABCDE'\nrespuesta = sum(1 for a, b, c, d in product(L, L, range(10), range(10)) if c != d)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Letras: se pueden repetir",
+     "$5 \\cdot 5 = 25$"
+    ],
+    "voz": "Para cada letra hay cinco opciones: cinco por cinco, veinticinco. Como pueden repetirse, ambas letras tienen las mismas opciones."
+   },
+   {
+    "lineas": [
+     "Dígitos: sin repetir",
+     "$10 \\cdot 9 = 90$"
+    ],
+    "voz": "El primer dígito tiene diez opciones y el segundo, solo nueve."
+   },
+   {
+    "lineas": [
+     "Principio multiplicativo",
+     "$25 \\cdot 90 = 2.250$"
+    ],
+    "voz": "Se multiplica todo: veinticinco por noventa, dos mil doscientas cincuenta claves."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: dos mil doscientas cincuenta. En el conteo por etapas se multiplican las opciones, y sin repetición cada etapa tiene una menos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "194"
+}

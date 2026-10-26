@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Media en tabla de frecuencias",
+ "gancho": "¿Cuántos goles mete por partido? ⚽",
+ "enunciado": "Los goles por partido de un equipo en <b>20 partidos</b> fueron: 0 goles en 3 partidos; 1 gol en 5; 2 goles en 8; 3 goles en 4. ¿Cuál es el promedio de goles por partido?",
+ "alternativas": [
+  "1,5",
+  "1,65",
+  "8,25",
+  "2"
+ ],
+ "valores": [
+  "3/2",
+  "33/20",
+  "33/4",
+  "2"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Total de goles: $0 \\cdot 3 + 1 \\cdot 5 + 2 \\cdot 8 + 3 \\cdot 4 = 33$.",
+  "$$\\bar{x} = \\frac{33}{20} = 1{,}65$$"
+ ],
+ "trampa": "Promediar solo los valores $0, 1, 2, 3$ (1,5, A) o dividir por las 4 filas en vez de los 20 partidos (C).",
+ "clave": "En una tabla de frecuencias: $\\bar{x} = \\dfrac{\\sum x_i f_i}{\\sum f_i}$.",
+ "verificacion": "f = {0: 3, 1: 5, 2: 8, 3: 4}\nrespuesta = Rational(sum(k*v for k, v in f.items()), sum(f.values()))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Total de goles",
+     "$0 + 5 + 16 + 12 = 33$"
+    ],
+    "voz": "Cada valor por su frecuencia: cero, cinco, dieciséis y doce. En total, treinta y tres goles. Ojo, no se promedian solo los valores de la tabla."
+   },
+   {
+    "lineas": [
+     "Dividimos por los partidos",
+     "$\\dfrac{33}{20} = 1{,}65$"
+    ],
+    "voz": "Se divide por los veinte partidos, no por las cuatro filas: uno coma sesenta y cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: uno coma sesenta y cinco. En una tabla de frecuencias, se divide por el total de datos, no por el número de filas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "201"
+}

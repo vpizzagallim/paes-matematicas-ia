@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Factorización",
+ "gancho": "Factoriza y encuentra el lado 📏",
+ "enunciado": "Un rectángulo tiene área $x^2 + 7x + 12$ y uno de sus lados mide $x + 3$. ¿Cuánto mide el otro lado?",
+ "alternativas": [
+  "$x - 4$",
+  "$x + 9$",
+  "$x + 4$",
+  "$x + 7$"
+ ],
+ "valores": [
+  "x-4",
+  "x+9",
+  "x+4",
+  "x+7"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Buscamos dos números que sumen 7 y multipliquen 12: son 3 y 4.",
+  "$$x^2 + 7x + 12 = (x + 3)(x + 4)$$ El otro lado es $x + 4$."
+ ],
+ "trampa": "Restar $12 - 3 = 9$ en vez de factorizar y marcar B ($x + 9$).",
+ "clave": "Para factorizar $x^2 + bx + c$, busca dos números que <b>sumen</b> $b$ y <b>multipliquen</b> $c$.",
+ "verificacion": "x = symbols('x')\nrespuesta = cancel((x**2 + 7*x + 12)/(x + 3))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suman siete, multiplican doce",
+     "$3 + 4 = 7 \\quad 3 \\cdot 4 = 12$"
+    ],
+    "voz": "La idea es factorizar el área, porque el área es largo por ancho. Buscamos dos números que sumen siete y multipliquen doce: tres y cuatro."
+   },
+   {
+    "lineas": [
+     "Factorizamos",
+     "$(x + 3)(x + 4)$"
+    ],
+    "voz": "El área queda equis más tres por equis más cuatro. Como un lado es equis más tres, el otro es equis más cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: equis más cuatro. Factorizar es buscar dos números que sumen y multipliquen lo pedido. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "159"
+}

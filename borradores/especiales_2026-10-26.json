@@ -1,0 +1,1011 @@
+[
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja lleva dos semanas diciendo «mañana empiezo» 📅😅 ¿Cuántos ejercicios se perdió? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Procrastinacion",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Hoy no. Mañana empiezo a estudiar, seguro.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "📅 Lleva 14 días<br>diciendo «mañana»",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "¿Dos semanas? Pero si fue ayer.",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Cada día cuenta, Benja. Mira esto.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Si cada día que postergas dejas de hacer <b>6 ejercicios</b>, ¿cuántos ejercicios dejas de hacer en <b>2 semanas</b>?",
+   "alternativas": [
+    "20",
+    "48",
+    "72",
+    "84"
+   ],
+   "valores": [
+    "20",
+    "48",
+    "72",
+    "84"
+   ],
+   "correcta": 3,
+   "verificacion": "respuesta = 6*14",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Dos semanas en días",
+       "$2 \\cdot 7 = 14$"
+      ],
+      "voz": "Dos semanas son catorce días."
+     },
+     {
+      "lineas": [
+       "Ejercicios perdidos",
+       "$6 \\cdot 14 = 84$"
+      ],
+      "voz": "Seis ejercicios por catorce días: ochenta y cuatro ejercicios."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la de: ochenta y cuatro. No esperes a mañana: empieza hoy con uno."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Atajo PAES: el 5%, el 15% y el 25% sin calculadora. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Porcentajes #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 ATAJO PAES",
+   "subtitulo": "5%, 15% y 25% al toque",
+   "intro_voz": "Atajo PAES: calcula el cinco, el quince y el veinticinco por ciento sin calculadora.",
+   "titulo": "Porcentajes rápidos",
+   "pasos": [
+    {
+     "lineas": [
+      "5% = la mitad del 10%",
+      "$360 \\to 36 \\to 18$"
+     ],
+     "voz": "El cinco por ciento es la mitad del diez. El diez por ciento de trescientos sesenta es treinta y seis; la mitad, dieciocho."
+    },
+    {
+     "lineas": [
+      "15% = 10% + 5%",
+      "$36 + 18 = 54$"
+     ],
+     "voz": "El quince por ciento es diez más cinco: treinta y seis más dieciocho, cincuenta y cuatro."
+    },
+    {
+     "lineas": [
+      "25% = la cuarta parte",
+      "$360 \\div 4 = 90$"
+     ],
+     "voz": "Y el veinticinco por ciento es la cuarta parte: trescientos sesenta dividido en cuatro, noventa."
+    }
+   ],
+   "remate": "5% = ½ del 10% · 25% = ¼",
+   "cierre": {
+    "voz": "Con el diez por ciento como base, sacas casi cualquier porcentaje."
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "La noche antes de la prueba, Benja quiere repasar TODO 🌙😵 ¿A qué hora termina? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #NocheAntes",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "Es la noche antes. Voy a repasar todo.",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🌙 3:00 AM<br>Unidad 1 de 12",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.0
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "Creo que hoy no duermo.",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Dormir también es estudiar. Calcula esto.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Benja quiere repasar <b>12 unidades</b> de <b>25 minutos</b> cada una. Si empieza a las <b>23:00</b> y no hace pausas, ¿a qué hora termina?",
+   "alternativas": [
+    "03:00",
+    "04:00",
+    "05:00",
+    "02:00"
+   ],
+   "valores": [
+    "3",
+    "4",
+    "5",
+    "2"
+   ],
+   "correcta": 1,
+   "verificacion": "respuesta = 23 + Rational(12*25, 60) - 24",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Tiempo total",
+       "$12 \\cdot 25 = 300\\ \\text{min}$"
+      ],
+      "voz": "Doce unidades de veinticinco minutos son trescientos minutos."
+     },
+     {
+      "lineas": [
+       "A horas",
+       "$300 \\div 60 = 5\\ \\text{h}$"
+      ],
+      "voz": "Trescientos minutos son cinco horas."
+     },
+     {
+      "lineas": [
+       "Sumamos a la hora de inicio",
+       "$23{:}00 + 5\\ \\text{h} = 04{:}00$"
+      ],
+      "voz": "Las once de la noche más cinco horas: las cuatro de la mañana."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la be: a las cuatro de la mañana. Mejor repasa de a poco y duerme bien."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Dos alzas del 20% NO son un 40% 🤯 El error más común con porcentajes. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Porcentajes #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "Aumentos sucesivos",
+   "intro_voz": "Dato PAES: dos aumentos seguidos no se suman.",
+   "titulo": "Aumentos sucesivos",
+   "pasos": [
+    {
+     "lineas": [
+      "Subir 20% es multiplicar",
+      "$\\times\\, 1{,}2$"
+     ],
+     "voz": "Subir un veinte por ciento es multiplicar por uno coma dos."
+    },
+    {
+     "lineas": [
+      "Dos alzas de 20%",
+      "$1{,}2 \\cdot 1{,}2 = 1{,}44$"
+     ],
+     "voz": "Dos alzas seguidas del veinte por ciento: uno coma dos por uno coma dos, uno coma cuarenta y cuatro."
+    },
+    {
+     "lineas": [
+      "Subió 44%, no 40%",
+      "$100 \\to 120 \\to 144$"
+     ],
+     "voz": "O sea, subió un cuarenta y cuatro por ciento, no un cuarenta. Cien pasa a ciento veinte, y luego a ciento cuarenta y cuatro."
+    }
+   ],
+   "remate": "Se multiplican, no se suman",
+   "cierre": {
+    "voz": "Y ojo: subir y después bajar un veinte por ciento no te deja igual. Te deja en el noventa y seis por ciento."
+   }
+  }
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: dormir también es estudiar 😴 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: dormir también es estudiar.",
+   "titulo": "Tip: dormir bien",
+   "pasos": [
+    {
+     "lineas": [
+      "Duerme bien toda la semana"
+     ],
+     "voz": "Dormir bien los días antes de la prueba ayuda a tu memoria y a tu concentración."
+    },
+    {
+     "lineas": [
+      "No trasnoches la noche antes"
+     ],
+     "voz": "La noche antes no te quedes despierto estudiando materia nueva."
+    },
+    {
+     "lineas": [
+      "Desayuna y sal con tiempo"
+     ],
+     "voz": "En la mañana, desayuna y sal con tiempo para llegar tranquilo."
+    }
+   ],
+   "remate": "Dormir bien = rendir mejor 😴",
+   "cierre": {
+    "voz": "Descansar también es parte de la preparación. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja creyó que sacó 70 puntos… y era el 70% 🤦 ¿Cuántas buenas tuvo? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Porcentajes",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "¡Saqué setenta en el ensayo! ¡Soy un genio!",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🤔 Era el 70%<br>de respuestas buenas",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "¿Y eso es mucho o poco?",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Depende de cuántas preguntas había. Calcula.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "En un ensayo de <b>40 preguntas</b>, Benja respondió bien el <b>70%</b>. ¿Cuántas respuestas correctas tuvo?",
+   "alternativas": [
+    "28",
+    "30",
+    "12",
+    "70"
+   ],
+   "valores": [
+    "28",
+    "30",
+    "12",
+    "70"
+   ],
+   "correcta": 0,
+   "verificacion": "respuesta = 40*Rational(70, 100)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "El setenta por ciento",
+       "$70\\% = 0{,}7$"
+      ],
+      "voz": "Setenta por ciento es cero coma siete."
+     },
+     {
+      "lineas": [
+       "Por el total",
+       "$40 \\cdot 0{,}7 = 28$"
+      ],
+      "voz": "Cuarenta por cero coma siete da veintiocho."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la a: veintiocho. Un porcentaje no es un puntaje: pregúntate siempre de qué total."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Truco: potencias de 10 contando ceros. Así la notación científica sale sola 🔟 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Potencias #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "Potencias de 10",
+   "intro_voz": "Truco PAES: las potencias de diez se resuelven contando ceros.",
+   "titulo": "Potencias de 10",
+   "pasos": [
+    {
+     "lineas": [
+      "El exponente cuenta ceros",
+      "$10^4 = 10.000$"
+     ],
+     "voz": "El exponente te dice cuántos ceros hay. Diez a la cuatro es diez mil: un uno y cuatro ceros."
+    },
+    {
+     "lineas": [
+      "Al multiplicar, se suman",
+      "$10^3 \\cdot 10^2 = 10^5$"
+     ],
+     "voz": "Al multiplicar potencias de diez, los exponentes se suman. Diez a la tres por diez a la dos es diez a la cinco."
+    },
+    {
+     "lineas": [
+      "Exponente negativo: decimales",
+      "$10^{-2} = 0{,}01$"
+     ],
+     "voz": "Y con exponente negativo, la coma se corre a la izquierda: diez a la menos dos es cero coma cero uno."
+    }
+   ],
+   "remate": "Exponente = cantidad de ceros",
+   "cierre": {
+    "voz": "Cuenta ceros y mueve la coma. Así la notación científica sale fácil."
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja hizo una planilla Excel preciosa para estudiar… y cero ejercicios 📊😅 ¿Qué porcentaje lleva? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Excel",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Hice una planilla de estudio con colores y gráficos.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "📊 3 horas formateando<br>0 ejercicios hechos",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "Pero quedó preciosa.",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "La planilla sirve si la usas. Calcula tu avance.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "La planilla de Benja tiene <b>5 unidades</b> con <b>8 ejercicios</b> cada una. Si ya hizo <b>15 ejercicios</b>, ¿qué porcentaje del total lleva?",
+   "alternativas": [
+    "15%",
+    "25%",
+    "40%",
+    "37,5%"
+   ],
+   "valores": [
+    "15",
+    "25",
+    "40",
+    "37.5"
+   ],
+   "correcta": 3,
+   "verificacion": "respuesta = Rational(15, 5*8)*100",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Total de ejercicios",
+       "$5 \\cdot 8 = 40$"
+      ],
+      "voz": "Cinco unidades de ocho ejercicios son cuarenta en total."
+     },
+     {
+      "lineas": [
+       "Parte sobre total, por 100",
+       "$\\dfrac{15}{40} \\cdot 100 = 37{,}5\\%$"
+      ],
+      "voz": "Quince de cuarenta, por cien, da treinta y siete coma cinco por ciento."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la de: treinta y siete coma cinco por ciento. Menos colores y más ejercicios."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Si triplicas los lados, el área NO se triplica 😮 Homotecia y semejanza en 30 segundos 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Geometria #Semejanza",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "Si amplías, el área crece más",
+   "intro_voz": "Dato PAES: si amplías una figura, el área no crece igual que los lados.",
+   "titulo": "Razón de homotecia k",
+   "pasos": [
+    {
+     "lineas": [
+      "Lados y perímetro: por k",
+      "$k = 3:\\ 2\\ \\text{cm} \\to 6\\ \\text{cm}$"
+     ],
+     "voz": "Si la razón es tres, los lados y el perímetro se multiplican por tres."
+    },
+    {
+     "lineas": [
+      "El área: por k al cuadrado",
+      "$k^2 = 3^2 = 9$"
+     ],
+     "voz": "Pero el área se multiplica por tres al cuadrado: nueve veces."
+    },
+    {
+     "lineas": [
+      "El volumen: por k al cubo",
+      "$k^3 = 3^3 = 27$"
+     ],
+     "voz": "Y si es un cuerpo, el volumen se multiplica por tres al cubo: veintisiete veces."
+    }
+   ],
+   "remate": "Lado ×k · Área ×k² · Vol ×k³",
+   "cierre": {
+    "voz": "Lados por ka, área por ka al cuadrado y volumen por ka al cubo."
+   }
+  }
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: aprende a descartar alternativas ❌ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: aprende a descartar alternativas.",
+   "titulo": "Tip: descartar",
+   "pasos": [
+    {
+     "lineas": [
+      "Tacha las imposibles"
+     ],
+     "voz": "Primero tacha las que no pueden ser, por ejemplo una longitud negativa."
+    },
+    {
+     "lineas": [
+      "Estima antes de calcular"
+     ],
+     "voz": "Estima el resultado aproximado. Muchas veces eso deja una sola opción."
+    },
+    {
+     "lineas": [
+      "Prueba las alternativas"
+     ],
+     "voz": "Y si es una ecuación, reemplaza las alternativas y mira cuál cumple."
+    }
+   ],
+   "remate": "Tacha · Estima · Prueba",
+   "cierre": {
+    "voz": "Cada alternativa que descartas te acerca a la correcta."
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja preguntó en el grupo del curso… y le llegaron puros stickers 💬🐱 ¿Cuántos mensajes llegan en media hora? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Proporcionalidad",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "Pregunté en el grupo del curso cómo se hacía el ejercicio.",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "💬 240 mensajes<br>0 respuestas útiles",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "Puros stickers de gatitos.",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Mejor pregúntame a mí. Y calcula esto.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "El grupo del curso recibió <b>240 mensajes</b> en <b>4 horas</b>. Al mismo ritmo, ¿cuántos mensajes llegan en <b>30 minutos</b>?",
+   "alternativas": [
+    "60",
+    "120",
+    "30",
+    "20"
+   ],
+   "valores": [
+    "60",
+    "120",
+    "30",
+    "20"
+   ],
+   "correcta": 2,
+   "verificacion": "respuesta = Rational(240, 4)*Rational(30, 60)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Mensajes por hora",
+       "$240 \\div 4 = 60$"
+      ],
+      "voz": "Doscientos cuarenta mensajes en cuatro horas son sesenta por hora."
+     },
+     {
+      "lineas": [
+       "Media hora es la mitad",
+       "$60 \\div 2 = 30$"
+      ],
+      "voz": "En media hora llega la mitad: treinta mensajes."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la ce: treinta. Silencia el grupo mientras estudias."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Tríos pitagóricos: Pitágoras sin sacar raíces 📐 Guárdalos 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Pitagoras #Geometria",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "Tríos pitagóricos",
+   "intro_voz": "Truco PAES: tríos pitagóricos que te ahorran sacar raíces.",
+   "titulo": "Tríos pitagóricos",
+   "pasos": [
+    {
+     "lineas": [
+      "El clásico",
+      "$3,\\ 4,\\ 5 \\quad (9 + 16 = 25)$"
+     ],
+     "voz": "El clásico: tres, cuatro y cinco. Tres al cuadrado más cuatro al cuadrado es cinco al cuadrado."
+    },
+    {
+     "lineas": [
+      "Otros que se repiten",
+      "$5,\\ 12,\\ 13 \\qquad 8,\\ 15,\\ 17$"
+     ],
+     "voz": "Otros que aparecen harto: cinco, doce, trece. Y ocho, quince, diecisiete."
+    },
+    {
+     "lineas": [
+      "Sus múltiplos también",
+      "$6,\\ 8,\\ 10 \\qquad 9,\\ 12,\\ 15$"
+     ],
+     "voz": "Y sus múltiplos también sirven: seis, ocho, diez, o nueve, doce, quince."
+    }
+   ],
+   "remate": "3-4-5 · 5-12-13 · 8-15-17",
+   "cierre": {
+    "voz": "Si ves dos de estos números en un triángulo rectángulo, ya sabes el tercero."
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Mamá: «¿Cómo te fue en mate?» Benja: «Súper bien» 😅📝 ¿Qué nota necesita? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Promedio",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "Sí, mamá, me fue súper bien en matemática.",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "📝 Notas: 4,0 y 5,5<br>Necesita promedio 5,0",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.0
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "¿Y cuánto necesito en la última?",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "Tranquilo, se calcula rápido. Inténtalo.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Benja tiene notas <b>4,0</b> y <b>5,5</b>. Le falta una tercera nota, con la misma ponderación. ¿Qué nota necesita para que su promedio sea <b>5,0</b>?",
+   "alternativas": [
+    "5,0",
+    "5,5",
+    "6,0",
+    "4,5"
+   ],
+   "valores": [
+    "5.0",
+    "5.5",
+    "6.0",
+    "4.5"
+   ],
+   "correcta": 1,
+   "verificacion": "respuesta = 3*Rational(5) - Rational(4) - Rational(11, 2)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Suma que necesita",
+       "$3 \\cdot 5{,}0 = 15$"
+      ],
+      "voz": "Para promediar cinco con tres notas, la suma debe ser quince."
+     },
+     {
+      "lineas": [
+       "Le falta",
+       "$15 - 4{,}0 - 5{,}5 = 5{,}5$"
+      ],
+      "voz": "Quince menos cuatro, menos cinco coma cinco: le falta un cinco coma cinco."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la be: cinco coma cinco. Promedio por cantidad de notas te da la suma total."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 ¿La pregunta dice «al menos uno»? Usa el complemento y ahórrate cálculos 🎲 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Probabilidad #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "«Al menos uno»",
+   "intro_voz": "Dato PAES: cuando leas al menos uno, usa el complemento.",
+   "titulo": "Complemento",
+   "pasos": [
+    {
+     "lineas": [
+      "Lo contrario de A",
+      "$P(\\text{no } A) = 1 - P(A)$"
+     ],
+     "voz": "La probabilidad de que algo no ocurra es uno menos la probabilidad de que ocurra."
+    },
+    {
+     "lineas": [
+      "Al menos un 6 en dos dados",
+      "$1 - \\left(\\dfrac{5}{6}\\right)^2$"
+     ],
+     "voz": "Ejemplo: al menos un seis al lanzar dos dados. Mejor calcula ninguno: cinco sextos por cinco sextos."
+    },
+    {
+     "lineas": [
+      "Resultado",
+      "$1 - \\dfrac{25}{36} = \\dfrac{11}{36}$"
+     ],
+     "voz": "Uno menos veinticinco treinta y seisavos: once treinta y seisavos."
+    }
+   ],
+   "remate": "Al menos uno = 1 − ninguno",
+   "cierre": {
+    "voz": "Al menos uno es uno menos ninguno. Mucho más rápido que contar todos los casos."
+   }
+  }
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: haz un ensayo como si fuera la prueba real ⏱️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #EnsayoPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: haz un ensayo como si fuera la prueba real.",
+   "titulo": "Tip: ensayo real",
+   "pasos": [
+    {
+     "lineas": [
+      "Reserva 2 h 20 min"
+     ],
+     "voz": "Reserva dos horas y veinte minutos, lo que dura la prueba de matemática uno."
+    },
+    {
+     "lineas": [
+      "Celular lejos, reloj a la vista"
+     ],
+     "voz": "Deja el celular lejos y ten un reloj a la vista."
+    },
+    {
+     "lineas": [
+      "Después, revisa tus errores"
+     ],
+     "voz": "Al terminar, revisa cada error y anota por qué te equivocaste."
+    }
+   ],
+   "remate": "Ensaya · Revisa · Repite",
+   "cierre": {
+    "voz": "Los errores de hoy son puntos que ganas el día de la prueba."
+   }
+  }
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "«Profe, esto nunca lo voy a usar»… y entonces vio una oferta 🛍️😏 ¿Cuánto paga? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Descuentos",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Profe, esto nunca lo voy a usar en la vida.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🛍️ Polerón $25.000<br>30% de descuento",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "Mmm… ¿y al final cuánto pago?",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "voz": "¿Decías que nunca lo ibas a usar? Calcula.",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Un polerón cuesta <b>\\$25.000</b> y tiene un <b>30% de descuento</b>. ¿Cuánto se paga por él?",
+   "alternativas": [
+    "\\$17.500",
+    "\\$7.500",
+    "\\$22.000",
+    "\\$18.500"
+   ],
+   "valores": [
+    "17500",
+    "7500",
+    "22000",
+    "18500"
+   ],
+   "correcta": 0,
+   "verificacion": "respuesta = 25000*Rational(70, 100)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Pagas el 70%",
+       "$100\\% - 30\\% = 70\\%$"
+      ],
+      "voz": "Si te descuentan el treinta por ciento, pagas el setenta por ciento."
+     },
+     {
+      "lineas": [
+       "Calculamos",
+       "$25.000 \\cdot 0{,}7 = 17.500$"
+      ],
+      "voz": "Veinticinco mil por cero coma siete: diecisiete mil quinientos pesos."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la a: diecisiete mil quinientos pesos. La matemática sí se usa, sobre todo en las ofertas."
+    }
+   }
+  }
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Truco: de fracción a porcentaje en un paso. Guárdalo para la prueba 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Fracciones #Porcentajes",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "De fracción a porcentaje",
+   "intro_voz": "Truco PAES: pasar de fracción a porcentaje en un paso.",
+   "titulo": "Fracción a porcentaje",
+   "pasos": [
+    {
+     "lineas": [
+      "Lleva el denominador a 100",
+      "$\\dfrac{3}{4} = \\dfrac{75}{100} = 75\\%$"
+     ],
+     "voz": "Si puedes, amplifica hasta tener cien abajo. Tres cuartos son setenta y cinco centésimos: setenta y cinco por ciento."
+    },
+    {
+     "lineas": [
+      "Otro ejemplo",
+      "$\\dfrac{7}{20} = \\dfrac{35}{100} = 35\\%$"
+     ],
+     "voz": "Siete veinteavos: amplificas por cinco y queda treinta y cinco por ciento."
+    },
+    {
+     "lineas": [
+      "Si no se puede: por 100",
+      "$\\dfrac{1}{8} \\cdot 100 = 12{,}5\\%$"
+     ],
+     "voz": "Si no se puede, multiplica por cien. Un octavo por cien es doce coma cinco por ciento."
+    }
+   ],
+   "remate": "Fracción × 100 = %",
+   "cierre": {
+    "voz": "Denominador cien, o multiplica por cien. Y listo."
+   }
+  }
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: arma tu propia hoja de fórmulas 📝 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: arma tu propia hoja de fórmulas.",
+   "titulo": "Tip: tus fórmulas",
+   "pasos": [
+    {
+     "lineas": [
+      "Anota las fórmulas clave"
+     ],
+     "voz": "Escribe en una hoja las fórmulas que más usas: áreas, porcentajes, Pitágoras."
+    },
+    {
+     "lineas": [
+      "Un ejemplo al lado de cada una"
+     ],
+     "voz": "Al lado de cada fórmula, anota un ejemplo resuelto."
+    },
+    {
+     "lineas": [
+      "Repásala cinco minutos al día"
+     ],
+     "voz": "Y repásala cinco minutos al día hasta la prueba."
+    }
+   ],
+   "remate": "Escribe · Ejemplo · Repasa",
+   "cierre": {
+    "voz": "Escribirlas con tu letra te ayuda a recordarlas. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: deja todo listo el día antes 🎒 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: deja todo listo el día antes.",
+   "titulo": "Tip: el día antes",
+   "pasos": [
+    {
+     "lineas": [
+      "Revisa en demre.cl qué llevar"
+     ],
+     "voz": "Revisa en la página del DEMRE qué documentos tienes que llevar."
+    },
+    {
+     "lineas": [
+      "Lápiz y goma, y uno de repuesto"
+     ],
+     "voz": "Prepara tus lápices y tu goma, y lleva uno de repuesto."
+    },
+    {
+     "lineas": [
+      "Averigua tu local y cómo llegar"
+     ],
+     "voz": "Averigua dónde rindes y cuánto te demoras en llegar."
+    }
+   ],
+   "remate": "Todo listo la noche antes ✅",
+   "cierre": {
+    "voz": "Así, el día de la prueba solo te preocupas de responder."
+   }
+  }
+ }
+]

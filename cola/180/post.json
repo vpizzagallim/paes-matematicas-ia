@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Si triplicas los lados, el área NO se triplica 😮 Homotecia y semejanza en 30 segundos 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Geometria #Semejanza",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "Si amplías, el área crece más",
+  "intro_voz": "Dato PAES: si amplías una figura, el área no crece igual que los lados.",
+  "titulo": "Razón de homotecia k",
+  "pasos": [
+   {
+    "lineas": [
+     "Lados y perímetro: por k",
+     "$k = 3:\\ 2\\ \\text{cm} \\to 6\\ \\text{cm}$"
+    ],
+    "voz": "Si la razón es tres, los lados y el perímetro se multiplican por tres."
+   },
+   {
+    "lineas": [
+     "El área: por k al cuadrado",
+     "$k^2 = 3^2 = 9$"
+    ],
+    "voz": "Pero el área se multiplica por tres al cuadrado: nueve veces."
+   },
+   {
+    "lineas": [
+     "El volumen: por k al cubo",
+     "$k^3 = 3^3 = 27$"
+    ],
+    "voz": "Y si es un cuerpo, el volumen se multiplica por tres al cubo: veintisiete veces."
+   }
+  ],
+  "remate": "Lado ×k · Área ×k² · Vol ×k³",
+  "cierre": {
+   "voz": "Lados por ka, área por ka al cuadrado y volumen por ka al cubo."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-09",
+ "id": "180"
+}

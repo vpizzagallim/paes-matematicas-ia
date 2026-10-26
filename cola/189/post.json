@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Función potencia",
+ "gancho": "El signo de la potencia impar 🔢",
+ "enunciado": "La función $f(x) = a \\cdot x^3$ cumple $f(2) = 24$. ¿Cuál es el valor de $f(-1)$?",
+ "alternativas": [
+  "3",
+  "−12",
+  "−3",
+  "12"
+ ],
+ "valores": [
+  "3",
+  "-12",
+  "-3",
+  "12"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "$$f(2) = a \\cdot 8 = 24 \\Rightarrow a = 3$$",
+  "$$f(-1) = 3 \\cdot (-1)^3 = -3$$"
+ ],
+ "trampa": "Creer que $(-1)^3 = 1$ y marcar A (3).",
+ "clave": "Una potencia de exponente <b>impar</b> conserva el signo de la base.",
+ "verificacion": "x, a = symbols('x a')\nav = solve(Eq(a*2**3, 24), a)[0]\nrespuesta = (av*x**3).subs(x, -1)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Encontramos a",
+     "$a \\cdot 2^3 = 24 \\Rightarrow a = 3$"
+    ],
+    "voz": "Primero encontramos el valor de a con el dato. Dos al cubo es ocho, y ocho por a da veinticuatro: a vale tres."
+   },
+   {
+    "lineas": [
+     "Evaluamos en menos uno",
+     "$3 \\cdot (-1)^3 = -3$"
+    ],
+    "voz": "Menos uno al cubo es menos uno, porque el exponente es impar. Tres por menos uno: menos tres. Si hubieras puesto más uno, marcarías tres, que es justo la trampa."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: menos tres. Con exponente impar, el signo de la base se mantiene. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "189"
+}

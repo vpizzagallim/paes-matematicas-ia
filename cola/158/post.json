@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Proporcionalidad inversa",
+ "gancho": "Más llaves, menos espera 🚰",
+ "enunciado": "Un estanque se llena con <b>4 llaves iguales</b> en <b>9 horas</b>. Si se usan <b>6 llaves</b> como esas, abiertas al mismo tiempo, ¿en cuántas horas se llena el estanque?",
+ "alternativas": [
+  "7 horas",
+  "6 horas",
+  "13,5 horas",
+  "11 horas"
+ ],
+ "valores": [
+  "7",
+  "6",
+  "27/2",
+  "11"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "A más llaves, menos tiempo: es proporcionalidad inversa y el producto se mantiene.",
+  "$$4 \\cdot 9 = 6 \\cdot t \\;\\Rightarrow\\; t = \\frac{36}{6} = 6$$"
+ ],
+ "trampa": "Plantear proporcionalidad directa (9 · 6 / 4 = 13,5) y marcar C.",
+ "clave": "En proporcionalidad inversa el <b>producto</b> de las cantidades es constante.",
+ "verificacion": "respuesta = Rational(4*9, 6)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Más llaves, menos tiempo",
+     "$4 \\cdot 9 = 6 \\cdot t$"
+    ],
+    "voz": "Con más llaves se demora menos, así que es inversa: el producto se mantiene. Cuatro por nueve es igual a seis por te."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$t = \\dfrac{36}{6} = 6$"
+    ],
+    "voz": "Treinta y seis dividido en seis: seis horas. Con seis llaves, el estanque se llena tres horas antes."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: seis horas. Si una cantidad sube y la otra baja, multiplica en vez de armar una regla de tres directa. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "158"
+}

@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Truco: potencias de 10 contando ceros. Así la notación científica sale sola 🔟 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Potencias #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "Potencias de 10",
+  "intro_voz": "Truco PAES: las potencias de diez se resuelven contando ceros.",
+  "titulo": "Potencias de 10",
+  "pasos": [
+   {
+    "lineas": [
+     "El exponente cuenta ceros",
+     "$10^4 = 10.000$"
+    ],
+    "voz": "El exponente te dice cuántos ceros hay. Diez a la cuatro es diez mil: un uno y cuatro ceros."
+   },
+   {
+    "lineas": [
+     "Al multiplicar, se suman",
+     "$10^3 \\cdot 10^2 = 10^5$"
+    ],
+    "voz": "Al multiplicar potencias de diez, los exponentes se suman. Diez a la tres por diez a la dos es diez a la cinco."
+   },
+   {
+    "lineas": [
+     "Exponente negativo: decimales",
+     "$10^{-2} = 0{,}01$"
+    ],
+    "voz": "Y con exponente negativo, la coma se corre a la izquierda: diez a la menos dos es cero coma cero uno."
+   }
+  ],
+  "remate": "Exponente = cantidad de ceros",
+  "cierre": {
+   "voz": "Cuenta ceros y mueve la coma. Así la notación científica sale fácil."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-07",
+ "id": "172"
+}

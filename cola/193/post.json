@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Ángulos entre paralelas",
+ "gancho": "x no es la respuesta 👀",
+ "enunciado": "Dos rectas paralelas son cortadas por una transversal. Uno de los ángulos agudos que se forman mide $(3x + 10)°$ y uno de los obtusos mide $(5x + 10)°$. ¿Cuánto mide el ángulo agudo?",
+ "alternativas": [
+  "20°",
+  "110°",
+  "10°",
+  "70°"
+ ],
+ "valores": [
+  "20",
+  "110",
+  "10",
+  "70"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Entre paralelas, un ángulo agudo y uno obtuso son <b>suplementarios</b>: $$(3x + 10) + (5x + 10) = 180$$",
+  "$$8x + 20 = 180 \\Rightarrow x = 20$$",
+  "Ángulo agudo: $$3 \\cdot 20 + 10 = 70°$$"
+ ],
+ "trampa": "Responder el valor de $x$ (20°), o igualar los dos ángulos como si fueran congruentes.",
+ "clave": "Entre paralelas, los agudos son todos iguales, los obtusos también, y un agudo más un obtuso suman <b>180°</b>.",
+ "verificacion": "x = symbols('x'); s = solve(Eq((3*x + 10) + (5*x + 10), 180), x)[0]; respuesta = 3*s + 10",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Agudo + obtuso = 180°",
+     "$8x + 20 = 180$"
+    ],
+    "voz": "Entre paralelas, un ángulo agudo y uno obtuso suman ciento ochenta grados. Queda ocho equis más veinte igual a ciento ochenta. Despejando, ocho equis es ciento sesenta."
+   },
+   {
+    "lineas": [
+     "x vale 20, pero falta",
+     "$3 \\cdot 20 + 10 = 70°$"
+    ],
+    "voz": "Equis vale veinte, pero no es la respuesta: el ángulo agudo mide tres por veinte más diez, setenta grados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: setenta grados. Entre paralelas, un ángulo agudo y uno obtuso siempre son suplementarios. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "193"
+}

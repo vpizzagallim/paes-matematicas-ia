@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Volumen del cono",
+ "gancho": "El barquillo no es un cilindro 🍦",
+ "enunciado": "Un barquillo de helado tiene forma de <b>cono</b> de <b>4 cm</b> de radio y <b>9 cm</b> de altura. ¿Cuál es su volumen?",
+ "alternativas": [
+  "$144\\pi$ cm³",
+  "$48\\pi$ cm³",
+  "$12\\pi$ cm³",
+  "$36\\pi$ cm³"
+ ],
+ "valores": [
+  "144*pi",
+  "48*pi",
+  "12*pi",
+  "36*pi"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Volumen del cono: $$V = \\frac{\\pi r^2 h}{3}$$",
+  "$$V = \\frac{\\pi \\cdot 4^2 \\cdot 9}{3} = \\frac{144\\pi}{3} = 48\\pi\\text{ cm}^3$$"
+ ],
+ "trampa": "Olvidar dividir por 3 y calcularlo como cilindro: $144\\pi$ cm³ (A).",
+ "clave": "Un cono ocupa <b>un tercio</b> del cilindro de igual base y altura.",
+ "verificacion": "r, h = 4, 9; respuesta = pi*r**2*h/3",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cono: un tercio del cilindro",
+     "$V = \\dfrac{\\pi r^2 h}{3}$"
+    ],
+    "voz": "El volumen del cono es pi por el radio al cuadrado por la altura, dividido en tres."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$\\dfrac{\\pi \\cdot 16 \\cdot 9}{3} = 48\\pi$"
+    ],
+    "voz": "Cuatro al cuadrado es dieciséis, por nueve da ciento cuarenta y cuatro, y dividido en tres queda cuarenta y ocho pi."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuarenta y ocho pi centímetros cúbicos. Un cono es un tercio del cilindro con la misma base y altura. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "181"
+}

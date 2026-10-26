@@ -1,0 +1,57 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Propiedades de logaritmos",
+ "gancho": "Calcula un logaritmo sin calculadora 🧠",
+ "enunciado": "Si $\\log 2 \\approx 0{,}30$ y $\\log 3 \\approx 0{,}48$, ¿cuál es el valor aproximado de $\\log 12$? (logaritmos en base 10)",
+ "alternativas": [
+  "0,78",
+  "0,288",
+  "1,38",
+  "1,08"
+ ],
+ "valores": [
+  "78/100",
+  "288/1000",
+  "138/100",
+  "108/100"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Descomponemos: $12 = 2^2 \\cdot 3$.",
+  "$$\\log 12 = 2\\log 2 + \\log 3$$",
+  "$$2 \\cdot 0{,}30 + 0{,}48 = 1{,}08$$"
+ ],
+ "trampa": "Multiplicar los logaritmos (0,30 · 0,48) o olvidar el exponente de 2² y sumar solo 0,30 + 0,48, marcando A.",
+ "clave": "$\\log(a \\cdot b) = \\log a + \\log b$ y $\\log a^n = n \\log a$: descompón en factores primos.",
+ "verificacion": "l2, l3 = Rational(30,100), Rational(48,100)\nf = factorint(12)\nrespuesta = f[2]*l2 + f[3]*l3",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Descomponemos doce",
+     "$12 = 2^2 \\cdot 3$"
+    ],
+    "voz": "Doce es dos al cuadrado por tres."
+   },
+   {
+    "lineas": [
+     "Producto y potencia",
+     "$\\log 12 = 2\\log 2 + \\log 3$"
+    ],
+    "voz": "El logaritmo de un producto es la suma, y el exponente baja multiplicando: dos por log de dos, más log de tres."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$0{,}60 + 0{,}48 = 1{,}08$"
+    ],
+    "voz": "Cero coma sesenta más cero coma cuarenta y ocho: uno coma cero ocho."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: uno coma cero ocho. Factoriza el número y usa que el logaritmo transforma productos en sumas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "150"
+}

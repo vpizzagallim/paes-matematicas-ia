@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: deja todo listo el día antes 🎒 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: deja todo listo el día antes.",
+  "titulo": "Tip: el día antes",
+  "pasos": [
+   {
+    "lineas": [
+     "Revisa en demre.cl qué llevar"
+    ],
+    "voz": "Revisa en la página del DEMRE qué documentos tienes que llevar."
+   },
+   {
+    "lineas": [
+     "Lápiz y goma, y uno de repuesto"
+    ],
+    "voz": "Prepara tus lápices y tu goma, y lleva uno de repuesto."
+   },
+   {
+    "lineas": [
+     "Averigua tu local y cómo llegar"
+    ],
+    "voz": "Averigua dónde rindes y cuánto te demoras en llegar."
+   }
+  ],
+  "remate": "Todo listo la noche antes ✅",
+  "cierre": {
+   "voz": "Así, el día de la prueba solo te preocupas de responder."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-19",
+ "id": "216"
+}

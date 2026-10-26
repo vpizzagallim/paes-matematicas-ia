@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 ¿La pregunta dice «al menos uno»? Usa el complemento y ahórrate cálculos 🎲 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Probabilidad #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "«Al menos uno»",
+  "intro_voz": "Dato PAES: cuando leas al menos uno, usa el complemento.",
+  "titulo": "Complemento",
+  "pasos": [
+   {
+    "lineas": [
+     "Lo contrario de A",
+     "$P(\\text{no } A) = 1 - P(A)$"
+    ],
+    "voz": "La probabilidad de que algo no ocurra es uno menos la probabilidad de que ocurra."
+   },
+   {
+    "lineas": [
+     "Al menos un 6 en dos dados",
+     "$1 - \\left(\\dfrac{5}{6}\\right)^2$"
+    ],
+    "voz": "Ejemplo: al menos un seis al lanzar dos dados. Mejor calcula ninguno: cinco sextos por cinco sextos."
+   },
+   {
+    "lineas": [
+     "Resultado",
+     "$1 - \\dfrac{25}{36} = \\dfrac{11}{36}$"
+    ],
+    "voz": "Uno menos veinticinco treinta y seisavos: once treinta y seisavos."
+   }
+  ],
+  "remate": "Al menos uno = 1 − ninguno",
+  "cierre": {
+   "voz": "Al menos uno es uno menos ninguno. Mucho más rápido que contar todos los casos."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-14",
+ "id": "199"
+}

@@ -1,0 +1,57 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Teorema de Pitágoras",
+ "gancho": "Cortar camino por el pasto 🚶",
+ "enunciado": "Un parque rectangular de Maipú mide <b>80 m</b> por <b>60 m</b>. Para llegar a la esquina opuesta, Benja cruza en <b>diagonal</b> en vez de rodearlo por los bordes. ¿Cuántos metros se ahorra?",
+ "alternativas": [
+  "100 m",
+  "140 m",
+  "40 m",
+  "20 m"
+ ],
+ "valores": [
+  "100",
+  "140",
+  "40",
+  "20"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Rodeando: $$80 + 60 = 140\\text{ m}$$",
+  "Diagonal (Pitágoras): $$d = \\sqrt{80^2 + 60^2} = \\sqrt{10.000} = 100\\text{ m}$$",
+  "Ahorro: $$140 - 100 = 40\\text{ m}$$"
+ ],
+ "trampa": "Responder la diagonal (100 m) sin calcular la diferencia entre los dos caminos.",
+ "clave": "Lee qué se pregunta: aquí no es la diagonal, sino la <b>diferencia</b> entre los dos recorridos.",
+ "verificacion": "a, b = 80, 60; respuesta = (a + b) - sqrt(a**2 + b**2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Por los bordes",
+     "$80 + 60 = 140$"
+    ],
+    "voz": "Rodeando el parque, Benja camina ochenta más sesenta: ciento cuarenta metros."
+   },
+   {
+    "lineas": [
+     "Diagonal con Pitágoras",
+     "$\\sqrt{80^2 + 60^2} = 100$"
+    ],
+    "voz": "La diagonal es la raíz de ochenta al cuadrado más sesenta al cuadrado: cien metros."
+   },
+   {
+    "lineas": [
+     "Diferencia",
+     "$140 - 100 = 40$"
+    ],
+    "voz": "Se ahorra ciento cuarenta menos cien. Es decir, cuarenta metros menos de caminata."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cuarenta metros. Antes de marcar, revisa si te piden la diagonal o la diferencia entre los caminos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "161"
+}

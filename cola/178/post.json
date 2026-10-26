@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Raíces de decimales",
+ "gancho": "La raíz no se reparte en la suma 🌱",
+ "enunciado": "¿Cuál es el valor de $$\\sqrt{0{,}09} + \\sqrt{0{,}16}\\,?$$",
+ "alternativas": [
+  "0,5",
+  "0,7",
+  "0,07",
+  "0,25"
+ ],
+ "valores": [
+  "1/2",
+  "7/10",
+  "7/100",
+  "1/4"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "$\\sqrt{0{,}09} = 0{,}3$ porque $0{,}3^2 = 0{,}09$.",
+  "$\\sqrt{0{,}16} = 0{,}4$, entonces $$0{,}3 + 0{,}4 = 0{,}7$$"
+ ],
+ "trampa": "Sumar dentro de la raíz: $\\sqrt{0{,}09 + 0{,}16} = \\sqrt{0{,}25} = 0{,}5$, y marcar A.",
+ "clave": "$\\sqrt{a + b} \\neq \\sqrt{a} + \\sqrt{b}$: calcula cada raíz por separado.",
+ "verificacion": "respuesta = sqrt(Rational(9,100)) + sqrt(Rational(16,100))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cada raíz por separado",
+     "$\\sqrt{0{,}09} = 0{,}3$"
+    ],
+    "voz": "Cada raíz va por separado. La raíz de cero coma cero nueve es cero coma tres, porque cero coma tres al cuadrado da eso."
+   },
+   {
+    "lineas": [
+     "La otra raíz y sumamos",
+     "$0{,}4 + 0{,}3 = 0{,}7$"
+    ],
+    "voz": "La raíz de cero coma dieciséis es cero coma cuatro. Sumando, cero coma siete. No se suma dentro de la raíz."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cero coma siete. La raíz de una suma no es la suma de las raíces. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "178"
+}

@@ -1,0 +1,57 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Razones trigonométricas",
+ "gancho": "Del seno al perímetro 📏",
+ "enunciado": "En un triángulo rectángulo, el seno de uno de sus ángulos agudos es $0{,}6$ y la hipotenusa mide <b>20 cm</b>. ¿Cuál es el perímetro del triángulo?",
+ "alternativas": [
+  "28 cm",
+  "32 cm",
+  "96 cm",
+  "48 cm"
+ ],
+ "valores": [
+  "28",
+  "32",
+  "96",
+  "48"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Cateto opuesto: $$20 \\cdot 0{,}6 = 12\\text{ cm}$$",
+  "Otro cateto (Pitágoras): $$\\sqrt{20^2 - 12^2} = \\sqrt{256} = 16\\text{ cm}$$",
+  "Perímetro: $$12 + 16 + 20 = 48\\text{ cm}$$"
+ ],
+ "trampa": "Sumar solo los catetos (28 cm), o confundir perímetro con área (96 cm²).",
+ "clave": "Seno = cateto opuesto / hipotenusa. Con un cateto y la hipotenusa, Pitágoras entrega el otro cateto.",
+ "verificacion": "c = 20; op = c*Rational(6, 10); ad = sqrt(c**2 - op**2); respuesta = op + ad + c",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Seno: opuesto / hipotenusa",
+     "$20 \\cdot 0{,}6 = 12$"
+    ],
+    "voz": "El seno es cateto opuesto partido por hipotenusa, así que el cateto opuesto es veinte por cero coma seis: doce."
+   },
+   {
+    "lineas": [
+     "Pitágoras",
+     "$\\sqrt{20^2 - 12^2} = 16$"
+    ],
+    "voz": "El otro cateto es la raíz de cuatrocientos menos ciento cuarenta y cuatro: dieciséis."
+   },
+   {
+    "lineas": [
+     "Perímetro",
+     "$12 + 16 + 20 = 48$"
+    ],
+    "voz": "Sumamos los tres lados. Doce más dieciséis más veinte da cuarenta y ocho."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cuarenta y ocho centímetros. El perímetro suma los tres lados, incluida la hipotenusa. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "209"
+}

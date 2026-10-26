@@ -1,0 +1,82 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Mamá: «¿Cómo te fue en mate?» Benja: «Súper bien» 😅📝 ¿Qué nota necesita? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Promedio",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Sí, mamá, me fue súper bien en matemática.",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "📝 Notas: 4,0 y 5,5<br>Necesita promedio 5,0",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.0
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "¿Y cuánto necesito en la última?",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Tranquilo, se calcula rápido. Inténtalo.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Benja tiene notas <b>4,0</b> y <b>5,5</b>. Le falta una tercera nota, con la misma ponderación. ¿Qué nota necesita para que su promedio sea <b>5,0</b>?",
+  "alternativas": [
+   "5,0",
+   "5,5",
+   "6,0",
+   "4,5"
+  ],
+  "valores": [
+   "5.0",
+   "5.5",
+   "6.0",
+   "4.5"
+  ],
+  "correcta": 1,
+  "verificacion": "respuesta = 3*Rational(5) - Rational(4) - Rational(11, 2)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Suma que necesita",
+      "$3 \\cdot 5{,}0 = 15$"
+     ],
+     "voz": "Para promediar cinco con tres notas, la suma debe ser quince."
+    },
+    {
+     "lineas": [
+      "Le falta",
+      "$15 - 4{,}0 - 5{,}5 = 5{,}5$"
+     ],
+     "voz": "Quince menos cuatro, menos cinco coma cinco: le falta un cinco coma cinco."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: cinco coma cinco. Promedio por cantidad de notas te da la suma total."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-13",
+ "id": "195"
+}

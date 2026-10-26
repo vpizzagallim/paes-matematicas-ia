@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "IVA y descuento",
+ "gancho": "Primero el IVA, después la oferta 💻",
+ "enunciado": "Un notebook tiene un precio neto de <b>\\$420.000</b>. Al precio se le agrega el <b>IVA (19%)</b> y luego, sobre ese total, se aplica un descuento del <b>10%</b>. ¿Cuánto se paga finalmente?",
+ "alternativas": [
+  "\\$449.820",
+  "\\$457.800",
+  "\\$499.800",
+  "\\$378.000"
+ ],
+ "valores": [
+  "449820",
+  "457800",
+  "499800",
+  "378000"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Con IVA: $$420.000 \\cdot 1{,}19 = 499.800$$",
+  "Descuento del 10%: $$499.800 \\cdot 0{,}9 = 449.820$$"
+ ],
+ "trampa": "Restar los porcentajes (19% − 10% = 9%) y calcular 420.000 · 1,09, marcando B.",
+ "clave": "Cambios porcentuales sucesivos se <b>multiplican</b>: $1{,}19 \\cdot 0{,}9$, no $1 + 0{,}19 - 0{,}10$.",
+ "verificacion": "respuesta = 420000*Rational(119,100)*(1-Rational(10,100))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Agregamos el IVA",
+     "$420.000 \\cdot 1{,}19 = 499.800$"
+    ],
+    "voz": "Partimos por el precio neto de cuatrocientos veinte mil. Agregar el diecinueve por ciento es multiplicar por uno coma diecinueve: cuatrocientos noventa y nueve mil ochocientos."
+   },
+   {
+    "lineas": [
+     "Descuento sobre el total",
+     "$499.800 \\cdot 0{,}9 = 449.820$"
+    ],
+    "voz": "El descuento del diez por ciento se aplica a ese total: multiplicamos por cero coma nueve."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuatrocientos cuarenta y nueve mil ochocientos veinte pesos. Los porcentajes sucesivos se multiplican, no se restan. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "151"
+}

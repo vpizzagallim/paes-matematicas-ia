@@ -1,0 +1,89 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "La noche antes de la prueba, Benja quiere repasar TODO 🌙😵 ¿A qué hora termina? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #NocheAntes",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Es la noche antes. Voy a repasar todo.",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🌙 3:00 AM<br>Unidad 1 de 12",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.0
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "Creo que hoy no duermo.",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Dormir también es estudiar. Calcula esto.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Benja quiere repasar <b>12 unidades</b> de <b>25 minutos</b> cada una. Si empieza a las <b>23:00</b> y no hace pausas, ¿a qué hora termina?",
+  "alternativas": [
+   "03:00",
+   "04:00",
+   "05:00",
+   "02:00"
+  ],
+  "valores": [
+   "3",
+   "4",
+   "5",
+   "2"
+  ],
+  "correcta": 1,
+  "verificacion": "respuesta = 23 + Rational(12*25, 60) - 24",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Tiempo total",
+      "$12 \\cdot 25 = 300\\ \\text{min}$"
+     ],
+     "voz": "Doce unidades de veinticinco minutos son trescientos minutos."
+    },
+    {
+     "lineas": [
+      "A horas",
+      "$300 \\div 60 = 5\\ \\text{h}$"
+     ],
+     "voz": "Trescientos minutos son cinco horas."
+    },
+    {
+     "lineas": [
+      "Sumamos a la hora de inicio",
+      "$23{:}00 + 5\\ \\text{h} = 04{:}00$"
+     ],
+     "voz": "Las once de la noche más cinco horas: las cuatro de la mañana."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: a las cuatro de la mañana. Mejor repasa de a poco y duerme bien."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-03",
+ "id": "156"
+}

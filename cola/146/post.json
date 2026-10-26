@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Reducción de expresiones algebraicas",
+ "gancho": "El signo menos que todos olvidan ➖",
+ "enunciado": "Al reducir la expresión $$3(2x - 4) - 2(x - 5)$$ se obtiene:",
+ "alternativas": [
+  "$4x - 22$",
+  "$4x - 2$",
+  "$8x - 2$",
+  "$4x + 2$"
+ ],
+ "valores": [
+  "4*x-22",
+  "4*x-2",
+  "8*x-2",
+  "4*x+2"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Distribuimos cada paréntesis: $$6x - 12 - 2x + 10$$",
+  "Juntamos términos semejantes: $$6x - 2x = 4x \\qquad -12 + 10 = -2$$"
+ ],
+ "trampa": "Hacer $-2 \\cdot (-5) = -10$ y marcar A ($4x - 22$).",
+ "clave": "El signo que está delante del paréntesis multiplica a <b>todos</b> los términos de adentro.",
+ "verificacion": "x = symbols('x')\nrespuesta = expand(3*(2*x - 4) - 2*(x - 5))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Distribuimos con cuidado",
+     "$6x - 12 - 2x + 10$"
+    ],
+    "voz": "Vamos paso a paso, distribuyendo cada paréntesis. Tres por dos equis, seis equis; tres por menos cuatro, menos doce. Y menos dos por menos cinco da más diez."
+   },
+   {
+    "lineas": [
+     "Términos semejantes",
+     "$4x - 2$"
+    ],
+    "voz": "Seis equis menos dos equis, cuatro equis. Menos doce más diez, menos dos. Ojo, que aquí está la trampa más típica de la prueba."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuatro equis menos dos. El signo delante del paréntesis multiplica a todos los términos de adentro. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "146"
+}

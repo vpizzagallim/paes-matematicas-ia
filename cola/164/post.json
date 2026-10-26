@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: dormir también es estudiar 😴 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: dormir también es estudiar.",
+  "titulo": "Tip: dormir bien",
+  "pasos": [
+   {
+    "lineas": [
+     "Duerme bien toda la semana"
+    ],
+    "voz": "Dormir bien los días antes de la prueba ayuda a tu memoria y a tu concentración."
+   },
+   {
+    "lineas": [
+     "No trasnoches la noche antes"
+    ],
+    "voz": "La noche antes no te quedes despierto estudiando materia nueva."
+   },
+   {
+    "lineas": [
+     "Desayuna y sal con tiempo"
+    ],
+    "voz": "En la mañana, desayuna y sal con tiempo para llegar tranquilo."
+   }
+  ],
+  "remate": "Dormir bien = rendir mejor 😴",
+  "cierre": {
+   "voz": "Descansar también es parte de la preparación. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-05",
+ "id": "164"
+}

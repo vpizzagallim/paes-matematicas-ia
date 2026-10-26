@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: arma tu propia hoja de fórmulas 📝 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: arma tu propia hoja de fórmulas.",
+  "titulo": "Tip: tus fórmulas",
+  "pasos": [
+   {
+    "lineas": [
+     "Anota las fórmulas clave"
+    ],
+    "voz": "Escribe en una hoja las fórmulas que más usas: áreas, porcentajes, Pitágoras."
+   },
+   {
+    "lineas": [
+     "Un ejemplo al lado de cada una"
+    ],
+    "voz": "Al lado de cada fórmula, anota un ejemplo resuelto."
+   },
+   {
+    "lineas": [
+     "Repásala cinco minutos al día"
+    ],
+    "voz": "Y repásala cinco minutos al día hasta la prueba."
+   }
+  ],
+  "remate": "Escribe · Ejemplo · Repasa",
+  "cierre": {
+   "voz": "Escribirlas con tu letra te ayuda a recordarlas. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-18",
+ "id": "213"
+}

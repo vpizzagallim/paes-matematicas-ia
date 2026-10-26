@@ -1,0 +1,50 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Rectas paralelas",
+ "gancho": "Misma pendiente, ojo con el signo ⚠️",
+ "enunciado": "¿Para qué valor de $k$ las rectas $kx + 2y = 5$ y $3x - y = 1$ son <b>paralelas</b>?",
+ "alternativas": [
+  "$6$",
+  "$-6$",
+  "$\\dfrac{2}{3}$",
+  "$-\\dfrac{3}{2}$"
+ ],
+ "valores": [
+  "6",
+  "-6",
+  "2/3",
+  "-3/2"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Primera recta: $$y = -\\frac{k}{2}x + \\frac{5}{2} \\Rightarrow m_1 = -\\frac{k}{2}$$",
+  "Segunda recta: $$y = 3x - 1 \\Rightarrow m_2 = 3$$",
+  "Paralelas: $$-\\frac{k}{2} = 3 \\Rightarrow k = -6$$"
+ ],
+ "trampa": "Perder el signo al despejar $y$ ($m_1 = \\frac{k}{2}$) y obtener $k = 6$; o usar la condición de perpendicularidad y llegar a $\\frac{2}{3}$.",
+ "clave": "Rectas paralelas (no verticales): <b>igual pendiente</b>. Despeja $y$ cuidando los signos.",
+ "verificacion": "x, y, k = symbols('x y k'); m1 = diff(solve(k*x + 2*y - 5, y)[0], x); m2 = diff(solve(3*x - y - 1, y)[0], x); respuesta = solve(Eq(m1, m2), k)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Despejamos y",
+     "$m_1 = -\\dfrac{k}{2}$,  $m_2 = 3$"
+    ],
+    "voz": "Despejando ye, la primera recta tiene pendiente menos ka medios y la segunda, pendiente tres. Para eso dejamos la ye sola a un lado."
+   },
+   {
+    "lineas": [
+     "Paralelas: igual pendiente",
+     "$-\\dfrac{k}{2} = 3 \\Rightarrow k = -6$"
+    ],
+    "voz": "Igualamos las pendientes: menos ka medios igual a tres, entonces ka es menos seis. Ojo, si ka fuera seis, las pendientes tendrían distinto signo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: menos seis. Dos rectas son paralelas cuando tienen la misma pendiente; cuida el signo al despejar. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "211"
+}

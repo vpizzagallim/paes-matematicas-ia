@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad condicional",
+ "gancho": "La condición cambia el total 🎯",
+ "enunciado": "En un liceo, de 3.° medio, 60 estudiantes llegan en Metro y 40 en bus; de 4.° medio, 50 en Metro y 50 en bus. Se elige al azar uno que llega en <b>Metro</b>. ¿Cuál es la probabilidad de que sea de 4.° medio?",
+ "alternativas": [
+  "$\\dfrac{5}{11}$",
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{11}{20}$"
+ ],
+ "valores": [
+  "5/11",
+  "1/4",
+  "1/2",
+  "11/20"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Se sabe que llega en Metro: el nuevo total es $60 + 50 = 110$.",
+  "$$P(4.^\\circ \\mid \\text{Metro}) = \\frac{50}{110} = \\frac{5}{11}$$"
+ ],
+ "trampa": "Dividir por los 200 estudiantes ($\\tfrac{50}{200} = \\tfrac{1}{4}$, B) o por los 100 de 4.° medio ($\\tfrac{1}{2}$, C).",
+ "clave": "$P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$: la condición reduce el total de casos.",
+ "verificacion": "metro = {'3': 60, '4': 50}\nbus = {'3': 40, '4': 50}\nrespuesta = Rational(metro['4'], sum(metro.values()))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Nuevo total: los de Metro",
+     "$60 + 50 = 110$"
+    ],
+    "voz": "Ya sabemos que llega en Metro, así que el total ya no es doscientos: son ciento diez. No hay que dividir por los cien de cuarto medio. Ni por los doscientos del liceo."
+   },
+   {
+    "lineas": [
+     "De ellos, de cuarto medio",
+     "$\\dfrac{50}{110} = \\dfrac{5}{11}$"
+    ],
+    "voz": "De esos ciento diez, cincuenta son de cuarto medio: cinco onceavos. Esa es la probabilidad pedida."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cinco onceavos. En probabilidad condicional, la condición achica el total de casos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "214"
+}

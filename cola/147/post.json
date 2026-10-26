@@ -1,0 +1,57 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Perímetro de figuras compuestas",
+ "gancho": "¿Cercas también el diámetro? 🌳",
+ "enunciado": "Un jardín tiene forma de rectángulo de <b>10 m</b> de largo y <b>6 m</b> de ancho, con un <b>semicírculo</b> agregado sobre uno de los lados de 6 m, que queda como diámetro. ¿Cuántos metros de reja se necesitan para cercar todo el borde?",
+ "alternativas": [
+  "$(26 + 3\\pi)$ m",
+  "$(32 + 3\\pi)$ m",
+  "$(26 + 6\\pi)$ m",
+  "$(20 + 3\\pi)$ m"
+ ],
+ "valores": [
+  "26+3*pi",
+  "32+3*pi",
+  "26+6*pi",
+  "20+3*pi"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "El borde tiene dos lados de 10 m, un lado de 6 m y el arco. El lado de 6 m que es diámetro <b>queda dentro</b> y no se cerca.",
+  "Arco: mitad de la circunferencia de radio 3: $$\\frac{2\\pi \\cdot 3}{2} = 3\\pi$$",
+  "Total: $$10 + 10 + 6 + 3\\pi = (26 + 3\\pi)\\text{ m}$$"
+ ],
+ "trampa": "Sumar también el diámetro, que queda dentro de la figura, y marcar B.",
+ "clave": "El perímetro de una figura compuesta es solo su <b>borde exterior</b>: los lados internos no se cuentan.",
+ "verificacion": "r = Rational(6, 2); respuesta = 2*10 + 6 + pi*r",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Solo el borde exterior",
+     "$10 + 10 + 6$"
+    ],
+    "voz": "El lado que sirve de diámetro queda adentro, así que no se cerca. Quedan dos lados de diez y uno de seis."
+   },
+   {
+    "lineas": [
+     "Arco: media circunferencia",
+     "$\\dfrac{2\\pi \\cdot 3}{2} = 3\\pi$"
+    ],
+    "voz": "El radio es tres, y la mitad de la circunferencia mide tres pi."
+   },
+   {
+    "lineas": [
+     "Sumamos",
+     "$26 + 3\\pi$"
+    ],
+    "voz": "En total, veintiséis más tres pi metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veintiséis más tres pi metros. En un perímetro solo cuenta el borde exterior, nunca los lados internos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "147"
+}

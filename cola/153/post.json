@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Productos notables",
+ "gancho": "Un truco con el cuadrado de binomio ✨",
+ "enunciado": "Si $x + \\dfrac{1}{x} = 5$, ¿cuál es el valor de $$x^2 + \\dfrac{1}{x^2}\\,?$$",
+ "alternativas": [
+  "23",
+  "25",
+  "27",
+  "10"
+ ],
+ "valores": [
+  "23",
+  "25",
+  "27",
+  "10"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Elevamos al cuadrado: $$\\left(x + \\frac{1}{x}\\right)^2 = x^2 + 2 + \\frac{1}{x^2} = 25$$",
+  "$$x^2 + \\frac{1}{x^2} = 25 - 2 = 23$$"
+ ],
+ "trampa": "Creer que $\\left(x + \\tfrac{1}{x}\\right)^2 = x^2 + \\tfrac{1}{x^2}$, olvidando el doble producto, y marcar B (25).",
+ "clave": "$(a + b)^2 = a^2 + 2ab + b^2$: nunca olvides el <b>doble producto</b>.",
+ "verificacion": "x = symbols('x')\nsol = solve(Eq(x + 1/x, 5), x)\nvals = {nsimplify(simplify(s**2 + 1/s**2)) for s in sol}\nassert len(vals) == 1\nrespuesta = vals.pop()",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Elevamos al cuadrado",
+     "$\\left(x + \\dfrac{1}{x}\\right)^2 = 25$"
+    ],
+    "voz": "No hace falta encontrar equis, basta un truco. Elevamos ambos lados al cuadrado: cinco al cuadrado es veinticinco."
+   },
+   {
+    "lineas": [
+     "El doble producto vale dos",
+     "$x^2 + 2 + \\dfrac{1}{x^2} = 25$"
+    ],
+    "voz": "El doble producto es dos por equis por uno partido equis, o sea dos. Restamos dos: veintitrés. Esa es la clave del ejercicio. Si te olvidas del doble producto, marcas veinticinco y caes en la trampa."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veintitrés. Al elevar un binomio al cuadrado nunca olvides el doble producto. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "153"
+}

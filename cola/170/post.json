@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Números irracionales",
+ "gancho": "¿Cuál de estos NO es racional? 🤔",
+ "enunciado": "¿Cuál de los siguientes números es <b>irracional</b>?",
+ "alternativas": [
+  "$\\sqrt{0{,}49}$",
+  "$\\sqrt{2} \\cdot \\sqrt{8}$",
+  "$\\dfrac{\\sqrt{12}}{\\sqrt{3}}$",
+  "$\\sqrt{2} + \\sqrt{8}$"
+ ],
+ "valores": [
+  "sqrt(49/100)",
+  "sqrt(2)*sqrt(8)",
+  "sqrt(12)/sqrt(3)",
+  "sqrt(2)+sqrt(8)"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "$\\sqrt{0{,}49} = 0{,}7$; $\\;\\sqrt{2}\\cdot\\sqrt{8} = \\sqrt{16} = 4$; $\\;\\dfrac{\\sqrt{12}}{\\sqrt{3}} = \\sqrt{4} = 2$.",
+  "$$\\sqrt{2} + \\sqrt{8} = \\sqrt{2} + 2\\sqrt{2} = 3\\sqrt{2}$$, que es irracional."
+ ],
+ "trampa": "Pensar que todo número con raíz es irracional (marcar A o B) o creer que $\\sqrt{2} + \\sqrt{8} = \\sqrt{10}$.",
+ "clave": "Simplifica antes de clasificar: productos y cocientes de raíces pueden dar racionales; $3\\sqrt{2}$ sigue siendo irracional.",
+ "verificacion": "cands = [sqrt(Rational(49,100)), sqrt(2)*sqrt(8), sqrt(12)/sqrt(3), sqrt(2)+sqrt(8)]\nirr = [x for x in cands if not nsimplify(x).is_rational]\nassert len(irr) == 1\nrespuesta = irr[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Simplificamos cada una",
+     "$0{,}7 \\quad \\sqrt{16} = 4 \\quad \\sqrt{4} = 2$"
+    ],
+    "voz": "Simplificamos. La raíz de cero coma cuarenta y nueve es cero coma siete; raíz de dos por raíz de ocho es raíz de dieciséis, cuatro; y el cociente da raíz de cuatro, dos."
+   },
+   {
+    "lineas": [
+     "La suma no se junta",
+     "$\\sqrt{2} + 2\\sqrt{2} = 3\\sqrt{2}$"
+    ],
+    "voz": "Pero raíz de dos más raíz de ocho es tres raíz de dos, que es irracional."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: raíz de dos más raíz de ocho. Simplifica siempre antes de decidir si un número es racional. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "170"
+}

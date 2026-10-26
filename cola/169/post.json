@@ -1,0 +1,57 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Cuartiles",
+ "gancho": "Primero ordena, después busca cuartiles 🚇",
+ "enunciado": "Los tiempos de viaje en Metro, en minutos, de 11 estudiantes son: 25, 12, 33, 18, 40, 22, 15, 35, 20, 30 y 27. ¿Cuál es el rango intercuartil $Q_3 - Q_1$?",
+ "alternativas": [
+  "15",
+  "28",
+  "33",
+  "3"
+ ],
+ "valores": [
+  "15",
+  "28",
+  "33",
+  "3"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Ordenados: $12, 15, 18, 20, 22, \\mathbf{25}, 27, 30, 33, 35, 40$. La mediana es 25.",
+  "Mitad inferior: $Q_1 = 18$. Mitad superior: $Q_3 = 33$.",
+  "$$Q_3 - Q_1 = 33 - 18 = 15$$"
+ ],
+ "trampa": "Buscar los cuartiles sin ordenar los datos, o confundir el rango intercuartil con el rango ($40 - 12 = 28$, B).",
+ "clave": "Los cuartiles se calculan con los datos <b>ordenados</b>: $Q_1$ y $Q_3$ son las medianas de cada mitad.",
+ "verificacion": "d = sorted([25, 12, 33, 18, 40, 22, 15, 35, 20, 30, 27])\nabajo, arriba = d[:5], d[6:]\nrespuesta = arriba[2] - abajo[2]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ordenamos: la mediana es 25",
+     "$12,15,18,20,22,\\mathbf{25},\\ldots$"
+    ],
+    "voz": "Primero se ordenan los once datos. El del medio, el sexto, es veinticinco."
+   },
+   {
+    "lineas": [
+     "Mediana de cada mitad",
+     "$Q_1 = 18 \\quad Q_3 = 33$"
+    ],
+    "voz": "La mitad de abajo tiene mediana dieciocho, y la de arriba, treinta y tres. Cada mitad tiene cinco datos, y su dato central es el tercero."
+   },
+   {
+    "lineas": [
+     "Restamos",
+     "$33 - 18 = 15$"
+    ],
+    "voz": "El rango intercuartil es treinta y tres menos dieciocho: quince minutos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: quince minutos. Los cuartiles se buscan siempre con los datos ordenados. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "169"
+}

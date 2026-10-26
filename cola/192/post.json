@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Función cuadrática: lanzamiento",
+ "gancho": "¿Hasta dónde sube la pelota? ⚽",
+ "enunciado": "La altura (en metros) de una pelota a los $t$ segundos es $$h(t) = -5t^2 + 20t + 1{,}5$$ ¿Cuál es la <b>altura máxima</b> que alcanza?",
+ "alternativas": [
+  "61,5 m",
+  "20 m",
+  "31,5 m",
+  "21,5 m"
+ ],
+ "valores": [
+  "123/2",
+  "20",
+  "63/2",
+  "43/2"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "El máximo está en el vértice: $$t = -\\frac{b}{2a} = -\\frac{20}{2 \\cdot (-5)} = 2$$",
+  "$$h(2) = -5 \\cdot 4 + 40 + 1{,}5 = 21{,}5$$"
+ ],
+ "trampa": "Calcular $-5 \\cdot 2$ en vez de $-5 \\cdot 2^2$ y marcar C (31,5 m).",
+ "clave": "La altura máxima de una parábola que abre hacia abajo se obtiene evaluando en $t = -\\dfrac{b}{2a}$.",
+ "verificacion": "t = symbols('t')\nh = -5*t**2 + 20*t + Rational(3, 2)\nt0 = solve(diff(h, t), t)[0]\nrespuesta = h.subs(t, t0)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Tiempo del vértice",
+     "$t = -\\dfrac{20}{2 \\cdot (-5)} = 2$"
+    ],
+    "voz": "Es una parábola que abre hacia abajo, así que tiene un máximo. La altura máxima está en el vértice. Menos be partido dos a: dos segundos."
+   },
+   {
+    "lineas": [
+     "Evaluamos en dos",
+     "$h(2) = -20 + 40 + 1{,}5$"
+    ],
+    "voz": "Menos cinco por dos al cuadrado es menos veinte. Más cuarenta, más uno coma cinco: veintiuno coma cinco metros. Ojo: primero el cuadrado y después el producto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: veintiuno coma cinco metros. Primero se busca el tiempo del vértice y después se evalúa la función. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "192"
+}

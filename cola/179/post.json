@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Sistemas de ecuaciones con contexto",
+ "gancho": "Autos y motos en el estacionamiento 🚗🏍️",
+ "enunciado": "En un estacionamiento hay <b>30 vehículos</b> entre autos y motos, y en total se cuentan <b>96 ruedas</b>. ¿Cuántas <b>motos</b> hay?",
+ "alternativas": [
+  "18",
+  "15",
+  "12",
+  "24"
+ ],
+ "valores": [
+  "18",
+  "15",
+  "12",
+  "24"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Autos $a$, motos $m$: $$a + m = 30 \\qquad 4a + 2m = 96$$",
+  "Restando el doble de la primera: $$2a = 36 \\Rightarrow a = 18,\\ m = 12$$"
+ ],
+ "trampa": "Calcular bien los autos (18) y marcarlos como respuesta (A), sin leer que se preguntaba por las motos.",
+ "clave": "Al resolver un sistema, revisa al final <b>qué incógnita</b> pide la pregunta.",
+ "verificacion": "a, m = symbols('a m')\ns = solve([Eq(a + m, 30), Eq(4*a + 2*m, 96)], [a, m])\nrespuesta = s[m]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Dos ecuaciones",
+     "$a + m = 30 \\quad 4a + 2m = 96$"
+    ],
+    "voz": "Llamemos a a los autos y eme a las motos. Autos más motos suman treinta. Cuatro ruedas por auto y dos por moto suman noventa y seis."
+   },
+   {
+    "lineas": [
+     "Restamos el doble de la primera",
+     "$2a = 36 \\Rightarrow a = 18$"
+    ],
+    "voz": "Restando el doble de la primera queda dos a igual a treinta y seis: dieciocho autos. Entonces hay doce motos. Pero ojo, preguntan por las motos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: doce motos. Al terminar, revisa qué incógnita pide la pregunta. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "179"
+}

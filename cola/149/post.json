@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Promedio ponderado",
+ "gancho": "No todas las notas pesan lo mismo ⚖️",
+ "enunciado": "En Lenguaje, los <b>controles</b> valen 30%, la <b>prueba</b> 50% y el <b>trabajo</b> 20%. Sofía tiene 5,0 en controles, 6,0 en la prueba y 4,0 en el trabajo. ¿Cuál es su nota final?",
+ "alternativas": [
+  "5,0",
+  "5,3",
+  "4,5",
+  "5,1"
+ ],
+ "valores": [
+  "5",
+  "53/10",
+  "9/2",
+  "51/10"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Cada nota se multiplica por su ponderación: $$5{,}0 \\cdot 0{,}3 + 6{,}0 \\cdot 0{,}5 + 4{,}0 \\cdot 0{,}2$$",
+  "$$1{,}5 + 3{,}0 + 0{,}8 = 5{,}3$$"
+ ],
+ "trampa": "Sacar el promedio simple de las tres notas ($5{,}0$) y marcar A, sin considerar las ponderaciones.",
+ "clave": "Promedio ponderado $= \\sum (\\text{nota} \\cdot \\text{peso})$, con los pesos sumando 100%.",
+ "verificacion": "respuesta = 5*Rational(30,100) + 6*Rational(50,100) + 4*Rational(20,100)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Nota por su ponderación",
+     "$5\\cdot 0{,}3 + 6\\cdot 0{,}5 + 4\\cdot 0{,}2$"
+    ],
+    "voz": "Cada nota se multiplica por su ponderación: cinco por cero coma tres, seis por cero coma cinco y cuatro por cero coma dos. Ojo: no es un promedio simple, porque la prueba pesa más que el trabajo."
+   },
+   {
+    "lineas": [
+     "Sumamos",
+     "$1{,}5 + 3{,}0 + 0{,}8 = 5{,}3$"
+    ],
+    "voz": "Queda uno coma cinco, más tres, más cero coma ocho: cinco coma tres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cinco coma tres. En un promedio ponderado, cada nota pesa según su porcentaje, no todas igual. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "149"
+}

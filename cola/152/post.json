@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Atajo PAES: el 5%, el 15% y el 25% sin calculadora. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Porcentajes #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 ATAJO PAES",
+  "subtitulo": "5%, 15% y 25% al toque",
+  "intro_voz": "Atajo PAES: calcula el cinco, el quince y el veinticinco por ciento sin calculadora.",
+  "titulo": "Porcentajes rápidos",
+  "pasos": [
+   {
+    "lineas": [
+     "5% = la mitad del 10%",
+     "$360 \\to 36 \\to 18$"
+    ],
+    "voz": "El cinco por ciento es la mitad del diez. El diez por ciento de trescientos sesenta es treinta y seis; la mitad, dieciocho."
+   },
+   {
+    "lineas": [
+     "15% = 10% + 5%",
+     "$36 + 18 = 54$"
+    ],
+    "voz": "El quince por ciento es diez más cinco: treinta y seis más dieciocho, cincuenta y cuatro."
+   },
+   {
+    "lineas": [
+     "25% = la cuarta parte",
+     "$360 \\div 4 = 90$"
+    ],
+    "voz": "Y el veinticinco por ciento es la cuarta parte: trescientos sesenta dividido en cuatro, noventa."
+   }
+  ],
+  "remate": "5% = ½ del 10% · 25% = ¼",
+  "cierre": {
+   "voz": "Con el diez por ciento como base, sacas casi cualquier porcentaje."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-02",
+ "id": "152"
+}

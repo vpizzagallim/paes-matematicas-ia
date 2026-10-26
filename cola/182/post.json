@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Función logarítmica: sismos",
+ "gancho": "Un grado más no es un poco más 🌎",
+ "enunciado": "La magnitud de un sismo es $M = \\log\\left(\\dfrac{A}{A_0}\\right)$, con $A$ la amplitud registrada. ¿Cuántas veces mayor es la amplitud de un sismo de magnitud <b>7</b> que la de uno de magnitud <b>5</b>?",
+ "alternativas": [
+  "2",
+  "20",
+  "1,4",
+  "100"
+ ],
+ "valores": [
+  "2",
+  "20",
+  "7/5",
+  "100"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Despejando: $A = A_0 \\cdot 10^M$.",
+  "$$\\frac{A_0 \\cdot 10^7}{A_0 \\cdot 10^5} = 10^2 = 100$$"
+ ],
+ "trampa": "Restar las magnitudes (7 − 5 = 2) y marcar A, como si la escala fuera lineal.",
+ "clave": "En una escala logarítmica base 10, cada unidad más <b>multiplica</b> por 10.",
+ "verificacion": "A0, A7, A5 = symbols('A0 A7 A5', positive=True)\nA7 = solve(Eq(log(A7/A0, 10), 7), A7)[0]\nA5 = solve(Eq(log(A5/A0, 10), 5), A5)[0]\nrespuesta = simplify(A7/A5)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Despejamos la amplitud",
+     "$A = A_0 \\cdot 10^M$"
+    ],
+    "voz": "Chile es tierra de sismos, así que esta es clave. Si eme es el logaritmo, la amplitud es a sub cero por diez elevado a eme."
+   },
+   {
+    "lineas": [
+     "Dividimos",
+     "$\\dfrac{10^7}{10^5} = 10^2 = 100$"
+    ],
+    "voz": "Diez a la siete dividido en diez a la cinco da diez al cuadrado: cien veces. No son dos veces, porque la escala no es lineal."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cien veces. En escala logarítmica cada grado más multiplica por diez. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "182"
+}

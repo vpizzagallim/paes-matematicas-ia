@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Eventos independientes",
+ "gancho": "¿Llegas a la hora en Metro? 🚇",
+ "enunciado": "La probabilidad de que la <b>Línea 1</b> del Metro tenga retraso un día es $0{,}2$, y la de la <b>Línea 4</b>, $0{,}1$, de forma independiente. ¿Cuál es la probabilidad de que <b>ninguna</b> tenga retraso ese día?",
+ "alternativas": [
+  "0,72",
+  "0,7",
+  "0,28",
+  "0,02"
+ ],
+ "valores": [
+  "72/100",
+  "7/10",
+  "28/100",
+  "2/100"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Sin retraso: Línea 1, $1 - 0{,}2 = 0{,}8$; Línea 4, $1 - 0{,}1 = 0{,}9$.",
+  "Como son independientes: $$0{,}8 \\cdot 0{,}9 = 0{,}72$$"
+ ],
+ "trampa": "Restar $1 - 0{,}2 - 0{,}1 = 0{,}7$ (B), como si los retrasos no pudieran ocurrir juntos.",
+ "clave": "Si $A$ y $B$ son independientes, $P(A \\cap B) = P(A) \\cdot P(B)$.",
+ "verificacion": "respuesta = (1 - Rational(2, 10)) * (1 - Rational(1, 10))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Sin retraso en cada línea",
+     "$0{,}8 \\quad \\text{y} \\quad 0{,}9$"
+    ],
+    "voz": "La Línea uno no se atrasa con probabilidad cero coma ocho, y la Línea cuatro, con cero coma nueve. Primero pasamos a lo contrario: que no haya retraso."
+   },
+   {
+    "lineas": [
+     "Independientes: multiplicamos",
+     "$0{,}8 \\cdot 0{,}9 = 0{,}72$"
+    ],
+    "voz": "Como son independientes, se multiplican: cero coma setenta y dos. No se restan las dos probabilidades al uno, porque los retrasos pueden ocurrir juntos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cero coma setenta y dos. Para que ocurran dos eventos independientes a la vez, se multiplican sus probabilidades. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "188"
+}

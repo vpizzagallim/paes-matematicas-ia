@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Aumentos sucesivos",
+ "gancho": "Dos alzas del 5% no son un 10% 🏠",
+ "enunciado": "El arriendo de un departamento es de <b>\\$400.000</b>. Sube un <b>5%</b> el primer año y otro <b>5%</b> el segundo, sobre el valor ya reajustado. ¿Cuál es el arriendo al final del segundo año?",
+ "alternativas": [
+  "\\$440.000",
+  "\\$420.000",
+  "\\$441.000",
+  "\\$41.000"
+ ],
+ "valores": [
+  "440000",
+  "420000",
+  "441000",
+  "41000"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Subir un 5% es multiplicar por 1,05.",
+  "Dos años seguidos: $$400.000 \\cdot 1{,}05^2 = 400.000 \\cdot 1{,}1025 = 441.000$$"
+ ],
+ "trampa": "Sumar los porcentajes (10%) sobre el valor inicial y marcar A (\\$440.000).",
+ "clave": "Aumentos sucesivos de $p\\%$: se multiplica por $(1 + p)$ en cada periodo; los porcentajes no se suman.",
+ "verificacion": "respuesta = 400000*(1+Rational(5,100))*(1+Rational(5,100))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Subir 5% es multiplicar",
+     "$\\times\\, 1{,}05$"
+    ],
+    "voz": "Subir un cinco por ciento es multiplicar por uno coma cero cinco. Ojo, dos alzas seguidas no equivalen a sumar diez por ciento."
+   },
+   {
+    "lineas": [
+     "Dos veces seguidas",
+     "$400.000 \\cdot 1{,}05^2 = 441.000$"
+    ],
+    "voz": "Como sube dos veces, cuatrocientos mil por uno coma cero cinco al cuadrado: cuatrocientos cuarenta y un mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cuatrocientos cuarenta y un mil pesos. El segundo aumento se calcula sobre el valor ya reajustado, por eso no se suman los porcentajes. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "145"
+}

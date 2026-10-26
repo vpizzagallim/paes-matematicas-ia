@@ -1,0 +1,56 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Mediana en tabla de frecuencias",
+ "gancho": "La mediana no es el valor del medio de la tabla 📚",
+ "enunciado": "Se preguntó a <b>20 estudiantes</b> cuántos libros leyeron en el semestre. 0 libros: 2 estudiantes; 1 libro: 4; 2 libros: 4; 3 libros: 6; 4 libros: 4. ¿Cuál es la <b>mediana</b>?",
+ "alternativas": [
+  "2",
+  "3",
+  "2,5",
+  "2,3"
+ ],
+ "valores": [
+  "2",
+  "3",
+  "5/2",
+  "23/10"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Con 20 datos, la mediana es el promedio de los datos 10.° y 11.° ordenados.",
+  "Frecuencias acumuladas: $2,\\ 6,\\ 10,\\ 16,\\ 20$. El 10.° dato es 2 y el 11.° es 3.",
+  "$$\\text{Me} = \\frac{2+3}{2} = 2{,}5$$"
+ ],
+ "trampa": "Tomar el valor central de la tabla (2) y marcar A, sin mirar las frecuencias.",
+ "clave": "Con $n$ par, la mediana es el promedio de los datos en las posiciones $\\tfrac{n}{2}$ y $\\tfrac{n}{2}+1$.",
+ "verificacion": "datos = sorted([0]*2 + [1]*4 + [2]*4 + [3]*6 + [4]*4)\nrespuesta = Rational(datos[9] + datos[10], 2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "20 datos: el 10.° y el 11.°"
+    ],
+    "voz": "Son veinte datos, así que la mediana es el promedio entre el décimo y el undécimo dato ordenado."
+   },
+   {
+    "lineas": [
+     "Acumulamos frecuencias",
+     "$2;\\ 6;\\ 10;\\ 16;\\ 20$"
+    ],
+    "voz": "Acumulando: dos, seis, diez, dieciséis. El décimo dato es dos y el undécimo ya es tres."
+   },
+   {
+    "lineas": [
+     "Promedio de ambos",
+     "$\\dfrac{2+3}{2} = 2{,}5$"
+    ],
+    "voz": "El promedio entre dos y tres es dos coma cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: dos coma cinco libros. Con una cantidad par de datos, la mediana es el promedio de los dos centrales. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "155"
+}

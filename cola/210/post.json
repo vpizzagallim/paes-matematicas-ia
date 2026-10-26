@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Truco: de fracción a porcentaje en un paso. Guárdalo para la prueba 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Fracciones #Porcentajes",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "De fracción a porcentaje",
+  "intro_voz": "Truco PAES: pasar de fracción a porcentaje en un paso.",
+  "titulo": "Fracción a porcentaje",
+  "pasos": [
+   {
+    "lineas": [
+     "Lleva el denominador a 100",
+     "$\\dfrac{3}{4} = \\dfrac{75}{100} = 75\\%$"
+    ],
+    "voz": "Si puedes, amplifica hasta tener cien abajo. Tres cuartos son setenta y cinco centésimos: setenta y cinco por ciento."
+   },
+   {
+    "lineas": [
+     "Otro ejemplo",
+     "$\\dfrac{7}{20} = \\dfrac{35}{100} = 35\\%$"
+    ],
+    "voz": "Siete veinteavos: amplificas por cinco y queda treinta y cinco por ciento."
+   },
+   {
+    "lineas": [
+     "Si no se puede: por 100",
+     "$\\dfrac{1}{8} \\cdot 100 = 12{,}5\\%$"
+    ],
+    "voz": "Si no se puede, multiplica por cien. Un octavo por cien es doce coma cinco por ciento."
+   }
+  ],
+  "remate": "Fracción × 100 = %",
+  "cierre": {
+   "voz": "Denominador cien, o multiplica por cien. Y listo."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-17",
+ "id": "210"
+}

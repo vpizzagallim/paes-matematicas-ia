@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Escalas y áreas",
+ "gancho": "El plano engaña con las áreas 📐",
+ "enunciado": "En el plano de un departamento, a escala <b>1 : 50</b>, un dormitorio rectangular mide <b>6 cm</b> por <b>8 cm</b>. ¿Cuál es el área real del dormitorio?",
+ "alternativas": [
+  "0,24 m²",
+  "120 m²",
+  "12 m²",
+  "1,2 m²"
+ ],
+ "valores": [
+  "24/100",
+  "120",
+  "12",
+  "12/10"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Medidas reales: $$6 \\cdot 50 = 300\\text{ cm} = 3\\text{ m}$$ $$8 \\cdot 50 = 400\\text{ cm} = 4\\text{ m}$$",
+  "Área real: $$3 \\cdot 4 = 12\\text{ m}^2$$"
+ ],
+ "trampa": "Multiplicar el área del plano (48 cm²) por 50 en vez de por $50^2$, y obtener 0,24 m².",
+ "clave": "Con escala $1 : n$, las longitudes se multiplican por $n$ y las áreas por $n^2$. Conviene convertir primero cada lado.",
+ "verificacion": "n = 50; largo = Rational(6*n, 100); ancho = Rational(8*n, 100); respuesta = largo*ancho",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cada lado por cincuenta",
+     "$3\\text{ m} \\times 4\\text{ m}$"
+    ],
+    "voz": "Seis por cincuenta son trescientos centímetros, o sea tres metros. Ocho por cincuenta son cuatrocientos centímetros, o sea cuatro metros."
+   },
+   {
+    "lineas": [
+     "Área real",
+     "$3 \\cdot 4 = 12\\text{ m}^2$"
+    ],
+    "voz": "El área real es tres por cuatro: doce metros cuadrados. Ojo, el área no se multiplica solo por cincuenta. Por eso conviene convertir primero cada lado."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: doce metros cuadrados. Convierte cada lado con la escala antes de calcular el área. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "186"
+}

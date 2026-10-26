@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "«Profe, esto nunca lo voy a usar»… y entonces vio una oferta 🛍️😏 ¿Cuánto paga? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Descuentos",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Profe, esto nunca lo voy a usar en la vida.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🛍️ Polerón $25.000<br>30% de descuento",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Mmm… ¿y al final cuánto pago?",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "¿Decías que nunca lo ibas a usar? Calcula.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Un polerón cuesta <b>\\$25.000</b> y tiene un <b>30% de descuento</b>. ¿Cuánto se paga por él?",
+  "alternativas": [
+   "\\$17.500",
+   "\\$7.500",
+   "\\$22.000",
+   "\\$18.500"
+  ],
+  "valores": [
+   "17500",
+   "7500",
+   "22000",
+   "18500"
+  ],
+  "correcta": 0,
+  "verificacion": "respuesta = 25000*Rational(70, 100)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Pagas el 70%",
+      "$100\\% - 30\\% = 70\\%$"
+     ],
+     "voz": "Si te descuentan el treinta por ciento, pagas el setenta por ciento."
+    },
+    {
+     "lineas": [
+      "Calculamos",
+      "$25.000 \\cdot 0{,}7 = 17.500$"
+     ],
+     "voz": "Veinticinco mil por cero coma siete: diecisiete mil quinientos pesos."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la a: diecisiete mil quinientos pesos. La matemática sí se usa, sobre todo en las ofertas."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-16",
+ "id": "207"
+}

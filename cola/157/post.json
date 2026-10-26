@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Logaritmos en la escala sísmica",
+ "gancho": "¿Mil veces más fuerte suma o multiplica? 🌎",
+ "enunciado": "La magnitud de un sismo se calcula como $M = \\log\\left(\\dfrac{A}{A_0}\\right)$, con $A$ la amplitud de la onda. Un sismo tiene una amplitud <b>1.000 veces</b> mayor que otro de magnitud <b>5</b>. ¿Cuál es su magnitud?",
+ "alternativas": [
+  "8",
+  "15",
+  "1.005",
+  "5.000"
+ ],
+ "valores": [
+  "8",
+  "15",
+  "1005",
+  "5000"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Si el primero tiene amplitud $A$, el nuevo tiene $1.000\\,A$.",
+  "$$\\log\\left(\\frac{1.000\\,A}{A_0}\\right) = \\log 1.000 + \\log\\frac{A}{A_0} = 3 + 5 = 8$$"
+ ],
+ "trampa": "Multiplicar la magnitud por 1.000 (o por 3) en vez de sumar log 1.000 = 3, y marcar D o B.",
+ "clave": "Multiplicar por $10^k$ lo que está dentro de un logaritmo en base 10 <b>suma</b> $k$ al resultado.",
+ "verificacion": "A, A0 = symbols('A A0', positive=True)\nA1 = A0*10**5\nrespuesta = simplify(log(1000*A1/A0, 10))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "La amplitud se multiplica",
+     "$\\log(1.000) + \\log\\dfrac{A}{A_0}$"
+    ],
+    "voz": "Multiplicar la amplitud por mil dentro del logaritmo se convierte en una suma: log de mil más la magnitud anterior. La magnitud del primer sismo es cinco."
+   },
+   {
+    "lineas": [
+     "Log de mil es tres",
+     "$3 + 5 = 8$"
+    ],
+    "voz": "El logaritmo de mil es tres, porque diez al cubo es mil. Tres más cinco: magnitud ocho."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: magnitud ocho. En una escala logarítmica, multiplicar por mil equivale a sumar tres. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "157"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Suma de potencias",
+ "gancho": "La trampa más famosa de las potencias ⚡",
+ "enunciado": "¿Cuál es el valor de $$2^5 + 2^5 + 2^5 + 2^5\\,?$$",
+ "alternativas": [
+  "$2^7$",
+  "$2^{20}$",
+  "$8^5$",
+  "$8^{20}$"
+ ],
+ "valores": [
+  "2**7",
+  "2**20",
+  "8**5",
+  "8**20"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Son cuatro términos iguales: $$4 \\cdot 2^5$$",
+  "Como $4 = 2^2$: $$2^2 \\cdot 2^5 = 2^{7}$$"
+ ],
+ "trampa": "Sumar los exponentes como si fuera una multiplicación ($2^{20}$) y marcar B.",
+ "clave": "La suma de potencias iguales no junta exponentes: $n$ veces $a^m$ es $n \\cdot a^m$.",
+ "verificacion": "respuesta = sum([2**5]*4)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cuatro términos iguales",
+     "$4 \\cdot 2^5$"
+    ],
+    "voz": "Sumar cuatro veces dos elevado a cinco es lo mismo que cuatro por dos elevado a cinco. Ojo, aquí no se multiplican los exponentes."
+   },
+   {
+    "lineas": [
+     "Escribimos cuatro como potencia",
+     "$2^2 \\cdot 2^5 = 2^7$"
+    ],
+    "voz": "Cuatro es dos al cuadrado. Al multiplicar potencias de igual base se suman los exponentes: dos elevado a siete."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: dos elevado a siete. Los exponentes se suman al multiplicar, nunca al sumar potencias. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "171"
+}

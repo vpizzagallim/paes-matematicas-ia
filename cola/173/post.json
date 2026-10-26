@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Inecuaciones lineales con contexto",
+ "gancho": "¿Cuántos completos alcanzas a comprar? 🌭",
+ "enunciado": "Sofía tiene <b>\\$20.000</b>. Paga una entrada de <b>\\$6.500</b> y con el resto compra completos de <b>\\$1.800</b> cada uno. ¿Cuántos completos puede comprar <b>como máximo</b>?",
+ "alternativas": [
+  "7",
+  "8",
+  "11",
+  "14"
+ ],
+ "valores": [
+  "7",
+  "8",
+  "11",
+  "14"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Planteamos: $$6.500 + 1.800n \\le 20.000$$",
+  "$$1.800n \\le 13.500 \\Rightarrow n \\le 7{,}5$$ Como $n$ es entero, el máximo es 7."
+ ],
+ "trampa": "Redondear 7,5 hacia arriba y marcar B (8): con 8 completos se pasa del presupuesto.",
+ "clave": "En problemas de “como máximo” con cantidades enteras, se redondea <b>hacia abajo</b>.",
+ "verificacion": "n = symbols('n', integer=True, positive=True)\nrespuesta = floor(Rational(20000 - 6500, 1800))\nassert 6500 + 1800*respuesta <= 20000 < 6500 + 1800*(respuesta + 1)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Lo que queda tras la entrada",
+     "$1.800n \\le 13.500$"
+    ],
+    "voz": "Planteamos la inecuación con todo lo que gasta. Después de la entrada le quedan trece mil quinientos pesos para completos."
+   },
+   {
+    "lineas": [
+     "Dividimos",
+     "$n \\le 7{,}5$"
+    ],
+    "voz": "Trece mil quinientos dividido en mil ochocientos da siete coma cinco. Pero no se compra medio completo. Con ocho completos se pasaría del presupuesto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: siete completos. Si es como máximo y la cantidad es entera, se redondea hacia abajo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "173"
+}

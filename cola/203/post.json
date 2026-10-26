@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: haz un ensayo como si fuera la prueba real ⏱️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #EnsayoPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: haz un ensayo como si fuera la prueba real.",
+  "titulo": "Tip: ensayo real",
+  "pasos": [
+   {
+    "lineas": [
+     "Reserva 2 h 20 min"
+    ],
+    "voz": "Reserva dos horas y veinte minutos, lo que dura la prueba de matemática uno."
+   },
+   {
+    "lineas": [
+     "Celular lejos, reloj a la vista"
+    ],
+    "voz": "Deja el celular lejos y ten un reloj a la vista."
+   },
+   {
+    "lineas": [
+     "Después, revisa tus errores"
+    ],
+    "voz": "Al terminar, revisa cada error y anota por qué te equivocaste."
+   }
+  ],
+  "remate": "Ensaya · Revisa · Repite",
+  "cierre": {
+   "voz": "Los errores de hoy son puntos que ganas el día de la prueba."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-15",
+ "id": "203"
+}

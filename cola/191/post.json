@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Tríos pitagóricos: Pitágoras sin sacar raíces 📐 Guárdalos 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Pitagoras #Geometria",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "Tríos pitagóricos",
+  "intro_voz": "Truco PAES: tríos pitagóricos que te ahorran sacar raíces.",
+  "titulo": "Tríos pitagóricos",
+  "pasos": [
+   {
+    "lineas": [
+     "El clásico",
+     "$3,\\ 4,\\ 5 \\quad (9 + 16 = 25)$"
+    ],
+    "voz": "El clásico: tres, cuatro y cinco. Tres al cuadrado más cuatro al cuadrado es cinco al cuadrado."
+   },
+   {
+    "lineas": [
+     "Otros que se repiten",
+     "$5,\\ 12,\\ 13 \\qquad 8,\\ 15,\\ 17$"
+    ],
+    "voz": "Otros que aparecen harto: cinco, doce, trece. Y ocho, quince, diecisiete."
+   },
+   {
+    "lineas": [
+     "Sus múltiplos también",
+     "$6,\\ 8,\\ 10 \\qquad 9,\\ 12,\\ 15$"
+    ],
+    "voz": "Y sus múltiplos también sirven: seis, ocho, diez, o nueve, doce, quince."
+   }
+  ],
+  "remate": "3-4-5 · 5-12-13 · 8-15-17",
+  "cierre": {
+   "voz": "Si ves dos de estos números en un triángulo rectángulo, ya sabes el tercero."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-12",
+ "id": "191"
+}

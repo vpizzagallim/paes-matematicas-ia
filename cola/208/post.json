@@ -1,0 +1,57 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Promedio",
+ "gancho": "Te corrigieron una nota: ¿cuánto sube tu promedio? 📝",
+ "enunciado": "Las <b>5 notas</b> de Martina tienen promedio 5,6. La profesora corrige una de ellas, que pasa de 4,0 a 6,0. ¿Cuál es el nuevo promedio de Martina?",
+ "alternativas": [
+  "6,0",
+  "6,1",
+  "7,6",
+  "6,6"
+ ],
+ "valores": [
+  "6",
+  "61/10",
+  "38/5",
+  "33/5"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Suma de las notas: $5 \\cdot 5{,}6 = 28$.",
+  "Nueva suma: $28 - 4 + 6 = 30$.",
+  "$$\\bar{x} = \\frac{30}{5} = 6{,}0$$"
+ ],
+ "trampa": "Sumarle los 2 puntos completos al promedio ($7{,}6$, C), en vez de repartirlos entre las 5 notas.",
+ "clave": "Si un dato cambia en $d$, el promedio cambia en $\\dfrac{d}{n}$.",
+ "verificacion": "suma = 5 * Rational(56, 10)\nrespuesta = (suma - 4 + 6) / 5",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma de las notas",
+     "$5 \\cdot 5{,}6 = 28$"
+    ],
+    "voz": "Si el promedio de cinco notas es cinco coma seis, las notas suman veintiocho."
+   },
+   {
+    "lineas": [
+     "Corregimos la suma",
+     "$28 - 4 + 6 = 30$"
+    ],
+    "voz": "Se quita el cuatro y se pone el seis: la suma sube a treinta."
+   },
+   {
+    "lineas": [
+     "Nuevo promedio",
+     "$\\dfrac{30}{5} = 6{,}0$"
+    ],
+    "voz": "Treinta dividido en cinco: seis coma cero. Ojo: no se suman los dos puntos completos al promedio, se reparten entre las cinco notas."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: seis coma cero. Si cambia un dato, el promedio cambia esa diferencia dividida por la cantidad de datos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "208"
+}

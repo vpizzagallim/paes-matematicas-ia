@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Vectores y traslaciones",
+ "gancho": "La aspiradora robot se mueve 🤖",
+ "enunciado": "Una aspiradora robot parte del punto $(-2, 5)$ de un plano cartesiano. Primero se traslada según el vector $(4, -3)$ y luego según el vector $(-1, -6)$. ¿En qué punto queda?",
+ "alternativas": [
+  "$(1, -4)$",
+  "$(3, -9)$",
+  "$(-5, 14)$",
+  "$(1, 4)$"
+ ],
+ "valores": [
+  "(1,-4)",
+  "(3,-9)",
+  "(-5,14)",
+  "(1,4)"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Cada traslación <b>suma</b> el vector al punto.",
+  "$$(-2, 5) + (4, -3) = (2, 2)$$",
+  "$$(2, 2) + (-1, -6) = (1, -4)$$"
+ ],
+ "trampa": "Sumar solo los dos vectores, $(3, -9)$, y olvidar el punto de partida.",
+ "clave": "Trasladar un punto es sumarle el vector, coordenada a coordenada.",
+ "verificacion": "P = Matrix([-2, 5]); u = Matrix([4, -3]); v = Matrix([-1, -6]); Q = P + u + v; respuesta = Tuple(Q[0], Q[1])",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Primera traslación",
+     "$(-2, 5) + (4, -3) = (2, 2)$"
+    ],
+    "voz": "Trasladar es sumar. Menos dos más cuatro da dos, y cinco menos tres da dos. Partimos en menos dos, cinco."
+   },
+   {
+    "lineas": [
+     "Segunda traslación",
+     "$(2, 2) + (-1, -6) = (1, -4)$"
+    ],
+    "voz": "Ahora dos menos uno da uno, y dos menos seis da menos cuatro. La aspiradora termina en uno, menos cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: el punto uno, menos cuatro. Trasladar un punto es sumarle el vector, coordenada por coordenada. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "200"
+}

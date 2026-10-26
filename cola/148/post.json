@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja lleva dos semanas diciendo «mañana empiezo» 📅😅 ¿Cuántos ejercicios se perdió? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Procrastinacion",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Hoy no. Mañana empiezo a estudiar, seguro.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "📅 Lleva 14 días<br>diciendo «mañana»",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "¿Dos semanas? Pero si fue ayer.",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Cada día cuenta, Benja. Mira esto.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Si cada día que postergas dejas de hacer <b>6 ejercicios</b>, ¿cuántos ejercicios dejas de hacer en <b>2 semanas</b>?",
+  "alternativas": [
+   "20",
+   "48",
+   "72",
+   "84"
+  ],
+  "valores": [
+   "20",
+   "48",
+   "72",
+   "84"
+  ],
+  "correcta": 3,
+  "verificacion": "respuesta = 6*14",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Dos semanas en días",
+      "$2 \\cdot 7 = 14$"
+     ],
+     "voz": "Dos semanas son catorce días."
+    },
+    {
+     "lineas": [
+      "Ejercicios perdidos",
+      "$6 \\cdot 14 = 84$"
+     ],
+     "voz": "Seis ejercicios por catorce días: ochenta y cuatro ejercicios."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la de: ochenta y cuatro. No esperes a mañana: empieza hoy con uno."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-01",
+ "id": "148"
+}

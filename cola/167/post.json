@@ -1,0 +1,57 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Semejanza y Thales",
+ "gancho": "Dos sombras, una misma punta 🌞",
+ "enunciado": "Un niño de <b>1,2 m</b> se ubica de modo que la punta de su sombra coincide con la de la sombra de un árbol. El niño está a <b>3 m</b> del árbol y su sombra mide <b>2 m</b>. ¿Cuál es la altura del árbol?",
+ "alternativas": [
+  "1,8 m",
+  "4,2 m",
+  "2,5 m",
+  "3 m"
+ ],
+ "valores": [
+  "18/10",
+  "42/10",
+  "5/2",
+  "3"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "La sombra del árbol mide $3 + 2 = 5$ m, porque va desde el árbol hasta la punta común.",
+  "Triángulos semejantes: $$\\frac{h}{5} = \\frac{1{,}2}{2}$$",
+  "$$h = \\frac{1{,}2 \\cdot 5}{2} = 3\\text{ m}$$"
+ ],
+ "trampa": "Usar 3 m como sombra del árbol, sin sumar los 2 m de la sombra del niño, y obtener 1,8 m.",
+ "clave": "En Thales, cada medida se toma <b>desde el mismo punto</b>: aquí, desde la punta común de las sombras.",
+ "verificacion": "nino, s_nino, dist = Rational(12, 10), 2, 3; s_arbol = dist + s_nino; respuesta = nino*s_arbol/s_nino",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Sombra del árbol",
+     "$3 + 2 = 5$"
+    ],
+    "voz": "Ojo: la sombra del árbol llega hasta la misma punta, así que mide tres más dos, cinco metros."
+   },
+   {
+    "lineas": [
+     "Thales",
+     "$\\dfrac{h}{5} = \\dfrac{1{,}2}{2}$"
+    ],
+    "voz": "Los triángulos son semejantes: hache es a cinco como uno coma dos es a dos."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$h = 3$"
+    ],
+    "voz": "Uno coma dos por cinco, dividido en dos: tres metros. El árbol mide lo mismo que la distancia, pero es casualidad."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: tres metros. En semejanza, mide cada sombra completa desde el mismo punto. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "167"
+}

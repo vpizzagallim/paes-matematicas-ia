@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja hizo una planilla Excel preciosa para estudiar… y cero ejercicios 📊😅 ¿Qué porcentaje lleva? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Excel",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Hice una planilla de estudio con colores y gráficos.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "📊 3 horas formateando<br>0 ejercicios hechos",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "Pero quedó preciosa.",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "La planilla sirve si la usas. Calcula tu avance.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "La planilla de Benja tiene <b>5 unidades</b> con <b>8 ejercicios</b> cada una. Si ya hizo <b>15 ejercicios</b>, ¿qué porcentaje del total lleva?",
+  "alternativas": [
+   "15%",
+   "25%",
+   "40%",
+   "37,5%"
+  ],
+  "valores": [
+   "15",
+   "25",
+   "40",
+   "37.5"
+  ],
+  "correcta": 3,
+  "verificacion": "respuesta = Rational(15, 5*8)*100",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Total de ejercicios",
+      "$5 \\cdot 8 = 40$"
+     ],
+     "voz": "Cinco unidades de ocho ejercicios son cuarenta en total."
+    },
+    {
+     "lineas": [
+      "Parte sobre total, por 100",
+      "$\\dfrac{15}{40} \\cdot 100 = 37{,}5\\%$"
+     ],
+     "voz": "Quince de cuarenta, por cien, da treinta y siete coma cinco por ciento."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la de: treinta y siete coma cinco por ciento. Menos colores y más ejercicios."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-08",
+ "id": "176"
+}

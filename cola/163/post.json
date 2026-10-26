@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Interés simple",
+ "gancho": "¿Cuánto pagas de intereses? 💳",
+ "enunciado": "Se pide un crédito de <b>\\$2.000.000</b> a un <b>interés simple del 1,5% mensual</b>, por <b>8 meses</b>. ¿Cuánto dinero se paga solo por concepto de intereses?",
+ "alternativas": [
+  "\\$2.240.000",
+  "\\$240.000",
+  "\\$30.000",
+  "\\$2.400.000"
+ ],
+ "valores": [
+  "2240000",
+  "240000",
+  "30000",
+  "2400000"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Interés de un mes: $$2.000.000 \\cdot 0{,}015 = 30.000$$",
+  "Con interés simple es igual cada mes: $$30.000 \\cdot 8 = 240.000$$"
+ ],
+ "trampa": "Responder el monto total a pagar (\\$2.240.000) en vez de solo el interés, y marcar A.",
+ "clave": "Interés simple: $I = C \\cdot i \\cdot n$, con $i$ en decimal y $n$ en la misma unidad de tiempo que la tasa.",
+ "verificacion": "C, i, n = 2000000, Rational(15,1000), 8\nrespuesta = C*i*n",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Interés de un mes",
+     "$2.000.000 \\cdot 0{,}015 = 30.000$"
+    ],
+    "voz": "Uno coma cinco por ciento es cero coma cero quince. Dos millones por eso: treinta mil pesos al mes."
+   },
+   {
+    "lineas": [
+     "Interés simple, ocho meses",
+     "$30.000 \\cdot 8 = 240.000$"
+    ],
+    "voz": "En interés simple se cobra lo mismo cada mes: treinta mil por ocho, doscientos cuarenta mil. Y no sumamos los dos millones, porque solo preguntan por el interés."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: doscientos cuarenta mil pesos. Fíjate si preguntan por el interés o por el monto total. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "163"
+}

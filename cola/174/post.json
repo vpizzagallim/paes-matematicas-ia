@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Homotecia y áreas",
+ "gancho": "¿Un área negativa? 🤔",
+ "enunciado": "A un rectángulo de área <b>12 cm²</b> se le aplica una homotecia de razón $k = -2$. ¿Cuál es el área del rectángulo imagen?",
+ "alternativas": [
+  "48 cm²",
+  "$-48$ cm²",
+  "24 cm²",
+  "6 cm²"
+ ],
+ "valores": [
+  "48",
+  "-48",
+  "24",
+  "6"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Una homotecia de razón $k$ multiplica las longitudes por $|k| = 2$.",
+  "Las áreas se multiplican por $k^2$: $$12 \\cdot (-2)^2 = 12 \\cdot 4 = 48\\text{ cm}^2$$",
+  "El signo negativo solo indica que la imagen queda <b>invertida</b> al otro lado del centro."
+ ],
+ "trampa": "Multiplicar el área por $k$ y no por $k^2$ (24 cm²), o arrastrar el signo y dar un área negativa.",
+ "clave": "Con razón $k$: longitudes por $|k|$ y áreas por $k^2$. Un área nunca es negativa.",
+ "verificacion": "k = -2; A = 12; respuesta = A*k**2",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Áreas: por k al cuadrado",
+     "$(-2)^2 = 4$"
+    ],
+    "voz": "En una homotecia, las longitudes se multiplican por la razón y las áreas por la razón al cuadrado. Menos dos al cuadrado es cuatro."
+   },
+   {
+    "lineas": [
+     "Área imagen",
+     "$12 \\cdot 4 = 48$"
+    ],
+    "voz": "Doce por cuatro: cuarenta y ocho centímetros cuadrados. El signo menos solo invierte la figura."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuarenta y ocho centímetros cuadrados. Las áreas se multiplican por la razón al cuadrado y nunca son negativas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "174"
+}

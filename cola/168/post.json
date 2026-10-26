@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja creyó que sacó 70 puntos… y era el 70% 🤦 ¿Cuántas buenas tuvo? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Porcentajes",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "¡Saqué setenta en el ensayo! ¡Soy un genio!",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🤔 Era el 70%<br>de respuestas buenas",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "¿Y eso es mucho o poco?",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "voz": "Depende de cuántas preguntas había. Calcula.",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "En un ensayo de <b>40 preguntas</b>, Benja respondió bien el <b>70%</b>. ¿Cuántas respuestas correctas tuvo?",
+  "alternativas": [
+   "28",
+   "30",
+   "12",
+   "70"
+  ],
+  "valores": [
+   "28",
+   "30",
+   "12",
+   "70"
+  ],
+  "correcta": 0,
+  "verificacion": "respuesta = 40*Rational(70, 100)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "El setenta por ciento",
+      "$70\\% = 0{,}7$"
+     ],
+     "voz": "Setenta por ciento es cero coma siete."
+    },
+    {
+     "lineas": [
+      "Por el total",
+      "$40 \\cdot 0{,}7 = 28$"
+     ],
+     "voz": "Cuarenta por cero coma siete da veintiocho."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la a: veintiocho. Un porcentaje no es un puntaje: pregúntate siempre de qué total."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s26-06",
+ "id": "168"
+}

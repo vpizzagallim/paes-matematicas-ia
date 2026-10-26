@@ -1,0 +1,56 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Regla aditiva",
+ "gancho": "¿Corazón o figura? No cuentes dos veces 🃏",
+ "enunciado": "De una baraja inglesa de <b>52 cartas</b> (13 por pinta, con 3 figuras en cada pinta) se saca una al azar. ¿Cuál es la probabilidad de que sea de <b>corazón</b> o una <b>figura</b>?",
+ "alternativas": [
+  "$\\dfrac{25}{52}$",
+  "$\\dfrac{3}{52}$",
+  "$\\dfrac{11}{26}$",
+  "$\\dfrac{1}{4}$"
+ ],
+ "valores": [
+  "25/52",
+  "3/52",
+  "11/26",
+  "1/4"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Corazones: 13. Figuras: 12. Figuras de corazón: 3 (se cuentan dos veces).",
+  "$$P = \\frac{13 + 12 - 3}{52} = \\frac{22}{52} = \\frac{11}{26}$$"
+ ],
+ "trampa": "Sumar $13 + 12 = 25$ sin restar las 3 figuras de corazón y marcar A.",
+ "clave": "$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+ "verificacion": "from itertools import product\ncartas = list(product(range(4), range(13)))\nfav = [c for c in cartas if c[0] == 0 or c[1] >= 10]\nrespuesta = Rational(len(fav), len(cartas))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Corazones más figuras",
+     "$13 + 12 = 25$"
+    ],
+    "voz": "Hay trece corazones y doce figuras. Pero sumarlos directo cuenta algunas cartas dos veces. Por ejemplo, el rey de corazón."
+   },
+   {
+    "lineas": [
+     "Restamos las repetidas",
+     "$25 - 3 = 22$"
+    ],
+    "voz": "Las tres figuras de corazón están en ambos grupos, así que se restan: quedan veintidós cartas."
+   },
+   {
+    "lineas": [
+     "Probabilidad",
+     "$\\dfrac{22}{52} = \\dfrac{11}{26}$"
+    ],
+    "voz": "Veintidós de cincuenta y dos, que simplificado es once veintiseisavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: once veintiseisavos. En la regla aditiva, si los eventos se cruzan, se resta la intersección. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "175"
+}

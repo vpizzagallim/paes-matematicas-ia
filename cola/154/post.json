@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Área del círculo en figuras compuestas",
+ "gancho": "Cuatro cuartos hacen uno 🍕",
+ "enunciado": "Un club diseña su logo a partir de un cuadrado de lado <b>8 cm</b>, al que se le recorta en cada esquina un <b>cuarto de círculo</b> de radio <b>2 cm</b> con centro en ese vértice. ¿Cuál es el área del logo?",
+ "alternativas": [
+  "$(64 - 16\\pi)$ cm²",
+  "$(64 - 4\\pi)$ cm²",
+  "$(64 - \\pi)$ cm²",
+  "$(64 - 8\\pi)$ cm²"
+ ],
+ "valores": [
+  "64-16*pi",
+  "64-4*pi",
+  "64-pi",
+  "64-8*pi"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Los cuatro cuartos de círculo juntos forman <b>un círculo completo</b> de radio 2.",
+  "Área recortada: $$\\pi \\cdot 2^2 = 4\\pi$$",
+  "Área del logo: $$8^2 - 4\\pi = (64 - 4\\pi)\\text{ cm}^2$$"
+ ],
+ "trampa": "Restar cuatro círculos completos ($4 \\cdot 4\\pi = 16\\pi$) y marcar A.",
+ "clave": "Cuatro cuartos de círculo iguales suman <b>un círculo</b>, de área $\\pi r^2$.",
+ "verificacion": "r = 2; respuesta = 8**2 - 4*(pi*r**2/4)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cuatro cuartos = un círculo",
+     "$\\pi \\cdot 2^2 = 4\\pi$"
+    ],
+    "voz": "Los cuatro cuartos de círculo juntos forman un solo círculo de radio dos, cuya área es cuatro pi. Esa es la parte que se recorta."
+   },
+   {
+    "lineas": [
+     "Cuadrado menos círculo",
+     "$64 - 4\\pi$"
+    ],
+    "voz": "El cuadrado tiene sesenta y cuatro centímetros cuadrados. Le restamos cuatro pi y eso es lo que queda del logo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: sesenta y cuatro menos cuatro pi centímetros cuadrados. Cuatro cuartos de círculo iguales forman un círculo completo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "154"
+}
