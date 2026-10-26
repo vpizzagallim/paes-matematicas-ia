@@ -119,7 +119,7 @@ def duracion(ruta):
         return 0.0
 
 
-def publicar_video(post, carpeta, video, texto, thumb_ms):
+def publicar_video(post, carpeta, video, texto, thumb_ms, historia=True):
     url = subir_video(video, f"reel_{post}.mp4")
     ig = llamar("GET", "me", fields="user_id,username")
     usuario = ig["user_id"]
@@ -130,6 +130,8 @@ def publicar_video(post, carpeta, video, texto, thumb_ms):
     publicado = llamar("POST", f"{usuario}/media_publish", creation_id=c["id"])
     print(f"Reel publicado: id {publicado['id']}")
     registro = {"media_id": publicado["id"], "tipo": "reel", "fecha_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+    if not historia:  # desde el 26-oct: los ejercicios normales van solo como Reel (12 al dia)
+        return registro
     try:
         quedan = cupo()
         if quedan is not None and quedan < 1:
@@ -155,7 +157,7 @@ def publicar_reel(post, carpeta, datos):
     with open(os.path.join(carpeta, "caption.txt"), encoding="utf-8") as f:
         texto = promo_pdf.promo_texto() + f.read()
     video = promo_pdf.decorar(video, video.replace(".mp4", "_promo.mp4"))
-    cerrar(post, carpeta, publicar_video(post, carpeta, video, texto, 9000))
+    cerrar(post, carpeta, publicar_video(post, carpeta, video, texto, 9000, historia=False))
 
 
 def publicar_especial(post, carpeta, datos):

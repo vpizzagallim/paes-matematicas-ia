@@ -4,16 +4,13 @@ name: Publicar en Instagram
 # congestionadas en GitHub y las ejecuciones se atrasan o se saltan.
 on:
   schedule:
-    # Lunes a jueves (Chile): 09:07, 12:07, 15:07, 18:07
-    - cron: "7 12,15,18,21 * * 1-4"
-    # Lunes a jueves (Chile): 21:07 y 23:07 -> en UTC ya es martes a viernes
-    - cron: "7 0,2 * * 2-5"
-    # Viernes, sabado y domingo (Chile): cada hora de 09:07 a 20:07
-    - cron: "7 12-23 * * 5,6,0"
-    # Viernes, sabado y domingo (Chile): 21:07, 22:07 y 23:07 -> en UTC sabado, domingo y lunes
-    - cron: "7 0-2 * * 6,0,1"
+    # Todos los dias, 12 publicaciones (Chile): 08:07, 09:27, 10:47, 12:07, 13:27, 14:47,
+    # 16:07, 17:27, 18:47, 20:07, 21:27 y 22:47
+    - cron: "7 11,15,19,23 * * *"
+    - cron: "27 0,12,16,20 * * *"
+    - cron: "47 1,13,17,21 * * *"
   # Reloj principal: cron-job.org llama a la API (workflow_dispatch) a la hora exacta.
-  # Los horarios de arriba quedan de respaldo; si ya salio un post hace poco (30 min reloj / 55 min respaldo), no se repite.
+  # Los horarios de arriba quedan de respaldo; si ya salio un post hace poco (20 min reloj / 55 min respaldo), no se repite.
   workflow_dispatch:
     inputs:
       forzar:
