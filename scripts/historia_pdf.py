@@ -18,6 +18,10 @@ n = promo_pdf.dias_para_paes()
 aviso = "⏳ ¡Mañana es la PAES!" if n == 1 else ("💪 ¡Hoy es la PAES!" if n <= 0 else None)
 html = open(os.path.join(PROMO, "historia.html"), encoding="utf-8").read()
 html = html.replace("__PORTADA__", os.path.join(PROMO, "portada.jpg"))
+# la fuente se carga desde el archivo (en GitHub la familia instalada se llama "Inter Variable" y no calza con "Inter")
+fuente = next((f for f in [os.path.expanduser("~/.local/share/fonts/InterVariable.ttf"), os.path.expanduser("~/sysdeps/InterVariable.ttf")]
+               if os.path.exists(f)), "")
+html = html.replace("__FUENTE__", fuente)
 html = html.replace("⏳ Faltan __N__ días para la PAES", aviso) if aviso else html.replace("__N__", str(n))
 png = "/tmp/historia_pdf.png"; jpg = f"/tmp/historia_pdf_{hoy.isoformat()}.jpg"
 json.dump([{"html": html, "out": png, "w": 1080, "h": 1920}], open("/tmp/hist_job.json", "w"))
