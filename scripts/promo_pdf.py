@@ -32,16 +32,38 @@ def promo_texto():
     return config().get("texto_post", "") if activo() else ""
 
 
+def inicio_solucion(video):
+    """Segundo en que empieza la solución (primer cuadro de fondo claro, el 'cuaderno'). None si no hay."""
+    try:
+        r = subprocess.run(["ffmpeg", "-v", "error", "-i", video, "-vf", "fps=4,scale=16:28,format=gray",
+                            "-f", "rawvideo", "-"], capture_output=True, check=True)
+        n = 16 * 28
+        datos = r.stdout
+        for i in range(len(datos) // n):
+            cuadro = datos[i * n:(i + 1) * n]
+            if sum(cuadro) / n > 150:
+                return i / 4
+    except Exception as e:
+        print(f"::warning::No se pudo detectar el inicio de la solución ({e})")
+    return None
+
+
+# La franja va bajo la barra superior de Instagram (zona segura) y dentro del recorte 3:4 de la grilla del perfil.
+Y_FRANJA = 250
+
+
 def decorar(video_in, video_out):
-    """Franja arriba durante todo el video + tarjeta final. Si algo falla, deja el video original."""
+    """Franja (solo mientras se muestra el problema) + tarjeta final. Si algo falla, deja el video original."""
     if not activo():
         return video_in
     franja, fin = os.path.join(PROMO, "franja.png"), os.path.join(PROMO, "fin.png")
+    t = inicio_solucion(video_in)
+    hasta = f":enable='lt(t,{max(t - 0.2, 0):.2f})'" if t is not None else ""
     try:
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video_in, "-i", franja, "-loop", "1", "-t", "2.5", "-i", fin,
                         "-f", "lavfi", "-t", "2.5", "-i", "anullsrc=r=44100:cl=mono",
                         "-filter_complex",
-                        "[0:v]scale=1080:1920,fps=30,setsar=1[b];[b][1:v]overlay=0:24[v0];"
+                        f"[0:v]scale=1080:1920,fps=30,setsar=1[b];[b][1:v]overlay=0:{Y_FRANJA}{hasta}[v0];"
                         "[2:v]scale=1080:1920,fps=30,setsar=1,format=yuv420p[v1];"
                         "[0:a]aresample=44100,aformat=channel_layouts=mono[a0];[3:a]aformat=channel_layouts=mono[a1];"
                         "[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]",
