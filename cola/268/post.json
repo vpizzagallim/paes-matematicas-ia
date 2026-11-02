@@ -1,0 +1,84 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja: «Con 90% de batería estudio todo el día» 📱🔋 Spoiler: TikTok no opina lo mismo #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Bateria",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Tengo noventa por ciento de batería. Me alcanza para todo el día.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "📱 TikTok gasta<br>15% de batería por hora",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "¿Y dónde quedaron mis apuntes?",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Calcula cuánto te dura, Benja."
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Un celular tiene <b>90% de batería</b> y gasta <b>15%</b> por cada hora de uso. ¿Cuántas <b>horas</b> dura hasta quedar en 0%?",
+  "alternativas": [
+   "5",
+   "6",
+   "9",
+   "4"
+  ],
+  "valores": [
+   "5",
+   "6",
+   "9",
+   "4"
+  ],
+  "correcta": 1,
+  "verificacion": "h = symbols('h'); respuesta = solve(Eq(90 - 15*h, 0), h)[0]",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Planteamos",
+      "$90 - 15h = 0$"
+     ],
+     "voz": "La batería baja quince por ciento por hora, desde noventa."
+    },
+    {
+     "lineas": [
+      "Despejamos",
+      "$h = \\dfrac{90}{15} = 6$"
+     ],
+     "voz": "Noventa dividido en quince: seis horas."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: seis horas. Y si es de estudio, mejor con el celular lejos."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-13",
+ "id": "268"
+}

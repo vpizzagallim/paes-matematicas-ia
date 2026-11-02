@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Semejanza: sombras",
+ "gancho": "Mide un edificio con su sombra 🏢",
+ "enunciado": "A cierta hora, un poste de <b>3 m</b> proyecta una sombra de <b>2 m</b>. A la misma hora, un edificio proyecta una sombra de <b>12 m</b>. ¿Cuál es la altura del edificio?",
+ "alternativas": [
+  "8 m",
+  "18 m",
+  "72 m",
+  "13 m"
+ ],
+ "valores": [
+  "8",
+  "18",
+  "72",
+  "13"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Los triángulos son semejantes: $$\\frac{3}{2} = \\frac{h}{12}$$",
+  "$$h = \\frac{3 \\cdot 12}{2} = 18 \\text{ m}$$"
+ ],
+ "trampa": "Invertir la razón ($\\tfrac{2}{3} \\cdot 12 = 8$) y marcar A.",
+ "clave": "En semejanza, compara lados <b>correspondientes</b>: altura con altura, sombra con sombra.",
+ "verificacion": "respuesta = Rational(3, 2)*12",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Triángulos semejantes",
+     "$\\dfrac{3}{2} = \\dfrac{h}{12}$"
+    ],
+    "voz": "El poste y el edificio forman triángulos semejantes con sus sombras: altura sobre sombra es igual en los dos."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$h = \\dfrac{3 \\cdot 12}{2} = 18$"
+    ],
+    "voz": "Tres por doce, dividido en dos: dieciocho metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: dieciocho metros. Compara altura con altura y sombra con sombra. Si inviertes la razón, el edificio te queda más bajo que su sombra, y eso no calza con el poste. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "273"
+}

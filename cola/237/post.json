@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Racionalización",
+ "gancho": "Sin raíces abajo 🧹",
+ "enunciado": "Al racionalizar $\\dfrac{6}{\\sqrt{3}}$ se obtiene:",
+ "alternativas": [
+  "2",
+  "$2\\sqrt{3}$",
+  "$6\\sqrt{3}$",
+  "$\\dfrac{\\sqrt{3}}{2}$"
+ ],
+ "valores": [
+  "2",
+  "2*sqrt(3)",
+  "6*sqrt(3)",
+  "sqrt(3)/2"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Amplificamos por $\\sqrt{3}$: $$\\frac{6}{\\sqrt{3}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{3}$$",
+  "$$\\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}$$"
+ ],
+ "trampa": "Multiplicar solo el numerador por $\\sqrt{3}$ y marcar C ($6\\sqrt{3}$).",
+ "clave": "Racionalizar: amplificar por la raíz del denominador, porque $\\sqrt{a} \\cdot \\sqrt{a} = a$.",
+ "verificacion": "respuesta = radsimp(6/sqrt(3))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Amplificamos por √3",
+     "$\\dfrac{6}{\\sqrt{3}} \\cdot \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{6\\sqrt{3}}{3}$"
+    ],
+    "voz": "Multiplicamos arriba y abajo por raíz de tres. Abajo queda tres."
+   },
+   {
+    "lineas": [
+     "Simplificamos",
+     "$\\dfrac{6\\sqrt{3}}{3} = 2\\sqrt{3}$"
+    ],
+    "voz": "Seis dividido en tres es dos: dos raíz de tres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: dos raíz de tres. Para racionalizar, amplifica arriba y abajo por la raíz del denominador. Si amplificas solo arriba, cambias el valor de la fracción. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "237"
+}

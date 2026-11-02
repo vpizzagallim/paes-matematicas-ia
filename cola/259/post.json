@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Ecuación de la recta por dos puntos",
+ "gancho": "La recta que pasa por dos puntos 📍",
+ "enunciado": "¿Cuál es la <b>ecuación de la recta</b> que pasa por los puntos $(1, 3)$ y $(3, 7)$?",
+ "alternativas": [
+  "$y = 4x - 1$",
+  "$y = 2x + 3$",
+  "$y = 2x + 1$",
+  "$y = \\dfrac{1}{2}x + \\dfrac{5}{2}$"
+ ],
+ "valores": [
+  "4*x-1",
+  "2*x+3",
+  "2*x+1",
+  "x/2+5/2"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Pendiente: $$m = \\frac{7 - 3}{3 - 1} = 2$$",
+  "Con el punto $(1, 3)$: $y - 3 = 2(x - 1)$, o sea $$y = 2x + 1$$"
+ ],
+ "trampa": "Calcular bien la pendiente, pero usar 3 como coeficiente de posición y marcar B.",
+ "clave": "Ecuación punto-pendiente: $y - y_1 = m(x - x_1)$. Comprueba con el otro punto.",
+ "verificacion": "x = symbols('x'); m = Rational(7 - 3, 3 - 1); respuesta = expand(m*(x - 1) + 3)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pendiente",
+     "$m = \\dfrac{7 - 3}{3 - 1} = 2$"
+    ],
+    "voz": "La pendiente es siete menos tres, dividido en tres menos uno: dos."
+   },
+   {
+    "lineas": [
+     "$y - 3 = 2(x - 1)$",
+     "$y = 2x + 1$"
+    ],
+    "voz": "Con el punto uno, tres: y menos tres igual dos por equis menos uno. Queda y igual dos equis más uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: y igual dos equis más uno. Siempre comprueba la recta con el otro punto. Compruébalo: con equis igual tres, dos por tres más uno da siete. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "259"
+}

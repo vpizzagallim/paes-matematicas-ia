@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Razones en mezclas",
+ "gancho": "El jugo perfecto 🧃",
+ "enunciado": "Un jugo se prepara mezclando concentrado y agua en razón <b>1 : 4</b>. ¿Cuánto concentrado se necesita para preparar <b>2 litros</b> de jugo?",
+ "alternativas": [
+  "800 mL",
+  "500 mL",
+  "1.600 mL",
+  "400 mL"
+ ],
+ "valores": [
+  "800",
+  "500",
+  "1600",
+  "400"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "La razón 1 : 4 forma $1 + 4 = 5$ partes iguales.",
+  "$$\\frac{2.000 \\text{ mL}}{5} = 400 \\text{ mL}$$ de concentrado."
+ ],
+ "trampa": "Dividir 2 litros en 4 partes y marcar B (500 mL), olvidando que el total tiene 5 partes.",
+ "clave": "En una razón $a : b$, el total se divide en $a + b$ partes.",
+ "verificacion": "respuesta = 2000*Rational(1, 1+4)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "1 : 4 son 5 partes",
+     "$1 + 4 = 5$"
+    ],
+    "voz": "Uno es a cuatro significa una parte de concentrado y cuatro de agua: cinco partes en total."
+   },
+   {
+    "lineas": [
+     "Cada parte",
+     "$2.000 \\div 5 = 400\\ \\text{mL}$"
+    ],
+    "voz": "Dos litros son dos mil mililitros. Divididos en cinco: cuatrocientos mililitros por parte."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cuatrocientos mililitros. En una razón, primero cuenta cuántas partes forman el total. El error típico es dividir en cuatro, pero el total tiene cinco partes: una de concentrado y cuatro de agua. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "231"
+}

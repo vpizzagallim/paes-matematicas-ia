@@ -1,0 +1,56 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Sistema 2x2: entradas al cine",
+ "gancho": "Cine en familia 🍿",
+ "enunciado": "En el cine, <b>3 entradas de adulto y 2 de niño</b> cuestan <b>\\$23.000</b>, y <b>1 de adulto y 4 de niño</b>, <b>\\$21.000</b>. ¿Cuánto cuesta una entrada de niño?",
+ "alternativas": [
+  "\\$4.000",
+  "\\$3.500",
+  "\\$4.400",
+  "\\$5.000"
+ ],
+ "valores": [
+  "4000",
+  "3500",
+  "4400",
+  "5000"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "De la segunda: $a = 21.000 - 4n$. En la primera: $$3(21.000 - 4n) + 2n = 23.000$$",
+  "$$63.000 - 10n = 23.000 \\Rightarrow n = 4.000$$"
+ ],
+ "trampa": "Resolver bien, pero responder el precio de la entrada de adulto y marcar D (\\$5.000).",
+ "clave": "En un sistema, despeja la incógnita más fácil (la de coeficiente 1) y reemplázala en la otra ecuación.",
+ "verificacion": "a, n = symbols('a n'); s = solve([Eq(3*a + 2*n, 23000), Eq(a + 4*n, 21000)], [a, n]); respuesta = s[n]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Despejamos a",
+     "$a = 21.000 - 4n$"
+    ],
+    "voz": "De la segunda ecuación, la entrada de adulto es veintiún mil menos cuatro ene."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$63.000 - 10n = 23.000$"
+    ],
+    "voz": "Al reemplazar en la primera queda sesenta y tres mil menos diez ene igual veintitrés mil."
+   },
+   {
+    "lineas": [
+     "Despejamos n",
+     "$10n = 40.000 \\Rightarrow n = 4.000$"
+    ],
+    "voz": "Diez ene es cuarenta mil, así que la entrada de niño cuesta cuatro mil."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuatro mil pesos. Despeja la incógnita con coeficiente uno y reemplázala en la otra ecuación. Y lee bien la pregunta: cinco mil es la entrada de adulto, no la de niño. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "226"
+}

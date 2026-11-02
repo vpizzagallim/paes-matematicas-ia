@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Ecuación logarítmica",
+ "gancho": "El logaritmo es un exponente 🔑",
+ "enunciado": "¿Cuál es el valor de $x$ en $$\\log_3 x = 4\\,?$$",
+ "alternativas": [
+  "64",
+  "$\\dfrac{4}{3}$",
+  "12",
+  "81"
+ ],
+ "valores": [
+  "64",
+  "4/3",
+  "12",
+  "81"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Por definición: $\\log_b x = c \\iff b^c = x$.",
+  "$$x = 3^4 = 81$$"
+ ],
+ "trampa": "Multiplicar la base por el resultado ($3 \\cdot 4 = 12$) y marcar C.",
+ "clave": "El logaritmo es un exponente: $\\log_b x = c$ significa $b^c = x$.",
+ "verificacion": "x = symbols('x', positive=True); respuesta = solve(Eq(log(x, 3), 4), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "El log es un exponente",
+     "$\\log_3 x = 4 \\iff 3^4 = x$"
+    ],
+    "voz": "Logaritmo en base tres de equis igual cuatro significa que tres elevado a cuatro es equis."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$3^4 = 81$"
+    ],
+    "voz": "Tres a la cuatro es ochenta y uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: ochenta y uno. Un logaritmo es un exponente: la base elevada al resultado da el argumento. Tres por cuatro, doce, es el error típico: el logaritmo pide elevar, no multiplicar. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "229"
+}

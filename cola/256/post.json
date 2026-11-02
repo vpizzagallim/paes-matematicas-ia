@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja compró alfombra para su pieza… usando el perímetro 🧶🤦 ¿Cuánta necesitaba? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Geometria",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Mi pieza mide tres por cuatro. Compré catorce metros de alfombra.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🧶 Le sobró alfombra<br>¿Área o perímetro?",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "¿Por qué tengo alfombra en el pasillo?",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Para cubrir el piso se usa el área, Benja. Mira."
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Una pieza rectangular mide <b>3 m</b> por <b>4 m</b>. ¿Cuántos <b>m²</b> de alfombra se necesitan para cubrir <b>todo el piso</b>?",
+  "alternativas": [
+   "14 m²",
+   "7 m²",
+   "24 m²",
+   "12 m²"
+  ],
+  "valores": [
+   "14",
+   "7",
+   "24",
+   "12"
+  ],
+  "correcta": 3,
+  "verificacion": "respuesta = 3*4",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Cubrir el piso = área",
+      "$A = 3 \\cdot 4$"
+     ],
+     "voz": "Para cubrir el piso necesitas el área: largo por ancho."
+    },
+    {
+     "lineas": [
+      "Calculamos",
+      "$A = 12\\ \\text{m}^2$"
+     ],
+     "voz": "Tres por cuatro: doce metros cuadrados. Catorce era el perímetro, el borde."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la de: doce metros cuadrados. El área cubre; el perímetro rodea."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-10",
+ "id": "256"
+}

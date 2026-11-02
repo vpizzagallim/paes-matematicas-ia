@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: ¿qué te están preguntando? 🔎 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: antes de calcular, identifica qué te preguntan.",
+  "titulo": "Tip: la pregunta",
+  "pasos": [
+   {
+    "lineas": [
+     "Lee primero la pregunta final"
+    ],
+    "voz": "Lee primero la última frase del enunciado: ahí está lo que te piden."
+   },
+   {
+    "lineas": [
+     "Anota qué buscas"
+    ],
+    "voz": "Anota qué buscas: ¿un precio, un porcentaje, un ángulo, una probabilidad?"
+   },
+   {
+    "lineas": [
+     "Al final, ¿respondiste eso?"
+    ],
+    "voz": "Cuando termines, revisa que tu resultado responda exactamente eso."
+   }
+  ],
+  "remate": "¿Qué me piden? ✅",
+  "cierre": {
+   "voz": "Muchos puntos se pierden por responder otra cosa. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-09",
+ "id": "252"
+}

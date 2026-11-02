@@ -1,0 +1,1043 @@
+[
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja pasó una hora en la micro mirando el techo 🚌😐 ¿Y si repasa en el camino? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Micro",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Hoy no alcancé a estudiar. Estuve una hora en la micro.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🚌 1 hora en micro<br>= 1 hora mirando el techo",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "Y el celular con cero batería.",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "¿Y si repasas quince minutos en cada viaje? Calcula."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Si repasas <b>15 minutos</b> en cada viaje, de ida y de vuelta, durante <b>5 días</b>, ¿cuántas <b>horas</b> repasas en total?",
+   "alternativas": [
+    "1,25 horas",
+    "2,5 horas",
+    "1,5 horas",
+    "75 horas"
+   ],
+   "valores": [
+    "5/4",
+    "5/2",
+    "3/2",
+    "75"
+   ],
+   "correcta": 1,
+   "verificacion": "respuesta = Rational(15*2*5, 60)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Minutos totales",
+       "$15 \\cdot 2 \\cdot 5 = 150\\ \\text{min}$"
+      ],
+      "voz": "Quince minutos, dos viajes al día, cinco días: ciento cincuenta minutos."
+     },
+     {
+      "lineas": [
+       "A horas",
+       "$150 \\div 60 = 2{,}5\\ \\text{h}$"
+      ],
+      "voz": "Ciento cincuenta minutos son dos horas y media."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la be: dos coma cinco horas. El tiempo muerto también sirve para estudiar."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-01"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Truco: multiplicar por 5 sin calculadora en 2 segundos ✋ Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "Multiplicar por 5 al toque",
+   "intro_voz": "Truco PAES: multiplicar por cinco en dos segundos, sin calculadora.",
+   "titulo": "Por 5 = por 10 ÷ 2",
+   "pasos": [
+    {
+     "lineas": [
+      "Multiplica por 10",
+      "$48 \\cdot 10 = 480$"
+     ],
+     "voz": "Multiplicar por cinco es lo mismo que multiplicar por diez y sacar la mitad. Cuarenta y ocho por diez, cuatrocientos ochenta."
+    },
+    {
+     "lineas": [
+      "Saca la mitad",
+      "$480 \\div 2 = 240$"
+     ],
+     "voz": "La mitad de cuatrocientos ochenta es doscientos cuarenta. Listo: cuarenta y ocho por cinco es doscientos cuarenta."
+    },
+    {
+     "lineas": [
+      "Sirve con decimales",
+      "$3{,}6 \\cdot 5 = 36 \\div 2 = 18$"
+     ],
+     "voz": "Con decimales también: tres coma seis por diez es treinta y seis, y la mitad, dieciocho."
+    }
+   ],
+   "remate": "× 5 = × 10 ÷ 2",
+   "cierre": {
+    "voz": "Y para dividir por cinco, haz lo contrario: divide por diez y multiplica por dos."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-02"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: arma tu cuaderno de errores ✍️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: arma tu cuaderno de errores.",
+   "titulo": "Tip: tus errores",
+   "pasos": [
+    {
+     "lineas": [
+      "Anota cada ejercicio que fallas"
+     ],
+     "voz": "Cada vez que te equivoques en un ejercicio, anótalo en un cuaderno aparte."
+    },
+    {
+     "lineas": [
+      "Escribe por qué te equivocaste"
+     ],
+     "voz": "Al lado, escribe por qué: ¿leíste mal, olvidaste una fórmula o fue un error de cálculo?"
+    },
+    {
+     "lineas": [
+      "Repásalo el fin de semana"
+     ],
+     "voz": "El fin de semana, vuelve a resolverlos sin mirar la solución."
+    }
+   ],
+   "remate": "Anota · Entiende · Repite",
+   "cierre": {
+    "voz": "Tus errores son tu mejor guía de estudio. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-03"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja invitó a todos a completos… y no sacó la cuenta 🌭💸 ¿Le alcanza con $10.000? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "¡Invito yo! Tres completos y dos bebidas.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🌭 Completo $2.500 · Bebida $1.200<br>Tiene $10.000",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.4
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "Eh… ¿alguien sabe sumar rápido?",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Cálculo mental, Benja. ¿Cuánto vuelto te dan?"
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Benja compra <b>3 completos</b> a <b>\\$2.500</b> y <b>2 bebidas</b> a <b>\\$1.200</b>. Si paga con <b>\\$10.000</b>, ¿cuánto vuelto recibe?",
+   "alternativas": [
+    "\\$1.300",
+    "\\$2.500",
+    "\\$100",
+    "\\$9.900"
+   ],
+   "valores": [
+    "1300",
+    "2500",
+    "100",
+    "9900"
+   ],
+   "correcta": 2,
+   "verificacion": "respuesta = 10000 - (3*2500 + 2*1200)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Total de la compra",
+       "$7.500 + 2.400 = 9.900$"
+      ],
+      "voz": "Tres completos son siete mil quinientos y dos bebidas, dos mil cuatrocientos. Total: nueve mil novecientos."
+     },
+     {
+      "lineas": [
+       "Vuelto",
+       "$10.000 - 9.900 = 100$"
+      ],
+      "voz": "Diez mil menos nueve mil novecientos: cien pesos de vuelto."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la ce: cien pesos. Justo le alcanzó, Benja."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-04"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 (a + b)² NO es a² + b² 😱 El error de álgebra más común de la PAES. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Algebra #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "Cuadrado de binomio",
+   "intro_voz": "Dato PAES: el error de álgebra que más puntos quita.",
+   "titulo": "Cuadrado de binomio",
+   "pasos": [
+    {
+     "lineas": [
+      "No es la suma de cuadrados",
+      "$(a + b)^2 \\neq a^2 + b^2$"
+     ],
+     "voz": "Un binomio al cuadrado no es la suma de los cuadrados. Ese es el error más común."
+    },
+    {
+     "lineas": [
+      "Falta el doble producto",
+      "$(a + b)^2 = a^2 + 2ab + b^2$"
+     ],
+     "voz": "Es el primero al cuadrado, más el doble del primero por el segundo, más el segundo al cuadrado."
+    },
+    {
+     "lineas": [
+      "Ejemplo",
+      "$(x + 3)^2 = x^2 + 6x + 9$"
+     ],
+     "voz": "Por ejemplo, equis más tres al cuadrado es equis cuadrado, más seis equis, más nueve."
+    }
+   ],
+   "remate": "¡No olvides el 2ab!",
+   "cierre": {
+    "voz": "Si dudas, compruébalo con números: dos más tres al cuadrado es veinticinco, no trece."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-05"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: estudia en bloques cortos ⏱️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: estudia en bloques cortos.",
+   "titulo": "Tip: bloques cortos",
+   "pasos": [
+    {
+     "lineas": [
+      "25 minutos de foco"
+     ],
+     "voz": "Pon un temporizador de veinticinco minutos y estudia solo matemática, con el celular lejos."
+    },
+    {
+     "lineas": [
+      "5 minutos de pausa"
+     ],
+     "voz": "Después, descansa cinco minutos: párate, toma agua, estira las piernas."
+    },
+    {
+     "lineas": [
+      "Repite tres o cuatro veces"
+     ],
+     "voz": "Repite el ciclo tres o cuatro veces. Rinde más que tres horas a medias."
+    }
+   ],
+   "remate": "25 de foco · 5 de pausa",
+   "cierre": {
+    "voz": "Poco y concentrado le gana a mucho y distraído. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-06"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Grupo de estudio: 2 horas… 15 minutos de matemática 🍕😅 ¿Qué porcentaje fue estudio? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #GrupoDeEstudio",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Hicimos grupo de estudio dos horas seguidas.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🍕 105 min de pizza y conversa<br>📐 15 min de matemática",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.4
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "Pero la pizza estaba buenísima.",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Benja, calcula qué porcentaje fue estudio de verdad."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "De un grupo de estudio de <b>2 horas</b>, solo <b>15 minutos</b> fueron de matemática. ¿Qué <b>porcentaje</b> del tiempo se estudió?",
+   "alternativas": [
+    "15%",
+    "7,5%",
+    "12,5%",
+    "25%"
+   ],
+   "valores": [
+    "15",
+    "15/2",
+    "25/2",
+    "25"
+   ],
+   "correcta": 2,
+   "verificacion": "respuesta = Rational(15, 2*60)*100",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Todo en minutos",
+       "$2\\ \\text{h} = 120\\ \\text{min}$"
+      ],
+      "voz": "Dos horas son ciento veinte minutos."
+     },
+     {
+      "lineas": [
+       "Porcentaje",
+       "$\\dfrac{15}{120} = 0{,}125 = 12{,}5\\%$"
+      ],
+      "voz": "Quince de ciento veinte es cero coma uno dos cinco: doce coma cinco por ciento."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la ce: doce coma cinco por ciento. Primero la matemática y después la pizza."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-07"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Las probabilidades «y» se multiplican, las «o» se suman 🎲 Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Probabilidad #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "«Y» multiplica, «o» suma",
+   "intro_voz": "Dato PAES: cuándo multiplicar y cuándo sumar probabilidades.",
+   "titulo": "«Y» y «o»",
+   "pasos": [
+    {
+     "lineas": [
+      "«Y» (independientes): multiplica",
+      "$P(A \\text{ y } B) = P(A) \\cdot P(B)$"
+     ],
+     "voz": "Si te piden que ocurra una cosa y también la otra, y son independientes, multiplicas."
+    },
+    {
+     "lineas": [
+      "Ej.: dos caras seguidas",
+      "$\\dfrac{1}{2} \\cdot \\dfrac{1}{2} = \\dfrac{1}{4}$"
+     ],
+     "voz": "Por ejemplo, cara y cara en dos lanzamientos: un medio por un medio, un cuarto."
+    },
+    {
+     "lineas": [
+      "«O» (excluyentes): suma",
+      "$P(1 \\text{ o } 2) = \\dfrac{1}{6} + \\dfrac{1}{6} = \\dfrac{1}{3}$"
+     ],
+     "voz": "Si te piden una cosa o la otra, y no pueden pasar juntas, sumas. Sacar uno o dos en un dado: un tercio."
+    }
+   ],
+   "remate": "Y → × · O → +",
+   "cierre": {
+    "voz": "Y si los eventos pueden pasar juntos, recuerda restar la intersección."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-08"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: ¿qué te están preguntando? 🔎 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: antes de calcular, identifica qué te preguntan.",
+   "titulo": "Tip: la pregunta",
+   "pasos": [
+    {
+     "lineas": [
+      "Lee primero la pregunta final"
+     ],
+     "voz": "Lee primero la última frase del enunciado: ahí está lo que te piden."
+    },
+    {
+     "lineas": [
+      "Anota qué buscas"
+     ],
+     "voz": "Anota qué buscas: ¿un precio, un porcentaje, un ángulo, una probabilidad?"
+    },
+    {
+     "lineas": [
+      "Al final, ¿respondiste eso?"
+     ],
+     "voz": "Cuando termines, revisa que tu resultado responda exactamente eso."
+    }
+   ],
+   "remate": "¿Qué me piden? ✅",
+   "cierre": {
+    "voz": "Muchos puntos se pierden por responder otra cosa. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-09"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja compró alfombra para su pieza… usando el perímetro 🧶🤦 ¿Cuánta necesitaba? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Geometria",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Mi pieza mide tres por cuatro. Compré catorce metros de alfombra.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🧶 Le sobró alfombra<br>¿Área o perímetro?",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "¿Por qué tengo alfombra en el pasillo?",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Para cubrir el piso se usa el área, Benja. Mira."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Una pieza rectangular mide <b>3 m</b> por <b>4 m</b>. ¿Cuántos <b>m²</b> de alfombra se necesitan para cubrir <b>todo el piso</b>?",
+   "alternativas": [
+    "14 m²",
+    "7 m²",
+    "24 m²",
+    "12 m²"
+   ],
+   "valores": [
+    "14",
+    "7",
+    "24",
+    "12"
+   ],
+   "correcta": 3,
+   "verificacion": "respuesta = 3*4",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Cubrir el piso = área",
+       "$A = 3 \\cdot 4$"
+      ],
+      "voz": "Para cubrir el piso necesitas el área: largo por ancho."
+     },
+     {
+      "lineas": [
+       "Calculamos",
+       "$A = 12\\ \\text{m}^2$"
+      ],
+      "voz": "Tres por cuatro: doce metros cuadrados. Catorce era el perímetro, el borde."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la de: doce metros cuadrados. El área cubre; el perímetro rodea."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-10"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Seno de 30°, 45° y 60° sin memorizar una tabla 🤯 Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Trigonometria #PAESM2 #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "Seno de 30°, 45° y 60°",
+   "intro_voz": "Truco PAES para M2: los senos de treinta, cuarenta y cinco y sesenta grados, sin tabla.",
+   "titulo": "Senos notables",
+   "pasos": [
+    {
+     "lineas": [
+      "Raíces de 1, 2 y 3 sobre 2",
+      "$\\dfrac{\\sqrt{1}}{2},\\ \\dfrac{\\sqrt{2}}{2},\\ \\dfrac{\\sqrt{3}}{2}$"
+     ],
+     "voz": "Escribe raíz de uno, raíz de dos y raíz de tres, todas divididas en dos."
+    },
+    {
+     "lineas": [
+      "Senos de 30°, 45°, 60°",
+      "$\\sin 30^\\circ = \\tfrac{1}{2}$"
+     ],
+     "voz": "Esos son los senos de treinta, cuarenta y cinco y sesenta grados. Raíz de uno es uno: seno de treinta es un medio."
+    },
+    {
+     "lineas": [
+      "El coseno, al revés",
+      "$\\cos 60^\\circ = \\tfrac{1}{2}$"
+     ],
+     "voz": "Para el coseno, se leen al revés: coseno de sesenta es un medio, y coseno de treinta, raíz de tres medios."
+    }
+   ],
+   "remate": "√1 · √2 · √3 ÷ 2",
+   "cierre": {
+    "voz": "Con eso armas la tangente: seno dividido en coseno."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-11"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: haz un dibujo ✏️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: si te enredas, haz un dibujo.",
+   "titulo": "Tip: dibuja",
+   "pasos": [
+    {
+     "lineas": [
+      "Geometría: dibuja la figura"
+     ],
+     "voz": "En geometría, dibuja la figura y anota las medidas que te dan."
+    },
+    {
+     "lineas": [
+      "Probabilidad: una tabla"
+     ],
+     "voz": "En probabilidad, una tabla o un diagrama de árbol ordena todos los casos."
+    },
+    {
+     "lineas": [
+      "Funciones: un bosquejo"
+     ],
+     "voz": "En funciones, un bosquejo rápido del gráfico te muestra si la respuesta tiene sentido."
+    }
+   ],
+   "remate": "Dibuja · Ordena · Comprueba",
+   "cierre": {
+    "voz": "Un dibujo de diez segundos ahorra minutos de confusión. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-12"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja: «Con 90% de batería estudio todo el día» 📱🔋 Spoiler: TikTok no opina lo mismo #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Bateria",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Tengo noventa por ciento de batería. Me alcanza para todo el día.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "📱 TikTok gasta<br>15% de batería por hora",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "¿Y dónde quedaron mis apuntes?",
+    "efecto": "trombon"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Calcula cuánto te dura, Benja."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Un celular tiene <b>90% de batería</b> y gasta <b>15%</b> por cada hora de uso. ¿Cuántas <b>horas</b> dura hasta quedar en 0%?",
+   "alternativas": [
+    "5",
+    "6",
+    "9",
+    "4"
+   ],
+   "valores": [
+    "5",
+    "6",
+    "9",
+    "4"
+   ],
+   "correcta": 1,
+   "verificacion": "h = symbols('h'); respuesta = solve(Eq(90 - 15*h, 0), h)[0]",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Planteamos",
+       "$90 - 15h = 0$"
+      ],
+      "voz": "La batería baja quince por ciento por hora, desde noventa."
+     },
+     {
+      "lineas": [
+       "Despejamos",
+       "$h = \\dfrac{90}{15} = 6$"
+      ],
+      "voz": "Noventa dividido en quince: seis horas."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la be: seis horas. Y si es de estudio, mejor con el celular lejos."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-13"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Estima antes de calcular y descarta alternativas en segundos ⏱️ Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TipsPAES #Estimacion",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "Estima antes de calcular",
+   "intro_voz": "Truco PAES: estimar antes de calcular te ahorra tiempo y errores.",
+   "titulo": "Estimar primero",
+   "pasos": [
+    {
+     "lineas": [
+      "Redondea",
+      "$19{,}8 \\cdot 5{,}1 \\approx 20 \\cdot 5$"
+     ],
+     "voz": "Redondea los números a valores cómodos: diecinueve coma ocho es casi veinte, y cinco coma uno es casi cinco."
+    },
+    {
+     "lineas": [
+      "Calcula fácil",
+      "$20 \\cdot 5 = 100$"
+     ],
+     "voz": "Veinte por cinco es cien. El resultado real tiene que estar cerca de cien."
+    },
+    {
+     "lineas": [
+      "Descarta lo lejano",
+      "$\\text{Si ves } 10{,}1 \\text{ o } 1.010\\text{: fuera}$"
+     ],
+     "voz": "Si una alternativa dice diez o mil, la descartas al tiro, sin calcular."
+    }
+   ],
+   "remate": "Redondea y descarta",
+   "cierre": {
+    "voz": "Estimar no reemplaza el cálculo, pero te avisa cuando algo salió mal."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-14"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: prueba las alternativas 🔁 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: a veces conviene probar las alternativas.",
+   "titulo": "Tip: prueba",
+   "pasos": [
+    {
+     "lineas": [
+      "Reemplaza en la ecuación"
+     ],
+     "voz": "Si te piden el valor de equis, puedes reemplazar cada alternativa en la ecuación."
+    },
+    {
+     "lineas": [
+      "La que cumple, es"
+     ],
+     "voz": "La alternativa que hace verdadera la igualdad es la correcta."
+    },
+    {
+     "lineas": [
+      "Úsalo para comprobar"
+     ],
+     "voz": "Y aunque lo hayas resuelto, reemplazar tu respuesta es la mejor forma de comprobarla."
+    }
+   ],
+   "remate": "Reemplaza y comprueba",
+   "cierre": {
+    "voz": "Las alternativas también son una herramienta. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-15"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja quiere subir 150 puntos en 5 semanas 📈😰 ¿Cuánto por semana? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #MetaPAES",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Este año saco setecientos cincuenta. Fijo.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "📈 Último ensayo: 600 puntos<br>Quedan 5 semanas",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "¿Eso es mucho o poco?",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Vamos por partes, Benja. Una meta por semana."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "Benja tiene <b>600 puntos</b> y quiere llegar a <b>750</b> en <b>5 semanas</b>, subiendo lo mismo cada semana. ¿Cuántos puntos debe subir por semana?",
+   "alternativas": [
+    "25",
+    "150",
+    "35",
+    "30"
+   ],
+   "valores": [
+    "25",
+    "150",
+    "35",
+    "30"
+   ],
+   "correcta": 3,
+   "verificacion": "respuesta = Rational(750 - 600, 5)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Cuánto le falta",
+       "$750 - 600 = 150$"
+      ],
+      "voz": "De seiscientos a setecientos cincuenta le faltan ciento cincuenta puntos."
+     },
+     {
+      "lineas": [
+       "Por semana",
+       "$150 \\div 5 = 30$"
+      ],
+      "voz": "Repartidos en cinco semanas: treinta puntos por semana."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la de: treinta puntos. Una meta grande se logra con metas chicas."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-16"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Leyes de logaritmos en 30 segundos 📈 Las que más salen en M2. Guárdalas 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Logaritmos #PAESM2 #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 DATO PAES",
+   "subtitulo": "Las 3 leyes de logaritmos",
+   "intro_voz": "Dato PAES para M2: las tres leyes de logaritmos que tienes que manejar.",
+   "titulo": "Leyes de logaritmos",
+   "pasos": [
+    {
+     "lineas": [
+      "Producto: se suman",
+      "$\\log(ab) = \\log a + \\log b$"
+     ],
+     "voz": "El logaritmo de un producto es la suma de los logaritmos."
+    },
+    {
+     "lineas": [
+      "Cociente: se restan",
+      "$\\log\\left(\\dfrac{a}{b}\\right) = \\log a - \\log b$"
+     ],
+     "voz": "El logaritmo de una división es la resta de los logaritmos."
+    },
+    {
+     "lineas": [
+      "Potencia: el exponente baja",
+      "$\\log\\left(a^n\\right) = n \\log a$"
+     ],
+     "voz": "Y el exponente baja multiplicando. Ojo: logaritmo de a más be no tiene fórmula."
+    }
+   ],
+   "remate": "Suma · Resta · Baja",
+   "cierre": {
+    "voz": "Repásalas con ejemplos: logaritmo de dos más logaritmo de cinco es logaritmo de diez, o sea uno."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-17"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: si te bloqueas, respira y sigue 🧘 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: qué hacer si te bloqueas en una pregunta.",
+   "titulo": "Tip: no te bloquees",
+   "pasos": [
+    {
+     "lineas": [
+      "Respira hondo tres veces"
+     ],
+     "voz": "Si te bloqueas, suelta el lápiz y respira hondo tres veces."
+    },
+    {
+     "lineas": [
+      "Marca la pregunta y sigue"
+     ],
+     "voz": "Marca la pregunta y pasa a la siguiente. No te quedes pegado."
+    },
+    {
+     "lineas": [
+      "Vuelve con la mente fresca"
+     ],
+     "voz": "Cuando vuelvas al final, muchas veces la respuesta aparece sola."
+    }
+   ],
+   "remate": "Respira · Marca · Vuelve",
+   "cierre": {
+    "voz": "Una pregunta difícil no define tu prueba. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-18"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Mamá mandó a Benja a la feria por 750 g de palta 🥑😅 ¿Cuánto le paga al casero? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Feria",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Mi mamá me mandó a la feria por tres cuartos de kilo de palta.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🥑 Palta a $4.000 el kilo<br>Pide 750 g",
+    "efecto": "bocina",
+    "t_cartel": 0.1,
+    "sacudir": true,
+    "dur_min": 2.2
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "¿Y cuánto le pago al casero?",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Proporción, Benja. Calcula antes de llegar al puesto."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "La palta cuesta <b>\\$4.000 el kilo</b>. ¿Cuánto se paga por <b>750 gramos</b>?",
+   "alternativas": [
+    "\\$3.000",
+    "\\$3.250",
+    "\\$2.000",
+    "\\$750"
+   ],
+   "valores": [
+    "3000",
+    "3250",
+    "2000",
+    "750"
+   ],
+   "correcta": 0,
+   "verificacion": "respuesta = Rational(4000, 1000)*750",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "750 g son 3/4 de kilo",
+       "$\\dfrac{750}{1.000} = \\dfrac{3}{4}$"
+      ],
+      "voz": "Setecientos cincuenta gramos son tres cuartos de kilo."
+     },
+     {
+      "lineas": [
+       "Tres cuartos del precio",
+       "$4.000 \\cdot \\dfrac{3}{4} = 3.000$"
+      ],
+      "voz": "Tres cuartos de cuatro mil: tres mil pesos."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la a: tres mil pesos. Y no olvides la yapa."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1102-19"
+ }
+]

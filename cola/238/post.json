@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Media: dato que falta",
+ "gancho": "¿Cuántos goles hizo? ⚽",
+ "enunciado": "Un equipo hizo en promedio <b>2 goles</b> en sus primeros <b>4 partidos</b>. Tras el quinto partido, el promedio subió a <b>2,4 goles</b>. ¿Cuántos goles hizo en el quinto partido?",
+ "alternativas": [
+  "4",
+  "12",
+  "2,8",
+  "3"
+ ],
+ "valores": [
+  "4",
+  "12",
+  "14/5",
+  "3"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Goles en 4 partidos: $4 \\cdot 2 = 8$. En 5 partidos: $5 \\cdot 2{,}4 = 12$.",
+  "$$12 - 8 = 4 \\text{ goles}$$"
+ ],
+ "trampa": "Responder el total de goles y marcar B (12), o pensar que basta con un poco más que el promedio.",
+ "clave": "Promedio $\\cdot$ cantidad de datos = suma. Trabaja con sumas, no con promedios.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq((4*2 + x)/5, Rational(24,10)), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Total de goles",
+     "$4 \\cdot 2 = 8 \\quad 5 \\cdot 2{,}4 = 12$"
+    ],
+    "voz": "En cuatro partidos con promedio dos, hizo ocho goles. Con cinco partidos y promedio dos coma cuatro, el total es doce."
+   },
+   {
+    "lineas": [
+     "La diferencia",
+     "$12 - 8 = 4$"
+    ],
+    "voz": "Así que en el quinto partido hizo cuatro goles."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuatro goles. Promedio por cantidad de datos da la suma: trabaja con sumas. No respondas doce, que es el total de goles: te preguntan solo por el quinto partido. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "238"
+}

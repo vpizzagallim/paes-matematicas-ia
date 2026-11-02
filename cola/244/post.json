@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Grupo de estudio: 2 horas… 15 minutos de matemática 🍕😅 ¿Qué porcentaje fue estudio? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #GrupoDeEstudio",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Hicimos grupo de estudio dos horas seguidas.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🍕 105 min de pizza y conversa<br>📐 15 min de matemática",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.4
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "Pero la pizza estaba buenísima.",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Benja, calcula qué porcentaje fue estudio de verdad."
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "De un grupo de estudio de <b>2 horas</b>, solo <b>15 minutos</b> fueron de matemática. ¿Qué <b>porcentaje</b> del tiempo se estudió?",
+  "alternativas": [
+   "15%",
+   "7,5%",
+   "12,5%",
+   "25%"
+  ],
+  "valores": [
+   "15",
+   "15/2",
+   "25/2",
+   "25"
+  ],
+  "correcta": 2,
+  "verificacion": "respuesta = Rational(15, 2*60)*100",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Todo en minutos",
+      "$2\\ \\text{h} = 120\\ \\text{min}$"
+     ],
+     "voz": "Dos horas son ciento veinte minutos."
+    },
+    {
+     "lineas": [
+      "Porcentaje",
+      "$\\dfrac{15}{120} = 0{,}125 = 12{,}5\\%$"
+     ],
+     "voz": "Quince de ciento veinte es cero coma uno dos cinco: doce coma cinco por ciento."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la ce: doce coma cinco por ciento. Primero la matemática y después la pizza."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-07",
+ "id": "244"
+}

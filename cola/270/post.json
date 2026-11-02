@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Proporcionalidad compuesta",
+ "gancho": "Más máquinas, menos horas 🏭",
+ "enunciado": "<b>3 máquinas</b> fabrican <b>600 poleras</b> en <b>5 horas</b>. Al mismo ritmo, ¿cuántas poleras fabrican <b>6 máquinas</b> en <b>4 horas</b>?",
+ "alternativas": [
+  "720",
+  "480",
+  "1.200",
+  "960"
+ ],
+ "valores": [
+  "720",
+  "480",
+  "1200",
+  "960"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Ritmo de una máquina en una hora: $$\\frac{600}{3 \\cdot 5} = 40$$ poleras.",
+  "$$40 \\cdot 6 \\cdot 4 = 960$$ poleras."
+ ],
+ "trampa": "Considerar solo que se duplican las máquinas y marcar C (1.200), sin ajustar las horas.",
+ "clave": "En proporcionalidad compuesta, calcula primero el rendimiento de <b>una</b> máquina en <b>una</b> hora.",
+ "verificacion": "respuesta = Rational(600, 3*5) * 6 * 4",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Una máquina, una hora",
+     "$\\dfrac{600}{3 \\cdot 5} = 40$"
+    ],
+    "voz": "Primero, cuánto hace una máquina en una hora: seiscientas dividido en quince, cuarenta poleras."
+   },
+   {
+    "lineas": [
+     "Seis máquinas, cuatro horas",
+     "$40 \\cdot 6 \\cdot 4 = 960$"
+    ],
+    "voz": "Seis máquinas por cuatro horas: cuarenta por veinticuatro, novecientas sesenta."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: novecientas sesenta poleras. Reduce todo a una unidad y después multiplica. Si solo duplicas por las máquinas, te olvidas de que ahora trabajan una hora menos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "270"
+}

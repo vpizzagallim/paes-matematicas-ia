@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Interés compuesto",
+ "gancho": "Los intereses también ganan intereses 🏦",
+ "enunciado": "Se depositan <b>\\$1.000.000</b> a un interés compuesto de <b>2% mensual</b>. ¿Cuánto dinero habrá al cabo de <b>2 meses</b>?",
+ "alternativas": [
+  "\\$1.400.000",
+  "\\$1.040.000",
+  "\\$1.040.400",
+  "\\$1.020.000"
+ ],
+ "valores": [
+  "1400000",
+  "1040000",
+  "1040400",
+  "1020000"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Cada mes el monto se multiplica por $1{,}02$: $$C = 1.000.000 \\cdot 1{,}02^2$$",
+  "$$1{,}02^2 = 1{,}0404 \\Rightarrow C = 1.040.400$$"
+ ],
+ "trampa": "Calcular interés simple (2% + 2% = 4%) y marcar B (\\$1.040.000).",
+ "clave": "Interés compuesto: $C = C_0(1 + i)^n$. Los intereses también generan intereses.",
+ "verificacion": "respuesta = 1000000*Rational(102,100)**2",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Por 1,02 cada mes",
+     "$1.000.000 \\cdot 1{,}02^2$"
+    ],
+    "voz": "Con interés compuesto, cada mes el dinero se multiplica por uno coma cero dos."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$1{,}0404 \\cdot 1.000.000 = 1.040.400$"
+    ],
+    "voz": "Uno coma cero dos al cuadrado es uno coma cero cuatro cero cuatro. Hay un millón cuarenta mil cuatrocientos pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: un millón cuarenta mil cuatrocientos pesos. En el interés compuesto, los intereses también ganan intereses. Con interés simple te daría un millón cuarenta mil, pero aquí el segundo mes gana sobre lo ya ganado. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "219"
+}

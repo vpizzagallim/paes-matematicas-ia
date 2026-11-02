@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Estimación de raíces",
+ "gancho": "Estima sin calculadora 🎯",
+ "enunciado": "¿Cuál es el <b>número entero más cercano</b> a $\\sqrt{70}$?",
+ "alternativas": [
+  "8",
+  "9",
+  "35",
+  "7"
+ ],
+ "valores": [
+  "8",
+  "9",
+  "35",
+  "7"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Cuadrados cercanos: $8^2 = 64$ y $9^2 = 81$, así que $8 < \\sqrt{70} < 9$.",
+  "70 está a 6 de 64 y a 11 de 81: $$\\sqrt{70} \\approx 8{,}4$$"
+ ],
+ "trampa": "Dividir 70 por 2 y marcar C (35), o redondear hacia arriba sin comparar.",
+ "clave": "Para estimar $\\sqrt{n}$, ubica $n$ entre dos cuadrados perfectos consecutivos.",
+ "verificacion": "import math; c = list(range(1, 40)); respuesta = Integer(min(c, key=lambda k: abs(k - math.sqrt(70))))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Entre dos cuadrados",
+     "$64 < 70 < 81$"
+    ],
+    "voz": "Setenta está entre sesenta y cuatro, que es ocho al cuadrado, y ochenta y uno, que es nueve al cuadrado."
+   },
+   {
+    "lineas": [
+     "¿Cuál está más cerca?",
+     "$\\sqrt{70} \\approx 8{,}4$"
+    ],
+    "voz": "Setenta está mucho más cerca de sesenta y cuatro, así que la raíz es cerca de ocho coma cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: ocho. Para estimar una raíz, busca los cuadrados perfectos más cercanos. Raíz de setenta no es la mitad de setenta: compárala con los cuadrados perfectos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "242"
+}

@@ -1,0 +1,84 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja quiere subir 150 puntos en 5 semanas 📈😰 ¿Cuánto por semana? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #MetaPAES",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Este año saco setecientos cincuenta. Fijo.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "📈 Último ensayo: 600 puntos<br>Quedan 5 semanas",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "¿Eso es mucho o poco?",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Vamos por partes, Benja. Una meta por semana."
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Benja tiene <b>600 puntos</b> y quiere llegar a <b>750</b> en <b>5 semanas</b>, subiendo lo mismo cada semana. ¿Cuántos puntos debe subir por semana?",
+  "alternativas": [
+   "25",
+   "150",
+   "35",
+   "30"
+  ],
+  "valores": [
+   "25",
+   "150",
+   "35",
+   "30"
+  ],
+  "correcta": 3,
+  "verificacion": "respuesta = Rational(750 - 600, 5)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Cuánto le falta",
+      "$750 - 600 = 150$"
+     ],
+     "voz": "De seiscientos a setecientos cincuenta le faltan ciento cincuenta puntos."
+    },
+    {
+     "lineas": [
+      "Por semana",
+      "$150 \\div 5 = 30$"
+     ],
+     "voz": "Repartidos en cinco semanas: treinta puntos por semana."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la de: treinta puntos. Una meta grande se logra con metas chicas."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-16",
+ "id": "280"
+}

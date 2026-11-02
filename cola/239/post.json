@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Propiedades de potencias",
+ "gancho": "Potencias en 10 segundos ⚡",
+ "enunciado": "¿Cuál es el valor de $$\\frac{2^5 \\cdot 2^3}{2^6}\\,?$$",
+ "alternativas": [
+  "4",
+  "16",
+  "512",
+  "2"
+ ],
+ "valores": [
+  "4",
+  "16",
+  "512",
+  "2"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Al multiplicar potencias de igual base se suman los exponentes: $2^5 \\cdot 2^3 = 2^8$.",
+  "Al dividir se restan: $$\\frac{2^8}{2^6} = 2^2 = 4$$"
+ ],
+ "trampa": "Multiplicar los exponentes ($2^{15}$) y llegar a $2^9 = 512$ (C).",
+ "clave": "$a^m \\cdot a^n = a^{m+n}$ y $\\dfrac{a^m}{a^n} = a^{m-n}$.",
+ "verificacion": "respuesta = Integer(2)**5*Integer(2)**3/Integer(2)**6",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Multiplicar: se suman",
+     "$2^5 \\cdot 2^3 = 2^8$"
+    ],
+    "voz": "Al multiplicar potencias de igual base, los exponentes se suman: dos elevado a ocho."
+   },
+   {
+    "lineas": [
+     "Dividir: se restan",
+     "$\\dfrac{2^8}{2^6} = 2^2 = 4$"
+    ],
+    "voz": "Al dividir se restan: ocho menos seis, dos. Dos al cuadrado es cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuatro. Multiplicar potencias de igual base suma los exponentes; dividir los resta. Ojo, los exponentes no se multiplican al multiplicar potencias: eso solo pasa con una potencia de una potencia. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "239"
+}

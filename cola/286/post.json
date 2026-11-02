@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuaciones con paréntesis",
+ "gancho": "Ojo con el signo antes del paréntesis ⚠️",
+ "enunciado": "¿Cuál es la solución de $$3(x - 2) - 2(x + 1) = 4\\,?$$",
+ "alternativas": [
+  "12",
+  "11",
+  "8",
+  "4"
+ ],
+ "valores": [
+  "12",
+  "11",
+  "8",
+  "4"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Distribuimos (ojo con el signo): $$3x - 6 - 2x - 2 = 4$$",
+  "$$x - 8 = 4 \\Rightarrow x = 12$$"
+ ],
+ "trampa": "Escribir $-2(x+1) = -2x + 2$ y llegar a 8 (C).",
+ "clave": "El signo que está antes del paréntesis multiplica a <b>todos</b> los términos de adentro.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(3*(x-2) - 2*(x+1), 4), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Distribuimos",
+     "$3x - 6 - 2x - 2 = 4$"
+    ],
+    "voz": "Ojo con el menos dos: multiplica a la equis y también al uno. Queda menos dos equis menos dos."
+   },
+   {
+    "lineas": [
+     "Reducimos",
+     "$x - 8 = 4 \\Rightarrow x = 12$"
+    ],
+    "voz": "Reduciendo: equis menos ocho igual cuatro. Equis vale doce."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: doce. El signo antes del paréntesis afecta a todos los términos de adentro. Si escribes menos dos equis más dos, llegas a ocho: el menos multiplica a todo el paréntesis. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "286"
+}

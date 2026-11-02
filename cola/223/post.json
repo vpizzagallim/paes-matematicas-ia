@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Interés simple: tasa",
+ "gancho": "¿Qué tasa me pagaron? 💵",
+ "enunciado": "Un capital de <b>\\$500.000</b> genera <b>\\$45.000</b> de interés <b>simple</b> en <b>6 meses</b>. ¿Cuál es la tasa de interés <b>mensual</b>?",
+ "alternativas": [
+  "0,9%",
+  "1,5%",
+  "7,5%",
+  "9%"
+ ],
+ "valores": [
+  "9/10",
+  "3/2",
+  "15/2",
+  "9"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Interés simple: $I = C \\cdot i \\cdot t$: $$45.000 = 500.000 \\cdot i \\cdot 6$$",
+  "$$i = \\frac{45.000}{3.000.000} = 0{,}015 = 1{,}5\\%$$"
+ ],
+ "trampa": "Calcular el interés de todo el período ($\\tfrac{45.000}{500.000} = 9\\%$) y marcar D, sin dividir por los 6 meses.",
+ "clave": "En interés simple, $I = C \\cdot i \\cdot t$: el interés es el mismo en cada período.",
+ "verificacion": "i = symbols('i'); respuesta = solve(Eq(500000*i*6, 45000), i)[0]*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "I = C · i · t",
+     "$45.000 = 500.000 \\cdot i \\cdot 6$"
+    ],
+    "voz": "En interés simple, el interés es capital por tasa por tiempo."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$i = \\dfrac{45.000}{3.000.000} = 1{,}5\\%$"
+    ],
+    "voz": "Quinientos mil por seis es tres millones. Cuarenta y cinco mil dividido en tres millones: uno coma cinco por ciento mensual."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: uno coma cinco por ciento. Si piden tasa mensual, divide también por la cantidad de meses. Nueve por ciento es la tasa de los seis meses juntos, no la mensual. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "223"
+}

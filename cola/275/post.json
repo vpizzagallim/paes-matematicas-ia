@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Promedio de grupos combinados",
+ "gancho": "No promedies promedios 🚫",
+ "enunciado": "El <b>3° A</b> (20 estudiantes) tiene promedio <b>5,5</b> y el <b>3° B</b> (30 estudiantes), promedio <b>5,0</b>. ¿Cuál es el promedio de los <b>50 estudiantes</b> juntos?",
+ "alternativas": [
+  "5,1",
+  "5,3",
+  "5,25",
+  "5,2"
+ ],
+ "valores": [
+  "51/10",
+  "53/10",
+  "21/4",
+  "26/5"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Sumas de notas: $20 \\cdot 5{,}5 = 110$ y $30 \\cdot 5{,}0 = 150$.",
+  "$$\\frac{110 + 150}{50} = \\frac{260}{50} = 5{,}2$$"
+ ],
+ "trampa": "Promediar los dos promedios, $\\tfrac{5{,}5 + 5{,}0}{2} = 5{,}25$, y marcar C, sin considerar que los cursos tienen distinto tamaño.",
+ "clave": "Para juntar grupos de distinto tamaño, usa promedio ponderado: suma total dividida por el total de datos.",
+ "verificacion": "respuesta = (20*Rational(55,10) + 30*5) / 50",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma de cada curso",
+     "$20 \\cdot 5{,}5 = 110 \\quad 30 \\cdot 5 = 150$"
+    ],
+    "voz": "Veinte estudiantes con promedio cinco coma cinco suman ciento diez; treinta con promedio cinco suman ciento cincuenta."
+   },
+   {
+    "lineas": [
+     "Promedio total",
+     "$\\dfrac{260}{50} = 5{,}2$"
+    ],
+    "voz": "En total, doscientos sesenta dividido en cincuenta: cinco coma dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cinco coma dos. No promedies promedios de grupos de distinto tamaño. Promediar cinco coma cinco y cinco da cinco coma veinticinco, pero el tercero be tiene más estudiantes. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "275"
+}

@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Mamá mandó a Benja a la feria por 750 g de palta 🥑😅 ¿Cuánto le paga al casero? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Feria",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Mi mamá me mandó a la feria por tres cuartos de kilo de palta.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🥑 Palta a $4.000 el kilo<br>Pide 750 g",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "¿Y cuánto le pago al casero?",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Proporción, Benja. Calcula antes de llegar al puesto."
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "La palta cuesta <b>\\$4.000 el kilo</b>. ¿Cuánto se paga por <b>750 gramos</b>?",
+  "alternativas": [
+   "\\$3.000",
+   "\\$3.250",
+   "\\$2.000",
+   "\\$750"
+  ],
+  "valores": [
+   "3000",
+   "3250",
+   "2000",
+   "750"
+  ],
+  "correcta": 0,
+  "verificacion": "respuesta = Rational(4000, 1000)*750",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "750 g son 3/4 de kilo",
+      "$\\dfrac{750}{1.000} = \\dfrac{3}{4}$"
+     ],
+     "voz": "Setecientos cincuenta gramos son tres cuartos de kilo."
+    },
+    {
+     "lineas": [
+      "Tres cuartos del precio",
+      "$4.000 \\cdot \\dfrac{3}{4} = 3.000$"
+     ],
+     "voz": "Tres cuartos de cuatro mil: tres mil pesos."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la a: tres mil pesos. Y no olvides la yapa."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-19",
+ "id": "292"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad con dos dados",
+ "gancho": "¿Por qué el 7 sale tanto? 🎲",
+ "enunciado": "Se lanzan <b>dos dados</b> comunes. ¿Cuál es la probabilidad de que la <b>suma sea 7</b>?",
+ "alternativas": [
+  "$\\dfrac{1}{6}$",
+  "$\\dfrac{1}{11}$",
+  "$\\dfrac{7}{12}$",
+  "$\\dfrac{7}{36}$"
+ ],
+ "valores": [
+  "1/6",
+  "1/11",
+  "7/12",
+  "7/36"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Hay $6 \\cdot 6 = 36$ resultados igualmente probables.",
+  "Suman 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). $$P = \\frac{6}{36} = \\frac{1}{6}$$"
+ ],
+ "trampa": "Pensar que las 11 sumas posibles (2 a 12) son igualmente probables y marcar B.",
+ "clave": "Con dos dados, cuenta pares ordenados: (2,5) y (5,2) son resultados distintos.",
+ "verificacion": "from itertools import product; casos = list(product(range(1,7), repeat=2)); respuesta = Rational(len([c for c in casos if sum(c) == 7]), len(casos))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "36 resultados",
+     "$6 \\cdot 6 = 36$"
+    ],
+    "voz": "Con dos dados hay seis por seis, treinta y seis resultados igual de probables."
+   },
+   {
+    "lineas": [
+     "Casos que suman 7",
+     "$P = \\dfrac{6}{36} = \\dfrac{1}{6}$"
+    ],
+    "voz": "Suman siete: uno y seis, dos y cinco, tres y cuatro, y al revés. Son seis casos: un sexto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: un sexto. Dos y cinco no es lo mismo que cinco y dos: cuenta pares ordenados. Las once sumas posibles no son igual de probables: el siete es la que más sale. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "222"
+}

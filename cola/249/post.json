@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Valor mínimo de una cuadrática",
+ "gancho": "El punto más bajo de la parábola ⬇️",
+ "enunciado": "¿Cuál es el <b>valor mínimo</b> de la función $$f(x) = x^2 - 6x + 5\\,?$$",
+ "alternativas": [
+  "3",
+  "$-4$",
+  "$-3$",
+  "5"
+ ],
+ "valores": [
+  "3",
+  "-4",
+  "-3",
+  "5"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "El vértice está en $x = -\\dfrac{b}{2a} = \\dfrac{6}{2} = 3$.",
+  "$$f(3) = 9 - 18 + 5 = -4$$"
+ ],
+ "trampa": "Responder la coordenada $x$ del vértice en vez del valor de la función, y marcar A (3).",
+ "clave": "En $f(x) = ax^2 + bx + c$ con $a > 0$, el mínimo es $f\\!\\left(-\\tfrac{b}{2a}\\right)$.",
+ "verificacion": "x = symbols('x'); f = x**2 - 6*x + 5; respuesta = f.subs(x, solve(diff(f, x), x)[0])",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "x del vértice",
+     "$x = -\\dfrac{b}{2a} = 3$"
+    ],
+    "voz": "La parábola abre hacia arriba, así que el mínimo está en el vértice: equis igual menos be partido en dos a, tres."
+   },
+   {
+    "lineas": [
+     "Evaluamos",
+     "$f(3) = 9 - 18 + 5 = -4$"
+    ],
+    "voz": "Ahora evaluamos en tres: nueve menos dieciocho más cinco, menos cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: menos cuatro. El mínimo es el valor de la función en el vértice, no la equis. El tres es dónde se alcanza el mínimo; el valor mínimo es lo que vale la función ahí. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "249"
+}

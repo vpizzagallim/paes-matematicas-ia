@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Las probabilidades «y» se multiplican, las «o» se suman 🎲 Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Probabilidad #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "«Y» multiplica, «o» suma",
+  "intro_voz": "Dato PAES: cuándo multiplicar y cuándo sumar probabilidades.",
+  "titulo": "«Y» y «o»",
+  "pasos": [
+   {
+    "lineas": [
+     "«Y» (independientes): multiplica",
+     "$P(A \\text{ y } B) = P(A) \\cdot P(B)$"
+    ],
+    "voz": "Si te piden que ocurra una cosa y también la otra, y son independientes, multiplicas."
+   },
+   {
+    "lineas": [
+     "Ej.: dos caras seguidas",
+     "$\\dfrac{1}{2} \\cdot \\dfrac{1}{2} = \\dfrac{1}{4}$"
+    ],
+    "voz": "Por ejemplo, cara y cara en dos lanzamientos: un medio por un medio, un cuarto."
+   },
+   {
+    "lineas": [
+     "«O» (excluyentes): suma",
+     "$P(1 \\text{ o } 2) = \\dfrac{1}{6} + \\dfrac{1}{6} = \\dfrac{1}{3}$"
+    ],
+    "voz": "Si te piden una cosa o la otra, y no pueden pasar juntas, sumas. Sacar uno o dos en un dado: un tercio."
+   }
+  ],
+  "remate": "Y → × · O → +",
+  "cierre": {
+   "voz": "Y si los eventos pueden pasar juntos, recuerda restar la intersección."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-08",
+ "id": "248"
+}

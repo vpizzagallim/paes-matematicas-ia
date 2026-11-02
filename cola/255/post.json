@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Rectas perpendiculares",
+ "gancho": "Perpendicular: invierte y cambia el signo ⊥",
+ "enunciado": "¿Cuál es la pendiente de una recta <b>perpendicular</b> a $y = 2x + 1$?",
+ "alternativas": [
+  "$\\dfrac{1}{2}$",
+  "$-2$",
+  "$-\\dfrac{1}{2}$",
+  "2"
+ ],
+ "valores": [
+  "1/2",
+  "-2",
+  "-1/2",
+  "2"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Rectas perpendiculares: $m_1 \\cdot m_2 = -1$.",
+  "$$2 \\cdot m_2 = -1 \\Rightarrow m_2 = -\\frac{1}{2}$$"
+ ],
+ "trampa": "Solo invertir la pendiente sin cambiar el signo y marcar A, o solo cambiar el signo (−2).",
+ "clave": "Paralelas: misma pendiente. Perpendiculares: pendiente inversa y de signo contrario.",
+ "verificacion": "m = symbols('m'); respuesta = solve(Eq(2*m, -1), m)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Perpendiculares",
+     "$m_1 \\cdot m_2 = -1$"
+    ],
+    "voz": "Dos rectas son perpendiculares si el producto de sus pendientes es menos uno."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$m_2 = -\\dfrac{1}{2}$"
+    ],
+    "voz": "La pendiente es dos, así que la perpendicular tiene pendiente menos un medio: se invierte y cambia de signo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: menos un medio. Perpendicular: invierte la pendiente y cámbiale el signo. Si solo inviertes, te da un medio, que es otra recta que sube. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "255"
+}

@@ -1,0 +1,84 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja invitó a todos a completos… y no sacó la cuenta 🌭💸 ¿Le alcanza con $10.000? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "¡Invito yo! Tres completos y dos bebidas.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🌭 Completo $2.500 · Bebida $1.200<br>Tiene $10.000",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.4
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Eh… ¿alguien sabe sumar rápido?",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Cálculo mental, Benja. ¿Cuánto vuelto te dan?"
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Benja compra <b>3 completos</b> a <b>\\$2.500</b> y <b>2 bebidas</b> a <b>\\$1.200</b>. Si paga con <b>\\$10.000</b>, ¿cuánto vuelto recibe?",
+  "alternativas": [
+   "\\$1.300",
+   "\\$2.500",
+   "\\$100",
+   "\\$9.900"
+  ],
+  "valores": [
+   "1300",
+   "2500",
+   "100",
+   "9900"
+  ],
+  "correcta": 2,
+  "verificacion": "respuesta = 10000 - (3*2500 + 2*1200)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Total de la compra",
+      "$7.500 + 2.400 = 9.900$"
+     ],
+     "voz": "Tres completos son siete mil quinientos y dos bebidas, dos mil cuatrocientos. Total: nueve mil novecientos."
+    },
+    {
+     "lineas": [
+      "Vuelto",
+      "$10.000 - 9.900 = 100$"
+     ],
+     "voz": "Diez mil menos nueve mil novecientos: cien pesos de vuelto."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la ce: cien pesos. Justo le alcanzó, Benja."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-04",
+ "id": "232"
+}

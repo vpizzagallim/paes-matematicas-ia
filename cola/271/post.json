@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Despeje de fórmulas",
+ "gancho": "De Fahrenheit a Celsius 🌡️",
+ "enunciado": "La fórmula $F = \\dfrac{9}{5}C + 32$ convierte grados Celsius a Fahrenheit. Si un termómetro marca <b>86 °F</b>, ¿a cuántos <b>°C</b> equivale?",
+ "alternativas": [
+  "97,2 °C",
+  "22 °C",
+  "30 °C",
+  "54 °C"
+ ],
+ "valores": [
+  "486/5",
+  "22",
+  "30",
+  "54"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Restamos 32: $$\\frac{9}{5}C = 86 - 32 = 54$$",
+  "$$C = 54 \\cdot \\frac{5}{9} = 30$$"
+ ],
+ "trampa": "Quedarse en $86 - 32 = 54$ (D) sin deshacer el $\\tfrac{9}{5}$.",
+ "clave": "Para despejar, deshaz las operaciones en orden inverso: primero lo que suma, después lo que multiplica.",
+ "verificacion": "C = symbols('C'); respuesta = solve(Eq(Rational(9,5)*C + 32, 86), C)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Restamos 32",
+     "$\\dfrac{9}{5}C = 54$"
+    ],
+    "voz": "Primero deshacemos la suma: ochenta y seis menos treinta y dos, cincuenta y cuatro."
+   },
+   {
+    "lineas": [
+     "Multiplicamos por 5/9",
+     "$C = 54 \\cdot \\dfrac{5}{9} = 30$"
+    ],
+    "voz": "Después deshacemos el nueve quintos: cincuenta y cuatro por cinco novenos, treinta grados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: treinta grados Celsius. Para despejar, deshaz las operaciones en orden inverso. Si te quedas en cincuenta y cuatro, olvidaste deshacer la multiplicación por nueve quintos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "271"
+}

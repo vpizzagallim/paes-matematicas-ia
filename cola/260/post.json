@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Seno de 30°, 45° y 60° sin memorizar una tabla 🤯 Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Trigonometria #PAESM2 #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "Seno de 30°, 45° y 60°",
+  "intro_voz": "Truco PAES para M2: los senos de treinta, cuarenta y cinco y sesenta grados, sin tabla.",
+  "titulo": "Senos notables",
+  "pasos": [
+   {
+    "lineas": [
+     "Raíces de 1, 2 y 3 sobre 2",
+     "$\\dfrac{\\sqrt{1}}{2},\\ \\dfrac{\\sqrt{2}}{2},\\ \\dfrac{\\sqrt{3}}{2}$"
+    ],
+    "voz": "Escribe raíz de uno, raíz de dos y raíz de tres, todas divididas en dos."
+   },
+   {
+    "lineas": [
+     "Senos de 30°, 45°, 60°",
+     "$\\sin 30^\\circ = \\tfrac{1}{2}$"
+    ],
+    "voz": "Esos son los senos de treinta, cuarenta y cinco y sesenta grados. Raíz de uno es uno: seno de treinta es un medio."
+   },
+   {
+    "lineas": [
+     "El coseno, al revés",
+     "$\\cos 60^\\circ = \\tfrac{1}{2}$"
+    ],
+    "voz": "Para el coseno, se leen al revés: coseno de sesenta es un medio, y coseno de treinta, raíz de tres medios."
+   }
+  ],
+  "remate": "√1 · √2 · √3 ÷ 2",
+  "cierre": {
+   "voz": "Con eso armas la tangente: seno dividido en coseno."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-11",
+ "id": "260"
+}

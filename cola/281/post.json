@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Perímetro de la circunferencia",
+ "gancho": "¿Cuántas vueltas da la rueda? 🚲",
+ "enunciado": "La rueda de una bicicleta tiene <b>radio 35 cm</b>. Usando $\\pi \\approx \\dfrac{22}{7}$, ¿cuántas <b>vueltas completas</b> da para avanzar <b>22 m</b>?",
+ "alternativas": [
+  "20",
+  "5",
+  "10",
+  "40"
+ ],
+ "valores": [
+  "20",
+  "5",
+  "10",
+  "40"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "En una vuelta avanza su perímetro: $$2\\pi r = 2 \\cdot \\frac{22}{7} \\cdot 35 = 220 \\text{ cm}$$",
+  "$$2.200 \\text{ cm} \\div 220 \\text{ cm} = 10$$ vueltas."
+ ],
+ "trampa": "Usar $\\pi r$ en vez de $2\\pi r$ y marcar A (20 vueltas).",
+ "clave": "En cada vuelta, una rueda avanza su perímetro: $2\\pi r$. Ojo con las unidades.",
+ "verificacion": "respuesta = Rational(2200, 1) / (2*Rational(22,7)*35)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Una vuelta = perímetro",
+     "$2 \\cdot \\dfrac{22}{7} \\cdot 35 = 220\\ \\text{cm}$"
+    ],
+    "voz": "En cada vuelta la rueda avanza su perímetro: dos pi erre, doscientos veinte centímetros."
+   },
+   {
+    "lineas": [
+     "Cuántas vueltas",
+     "$2.200 \\div 220 = 10$"
+    ],
+    "voz": "Veintidós metros son dos mil doscientos centímetros. Divididos en doscientos veinte: diez vueltas."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: diez vueltas. Cada vuelta de la rueda avanza su perímetro, dos pi erre. Si usas pi por radio, cuentas solo media vuelta y te da el doble de vueltas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "281"
+}

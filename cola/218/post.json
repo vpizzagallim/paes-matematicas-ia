@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Problema de edades",
+ "gancho": "El clásico de las edades 👨‍👧",
+ "enunciado": "Pedro tiene el <b>triple</b> de la edad de su hija. En <b>10 años</b> tendrá el <b>doble</b> de la edad de ella. ¿Qué edad tiene hoy la hija?",
+ "alternativas": [
+  "5 años",
+  "20 años",
+  "10 años",
+  "30 años"
+ ],
+ "valores": [
+  "5",
+  "20",
+  "10",
+  "30"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Hija: $x$; Pedro: $3x$. En 10 años: $$3x + 10 = 2(x + 10)$$",
+  "$$3x + 10 = 2x + 20 \\Rightarrow x = 10$$"
+ ],
+ "trampa": "Responder la edad de Pedro y marcar D (30 años), o sumar los 10 años a una sola persona.",
+ "clave": "En problemas de edades, suma los años a las <b>dos</b> personas antes de plantear la ecuación.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(3*x + 10, 2*(x + 10)), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "En 10 años, a los dos",
+     "$3x + 10 = 2(x + 10)$"
+    ],
+    "voz": "Si la hija tiene equis, Pedro tiene tres equis. En diez años, tres equis más diez es el doble de equis más diez."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$3x + 10 = 2x + 20 \\Rightarrow x = 10$"
+    ],
+    "voz": "Despejando, equis vale diez."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: diez años. Los años pasan para las dos personas, no solo para una. Y lee bien qué te preguntan: la edad de la hija, no la de Pedro, que tiene treinta. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "218"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Diferencia de cuadrados",
+ "gancho": "Cálculo mental de crack 🧠",
+ "enunciado": "Sin calculadora: ¿cuál es el valor de $$101^2 - 99^2\\,?$$",
+ "alternativas": [
+  "200",
+  "40.000",
+  "400",
+  "4"
+ ],
+ "valores": [
+  "200",
+  "40000",
+  "400",
+  "4"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Diferencia de cuadrados: $a^2 - b^2 = (a+b)(a-b)$.",
+  "$$(101 + 99)(101 - 99) = 200 \\cdot 2 = 400$$"
+ ],
+ "trampa": "Pensar que $a^2 - b^2 = (a - b)^2$ y obtener $2^2 = 4$ (D).",
+ "clave": "$a^2 - b^2 = (a+b)(a-b)$: suma por diferencia. Sirve para calcular rápido.",
+ "verificacion": "respuesta = 101**2 - 99**2",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma por diferencia",
+     "$a^2 - b^2 = (a+b)(a-b)$"
+    ],
+    "voz": "Usamos la diferencia de cuadrados: suma por diferencia."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$200 \\cdot 2 = 400$"
+    ],
+    "voz": "Ciento uno más noventa y nueve es doscientos, y la diferencia es dos. Doscientos por dos: cuatrocientos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cuatrocientos. A al cuadrado menos be al cuadrado es suma por diferencia. Ojo, a al cuadrado menos be al cuadrado no es a menos be al cuadrado: ese error da cuatro. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "257"
+}

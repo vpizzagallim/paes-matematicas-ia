@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Truco: multiplicar por 5 sin calculadora en 2 segundos ✋ Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "Multiplicar por 5 al toque",
+  "intro_voz": "Truco PAES: multiplicar por cinco en dos segundos, sin calculadora.",
+  "titulo": "Por 5 = por 10 ÷ 2",
+  "pasos": [
+   {
+    "lineas": [
+     "Multiplica por 10",
+     "$48 \\cdot 10 = 480$"
+    ],
+    "voz": "Multiplicar por cinco es lo mismo que multiplicar por diez y sacar la mitad. Cuarenta y ocho por diez, cuatrocientos ochenta."
+   },
+   {
+    "lineas": [
+     "Saca la mitad",
+     "$480 \\div 2 = 240$"
+    ],
+    "voz": "La mitad de cuatrocientos ochenta es doscientos cuarenta. Listo: cuarenta y ocho por cinco es doscientos cuarenta."
+   },
+   {
+    "lineas": [
+     "Sirve con decimales",
+     "$3{,}6 \\cdot 5 = 36 \\div 2 = 18$"
+    ],
+    "voz": "Con decimales también: tres coma seis por diez es treinta y seis, y la mitad, dieciocho."
+   }
+  ],
+  "remate": "× 5 = × 10 ÷ 2",
+  "cierre": {
+   "voz": "Y para dividir por cinco, haz lo contrario: divide por diez y multiplica por dos."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-02",
+ "id": "224"
+}

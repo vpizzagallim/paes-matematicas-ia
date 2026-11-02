@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Crecimiento exponencial: bacterias",
+ "gancho": "Se duplican cada 3 horas 🦠",
+ "enunciado": "Un cultivo tiene <b>500 bacterias</b> y su cantidad se <b>duplica cada 3 horas</b>. ¿Cuántas habrá después de <b>12 horas</b>?",
+ "alternativas": [
+  "2.000",
+  "8.000",
+  "6.000",
+  "4.000"
+ ],
+ "valores": [
+  "2000",
+  "8000",
+  "6000",
+  "4000"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "En 12 horas hay $12 \\div 3 = 4$ duplicaciones.",
+  "$$500 \\cdot 2^4 = 500 \\cdot 16 = 8.000$$"
+ ],
+ "trampa": "Multiplicar por 4 en vez de duplicar 4 veces y marcar A (2.000).",
+ "clave": "Crecimiento exponencial: $N(t) = N_0 \\cdot 2^{t/T}$, con $T$ el tiempo de duplicación.",
+ "verificacion": "t = symbols('t'); N = 500*2**(t/3); respuesta = N.subs(t, 12)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cuántas duplicaciones",
+     "$12 \\div 3 = 4$"
+    ],
+    "voz": "Si se duplica cada tres horas, en doce horas se duplica cuatro veces."
+   },
+   {
+    "lineas": [
+     "Exponencial",
+     "$500 \\cdot 2^4 = 8.000$"
+    ],
+    "voz": "Quinientos por dos a la cuatro, que es dieciséis: ocho mil bacterias."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: ocho mil bacterias. Duplicar cuatro veces es multiplicar por dos a la cuatro, no por cuatro. Multiplicar por cuatro sería crecer en forma lineal; aquí se duplica cuatro veces. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "246"
+}

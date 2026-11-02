@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Área del trapecio",
+ "gancho": "Un terreno con forma de trapecio 🏡",
+ "enunciado": "Un terreno tiene forma de <b>trapecio</b>, con bases de <b>12 m</b> y <b>8 m</b>, y altura de <b>5 m</b>. ¿Cuál es su área?",
+ "alternativas": [
+  "100 m²",
+  "40 m²",
+  "480 m²",
+  "50 m²"
+ ],
+ "valores": [
+  "100",
+  "40",
+  "480",
+  "50"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "$$A = \\frac{(B + b)\\,h}{2}$$",
+  "$$A = \\frac{(12 + 8) \\cdot 5}{2} = \\frac{100}{2} = 50 \\text{ m}^2$$"
+ ],
+ "trampa": "Olvidar dividir por 2 y marcar A (100 m²).",
+ "clave": "Trapecio: promedio de las bases por la altura.",
+ "verificacion": "respuesta = Rational((12+8)*5, 2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Área del trapecio",
+     "$A = \\dfrac{(B + b)\\,h}{2}$"
+    ],
+    "voz": "El área del trapecio es base mayor más base menor, por la altura, dividido en dos."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$\\dfrac{(12 + 8) \\cdot 5}{2} = 50$"
+    ],
+    "voz": "Doce más ocho es veinte, por cinco, cien. Dividido en dos: cincuenta metros cuadrados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cincuenta metros cuadrados. El área del trapecio es el promedio de las bases por la altura. El error más común es olvidar dividir por dos y responder cien metros cuadrados. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "235"
+}

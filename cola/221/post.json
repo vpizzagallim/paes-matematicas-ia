@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Pitágoras: pantalla",
+ "gancho": "¿Cuántas pulgadas tiene la tele? 📺",
+ "enunciado": "Una pantalla mide <b>40 pulgadas</b> de ancho y <b>30 pulgadas</b> de alto. ¿Cuánto mide su <b>diagonal</b>?",
+ "alternativas": [
+  "$10\\sqrt{7}$ pulgadas",
+  "50 pulgadas",
+  "35 pulgadas",
+  "70 pulgadas"
+ ],
+ "valores": [
+  "10*sqrt(7)",
+  "50",
+  "35",
+  "70"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "La diagonal es la hipotenusa: $$d^2 = 40^2 + 30^2 = 1.600 + 900 = 2.500$$",
+  "$$d = \\sqrt{2.500} = 50$$"
+ ],
+ "trampa": "Sumar los lados y marcar D (70), o restar los cuadrados en vez de sumarlos ($10\\sqrt{7}$).",
+ "clave": "Trío pitagórico 3, 4, 5 y sus múltiplos: 30, 40, 50.",
+ "verificacion": "respuesta = sqrt(40**2 + 30**2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "La diagonal es hipotenusa",
+     "$d^2 = 40^2 + 30^2 = 2.500$"
+    ],
+    "voz": "El ancho, el alto y la diagonal forman un triángulo rectángulo. Cuarenta al cuadrado más treinta al cuadrado: dos mil quinientos."
+   },
+   {
+    "lineas": [
+     "Raíz",
+     "$d = \\sqrt{2.500} = 50$"
+    ],
+    "voz": "La raíz de dos mil quinientos es cincuenta pulgadas."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cincuenta pulgadas. Treinta, cuarenta y cincuenta es el trío tres, cuatro, cinco por diez. No se suman los lados: la diagonal siempre es más corta que el ancho más el alto. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "221"
+}

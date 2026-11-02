@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "MCD en contexto",
+ "gancho": "Cortar sin que sobre nada ✂️",
+ "enunciado": "Se tienen dos cintas de <b>48 cm</b> y <b>72 cm</b>. Se quieren cortar en trozos <b>iguales</b>, lo más largos posible, sin que sobre nada. ¿Cuánto mide cada trozo?",
+ "alternativas": [
+  "12 cm",
+  "24 cm",
+  "6 cm",
+  "144 cm"
+ ],
+ "valores": [
+  "12",
+  "24",
+  "6",
+  "144"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "El trozo debe caber exacto en 48 y en 72: buscamos el <b>máximo común divisor</b>.",
+  "$$48 = 2^4 \\cdot 3, \\quad 72 = 2^3 \\cdot 3^2$$ $$\\text{MCD} = 2^3 \\cdot 3 = 24$$"
+ ],
+ "trampa": "Calcular el mínimo común múltiplo y marcar D (144 cm), o quedarse con un divisor común que no es el mayor (12 cm).",
+ "clave": "Partir en partes iguales lo más grandes posible: MCD. Coincidir en el tiempo o en un múltiplo: MCM.",
+ "verificacion": "respuesta = gcd(48, 72)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Máximo común divisor",
+     "$48 = 2^4 \\cdot 3 \\quad 72 = 2^3 \\cdot 3^2$"
+    ],
+    "voz": "El trozo tiene que caber exacto en las dos cintas. Eso es el máximo común divisor."
+   },
+   {
+    "lineas": [
+     "Factores comunes",
+     "$2^3 \\cdot 3 = 24$"
+    ],
+    "voz": "Tomamos los factores comunes con el menor exponente: dos al cubo por tres, veinticuatro centímetros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: veinticuatro centímetros. Partir en trozos iguales lo más grandes posible es el máximo común divisor. Si calculas el mínimo común múltiplo, te da ciento cuarenta y cuatro, un trozo más largo que las cintas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "290"
+}

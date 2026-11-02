@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Rotación en el plano",
+ "gancho": "Gira el punto 90° 🔄",
+ "enunciado": "El punto $A(3, 2)$ se rota en <b>90° en sentido antihorario</b> en torno al origen. ¿Cuáles son las coordenadas de su imagen?",
+ "alternativas": [
+  "$(2, -3)$",
+  "$(-3, -2)$",
+  "$(-2, 3)$",
+  "$(3, -2)$"
+ ],
+ "valores": [
+  "(2,-3)",
+  "(-3,-2)",
+  "(-2,3)",
+  "(3,-2)"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Rotación de 90° antihoraria en torno al origen: $$(x, y) \\to (-y, x)$$",
+  "$$(3, 2) \\to (-2, 3)$$"
+ ],
+ "trampa": "Usar la regla del sentido horario, $(x, y) \\to (y, -x)$, y marcar A.",
+ "clave": "En torno al origen: 90° antihorario $(-y, x)$; 180° $(-x, -y)$; 270° antihorario $(y, -x)$.",
+ "verificacion": "R = Matrix([[0, -1], [1, 0]]); Q = R*Matrix([3, 2]); respuesta = Tuple(Q[0], Q[1])",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "90° antihorario",
+     "$(x, y) \\to (-y, x)$"
+    ],
+    "voz": "Al rotar noventa grados en sentido antihorario, las coordenadas se intercambian y la nueva primera cambia de signo."
+   },
+   {
+    "lineas": [
+     "Aplicamos",
+     "$(3, 2) \\to (-2, 3)$"
+    ],
+    "voz": "El punto tres, dos queda en menos dos, tres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: el punto menos dos, tres. Noventa grados antihorario: equis, y pasa a menos y, equis. Si usas la regla del sentido horario, llegas a dos, menos tres, que está al otro lado. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "258"
+}

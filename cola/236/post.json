@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 (a + b)² NO es a² + b² 😱 El error de álgebra más común de la PAES. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Algebra #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "Cuadrado de binomio",
+  "intro_voz": "Dato PAES: el error de álgebra que más puntos quita.",
+  "titulo": "Cuadrado de binomio",
+  "pasos": [
+   {
+    "lineas": [
+     "No es la suma de cuadrados",
+     "$(a + b)^2 \\neq a^2 + b^2$"
+    ],
+    "voz": "Un binomio al cuadrado no es la suma de los cuadrados. Ese es el error más común."
+   },
+   {
+    "lineas": [
+     "Falta el doble producto",
+     "$(a + b)^2 = a^2 + 2ab + b^2$"
+    ],
+    "voz": "Es el primero al cuadrado, más el doble del primero por el segundo, más el segundo al cuadrado."
+   },
+   {
+    "lineas": [
+     "Ejemplo",
+     "$(x + 3)^2 = x^2 + 6x + 9$"
+    ],
+    "voz": "Por ejemplo, equis más tres al cuadrado es equis cuadrado, más seis equis, más nueve."
+   }
+  ],
+  "remate": "¡No olvides el 2ab!",
+  "cierre": {
+   "voz": "Si dudas, compruébalo con números: dos más tres al cuadrado es veinticinco, no trece."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-05",
+ "id": "236"
+}

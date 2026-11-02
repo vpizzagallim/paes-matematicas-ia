@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Leyes de logaritmos en 30 segundos 📈 Las que más salen en M2. Guárdalas 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Logaritmos #PAESM2 #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "Las 3 leyes de logaritmos",
+  "intro_voz": "Dato PAES para M2: las tres leyes de logaritmos que tienes que manejar.",
+  "titulo": "Leyes de logaritmos",
+  "pasos": [
+   {
+    "lineas": [
+     "Producto: se suman",
+     "$\\log(ab) = \\log a + \\log b$"
+    ],
+    "voz": "El logaritmo de un producto es la suma de los logaritmos."
+   },
+   {
+    "lineas": [
+     "Cociente: se restan",
+     "$\\log\\left(\\dfrac{a}{b}\\right) = \\log a - \\log b$"
+    ],
+    "voz": "El logaritmo de una división es la resta de los logaritmos."
+   },
+   {
+    "lineas": [
+     "Potencia: el exponente baja",
+     "$\\log\\left(a^n\\right) = n \\log a$"
+    ],
+    "voz": "Y el exponente baja multiplicando. Ojo: logaritmo de a más be no tiene fórmula."
+   }
+  ],
+  "remate": "Suma · Resta · Baja",
+  "cierre": {
+   "voz": "Repásalas con ejemplos: logaritmo de dos más logaritmo de cinco es logaritmo de diez, o sea uno."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-17",
+ "id": "284"
+}

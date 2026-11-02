@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Unión de eventos",
+ "gancho": "Fútbol, básquetbol o ambos 🏀",
+ "enunciado": "En un curso de <b>30 estudiantes</b>, <b>18</b> practican fútbol, <b>12</b> básquetbol y <b>5</b> ambos deportes. Si se elige uno al azar, ¿cuál es la probabilidad de que practique <b>al menos uno</b> de los dos?",
+ "alternativas": [
+  "1",
+  "$\\dfrac{1}{6}$",
+  "$\\dfrac{2}{3}$",
+  "$\\dfrac{5}{6}$"
+ ],
+ "valores": [
+  "1",
+  "1/6",
+  "2/3",
+  "5/6"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Regla aditiva: $$P(F \\cup B) = P(F) + P(B) - P(F \\cap B)$$",
+  "$$\\frac{18 + 12 - 5}{30} = \\frac{25}{30} = \\frac{5}{6}$$"
+ ],
+ "trampa": "Sumar 18 + 12 = 30 sin restar a los que hacen ambos y marcar A (probabilidad 1).",
+ "clave": "Si los eventos pueden ocurrir juntos, se resta la intersección para no contarla dos veces.",
+ "verificacion": "respuesta = Rational(18 + 12 - 5, 30)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Regla aditiva",
+     "$18 + 12 - 5 = 25$"
+    ],
+    "voz": "Sumamos los de fútbol y los de básquetbol, y restamos los cinco que hacen ambos, porque se contaron dos veces: veinticinco."
+   },
+   {
+    "lineas": [
+     "Probabilidad",
+     "$\\dfrac{25}{30} = \\dfrac{5}{6}$"
+    ],
+    "voz": "Veinticinco de treinta: cinco sextos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cinco sextos. Al sumar eventos que se cruzan, resta la intersección. Si sumas dieciocho más doce, cuentas dos veces a los cinco que hacen ambos deportes. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "267"
+}

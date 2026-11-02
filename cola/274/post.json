@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Varianza",
+ "gancho": "Varianza en 3 pasos 📊",
+ "enunciado": "¿Cuál es la <b>varianza</b> de los datos $$2,\\ 4,\\ 6\\,?$$",
+ "alternativas": [
+  "$\\dfrac{2\\sqrt{6}}{3}$",
+  "$\\dfrac{8}{3}$",
+  "4",
+  "$\\dfrac{4}{3}$"
+ ],
+ "valores": [
+  "2*sqrt(6)/3",
+  "8/3",
+  "4",
+  "4/3"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Media: $\\dfrac{2 + 4 + 6}{3} = 4$.",
+  "$$\\sigma^2 = \\frac{(2-4)^2 + (4-4)^2 + (6-4)^2}{3} = \\frac{8}{3}$$"
+ ],
+ "trampa": "Dividir por 2 en vez de 3 y marcar C (4), o confundir la varianza con la desviación estándar ($\\sqrt{\\tfrac{8}{3}}$).",
+ "clave": "Varianza: promedio de las distancias al cuadrado a la media. Desviación estándar: su raíz.",
+ "verificacion": "d = [2, 4, 6]; m = Rational(sum(d), len(d)); respuesta = Rational(sum([(v - m)**2 for v in d]), len(d))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Media",
+     "$\\bar{x} = 4$"
+    ],
+    "voz": "La media de dos, cuatro y seis es cuatro."
+   },
+   {
+    "lineas": [
+     "Distancias al cuadrado",
+     "$\\dfrac{4 + 0 + 4}{3} = \\dfrac{8}{3}$"
+    ],
+    "voz": "Las distancias a la media son menos dos, cero y dos. Al cuadrado: cuatro, cero y cuatro. Su promedio es ocho tercios."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: ocho tercios. La varianza es el promedio de las distancias al cuadrado; la desviación es su raíz. En la PAES la varianza se divide por la cantidad de datos, en este caso tres. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "274"
+}

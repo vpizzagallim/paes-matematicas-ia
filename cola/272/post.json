@@ -1,0 +1,41 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Estima antes de calcular y descarta alternativas en segundos ⏱️ Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #TipsPAES #Estimacion",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "Estima antes de calcular",
+  "intro_voz": "Truco PAES: estimar antes de calcular te ahorra tiempo y errores.",
+  "titulo": "Estimar primero",
+  "pasos": [
+   {
+    "lineas": [
+     "Redondea",
+     "$19{,}8 \\cdot 5{,}1 \\approx 20 \\cdot 5$"
+    ],
+    "voz": "Redondea los números a valores cómodos: diecinueve coma ocho es casi veinte, y cinco coma uno es casi cinco."
+   },
+   {
+    "lineas": [
+     "Calcula fácil",
+     "$20 \\cdot 5 = 100$"
+    ],
+    "voz": "Veinte por cinco es cien. El resultado real tiene que estar cerca de cien."
+   },
+   {
+    "lineas": [
+     "Descarta lo lejano",
+     "$\\text{Si ves } 10{,}1 \\text{ o } 1.010\\text{: fuera}$"
+    ],
+    "voz": "Si una alternativa dice diez o mil, la descartas al tiro, sin calcular."
+   }
+  ],
+  "remate": "Redondea y descarta",
+  "cierre": {
+   "voz": "Estimar no reemplaza el cálculo, pero te avisa cuando algo salió mal."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-14",
+ "id": "272"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Binomial: exactamente k éxitos",
+ "gancho": "Exactamente 2 caras 🪙",
+ "enunciado": "Se lanza una moneda <b>4 veces</b>. ¿Cuál es la probabilidad de obtener <b>exactamente 2 caras</b>?",
+ "alternativas": [
+  "$\\dfrac{3}{8}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{1}{16}$"
+ ],
+ "valores": [
+  "3/8",
+  "1/2",
+  "1/4",
+  "1/16"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Modelo binomial: $$P = \\binom{4}{2}\\left(\\frac{1}{2}\\right)^2\\left(\\frac{1}{2}\\right)^2$$",
+  "$$P = 6 \\cdot \\frac{1}{16} = \\frac{3}{8}$$"
+ ],
+ "trampa": "Pensar que \"la mitad caras\" tiene probabilidad $\\tfrac{1}{2}$ y marcar B, u olvidar el $\\binom{4}{2}$ ($\\tfrac{1}{16}$).",
+ "clave": "Binomial: $P(X = k) = \\binom{n}{k}\\,p^k (1-p)^{n-k}$. El $\\binom{n}{k}$ cuenta en qué lanzamientos salen los éxitos.",
+ "verificacion": "from itertools import product; r = list(product('CS', repeat=4)); respuesta = Rational(len([t for t in r if t.count('C') == 2]), len(r))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "En qué lanzamientos",
+     "$\\dbinom{4}{2} = 6$"
+    ],
+    "voz": "Las dos caras pueden salir en seis posiciones distintas: cuatro sobre dos es seis."
+   },
+   {
+    "lineas": [
+     "Cada secuencia",
+     "$6 \\cdot \\dfrac{1}{16} = \\dfrac{3}{8}$"
+    ],
+    "voz": "Cada secuencia tiene probabilidad un dieciseisavo. Seis por un dieciseisavo: tres octavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: tres octavos. En la binomial, no olvides contar las posiciones con ene sobre ka. Un medio parece lógico, pero salir justo la mitad de caras es menos probable de lo que crees. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "287"
+}

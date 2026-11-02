@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Descuentos sucesivos",
+ "gancho": "30% + 20% NO es 50% de descuento 🛍️",
+ "enunciado": "Una polera cuesta <b>\\$40.000</b>. Tiene un <b>30% de descuento</b> y, en caja, un <b>20% adicional</b> sobre el precio ya rebajado. ¿Cuánto se paga?",
+ "alternativas": [
+  "\\$28.000",
+  "\\$20.000",
+  "\\$22.400",
+  "\\$32.000"
+ ],
+ "valores": [
+  "28000",
+  "20000",
+  "22400",
+  "32000"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Con el 30% de descuento se paga el 70%: $$40.000 \\cdot 0{,}7 = 28.000$$",
+  "El 20% adicional se aplica sobre \\$28.000: $$28.000 \\cdot 0{,}8 = 22.400$$"
+ ],
+ "trampa": "Sumar los descuentos (50%) y marcar B (\\$20.000).",
+ "clave": "Los descuentos sucesivos se <b>multiplican</b>: $0{,}7 \\cdot 0{,}8 = 0{,}56$, o sea se paga el 56%.",
+ "verificacion": "respuesta = 40000*Rational(7,10)*Rational(8,10)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Primer descuento: pagas 70%",
+     "$40.000 \\cdot 0{,}7 = 28.000$"
+    ],
+    "voz": "Con treinta por ciento de descuento pagas el setenta por ciento: veintiocho mil pesos."
+   },
+   {
+    "lineas": [
+     "El 20% va sobre lo rebajado",
+     "$28.000 \\cdot 0{,}8 = 22.400$"
+    ],
+    "voz": "El veinte por ciento adicional se aplica sobre veintiocho mil. Pagas el ochenta por ciento: veintidós mil cuatrocientos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: veintidós mil cuatrocientos pesos. Los descuentos sucesivos se multiplican, no se suman. Ojo, el segundo descuento se calcula sobre el precio ya rebajado, por eso no es un cincuenta por ciento. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "217"
+}

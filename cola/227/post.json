@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Volumen del cilindro",
+ "gancho": "¿Cuánta agua cabe en el estanque? 💧",
+ "enunciado": "Un estanque cilíndrico tiene <b>radio 1 m</b> y <b>altura 2 m</b>. Usando $\\pi \\approx 3{,}14$, ¿cuántos <b>litros</b> caben? ($1\\ \\text{m}^3 = 1.000$ L)",
+ "alternativas": [
+  "628 L",
+  "6.280 L",
+  "3.140 L",
+  "12.560 L"
+ ],
+ "valores": [
+  "628",
+  "6280",
+  "3140",
+  "12560"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "$$V = \\pi r^2 h = 3{,}14 \\cdot 1^2 \\cdot 2 = 6{,}28 \\text{ m}^3$$",
+  "$$6{,}28 \\cdot 1.000 = 6.280 \\text{ L}$$"
+ ],
+ "trampa": "Calcular solo el área de la base (3,14) olvidando la altura y marcar C.",
+ "clave": "Volumen de un cilindro: área de la base por la altura, $V = \\pi r^2 h$.",
+ "verificacion": "respuesta = Rational(314,100)*1**2*2*1000",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Volumen = πr²h",
+     "$3{,}14 \\cdot 1^2 \\cdot 2 = 6{,}28\\ \\text{m}^3$"
+    ],
+    "voz": "El volumen del cilindro es pi por radio al cuadrado por la altura: seis coma veintiocho metros cúbicos."
+   },
+   {
+    "lineas": [
+     "A litros",
+     "$6{,}28 \\cdot 1.000 = 6.280\\ \\text{L}$"
+    ],
+    "voz": "Cada metro cúbico son mil litros: seis mil doscientos ochenta litros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: seis mil doscientos ochenta litros. Volumen del cilindro: área de la base por la altura. Si olvidas la altura, solo calculas el área de la base y te queda la mitad del estanque. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "227"
+}

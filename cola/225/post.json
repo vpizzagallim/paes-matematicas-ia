@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Porcentaje inverso: IVA",
+ "gancho": "¿Cuánto costaba sin IVA? 🧾",
+ "enunciado": "Una boleta muestra un total de <b>\\$11.900</b>, que ya incluye el <b>IVA de 19%</b>. ¿Cuál era el precio <b>sin IVA</b>?",
+ "alternativas": [
+  "\\$9.639",
+  "\\$6.263",
+  "\\$14.161",
+  "\\$10.000"
+ ],
+ "valores": [
+  "9639",
+  "6263",
+  "14161",
+  "10000"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Precio con IVA = precio sin IVA $\\cdot\\, 1{,}19$: $$x \\cdot 1{,}19 = 11.900$$",
+  "$$x = \\frac{11.900}{1{,}19} = 10.000$$"
+ ],
+ "trampa": "Restar el 19% de \\$11.900 y marcar A (\\$9.639): el 19% se calcula sobre el precio sin IVA, no sobre el total.",
+ "clave": "Para quitar un aumento de $p\\%$ se <b>divide</b> por $(1 + p)$; no se resta el porcentaje.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(x*Rational(119,100), 11900), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Con IVA: por 1,19",
+     "$x \\cdot 1{,}19 = 11.900$"
+    ],
+    "voz": "Agregar el diecinueve por ciento es multiplicar por uno coma diecinueve."
+   },
+   {
+    "lineas": [
+     "Dividimos",
+     "$x = \\dfrac{11.900}{1{,}19} = 10.000$"
+    ],
+    "voz": "Entonces, para quitarlo, dividimos once mil novecientos en uno coma diecinueve: diez mil pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: diez mil pesos. Para quitar el IVA se divide por uno coma diecinueve, no se resta el diecinueve por ciento. Si restas el diecinueve por ciento del total, lo estás calculando sobre un precio que ya tenía el impuesto. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "225"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Pendiente de una recta",
+ "gancho": "¿Cuánto sube la recta? 📈",
+ "enunciado": "¿Cuál es la <b>pendiente</b> de la recta que pasa por los puntos $(2, 5)$ y $(6, 13)$?",
+ "alternativas": [
+  "$\\dfrac{1}{2}$",
+  "2",
+  "4",
+  "8"
+ ],
+ "valores": [
+  "1/2",
+  "2",
+  "4",
+  "8"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$",
+  "$$m = \\frac{13 - 5}{6 - 2} = \\frac{8}{4} = 2$$"
+ ],
+ "trampa": "Invertir la fórmula (cambio en $x$ sobre cambio en $y$) y marcar A.",
+ "clave": "Pendiente = cambio en $y$ dividido por cambio en $x$.",
+ "verificacion": "respuesta = Rational(13 - 5, 6 - 2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pendiente",
+     "$m = \\dfrac{y_2 - y_1}{x_2 - x_1}$"
+    ],
+    "voz": "La pendiente es la diferencia de las y dividida en la diferencia de las x."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$m = \\dfrac{13 - 5}{6 - 2} = 2$"
+    ],
+    "voz": "Trece menos cinco es ocho; seis menos dos es cuatro. Ocho dividido en cuatro: dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: dos. La pendiente es cuánto sube y por cada unidad que avanza x. Si inviertes la división, te da un medio. Siempre va la diferencia de las y arriba. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "241"
+}

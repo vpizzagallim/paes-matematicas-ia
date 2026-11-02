@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Operatoria con fracciones",
+ "gancho": "¿Cuánto queda del sueldo? 💰",
+ "enunciado": "Camila gasta $\\dfrac{2}{5}$ de su sueldo en arriendo y $\\dfrac{1}{3}$ en comida. ¿Qué <b>fracción</b> del sueldo le queda?",
+ "alternativas": [
+  "$\\dfrac{4}{15}$",
+  "$\\dfrac{11}{15}$",
+  "$\\dfrac{3}{8}$",
+  "$\\dfrac{5}{8}$"
+ ],
+ "valores": [
+  "4/15",
+  "11/15",
+  "3/8",
+  "5/8"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Sumamos lo gastado con denominador 15: $$\\frac{6}{15} + \\frac{5}{15} = \\frac{11}{15}$$",
+  "$$1 - \\frac{11}{15} = \\frac{4}{15}$$"
+ ],
+ "trampa": "Responder lo gastado, $\\tfrac{11}{15}$, y marcar B; o sumar numeradores y denominadores ($\\tfrac{3}{8}$).",
+ "clave": "Para sumar fracciones, iguala denominadores. Lo que queda es $1 -$ lo que se gastó.",
+ "verificacion": "respuesta = 1 - Rational(2,5) - Rational(1,3)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Lo gastado",
+     "$\\dfrac{2}{5} + \\dfrac{1}{3} = \\dfrac{11}{15}$"
+    ],
+    "voz": "Dos quintos más un tercio. Con denominador quince: seis más cinco, once quinceavos."
+   },
+   {
+    "lineas": [
+     "Lo que queda",
+     "$1 - \\dfrac{11}{15} = \\dfrac{4}{15}$"
+    ],
+    "voz": "Le queda el entero menos lo gastado: cuatro quinceavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuatro quinceavos. Lee bien si te preguntan lo que se gastó o lo que queda. Y nunca sumes los denominadores: dos quintos más un tercio no es tres octavos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "277"
+}

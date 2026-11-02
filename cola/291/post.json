@@ -1,0 +1,56 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad condicional con porcentajes",
+ "gancho": "Dado que rinde M2… 🤓",
+ "enunciado": "En un preuniversitario, el <b>60%</b> son mujeres. Rinden M2 el <b>50%</b> de las mujeres y el <b>25%</b> de los hombres. Si se elige al azar a alguien que <b>rinde M2</b>, ¿cuál es la probabilidad de que sea mujer?",
+ "alternativas": [
+  "$\\dfrac{3}{4}$",
+  "$\\dfrac{3}{5}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{3}{10}$"
+ ],
+ "valores": [
+  "3/4",
+  "3/5",
+  "1/2",
+  "3/10"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Mujeres que rinden M2: $0{,}6 \\cdot 0{,}5 = 0{,}3$. Hombres: $0{,}4 \\cdot 0{,}25 = 0{,}1$.",
+  "$$P(\\text{mujer} \\mid M2) = \\frac{0{,}3}{0{,}3 + 0{,}1} = \\frac{3}{4}$$"
+ ],
+ "trampa": "Responder $P(\\text{M2} \\mid \\text{mujer})$ y marcar C, o la intersección (D).",
+ "clave": "$P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$: el universo se reduce a los que cumplen $B$.",
+ "verificacion": "pm, ph = Rational(6,10), Rational(4,10); a = pm*Rational(1,2); b = ph*Rational(1,4); respuesta = a/(a + b)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Quiénes rinden M2",
+     "$0{,}6 \\cdot 0{,}5 = 0{,}3$"
+    ],
+    "voz": "Mujeres que rinden eme dos: cero coma seis por cero coma cinco, cero coma tres."
+   },
+   {
+    "lineas": [
+     "Hombres",
+     "$0{,}4 \\cdot 0{,}25 = 0{,}1$"
+    ],
+    "voz": "Hombres: cero coma cuatro por cero coma veinticinco, cero coma uno."
+   },
+   {
+    "lineas": [
+     "Dentro de los de M2",
+     "$\\dfrac{0{,}3}{0{,}4} = \\dfrac{3}{4}$"
+    ],
+    "voz": "De los que rinden eme dos, que son cero coma cuatro, las mujeres son cero coma tres: tres cuartos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: tres cuartos. En la condicional, el universo son solo los que cumplen la condición. No es lo mismo la probabilidad de rendir eme dos siendo mujer, que es un medio. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "291"
+}

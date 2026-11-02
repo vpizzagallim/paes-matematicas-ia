@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: prueba las alternativas 🔁 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: a veces conviene probar las alternativas.",
+  "titulo": "Tip: prueba",
+  "pasos": [
+   {
+    "lineas": [
+     "Reemplaza en la ecuación"
+    ],
+    "voz": "Si te piden el valor de equis, puedes reemplazar cada alternativa en la ecuación."
+   },
+   {
+    "lineas": [
+     "La que cumple, es"
+    ],
+    "voz": "La alternativa que hace verdadera la igualdad es la correcta."
+   },
+   {
+    "lineas": [
+     "Úsalo para comprobar"
+    ],
+    "voz": "Y aunque lo hayas resuelto, reemplazar tu respuesta es la mejor forma de comprobarla."
+   }
+  ],
+  "remate": "Reemplaza y comprueba",
+  "cierre": {
+   "voz": "Las alternativas también son una herramienta. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-15",
+ "id": "276"
+}

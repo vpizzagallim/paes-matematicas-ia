@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Inecuación: nota mínima",
+ "gancho": "¿Qué nota necesito para eximirme? 📝",
+ "enunciado": "Sofía tiene notas <b>5,2</b> y <b>4,6</b>. Para eximirse necesita un promedio de <b>al menos 5,0</b> con una tercera nota. ¿Cuál es la <b>nota mínima</b> que necesita?",
+ "alternativas": [
+  "4,8",
+  "5,4",
+  "5,0",
+  "5,2"
+ ],
+ "valores": [
+  "24/5",
+  "27/5",
+  "5",
+  "26/5"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "$$\\frac{5{,}2 + 4{,}6 + x}{3} \\geq 5{,}0$$",
+  "$$9{,}8 + x \\geq 15 \\Rightarrow x \\geq 5{,}2$$"
+ ],
+ "trampa": "Creer que basta con sacar 5,0 y marcar C: el 4,6 baja el promedio.",
+ "clave": "Promedio mínimo $\\cdot$ número de notas = suma mínima. Lo que falta es la nota necesaria.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq((Rational(52,10) + Rational(46,10) + x)/3, 5), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$\\dfrac{5{,}2 + 4{,}6 + x}{3} \\geq 5$"
+    ],
+    "voz": "El promedio de las tres notas tiene que ser al menos cinco."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$9{,}8 + x \\geq 15 \\Rightarrow x \\geq 5{,}2$"
+    ],
+    "voz": "Multiplicando por tres, la suma debe ser al menos quince. Ya tiene nueve coma ocho, así que necesita un cinco coma dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cinco coma dos. Multiplica el promedio que quieres por la cantidad de notas y resta lo que ya tienes. Un cinco no alcanza, porque el cuatro coma seis tira el promedio hacia abajo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "263"
+}

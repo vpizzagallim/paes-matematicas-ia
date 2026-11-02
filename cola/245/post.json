@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Gráfico circular",
+ "gancho": "Grados a porcentaje 🥧",
+ "enunciado": "En un <b>gráfico circular</b> sobre cómo llegan al liceo los estudiantes de un curso, el sector <b>Metro</b> mide <b>72°</b>. ¿Qué porcentaje del curso llega en Metro?",
+ "alternativas": [
+  "20%",
+  "36%",
+  "72%",
+  "7,2%"
+ ],
+ "valores": [
+  "20",
+  "36",
+  "72",
+  "36/5"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "El círculo completo, $360^\\circ$, es el 100%.",
+  "$$\\frac{72^\\circ}{360^\\circ} = 0{,}2 = 20\\%$$"
+ ],
+ "trampa": "Leer los grados como porcentaje y marcar C (72%).",
+ "clave": "En un gráfico circular: porcentaje $= \\dfrac{\\text{ángulo}}{360^\\circ} \\cdot 100$. Cada 10% son $36^\\circ$.",
+ "verificacion": "respuesta = Rational(72, 360)*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "360° es el 100%",
+     "$\\dfrac{72^\\circ}{360^\\circ}$"
+    ],
+    "voz": "En un gráfico circular, la vuelta completa, trescientos sesenta grados, es el cien por ciento."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$\\dfrac{72}{360} = 0{,}2 = 20\\%$"
+    ],
+    "voz": "Setenta y dos dividido en trescientos sesenta es cero coma dos: el veinte por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veinte por ciento. Cada diez por ciento del gráfico circular son treinta y seis grados. Los setenta y dos grados no son setenta y dos por ciento: el círculo completo tiene trescientos sesenta. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "245"
+}

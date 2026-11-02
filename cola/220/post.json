@@ -1,0 +1,85 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja pasó una hora en la micro mirando el techo 🚌😐 ¿Y si repasa en el camino? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Micro",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Hoy no alcancé a estudiar. Estuve una hora en la micro.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🚌 1 hora en micro<br>= 1 hora mirando el techo",
+   "efecto": "bocina",
+   "t_cartel": 0.1,
+   "sacudir": true,
+   "dur_min": 2.2
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "Y el celular con cero batería.",
+   "efecto": "trombon"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "¿Y si repasas quince minutos en cada viaje? Calcula."
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Si repasas <b>15 minutos</b> en cada viaje, de ida y de vuelta, durante <b>5 días</b>, ¿cuántas <b>horas</b> repasas en total?",
+  "alternativas": [
+   "1,25 horas",
+   "2,5 horas",
+   "1,5 horas",
+   "75 horas"
+  ],
+  "valores": [
+   "5/4",
+   "5/2",
+   "3/2",
+   "75"
+  ],
+  "correcta": 1,
+  "verificacion": "respuesta = Rational(15*2*5, 60)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Minutos totales",
+      "$15 \\cdot 2 \\cdot 5 = 150\\ \\text{min}$"
+     ],
+     "voz": "Quince minutos, dos viajes al día, cinco días: ciento cincuenta minutos."
+    },
+    {
+     "lineas": [
+      "A horas",
+      "$150 \\div 60 = 2{,}5\\ \\text{h}$"
+     ],
+     "voz": "Ciento cincuenta minutos son dos horas y media."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: dos coma cinco horas. El tiempo muerto también sirve para estudiar."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-01",
+ "id": "220"
+}

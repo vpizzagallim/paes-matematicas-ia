@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Módulo de un vector",
+ "gancho": "El largo de un vector ➡️",
+ "enunciado": "¿Cuál es el <b>módulo</b> (largo) del vector $\\vec{v} = (6, -8)$?",
+ "alternativas": [
+  "14",
+  "100",
+  "$-2$",
+  "10"
+ ],
+ "valores": [
+  "14",
+  "100",
+  "-2",
+  "10"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "$$|\\vec{v}| = \\sqrt{x^2 + y^2}$$",
+  "$$\\sqrt{6^2 + (-8)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$"
+ ],
+ "trampa": "Sumar los valores absolutos de las componentes y marcar A (14), o sumarlas con signo (−2).",
+ "clave": "El módulo de $(x, y)$ es $\\sqrt{x^2 + y^2}$: es Pitágoras. Nunca es negativo.",
+ "verificacion": "respuesta = sqrt(6**2 + (-8)**2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Módulo = Pitágoras",
+     "$|\\vec{v}| = \\sqrt{6^2 + (-8)^2}$"
+    ],
+    "voz": "El módulo de un vector se calcula con Pitágoras: raíz de seis al cuadrado más menos ocho al cuadrado."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$\\sqrt{36 + 64} = \\sqrt{100} = 10$"
+    ],
+    "voz": "Treinta y seis más sesenta y cuatro es cien, y su raíz es diez."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: diez. El módulo de un vector es Pitágoras y nunca es negativo. No se suman las componentes: el módulo es una distancia, así que nunca es negativo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "266"
+}

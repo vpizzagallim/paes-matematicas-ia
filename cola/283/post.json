@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Eventos independientes: moneda y dado",
+ "gancho": "Cara y par 🪙🎲",
+ "enunciado": "Se lanzan una <b>moneda</b> y un <b>dado</b> común. ¿Cuál es la probabilidad de obtener <b>cara y un número par</b>?",
+ "alternativas": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{1}{12}$"
+ ],
+ "valores": [
+  "1/2",
+  "1/8",
+  "1/4",
+  "1/12"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Espacio muestral: $2 \\cdot 6 = 12$ resultados.",
+  "Favorables: (C,2), (C,4), (C,6). $$P = \\frac{3}{12} = \\frac{1}{4}$$"
+ ],
+ "trampa": "Multiplicar por la probabilidad de un solo número, $\\tfrac{1}{2} \\cdot \\tfrac{1}{6}$, y marcar D ($\\tfrac{1}{12}$).",
+ "clave": "Eventos independientes: $P(A \\cap B) = P(A) \\cdot P(B) = \\tfrac{1}{2} \\cdot \\tfrac{1}{2}$.",
+ "verificacion": "from itertools import product; casos = list(product('CS', range(1,7))); respuesta = Rational(len([c for c in casos if c[0] == 'C' and c[1] % 2 == 0]), len(casos))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "12 resultados",
+     "$2 \\cdot 6 = 12$"
+    ],
+    "voz": "La moneda tiene dos resultados y el dado seis: doce en total."
+   },
+   {
+    "lineas": [
+     "Favorables",
+     "$\\dfrac{3}{12} = \\dfrac{1}{4}$"
+    ],
+    "voz": "Cara con dos, cara con cuatro y cara con seis: tres de doce, un cuarto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: un cuarto. Para eventos independientes, multiplica las probabilidades. Par no es un solo número: hay tres pares en el dado, así que la probabilidad es un medio. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "283"
+}

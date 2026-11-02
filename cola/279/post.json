@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Lenguaje algebraico",
+ "gancho": "Traduce y resuelve ✍️",
+ "enunciado": "El <b>doble</b> de un número, <b>disminuido en 7</b>, es igual a <b>15</b>. ¿Cuál es el número?",
+ "alternativas": [
+  "8",
+  "22",
+  "4",
+  "11"
+ ],
+ "valores": [
+  "8",
+  "22",
+  "4",
+  "11"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Traducimos: $$2x - 7 = 15$$",
+  "$$2x = 22 \\Rightarrow x = 11$$"
+ ],
+ "trampa": "Restar 7 en vez de sumarlo al despejar y obtener 4 (C).",
+ "clave": "\"Disminuido en\" es restar; \"el doble\" es multiplicar por 2. Traduce frase por frase.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(2*x - 7, 15), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Traducimos",
+     "$2x - 7 = 15$"
+    ],
+    "voz": "El doble de un número es dos equis; disminuido en siete, menos siete. Igual a quince."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$2x = 22 \\Rightarrow x = 11$"
+    ],
+    "voz": "Sumamos siete: dos equis es veintidós. El número es once."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: once. Traduce la frase pedazo por pedazo antes de despejar. Al despejar, el menos siete pasa sumando al otro lado, no restando. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "279"
+}

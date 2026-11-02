@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Decimales periódicos",
+ "gancho": "0,666… ¿qué fracción es? 🤔",
+ "enunciado": "¿Qué fracción es igual al decimal periódico $0{,}\\overline{6}$?",
+ "alternativas": [
+  "$\\dfrac{2}{3}$",
+  "$\\dfrac{3}{5}$",
+  "$\\dfrac{1}{6}$",
+  "$\\dfrac{3}{50}$"
+ ],
+ "valores": [
+  "2/3",
+  "3/5",
+  "1/6",
+  "3/50"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Un periódico puro de una cifra es esa cifra sobre 9: $$0{,}\\overline{6} = \\frac{6}{9}$$",
+  "Simplificamos por 3: $$\\frac{6}{9} = \\frac{2}{3}$$"
+ ],
+ "trampa": "Escribirlo como decimal finito, $0{,}6 = \\tfrac{6}{10} = \\tfrac{3}{5}$, y marcar B.",
+ "clave": "Periódico puro: el período sobre tantos 9 como cifras tenga. Ej.: $0{,}\\overline{12} = \\tfrac{12}{99}$.",
+ "verificacion": "n = symbols('n'); respuesta = summation(6*Rational(1,10)**n, (n, 1, oo))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Período sobre 9",
+     "$0{,}\\overline{6} = \\dfrac{6}{9}$"
+    ],
+    "voz": "Cero coma seis periódico es seis novenos, no seis décimos."
+   },
+   {
+    "lineas": [
+     "Simplificamos",
+     "$\\dfrac{6}{9} = \\dfrac{2}{3}$"
+    ],
+    "voz": "Simplificando por tres: dos tercios. Compruébalo: dos dividido en tres da cero coma seis seis seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: dos tercios. Un periódico puro es el período sobre tantos nueves como cifras tenga. El error típico es tratarlo como cero coma seis, que es un decimal finito y vale tres quintos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "254"
+}

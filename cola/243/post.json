@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Ángulos en polígonos",
+ "gancho": "El ángulo del hexágono 🐝",
+ "enunciado": "¿Cuánto mide cada <b>ángulo interior</b> de un <b>hexágono regular</b>?",
+ "alternativas": [
+  "120°",
+  "720°",
+  "60°",
+  "108°"
+ ],
+ "valores": [
+  "120",
+  "720",
+  "60",
+  "108"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "La suma de los ángulos interiores es $180^\\circ(n - 2)$: $$180^\\circ \\cdot 4 = 720^\\circ$$",
+  "Son 6 ángulos iguales: $$720^\\circ \\div 6 = 120^\\circ$$"
+ ],
+ "trampa": "Confundir con el ángulo exterior (60°) y marcar C, o quedarse con la suma total (720°).",
+ "clave": "Polígono regular de $n$ lados: cada ángulo interior mide $\\dfrac{180^\\circ(n-2)}{n}$.",
+ "verificacion": "n = 6; respuesta = Rational(180*(n-2), n)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma de interiores",
+     "$180^\\circ \\cdot (6 - 2) = 720^\\circ$"
+    ],
+    "voz": "Los ángulos interiores de un polígono suman ciento ochenta por ene menos dos. Para el hexágono: setecientos veinte grados."
+   },
+   {
+    "lineas": [
+     "Repartimos en 6",
+     "$720^\\circ \\div 6 = 120^\\circ$"
+    ],
+    "voz": "Como es regular, los seis ángulos son iguales: ciento veinte grados cada uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: ciento veinte grados. La suma de ángulos interiores es ciento ochenta por ene menos dos. Sesenta grados es el ángulo exterior, y setecientos veinte es la suma de todos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "243"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Combinaciones",
+ "gancho": "¿Importa el orden? 🤝",
+ "enunciado": "De un grupo de <b>6 estudiantes</b> se elegirá una <b>comisión de 3</b>, sin cargos. ¿Cuántas comisiones distintas se pueden formar?",
+ "alternativas": [
+  "20",
+  "216",
+  "18",
+  "120"
+ ],
+ "valores": [
+  "20",
+  "216",
+  "18",
+  "120"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Sin cargos, el orden no importa: son combinaciones. $$\\binom{6}{3} = \\frac{6 \\cdot 5 \\cdot 4}{3 \\cdot 2 \\cdot 1}$$",
+  "$$\\frac{120}{6} = 20$$"
+ ],
+ "trampa": "Contar como si importara el orden ($6 \\cdot 5 \\cdot 4 = 120$) y marcar D.",
+ "clave": "¿Importa el orden? Sí: variaciones. No: combinaciones, $\\binom{n}{k} = \\dfrac{n!}{k!\\,(n-k)!}$.",
+ "verificacion": "from itertools import combinations; respuesta = Integer(len(list(combinations(range(6), 3))))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "El orden no importa",
+     "$\\dbinom{6}{3} = \\dfrac{6 \\cdot 5 \\cdot 4}{3 \\cdot 2 \\cdot 1}$"
+    ],
+    "voz": "En una comisión sin cargos el orden no importa: son combinaciones de seis en tres."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$\\dfrac{120}{6} = 20$"
+    ],
+    "voz": "Seis por cinco por cuatro es ciento veinte, dividido en seis: veinte comisiones."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veinte. Si el orden no importa, divide por las formas de ordenar a los elegidos. Ciento veinte sería si hubiera presidente, secretario y tesorero, porque ahí sí importa el orden. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "278"
+}

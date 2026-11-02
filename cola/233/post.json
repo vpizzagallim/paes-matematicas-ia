@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Logaritmo de una potencia",
+ "gancho": "El exponente baja 👇",
+ "enunciado": "¿Cuál es el valor de $$\\log_2\\left(8^3\\right)\\,?$$",
+ "alternativas": [
+  "24",
+  "9",
+  "6",
+  "512"
+ ],
+ "valores": [
+  "24",
+  "9",
+  "6",
+  "512"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Propiedad de la potencia: $$\\log_2\\left(8^3\\right) = 3 \\log_2 8$$",
+  "Como $2^3 = 8$, $\\log_2 8 = 3$: $$3 \\cdot 3 = 9$$"
+ ],
+ "trampa": "Multiplicar el exponente por el argumento ($3 \\cdot 8 = 24$) y marcar A.",
+ "clave": "$\\log_b(a^n) = n \\log_b a$: el exponente baja multiplicando.",
+ "verificacion": "respuesta = simplify(log(Integer(8)**3) / log(2))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "El exponente baja",
+     "$\\log_2\\left(8^3\\right) = 3\\log_2 8$"
+    ],
+    "voz": "El exponente del argumento baja multiplicando: tres por logaritmo en base dos de ocho."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$3 \\cdot 3 = 9$"
+    ],
+    "voz": "Dos al cubo es ocho, así que ese logaritmo vale tres. Tres por tres: nueve."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: nueve. El exponente del argumento baja multiplicando al logaritmo. Si multiplicas tres por ocho, te da veinticuatro: el exponente multiplica al logaritmo, no al número. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "233"
+}

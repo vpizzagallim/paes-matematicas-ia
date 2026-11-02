@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Homotecia en el plano",
+ "gancho": "Agrandar un punto desde el origen 🔍",
+ "enunciado": "Se aplica una <b>homotecia</b> de centro en el origen y razón $k = 3$ al punto $P(2, -1)$. ¿Cuáles son las coordenadas de su imagen?",
+ "alternativas": [
+  "$(5, 2)$",
+  "$(-6, 3)$",
+  "$(6, -3)$",
+  "$(6, -1)$"
+ ],
+ "valores": [
+  "(5,2)",
+  "(-6,3)",
+  "(6,-3)",
+  "(6,-1)"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Con centro en el origen, la homotecia multiplica cada coordenada por $k$.",
+  "$$3 \\cdot (2, -1) = (6, -3)$$"
+ ],
+ "trampa": "Sumar 3 a cada coordenada, como si fuera una traslación, y marcar A.",
+ "clave": "Homotecia de centro $O$ y razón $k$: $(x, y) \\to (kx, ky)$. Si $k < 0$, la imagen queda al otro lado del centro.",
+ "verificacion": "P = Matrix([2, -1]); Q = 3*P; respuesta = Tuple(Q[0], Q[1])",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Multiplicamos por k",
+     "$(x, y) \\to (3x, 3y)$"
+    ],
+    "voz": "Una homotecia con centro en el origen multiplica las dos coordenadas por la razón."
+   },
+   {
+    "lineas": [
+     "Aplicamos",
+     "$(2, -1) \\to (6, -3)$"
+    ],
+    "voz": "Dos por tres es seis, y menos uno por tres es menos tres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: el punto seis, menos tres. Homotecia con centro en el origen: se multiplican las coordenadas, no se suman. Si sumas tres a cada coordenada, estás haciendo una traslación, no una homotecia. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "250"
+}

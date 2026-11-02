@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Números enteros: temperatura",
+ "gancho": "Frío en Punta Arenas 🥶",
+ "enunciado": "En Punta Arenas, la temperatura mínima de un día fue <b>−4 °C</b> y la máxima, <b>7 °C</b>. ¿Cuál fue la diferencia entre la máxima y la mínima?",
+ "alternativas": [
+  "3 °C",
+  "11 °C",
+  "−11 °C",
+  "−3 °C"
+ ],
+ "valores": [
+  "3",
+  "11",
+  "-11",
+  "-3"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Diferencia = máxima − mínima: $$7 - (-4)$$",
+  "Restar un negativo es sumar: $$7 + 4 = 11\\ ^\\circ\\text{C}$$"
+ ],
+ "trampa": "Hacer $7 - 4 = 3$ y marcar A, olvidando que la mínima es negativa.",
+ "clave": "Restar un número negativo es sumar su opuesto: $a - (-b) = a + b$.",
+ "verificacion": "respuesta = 7 - (-4)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Máxima menos mínima",
+     "$7 - (-4)$"
+    ],
+    "voz": "La diferencia es la máxima menos la mínima: siete menos menos cuatro."
+   },
+   {
+    "lineas": [
+     "Menos por menos",
+     "$7 + 4 = 11$"
+    ],
+    "voz": "Restar un negativo es sumar: siete más cuatro, once grados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: once grados. Restar un número negativo es lo mismo que sumar. Si haces siete menos cuatro, olvidas que la mínima estaba bajo cero y te faltan cuatro grados. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "262"
+}

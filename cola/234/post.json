@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Función afín: cuenta de la luz",
+ "gancho": "¿Cuánto consumiste? 💡",
+ "enunciado": "Una cuenta de la luz cobra un <b>cargo fijo de \\$1.200</b> más <b>\\$150 por kWh</b>. Si un mes se pagaron <b>\\$28.200</b>, ¿cuántos kWh se consumieron?",
+ "alternativas": [
+  "196",
+  "188",
+  "200",
+  "180"
+ ],
+ "valores": [
+  "196",
+  "188",
+  "200",
+  "180"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "La cuenta es $C(x) = 1.200 + 150x$: $$1.200 + 150x = 28.200$$",
+  "$$150x = 27.000 \\Rightarrow x = 180$$"
+ ],
+ "trampa": "Dividir \\$28.200 por 150 sin restar el cargo fijo y marcar B (188).",
+ "clave": "En una función afín $f(x) = mx + n$, el valor fijo $n$ se resta antes de dividir por la pendiente.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(1200 + 150*x, 28200), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$1.200 + 150x = 28.200$"
+    ],
+    "voz": "La cuenta es mil doscientos fijos más ciento cincuenta por cada kilowatt hora."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$150x = 27.000 \\Rightarrow x = 180$"
+    ],
+    "voz": "Restamos el cargo fijo: veintisiete mil. Dividido en ciento cincuenta: ciento ochenta kilowatt hora."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: ciento ochenta kilowatt hora. Primero se resta el cargo fijo y después se divide. Si divides el total directo por ciento cincuenta, te da ciento ochenta y ocho, porque incluiste el cargo fijo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "234"
+}

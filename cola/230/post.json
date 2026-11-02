@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Extracción sin reposición",
+ "gancho": "Sacar fichas sin devolverlas 🔴",
+ "enunciado": "Una bolsa tiene <b>3 fichas rojas</b> y <b>2 azules</b>. Se sacan <b>2 fichas sin reposición</b>. ¿Cuál es la probabilidad de que <b>ambas sean rojas</b>?",
+ "alternativas": [
+  "$\\dfrac{9}{25}$",
+  "$\\dfrac{2}{5}$",
+  "$\\dfrac{3}{5}$",
+  "$\\dfrac{3}{10}$"
+ ],
+ "valores": [
+  "9/25",
+  "2/5",
+  "3/5",
+  "3/10"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Primera roja: $\\tfrac{3}{5}$. Quedan 4 fichas, 2 rojas: $\\tfrac{2}{4}$.",
+  "$$P = \\frac{3}{5} \\cdot \\frac{2}{4} = \\frac{6}{20} = \\frac{3}{10}$$"
+ ],
+ "trampa": "Calcular como si se devolviera la ficha, $\\left(\\tfrac{3}{5}\\right)^2 = \\tfrac{9}{25}$, y marcar A.",
+ "clave": "Sin reposición, la segunda extracción cambia: hay una ficha menos en total y una menos del color sacado.",
+ "verificacion": "from itertools import permutations; b = 'RRRAA'; pares = list(permutations(range(5), 2)); respuesta = Rational(len([p for p in pares if b[p[0]] == 'R' and b[p[1]] == 'R']), len(pares))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Primera roja",
+     "$\\dfrac{3}{5}$"
+    ],
+    "voz": "La primera ficha es roja con probabilidad tres quintos."
+   },
+   {
+    "lineas": [
+     "Segunda roja",
+     "$\\dfrac{3}{5} \\cdot \\dfrac{2}{4} = \\dfrac{3}{10}$"
+    ],
+    "voz": "Sin reponer, quedan cuatro fichas y dos rojas: dos cuartos. Multiplicando: tres décimos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: tres décimos. Sin reposición, cambia el total en la segunda extracción. Si usas tres quintos por tres quintos, estás devolviendo la ficha, y eso es con reposición. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "230"
+}

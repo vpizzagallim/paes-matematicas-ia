@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Logaritmos: decibeles",
+ "gancho": "¿Música 100 veces más fuerte? 🔊",
+ "enunciado": "El nivel de sonido es $L = 10 \\log\\left(\\dfrac{I}{I_0}\\right)$ decibeles. Si la intensidad $I$ de una música se multiplica por <b>100</b>, ¿en cuánto aumenta $L$?",
+ "alternativas": [
+  "20 dB",
+  "2 dB",
+  "1.000 dB",
+  "100 dB"
+ ],
+ "valores": [
+  "20",
+  "2",
+  "1000",
+  "100"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Como $\\log(ab) = \\log a + \\log b$, multiplicar $I$ por 100 suma $10 \\log 100$ al nivel.",
+  "$$10 \\log 100 = 10 \\cdot 2 = 20 \\text{ dB}$$"
+ ],
+ "trampa": "Pensar que el nivel en decibeles también se multiplica por 100 y marcar D (100 dB).",
+ "clave": "En escalas logarítmicas (decibeles, Richter, pH), multiplicar la cantidad <b>suma</b> al nivel.",
+ "verificacion": "I, I0 = symbols('I I0', positive=True); d = 10*log(100*I/I0, 10) - 10*log(I/I0, 10); respuesta = nsimplify(simplify(expand_log(d, force=True)))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Log del producto",
+     "$\\log(100\\,I) = \\log 100 + \\log I$"
+    ],
+    "voz": "Por la propiedad del producto, multiplicar la intensidad por cien suma diez por logaritmo de cien al nivel."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$10 \\cdot \\log 100 = 10 \\cdot 2 = 20$"
+    ],
+    "voz": "Logaritmo de cien es dos. Diez por dos: veinte decibeles más."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: veinte decibeles. En una escala logarítmica, multiplicar la intensidad suma decibeles. Los decibeles no se multiplican por cien: por eso una escala logarítmica crece tan lento. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "251"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Volumen de la esfera",
+ "gancho": "El volumen de una pelota ⚽",
+ "enunciado": "Una pelota tiene <b>radio 3 cm</b>. ¿Cuál es su volumen? (Usa $V = \\dfrac{4}{3}\\pi r^3$.)",
+ "alternativas": [
+  "$12\\pi$ cm³",
+  "$27\\pi$ cm³",
+  "$108\\pi$ cm³",
+  "$36\\pi$ cm³"
+ ],
+ "valores": [
+  "12*pi",
+  "27*pi",
+  "108*pi",
+  "36*pi"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "$$V = \\frac{4}{3}\\pi \\cdot 3^3 = \\frac{4}{3}\\pi \\cdot 27$$",
+  "$$V = 36\\pi \\text{ cm}^3$$"
+ ],
+ "trampa": "Elevar el radio al cuadrado en vez de al cubo y marcar A ($12\\pi$).",
+ "clave": "Volumen de la esfera: $\\tfrac{4}{3}\\pi r^3$ (al cubo, porque es volumen). Área: $4\\pi r^2$.",
+ "verificacion": "respuesta = Rational(4,3)*pi*3**3",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Volumen de la esfera",
+     "$V = \\dfrac{4}{3}\\pi \\cdot 3^3$"
+    ],
+    "voz": "El volumen de la esfera es cuatro tercios de pi por el radio al cubo."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$\\dfrac{4}{3} \\cdot 27 = 36 \\Rightarrow 36\\pi$"
+    ],
+    "voz": "Tres al cubo es veintisiete. Cuatro tercios de veintisiete es treinta y seis: treinta y seis pi centímetros cúbicos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: treinta y seis pi centímetros cúbicos. Si es volumen, el radio va al cubo. Si elevas el radio al cuadrado en vez de al cubo, te da doce pi, que no es un volumen. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "289"
+}

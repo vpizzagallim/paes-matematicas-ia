@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Conversión de unidades",
+ "gancho": "De km/h a m/s sin enredarse 🚌",
+ "enunciado": "Un bus avanza por la Ruta 5 a <b>72 km/h</b>. ¿A cuántos <b>metros por segundo</b> equivale esa rapidez?",
+ "alternativas": [
+  "259,2 m/s",
+  "20 m/s",
+  "1.200 m/s",
+  "72 m/s"
+ ],
+ "valores": [
+  "2592/10",
+  "20",
+  "1200",
+  "72"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "72 km son 72.000 m, y 1 hora son 3.600 s.",
+  "$$\\frac{72.000 \\text{ m}}{3.600 \\text{ s}} = 20 \\text{ m/s}$$"
+ ],
+ "trampa": "Dividir solo por 60, como si una hora tuviera 60 segundos, y marcar C (1.200 m/s).",
+ "clave": "De km/h a m/s se divide por $3{,}6$; de m/s a km/h se multiplica por $3{,}6$.",
+ "verificacion": "respuesta = Rational(72*1000, 3600)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "A metros y segundos",
+     "$\\dfrac{72.000\\ \\text{m}}{3.600\\ \\text{s}}$"
+    ],
+    "voz": "Setenta y dos kilómetros son setenta y dos mil metros, y una hora tiene tres mil seiscientos segundos."
+   },
+   {
+    "lineas": [
+     "Dividimos",
+     "$72.000 \\div 3.600 = 20$"
+    ],
+    "voz": "Dividiendo: veinte metros por segundo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: veinte metros por segundo. Para pasar de kilómetros por hora a metros por segundo, divide por tres coma seis. Una hora tiene tres mil seiscientos segundos, no sesenta: ese es el error más común. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "293"
+}

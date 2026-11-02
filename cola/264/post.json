@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: haz un dibujo ✏️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: si te enredas, haz un dibujo.",
+  "titulo": "Tip: dibuja",
+  "pasos": [
+   {
+    "lineas": [
+     "Geometría: dibuja la figura"
+    ],
+    "voz": "En geometría, dibuja la figura y anota las medidas que te dan."
+   },
+   {
+    "lineas": [
+     "Probabilidad: una tabla"
+    ],
+    "voz": "En probabilidad, una tabla o un diagrama de árbol ordena todos los casos."
+   },
+   {
+    "lineas": [
+     "Funciones: un bosquejo"
+    ],
+    "voz": "En funciones, un bosquejo rápido del gráfico te muestra si la respuesta tiene sentido."
+   }
+  ],
+  "remate": "Dibuja · Ordena · Comprueba",
+  "cierre": {
+   "voz": "Un dibujo de diez segundos ahorra minutos de confusión. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-12",
+ "id": "264"
+}

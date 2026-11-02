@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Mediana con datos pares",
+ "gancho": "Mediana: primero ordena 📋",
+ "enunciado": "Los minutos que demoran 6 estudiantes en llegar al liceo son: $$15,\\ 4,\\ 20,\\ 9,\\ 12,\\ 7$$ ¿Cuál es la <b>mediana</b>?",
+ "alternativas": [
+  "14,5",
+  "9",
+  "10,5",
+  "≈ 11,2"
+ ],
+ "valores": [
+  "29/2",
+  "9",
+  "21/2",
+  "67/6"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Ordenamos: $4,\\ 7,\\ 9,\\ 12,\\ 15,\\ 20$.",
+  "Con 6 datos, la mediana es el promedio de los dos centrales: $$\\frac{9 + 12}{2} = 10{,}5$$"
+ ],
+ "trampa": "No ordenar y promediar los datos centrales de la lista original (20 y 9), marcando A.",
+ "clave": "Mediana: <b>ordena primero</b>. Si la cantidad de datos es par, promedia los dos centrales.",
+ "verificacion": "d = sorted([15, 4, 20, 9, 12, 7]); respuesta = Rational(d[2] + d[3], 2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ordenamos",
+     "$4,\\ 7,\\ 9,\\ 12,\\ 15,\\ 20$"
+    ],
+    "voz": "Primero, siempre ordenar: cuatro, siete, nueve, doce, quince y veinte."
+   },
+   {
+    "lineas": [
+     "Los dos centrales",
+     "$\\dfrac{9 + 12}{2} = 10{,}5$"
+    ],
+    "voz": "Como son seis datos, se promedian los dos del centro: nueve y doce. Diez coma cinco minutos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: diez coma cinco minutos. Para la mediana, ordena primero; si son pares, promedia los dos centrales. Si no ordenas, el centro de la lista no significa nada. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "261"
+}

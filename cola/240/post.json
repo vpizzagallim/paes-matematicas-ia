@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: estudia en bloques cortos ⏱️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: estudia en bloques cortos.",
+  "titulo": "Tip: bloques cortos",
+  "pasos": [
+   {
+    "lineas": [
+     "25 minutos de foco"
+    ],
+    "voz": "Pon un temporizador de veinticinco minutos y estudia solo matemática, con el celular lejos."
+   },
+   {
+    "lineas": [
+     "5 minutos de pausa"
+    ],
+    "voz": "Después, descansa cinco minutos: párate, toma agua, estira las piernas."
+   },
+   {
+    "lineas": [
+     "Repite tres o cuatro veces"
+    ],
+    "voz": "Repite el ciclo tres o cuatro veces. Rinde más que tres horas a medias."
+   }
+  ],
+  "remate": "25 de foco · 5 de pausa",
+  "cierre": {
+   "voz": "Poco y concentrado le gana a mucho y distraído. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-06",
+ "id": "240"
+}

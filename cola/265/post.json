@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Seno en contexto: rampa",
+ "gancho": "¿A qué altura llega la rampa? ♿",
+ "enunciado": "Una rampa de <b>10 m</b> de largo forma un ángulo de <b>30°</b> con el suelo. ¿A qué <b>altura</b> llega?",
+ "alternativas": [
+  "$5\\sqrt{3}$ m",
+  "$10\\sqrt{3}$ m",
+  "20 m",
+  "5 m"
+ ],
+ "valores": [
+  "5*sqrt(3)",
+  "10*sqrt(3)",
+  "20",
+  "5"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "La rampa es la hipotenusa y la altura, el cateto opuesto: $$\\sin 30^\\circ = \\frac{h}{10}$$",
+  "$$h = 10 \\cdot \\frac{1}{2} = 5 \\text{ m}$$"
+ ],
+ "trampa": "Usar coseno en vez de seno y marcar A ($5\\sqrt{3}$ m).",
+ "clave": "Opuesto e hipotenusa: seno. $\\sin 30^\\circ = \\tfrac{1}{2}$, $\\sin 45^\\circ = \\tfrac{\\sqrt{2}}{2}$, $\\sin 60^\\circ = \\tfrac{\\sqrt{3}}{2}$.",
+ "verificacion": "respuesta = 10*sin(pi/6)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Opuesto/hipotenusa = seno",
+     "$\\sin 30^\\circ = \\dfrac{h}{10}$"
+    ],
+    "voz": "El largo de la rampa es la hipotenusa y la altura es el cateto opuesto al ángulo: eso es seno."
+   },
+   {
+    "lineas": [
+     "sen 30° = 1/2",
+     "$h = 10 \\cdot \\dfrac{1}{2} = 5$"
+    ],
+    "voz": "Seno de treinta grados es un medio. Diez por un medio: cinco metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cinco metros. Con opuesto e hipotenusa se usa el seno. Coseno daría el largo horizontal de la rampa, no la altura. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "265"
+}

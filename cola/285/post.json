@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Porcentaje de un porcentaje",
+ "gancho": "El 25% del 40% ⚽",
+ "enunciado": "En un curso, el <b>40%</b> son mujeres y, de ellas, el <b>25%</b> juega fútbol. ¿Qué porcentaje del <b>curso</b> son mujeres que juegan fútbol?",
+ "alternativas": [
+  "65%",
+  "25%",
+  "10%",
+  "15%"
+ ],
+ "valores": [
+  "65",
+  "25",
+  "10",
+  "15"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "El 25% de las mujeres es el 25% del 40%: $$0{,}25 \\cdot 0{,}4 = 0{,}1$$",
+  "$$0{,}1 = 10\\%$$ del curso."
+ ],
+ "trampa": "Sumar los porcentajes y marcar A (65%), o restarlos (15%).",
+ "clave": "El $a\\%$ del $b\\%$ se calcula multiplicando: $\\dfrac{a}{100} \\cdot \\dfrac{b}{100}$.",
+ "verificacion": "respuesta = Rational(40,100)*Rational(25,100)*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "El 25% del 40%",
+     "$0{,}25 \\cdot 0{,}4$"
+    ],
+    "voz": "Las futbolistas son el veinticinco por ciento de las mujeres, que son el cuarenta por ciento del curso."
+   },
+   {
+    "lineas": [
+     "Multiplicamos",
+     "$0{,}25 \\cdot 0{,}4 = 0{,}1 = 10\\%$"
+    ],
+    "voz": "Cero coma veinticinco por cero coma cuatro: cero coma uno, el diez por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: diez por ciento. Un porcentaje de otro porcentaje se multiplica. Sumar cuarenta y veinticinco no tiene sentido: el veinticinco por ciento se calcula solo sobre las mujeres. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "285"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Razones trigonométricas a partir de una",
+ "gancho": "Del seno a la tangente 📐",
+ "enunciado": "Si $\\alpha$ es un ángulo agudo y $\\sin \\alpha = \\dfrac{3}{5}$, ¿cuál es el valor de $\\tan \\alpha$?",
+ "alternativas": [
+  "$\\dfrac{4}{3}$",
+  "$\\dfrac{4}{5}$",
+  "$\\dfrac{3}{4}$",
+  "$\\dfrac{5}{3}$"
+ ],
+ "valores": [
+  "4/3",
+  "4/5",
+  "3/4",
+  "5/3"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Triángulo con opuesto 3 e hipotenusa 5. El adyacente: $$\\sqrt{5^2 - 3^2} = 4$$",
+  "$$\\tan \\alpha = \\frac{\\text{opuesto}}{\\text{adyacente}} = \\frac{3}{4}$$"
+ ],
+ "trampa": "Invertir la tangente (adyacente sobre opuesto) y marcar A.",
+ "clave": "Dibuja el triángulo: con dos lados, Pitágoras da el tercero y salen todas las razones.",
+ "verificacion": "a = asin(Rational(3,5)); respuesta = simplify(tan(a))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Falta el adyacente",
+     "$\\sqrt{5^2 - 3^2} = 4$"
+    ],
+    "voz": "Seno tres quintos: opuesto tres, hipotenusa cinco. Por Pitágoras, el adyacente es cuatro."
+   },
+   {
+    "lineas": [
+     "Tangente",
+     "$\\tan\\alpha = \\dfrac{3}{4}$"
+    ],
+    "voz": "Tangente es opuesto sobre adyacente: tres cuartos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: tres cuartos. Dibuja el triángulo y completa el lado que falta con Pitágoras. Si inviertes, te da cuatro tercios, que es la tangente del otro ángulo agudo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "269"
+}

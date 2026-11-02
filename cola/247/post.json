@@ -1,0 +1,56 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Suma de raíces",
+ "gancho": "Las raíces no se suman así 😬",
+ "enunciado": "¿Cuál es el resultado de $$\\sqrt{50} + \\sqrt{18}\\,?$$",
+ "alternativas": [
+  "8",
+  "$8\\sqrt{2}$",
+  "$\\sqrt{68}$",
+  "$15\\sqrt{2}$"
+ ],
+ "valores": [
+  "8",
+  "8*sqrt(2)",
+  "sqrt(68)",
+  "15*sqrt(2)"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Descomponemos: $\\sqrt{50} = \\sqrt{25 \\cdot 2} = 5\\sqrt{2}$ y $\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$.",
+  "$$5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$$"
+ ],
+ "trampa": "Sumar las cantidades subradicales, $\\sqrt{50 + 18} = \\sqrt{68}$, y marcar C.",
+ "clave": "Solo se suman raíces <b>semejantes</b> (misma cantidad subradical): $a\\sqrt{n} + b\\sqrt{n} = (a+b)\\sqrt{n}$.",
+ "verificacion": "respuesta = sqrt(50) + sqrt(18)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Descomponemos",
+     "$\\sqrt{50} = 5\\sqrt{2}$"
+    ],
+    "voz": "Raíz de cincuenta es cinco raíz de dos, porque cincuenta es veinticinco por dos."
+   },
+   {
+    "lineas": [
+     "y también",
+     "$\\sqrt{18} = 3\\sqrt{2}$"
+    ],
+    "voz": "Raíz de dieciocho es tres raíz de dos."
+   },
+   {
+    "lineas": [
+     "Sumamos las semejantes",
+     "$5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$"
+    ],
+    "voz": "Ahora son raíces semejantes: cinco más tres, ocho raíz de dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: ocho raíz de dos. Las raíces se suman solo si tienen lo mismo adentro. Raíz de cincuenta más raíz de dieciocho no es raíz de sesenta y ocho: las raíces no se suman por dentro. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "247"
+}

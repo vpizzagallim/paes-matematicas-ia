@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Frecuencia acumulada",
+ "gancho": "«A lo más» no es «exactamente» 👀",
+ "enunciado": "En una encuesta a <b>20 familias</b>: <b>3</b> no tienen hijos, <b>5</b> tienen 1, <b>8</b> tienen 2 y <b>4</b> tienen 3. ¿Qué porcentaje de las familias tiene <b>a lo más 1 hijo</b>?",
+ "alternativas": [
+  "80%",
+  "40%",
+  "25%",
+  "15%"
+ ],
+ "valores": [
+  "80",
+  "40",
+  "25",
+  "15"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "\\\"A lo más 1\\\" es 0 o 1 hijo: $3 + 5 = 8$ familias.",
+  "$$\\frac{8}{20} = 0{,}4 = 40\\%$$"
+ ],
+ "trampa": "Contar solo las familias con exactamente 1 hijo y marcar C (25%).",
+ "clave": "\"A lo más $k$\" incluye $k$ y todos los valores menores: es la frecuencia acumulada.",
+ "verificacion": "f = {0: 3, 1: 5, 2: 8, 3: 4}; respuesta = Rational(f[0] + f[1], sum(f.values()))*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "A lo más 1: cero o uno",
+     "$3 + 5 = 8$"
+    ],
+    "voz": "A lo más un hijo significa cero o uno: tres más cinco, ocho familias."
+   },
+   {
+    "lineas": [
+     "Porcentaje",
+     "$\\dfrac{8}{20} = 40\\%$"
+    ],
+    "voz": "Ocho de veinte es el cuarenta por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuarenta por ciento. A lo más uno incluye el cero y el uno. Si cuentas solo las familias con un hijo, te faltan las tres que no tienen hijos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "253"
+}

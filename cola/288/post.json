@@ -1,0 +1,37 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: si te bloqueas, respira y sigue 🧘 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: qué hacer si te bloqueas en una pregunta.",
+  "titulo": "Tip: no te bloquees",
+  "pasos": [
+   {
+    "lineas": [
+     "Respira hondo tres veces"
+    ],
+    "voz": "Si te bloqueas, suelta el lápiz y respira hondo tres veces."
+   },
+   {
+    "lineas": [
+     "Marca la pregunta y sigue"
+    ],
+    "voz": "Marca la pregunta y pasa a la siguiente. No te quedes pegado."
+   },
+   {
+    "lineas": [
+     "Vuelve con la mente fresca"
+    ],
+    "voz": "Cuando vuelvas al final, muchas veces la respuesta aparece sola."
+   }
+  ],
+  "remate": "Respira · Marca · Vuelve",
+  "cierre": {
+   "voz": "Una pregunta difícil no define tu prueba. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1102-18",
+ "id": "288"
+}
