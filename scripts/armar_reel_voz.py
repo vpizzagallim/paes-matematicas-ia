@@ -33,6 +33,10 @@ def leer_wav(ruta):
 
 
 def hablar(texto, ruta):
+    import voz_cl  # voz chilena (Lorenzo); si falla, piper
+    x = voz_cl.sintetizar(texto, SR, "profe_h")
+    if x is not None:
+        return x.astype(np.float32)
     subprocess.run([sys.executable, "-m", "piper", "-m", VOZ, "-f", ruta, "--length-scale", "0.85", "--sentence-silence", "0.15"],
                    input=texto.encode(), check=True, capture_output=True)
     return leer_wav(ruta)

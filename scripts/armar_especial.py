@@ -98,6 +98,10 @@ def renderizar(trabajos):
 _KK = None
 def voz(texto, quien, vel=1.05):
     global _KK
+    import voz_cl  # voz chilena; si falla, kokoro
+    x = voz_cl.sintetizar(texto, SR, quien)
+    if x is not None:
+        return x.astype(np.float64)
     if _KK is None:
         from kokoro_onnx import Kokoro
         d = os.environ["KOKORO_DIR"]; _KK = Kokoro(os.path.join(d, "kokoro-v1.0.onnx"), os.path.join(d, "voices-v1.0.bin"))
@@ -288,7 +292,7 @@ def main():
 
     # --- audio
     estilo = post.get("musica", "payaso" if fmt == "sketch" else "rock")
-    mus = musica_payaso(total, post.get("id", 0)) if estilo == "payaso" else musica_rock.rock_variado(total, post.get("id", 0))
+    mus = musica_rock.rock_variado(total, post.get("id", 0))  # desde 5-nov-2026: musica ochentera (disco) en todo
     tt = np.arange(len(mus)) / SR
     vol = np.full(len(mus), 0.10)
     for ini, fin, tipo, d in linea:

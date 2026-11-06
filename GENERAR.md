@@ -1,10 +1,10 @@
 # Instrucciones para la generación semanal de problemas
 
-Este archivo lo lee la tarea programada semanal de Claude. Objetivo: dejar en `cola/` suficientes posts para 7 días, sin repetir problemas ya publicados. Desde el 26-oct-2026 salen **12 publicaciones al día (84 por semana)**; de esas, los videos promocionales del Método 500 (promo/plan.json, unos 10 a 14 por semana) reemplazan posts de la cola, así que la cola necesita **unos 74 por semana**.
+Este archivo lo lee la tarea programada semanal de Claude. Objetivo: dejar en `cola/` suficientes posts para 7 días, sin repetir problemas ya publicados. Desde el 6-nov-2026 salen **8 publicaciones al día, cada 2 horas (08:07 a 22:07)**, rotando: ejercicio (de la cola) · pizarra animada · cuenta regresiva PAES, más 1 anuncio del Método 500 al día. Las pizarras, cuentas y anuncios van pre-armados en promo/plan.json; la cola solo pone los ejercicios: **unos 21 a 25 por semana** (3 al día).
 
 ## Pasos
 
-1. Clonar el repo y contar los posts en `cola/`. Generar los que falten para llegar a **74** (más un 10% extra, porque algunos se rechazan en la verificación).
+1. Clonar el repo y contar los posts en `cola/`. Generar los que falten para llegar a **25** (más un 10% extra, porque algunos se rechazan en la verificación).
 2. Revisar `publicados/*/post.json` y `cola/*/post.json` para no repetir temas ni enunciados recientes.
 3. Escribir el lote en `borradores/lote_AAAA-MM-DD.json` (lista JSON) con el formato de `borradores/lote_inicial.json`.
 4. Ejecutar `python3 scripts/preparar_lote.py borradores/lote_AAAA-MM-DD.json`. Los rechazados se corrigen o se descartan; nunca se fuerza un problema que no pasa la verificación.
@@ -58,5 +58,5 @@ En la cola, después de cada 3 problemas normales va 1 video especial (`"tipo": 
 - **cuenta**: "Faltan N días para la PAES" (N se calcula al publicar; la PAES regular es el 30-nov-2026) + tip del día en `pizarra_dato`.
 - **Duración:** menos de 59 segundos (la historia de Instagram admite 60). El campo `texto_post` es el texto del Reel, con hashtags.
 - **Datos factuales** (reglas de la prueba, fechas): solo los confirmados en fuentes oficiales del DEMRE.
-- **Horario (desde el 26-oct-2026):** todos los días 12 publicaciones (Chile): 08:07, 09:27, 10:47, 12:07, 13:27, 14:47, 16:07, 17:27, 18:47, 20:07, 21:27 y 22:47. Unas 74 desde la cola por semana: ~55 problemas normales y ~19 especiales. Solo las promos y los especiales se publican además como historia.
+- **Horario (desde el 6-nov-2026):** 8 al día cada 2 horas. Lun–jue: 08 E, 10 P, 12 C, 14 E, 16 P, 18 A, 20 C, 22 E · vie–dom: 08 E, 10 P, 12 C, 14 E, 16 P, 18 C, 20 A, 22 E (E ejercicio de la cola, P pizarra, C cuenta regresiva, A anuncio). Voz chilena (es-CL-LorenzoNeural, scripts/voz_cl.py) y música ochentera (musica/) en todo.
 - **Nombres de carpeta en la cola:** números de 3 cifras correlativos, mayores al máximo de cola/ y publicados/.
