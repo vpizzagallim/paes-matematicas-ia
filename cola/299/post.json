@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Coseno en contexto: escalera",
+ "gancho": "La escalera y el coseno 🪜",
+ "enunciado": "Una escalera de <b>5 m</b> está apoyada en una pared y forma con el suelo un ángulo $\\alpha$ tal que $\\cos\\alpha = 0{,}6$. ¿A qué distancia de la pared está el <b>pie de la escalera</b>?",
+ "alternativas": [
+  "3 m",
+  "2 m",
+  "$\\dfrac{25}{3}$ m",
+  "4 m"
+ ],
+ "valores": [
+  "3",
+  "2",
+  "25/3",
+  "4"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "El pie de la escalera es el cateto <b>adyacente</b> al ángulo y la escalera es la hipotenusa: $$\\cos\\alpha = \\frac{d}{5}$$",
+  "$$d = 5 \\cdot 0{,}6 = 3 \\text{ m}$$"
+ ],
+ "trampa": "Usar el seno, $\\sqrt{1 - 0{,}36} = 0{,}8$, y marcar D (4 m), o dividir $5 : 0{,}6$ (C).",
+ "clave": "$\\cos\\alpha = \\dfrac{\\text{adyacente}}{\\text{hipotenusa}}$: el lado del suelo sale multiplicando la hipotenusa por el coseno.",
+ "verificacion": "d = symbols('d'); respuesta = solve(Eq(d/5, Rational(6,10)), d)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Adyacente sobre hipotenusa",
+     "$\\cos\\alpha = \\dfrac{d}{5}$"
+    ],
+    "voz": "La distancia a la pared es el cateto adyacente, y la escalera es la hipotenusa."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$d = 5 \\cdot 0{,}6 = 3\\ \\text{m}$"
+    ],
+    "voz": "Cinco por cero coma seis: tres metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: tres metros. El coseno relaciona el adyacente con la hipotenusa. Cuatro metros es la altura que alcanza en la pared, que sale con el seno. Si divides cinco en cero coma seis, te da más que la escalera, y un cateto nunca es más largo que la hipotenusa. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "299"
+}

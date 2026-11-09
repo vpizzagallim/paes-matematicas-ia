@@ -1,0 +1,78 @@
+[
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Truco: 21 × 19 de cabeza en 3 segundos 🤯 Suma por diferencia. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "21 × 19 sin calculadora",
+   "intro_voz": "Truco PAES: multiplicar veintiuno por diecinueve en tres segundos, sin calculadora.",
+   "titulo": "Suma por diferencia",
+   "pasos": [
+    {
+     "lineas": [
+      "Busca el número del medio",
+      "$21 \\cdot 19 = (20 + 1)(20 - 1)$"
+     ],
+     "voz": "Veintiuno y diecinueve están a uno de distancia del veinte. Es veinte más uno, por veinte menos uno."
+    },
+    {
+     "lineas": [
+      "Suma por diferencia",
+      "$(a + b)(a - b) = a^2 - b^2$"
+     ],
+     "voz": "Y la suma por su diferencia es el primero al cuadrado menos el segundo al cuadrado."
+    },
+    {
+     "lineas": [
+      "Listo",
+      "$20^2 - 1^2 = 400 - 1 = 399$"
+     ],
+     "voz": "Veinte al cuadrado es cuatrocientos, menos uno: trescientos noventa y nueve."
+    }
+   ],
+   "remate": "(a + b)(a − b) = a² − b²",
+   "cierre": {
+    "voz": "Prueba con treinta y dos por veintiocho: novecientos menos dieciséis, ochocientos ochenta y cuatro. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1109-01"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: revisa las unidades 📏 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: antes de responder, revisa las unidades.",
+   "titulo": "Tip: las unidades",
+   "pasos": [
+    {
+     "lineas": [
+      "¿Metros o centímetros?"
+     ],
+     "voz": "Antes de calcular, revisa que todos los datos estén en la misma unidad: metros con metros, minutos con minutos."
+    },
+    {
+     "lineas": [
+      "Convierte al principio"
+     ],
+     "voz": "Si vienen mezclados, convierte todo al principio, no al final."
+    },
+    {
+     "lineas": [
+      "¿En qué unidad te preguntan?"
+     ],
+     "voz": "Y al terminar, fíjate en qué unidad está la respuesta que te piden."
+    }
+   ],
+   "remate": "Revisa las unidades ✅",
+   "cierre": {
+    "voz": "Muchas alternativas incorrectas son el resultado correcto en otra unidad. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1109-02"
+ }
+]

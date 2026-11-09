@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Discriminante: solución única",
+ "gancho": "Una sola solución 🎯",
+ "enunciado": "¿Para qué valor de $k$ la ecuación $$x^2 + 4x + k = 0$$ tiene <b>una única solución real</b>?",
+ "alternativas": [
+  "4",
+  "-4",
+  "2",
+  "16"
+ ],
+ "valores": [
+  "4",
+  "-4",
+  "2",
+  "16"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Hay una única solución cuando el discriminante es cero: $$\\Delta = b^2 - 4ac = 0$$",
+  "$$4^2 - 4 \\cdot 1 \\cdot k = 0 \\Rightarrow 16 = 4k \\Rightarrow k = 4$$"
+ ],
+ "trampa": "Igualar $k$ a $b^2 = 16$ y marcar D, olvidando el factor $4a$.",
+ "clave": "Discriminante $\\Delta = b^2 - 4ac$: si es positivo hay 2 soluciones, si es cero hay 1 y si es negativo, ninguna real.",
+ "verificacion": "k, x = symbols('k x'); sols = [s for s in solve(Eq(4**2 - 4*1*k, 0), k)]; assert len(solve(x**2 + 4*x + sols[0], x)) == 1; respuesta = sols[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Una solución: Δ = 0",
+     "$\\Delta = b^2 - 4ac = 0$"
+    ],
+    "voz": "Una ecuación cuadrática tiene una única solución cuando su discriminante es cero."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$16 - 4k = 0 \\Rightarrow k = 4$"
+    ],
+    "voz": "Be al cuadrado es dieciséis, y cuatro a ce es cuatro ka. Dieciséis igual a cuatro ka: ka vale cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuatro. Discriminante cero, una sola solución; positivo, dos; negativo, ninguna real. El error típico es igualar ka a dieciséis y olvidar el cuatro a ce. Compruébalo: equis más dos al cuadrado es cero. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "295"
+}

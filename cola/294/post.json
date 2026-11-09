@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Comparación de precios por unidad",
+ "gancho": "¿Conviene el pack? 🛒",
+ "enunciado": "En el supermercado, un <b>pack de 6 yogures</b> cuesta <b>\\$2.700</b> y cada yogur <b>suelto</b> cuesta <b>\\$520</b>. Si se necesitan 6 yogures, ¿cuánto se <b>ahorra</b> comprando el pack?",
+ "alternativas": [
+  "\\$70",
+  "\\$3.120",
+  "\\$420",
+  "\\$450"
+ ],
+ "valores": [
+  "70",
+  "3120",
+  "420",
+  "450"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Seis yogures sueltos cuestan $$6 \\cdot 520 = 3.120$$",
+  "El ahorro es la diferencia: $$3.120 - 2.700 = 420$$"
+ ],
+ "trampa": "Calcular solo el ahorro por yogur ($520 - 450 = 70$) y marcar A, olvidando que son 6 yogures.",
+ "clave": "Para comparar ofertas, calcula el costo de la <b>misma cantidad</b> en ambas opciones, o el precio por unidad.",
+ "verificacion": "respuesta = 6*520 - 2700",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Seis sueltos",
+     "$6 \\cdot 520 = 3.120$"
+    ],
+    "voz": "Seis yogures sueltos cuestan seis por quinientos veinte: tres mil ciento veinte pesos."
+   },
+   {
+    "lineas": [
+     "Ahorro con el pack",
+     "$3.120 - 2.700 = 420$"
+    ],
+    "voz": "El pack cuesta dos mil setecientos. La diferencia es cuatrocientos veinte pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cuatrocientos veinte pesos. Para comparar ofertas, compara la misma cantidad de producto. Ojo: setenta pesos es lo que ahorras en cada yogur, pero son seis yogures. En el pack, cada uno sale a cuatrocientos cincuenta, así que siempre conviene sacar la cuenta antes de pasar por la caja. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "294"
+}

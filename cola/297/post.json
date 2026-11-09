@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Área total de un paralelepípedo",
+ "gancho": "¿Cuánto papel de regalo? 🎁",
+ "enunciado": "Una caja de regalo mide <b>20 cm</b> de largo, <b>10 cm</b> de ancho y <b>5 cm</b> de alto. ¿Cuántos <b>cm²</b> de papel se necesitan para forrar <b>toda su superficie</b>, sin traslapes?",
+ "alternativas": [
+  "70 cm²",
+  "700 cm²",
+  "1.000 cm²",
+  "350 cm²"
+ ],
+ "valores": [
+  "70",
+  "700",
+  "1000",
+  "350"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "La caja tiene 3 pares de caras iguales: $$20 \\cdot 10 = 200,\\quad 20 \\cdot 5 = 100,\\quad 10 \\cdot 5 = 50$$",
+  "$$A = 2\\,(200 + 100 + 50) = 700 \\text{ cm}^2$$"
+ ],
+ "trampa": "Calcular el volumen ($20 \\cdot 10 \\cdot 5 = 1.000$) y marcar C, o contar cada cara una sola vez (350).",
+ "clave": "Área total de un paralelepípedo: $A = 2(ab + ac + bc)$. El volumen, $abc$, mide lo que cabe adentro, no lo que la cubre.",
+ "verificacion": "a, b, c = 20, 10, 5; respuesta = 2*(a*b + a*c + b*c)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Tres pares de caras",
+     "$200 + 100 + 50 = 350$"
+    ],
+    "voz": "La caja tiene tres pares de caras iguales: doscientos, cien y cincuenta centímetros cuadrados."
+   },
+   {
+    "lineas": [
+     "Cada una dos veces",
+     "$2 \\cdot 350 = 700\\ \\text{cm}^2$"
+    ],
+    "voz": "Cada cara aparece dos veces, arriba y abajo, adelante y atrás. Total: setecientos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: setecientos centímetros cuadrados. Para forrar se usa el área total; el volumen, mil, es lo que cabe adentro. Y si cuentas cada cara una sola vez, te quedan trescientos cincuenta, que alcanza solo para media caja. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "297"
+}

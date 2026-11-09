@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Permutaciones con repetición: anagramas",
+ "gancho": "¿Cuántas palabras con CASA? 🔤",
+ "enunciado": "¿Cuántas «palabras» distintas, con o sin sentido, se pueden formar usando <b>todas las letras</b> de la palabra <b>CASA</b>?",
+ "alternativas": [
+  "4",
+  "12",
+  "6",
+  "24"
+ ],
+ "valores": [
+  "4",
+  "12",
+  "6",
+  "24"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Si las 4 letras fueran distintas habría $4! = 24$ ordenamientos.",
+  "Pero la A se repite 2 veces, así que se divide por $2!$: $$\\frac{4!}{2!} = \\frac{24}{2} = 12$$"
+ ],
+ "trampa": "Contar $4! = 24$ y marcar D, sin considerar que intercambiar las dos A da la misma palabra.",
+ "clave": "Permutaciones con repetición: $\\dfrac{n!}{a!\\,b!\\cdots}$, dividiendo por el factorial de cada letra repetida.",
+ "verificacion": "from itertools import permutations; respuesta = Integer(len(set(permutations('CASA'))))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Si fueran distintas",
+     "$4! = 24$"
+    ],
+    "voz": "Con cuatro letras distintas habría cuatro factorial: veinticuatro ordenamientos."
+   },
+   {
+    "lineas": [
+     "La A se repite",
+     "$\\dfrac{4!}{2!} = 12$"
+    ],
+    "voz": "Pero hay dos A, y cambiarlas de lugar da la misma palabra. Dividimos por dos factorial: doce."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: doce. Cuando una letra se repite, divide por el factorial de sus repeticiones; si no, cuentas cada palabra dos veces. Por ejemplo, con la palabra ala serían tres factorial dividido en dos factorial: tres palabras. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "301"
+}

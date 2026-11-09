@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad de una intersección",
+ "gancho": "Hombre Y en Metro 🚇",
+ "enunciado": "En un curso de <b>40 estudiantes</b>, <b>22</b> llegan en Metro y el resto en micro. De los que llegan en Metro, <b>12 son mujeres</b>. Si se elige al azar un estudiante del curso, ¿cuál es la probabilidad de que sea <b>hombre y llegue en Metro</b>?",
+ "alternativas": [
+  "$\\dfrac{3}{10}$",
+  "$\\dfrac{11}{20}$",
+  "$\\dfrac{5}{11}$",
+  "$\\dfrac{1}{4}$"
+ ],
+ "valores": [
+  "3/10",
+  "11/20",
+  "5/11",
+  "1/4"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Hombres que llegan en Metro: $22 - 12 = 10$.",
+  "Sobre el total del curso: $$P = \\frac{10}{40} = \\frac{1}{4}$$"
+ ],
+ "trampa": "Dividir por los 22 del Metro y marcar C ($\\tfrac{10}{22}$): eso sería la probabilidad <i>dado que</i> llega en Metro.",
+ "clave": "Si se elige del curso completo, el denominador es el total; solo con «dado que» se reduce el universo.",
+ "verificacion": "metro, mujeres_metro, total = 22, 12, 40; respuesta = Rational(metro - mujeres_metro, total)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Hombres en Metro",
+     "$22 - 12 = 10$"
+    ],
+    "voz": "De los veintidós que llegan en Metro, doce son mujeres. Entonces diez son hombres."
+   },
+   {
+    "lineas": [
+     "Sobre todo el curso",
+     "$\\dfrac{10}{40} = \\dfrac{1}{4}$"
+    ],
+    "voz": "Se elige del curso completo, así que dividimos por cuarenta: un cuarto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: un cuarto. Si no dice dado que, el denominador es el total. Diez veintidosavos sería la probabilidad de ser hombre sabiendo que llega en Metro. Y lee bien: hombre y Metro al mismo tiempo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "298"
+}
