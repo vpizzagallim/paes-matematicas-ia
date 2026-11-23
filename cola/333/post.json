@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuación lineal: tarifa de taxi",
+ "gancho": "¿Cuántos kilómetros anduvo? 🚕",
+ "enunciado": "Un taxi cobra <b>\\$400</b> fijos más <b>\\$160</b> por cada <b>200 m</b> recorridos. Si un viaje costó <b>\\$5.200</b>, ¿cuántos <b>kilómetros</b> recorrió?",
+ "alternativas": [
+  "30 km",
+  "3 km",
+  "6 km",
+  "7 km"
+ ],
+ "valores": [
+  "30",
+  "3",
+  "6",
+  "7"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Si $n$ es el número de tramos de 200 m: $$400 + 160n = 5.200 \\Rightarrow n = 30$$",
+  "La distancia es $$30 \\cdot 200 \\text{ m} = 6.000 \\text{ m} = 6 \\text{ km}$$"
+ ],
+ "trampa": "Responder el número de tramos (A), o sumar los \\$400 en vez de restarlos: $5.600 : 160 = 35$ tramos, 7 km (D).",
+ "clave": "Ojo con las unidades: la incógnita suele ser una cantidad de <b>tramos</b>, que después hay que convertir.",
+ "verificacion": "n = symbols('n'); tramos = solve(Eq(400 + 160*n, 5200), n)[0]; respuesta = tramos*200/Integer(1000)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$400 + 160n = 5.200$"
+    ],
+    "voz": "Cuatrocientos fijos más ciento sesenta por cada tramo igual a cinco mil doscientos. Ene vale treinta tramos."
+   },
+   {
+    "lineas": [
+     "Pasamos a kilómetros",
+     "$30 \\cdot 200 \\text{ m} = 6 \\text{ km}$"
+    ],
+    "voz": "Treinta tramos de doscientos metros son seis mil metros: seis kilómetros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: seis kilómetros. La ecuación te da tramos, no kilómetros. Antes de marcar, revisa en qué unidad te preguntan. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "333"
+}

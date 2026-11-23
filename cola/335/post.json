@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Promedio al agregar un dato",
+ "gancho": "La nota que salvó el promedio 📊",
+ "enunciado": "Camila tiene <b>5 notas</b> con promedio <b>5,0</b>. Si obtiene un <b>7,0</b> como sexta nota, todas con igual ponderación, ¿cuál es su nuevo promedio?",
+ "alternativas": [
+  "≈ 5,3",
+  "5,4",
+  "6,0",
+  "≈ 5,2"
+ ],
+ "valores": [
+  "16/3",
+  "27/5",
+  "6",
+  "26/5"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "La suma de las 5 notas es $$5 \\cdot 5{,}0 = 25$$",
+  "Con la sexta nota: $$\\frac{25 + 7}{6} = \\frac{32}{6} \\approx 5{,}3$$"
+ ],
+ "trampa": "Promediar solo $5{,}0$ y $7{,}0$ (C), o dividir por 5 en vez de 6 (B).",
+ "clave": "Para agregar datos a un promedio, recupera primero la <b>suma total</b>: promedio × cantidad.",
+ "verificacion": "suma = 5*5; respuesta = Rational(suma + 7, 6)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma de las notas",
+     "$5 \\cdot 5{,}0 = 25$"
+    ],
+    "voz": "Cinco notas con promedio cinco suman veinticinco."
+   },
+   {
+    "lineas": [
+     "Nuevo promedio",
+     "$\\dfrac{25 + 7}{6} \\approx 5{,}3$"
+    ],
+    "voz": "Sumamos el siete y dividimos por seis notas: treinta y dos sextos, cerca de cinco coma tres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: aproximadamente cinco coma tres. Un siete no te sube el promedio a seis: pesa lo mismo que cada una de las otras notas. Siempre vuelve a la suma total. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "335"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Composición de traslaciones",
+ "gancho": "Dos traslaciones seguidas ➡️",
+ "enunciado": "El punto $P(1,\\ 2)$ se traslada según el vector $\\vec{u} = (3,\\ -1)$ y, luego, el punto obtenido se traslada según $\\vec{v} = (-5,\\ 4)$. ¿Cuáles son las coordenadas del punto final?",
+ "alternativas": [
+  "$(-2,\\ 3)$",
+  "$(-1,\\ -1)$",
+  "$(9,\\ 1)$",
+  "$(-1,\\ 5)$"
+ ],
+ "valores": [
+  "-2 + 3*I",
+  "-1 - I",
+  "9 + I",
+  "-1 + 5*I"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Primera traslación: $$(1 + 3,\\ 2 - 1) = (4,\\ 1)$$",
+  "Segunda traslación: $$(4 - 5,\\ 1 + 4) = (-1,\\ 5)$$"
+ ],
+ "trampa": "Sumar solo los vectores y olvidar el punto, $(-2,\\ 3)$ (A), o restar el segundo vector en vez de sumarlo (C).",
+ "clave": "Dos traslaciones seguidas equivalen a <b>una sola</b>, con vector $\\vec{u} + \\vec{v}$.",
+ "verificacion": "P = Matrix([1, 2]); u = Matrix([3, -1]); v = Matrix([-5, 4]); F = P + u + v; respuesta = F[0] + F[1]*I",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Primera",
+     "$(1,\\ 2) + (3,\\ -1) = (4,\\ 1)$"
+    ],
+    "voz": "Sumamos el primer vector: el punto queda en cuatro coma uno."
+   },
+   {
+    "lineas": [
+     "Segunda",
+     "$(4,\\ 1) + (-5,\\ 4) = (-1,\\ 5)$"
+    ],
+    "voz": "Sumamos el segundo: menos uno coma cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: menos uno, cinco. Trasladar es sumar el vector, coordenada por coordenada. Y si son dos traslaciones, puedes sumar primero los vectores: menos dos, tres, y después al punto. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "354"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Capacidad de un acuario",
+ "gancho": "Llenando el acuario 🐠",
+ "enunciado": "Un acuario con forma de paralelepípedo mide <b>60 cm</b> de largo, <b>30 cm</b> de ancho y <b>40 cm</b> de alto. ¿Cuántos <b>litros</b> de agua caben?",
+ "alternativas": [
+  "130 L",
+  "720 L",
+  "72 L",
+  "7,2 L"
+ ],
+ "valores": [
+  "130",
+  "720",
+  "72",
+  "36/5"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Volumen: $$60 \\cdot 30 \\cdot 40 = 72.000 \\text{ cm}^3$$",
+  "Como $1 \\text{ L} = 1.000 \\text{ cm}^3$: $$72.000 : 1.000 = 72 \\text{ L}$$"
+ ],
+ "trampa": "Dividir por 100 en vez de 1.000 (B), o sumar las medidas, $60 + 30 + 40 = 130$ (A).",
+ "clave": "$1 \\text{ litro} = 1 \\text{ dm}^3 = 1.000 \\text{ cm}^3$.",
+ "verificacion": "v = 60*30*40; respuesta = Rational(v, 1000)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Volumen",
+     "$60 \\cdot 30 \\cdot 40 = 72.000 \\text{ cm}^3$"
+    ],
+    "voz": "Largo por ancho por alto: setenta y dos mil centímetros cúbicos."
+   },
+   {
+    "lineas": [
+     "A litros",
+     "$72.000 : 1.000 = 72 \\text{ L}$"
+    ],
+    "voz": "Un litro son mil centímetros cúbicos. Entonces caben setenta y dos litros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: setenta y dos litros. Un litro es un cubo de diez centímetros por lado, o sea, mil centímetros cúbicos. Si divides por cien, tu acuario se convierte en piscina. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "347"
+}

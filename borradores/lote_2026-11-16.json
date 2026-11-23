@@ -1,0 +1,1058 @@
+[
+ {
+  "nivel": "M1",
+  "eje": "Números",
+  "tema": "Cambio de moneda con comisión",
+  "gancho": "Dólares para Mendoza ✈️",
+  "enunciado": "Sofía tiene <b>\\$190.000</b> para su viaje a Mendoza. La casa de cambio le cobra una <b>comisión de \\$9.500</b>, que se descuenta antes de cambiar, y vende cada dólar a <b>\\$950</b>. ¿Cuántos <b>dólares</b> recibe?",
+  "alternativas": [
+   "210",
+   "200",
+   "10",
+   "190"
+  ],
+  "valores": [
+   "210",
+   "200",
+   "10",
+   "190"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "Primero se descuenta la comisión: $$190.000 - 9.500 = 180.500$$",
+   "Luego se divide por el valor del dólar: $$180.500 : 950 = 190$$"
+  ],
+  "trampa": "Olvidar la comisión y dividir $190.000 : 950 = 200$, marcando B, o sumarla en vez de restarla (A).",
+  "clave": "Cuando hay cobros previos, primero se ajusta el monto y después se convierte: <b>pesos ÷ precio del dólar</b>.",
+  "verificacion": "pesos, comision, dolar = 190000, 9500, 950; respuesta = Rational(pesos - comision, dolar)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Descontamos la comisión",
+      "$190.000 - 9.500 = 180.500$"
+     ],
+     "voz": "Primero se descuenta la comisión: quedan ciento ochenta mil quinientos pesos."
+    },
+    {
+     "lineas": [
+      "Pasamos a dólares",
+      "$180.500 : 950 = 190$"
+     ],
+     "voz": "Cada dólar cuesta novecientos cincuenta. Dividimos y salen ciento noventa dólares."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: ciento noventa dólares. Para convertir pesos a dólares se divide por el precio del dólar, pero solo con la plata que realmente se cambia. Si olvidas la comisión te salen doscientos, y en la casa de cambio no te van a regalar esos diez dólares. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Números",
+  "tema": "Recargo por pagar en cuotas",
+  "gancho": "¿Contado o en cuotas? 📱",
+  "enunciado": "Un celular cuesta <b>\\$240.000</b> al contado, o bien <b>12 cuotas de \\$22.000</b>. ¿En qué <b>porcentaje</b> aumenta el precio si se paga en cuotas?",
+  "alternativas": [
+   "110%",
+   "10%",
+   "≈ 9,1%",
+   "24%"
+  ],
+  "valores": [
+   "110",
+   "10",
+   "100/11",
+   "24"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "En cuotas se paga $$12 \\cdot 22.000 = 264.000$$",
+   "El recargo es $24.000$, y se compara con el precio <b>original</b>: $$\\frac{24.000}{240.000} = 0{,}1 = 10\\%$$"
+  ],
+  "trampa": "Dividir el recargo por el precio en cuotas ($24.000 : 264.000 ≈ 9,1\\%$) y marcar C, o confundir el factor 1,1 con 110% (A).",
+  "clave": "El porcentaje de aumento siempre se calcula sobre el <b>valor inicial</b>: $\\dfrac{\\text{final} - \\text{inicial}}{\\text{inicial}}$.",
+  "verificacion": "contado, cuotas = 240000, 12*22000; respuesta = Rational(cuotas - contado, contado)*100",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Total en cuotas",
+      "$12 \\cdot 22.000 = 264.000$"
+     ],
+     "voz": "Doce cuotas de veintidós mil suman doscientos sesenta y cuatro mil pesos."
+    },
+    {
+     "lineas": [
+      "Recargo sobre el contado",
+      "$\\dfrac{24.000}{240.000} = 10\\%$"
+     ],
+     "voz": "Son veinticuatro mil pesos más. Sobre el precio al contado, eso es un diez por ciento."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: diez por ciento. El aumento porcentual se calcula sobre el valor inicial, no sobre el final. Si divides por el precio en cuotas te sale nueve coma uno, y ese no es el recargo que te cobra la tienda. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Números",
+  "tema": "Potencias en contexto: cadena de mensajes",
+  "gancho": "El meme que se viralizó 📲",
+  "enunciado": "Benja envía un meme a <b>3 amigos</b> (ronda 1). En la ronda 2, cada uno lo reenvía a <b>3 personas nuevas</b>, y así sucesivamente. ¿Cuántas personas reciben el meme <b>en la ronda 5</b>?",
+  "alternativas": [
+   "15",
+   "243",
+   "363",
+   "125"
+  ],
+  "valores": [
+   "15",
+   "243",
+   "363",
+   "125"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "En cada ronda el número de personas se multiplica por 3: $$3,\\ 9,\\ 27,\\ 81,\\ \\ldots$$",
+   "En la ronda 5: $$3^5 = 243$$"
+  ],
+  "trampa": "Multiplicar $3 \\cdot 5 = 15$ y marcar A, invertir la potencia ($5^3 = 125$) o sumar todas las rondas (363).",
+  "clave": "Si algo se multiplica por el mismo factor en cada etapa, después de $n$ etapas se usa una <b>potencia</b>: $a^n$.",
+  "verificacion": "rondas = [3]\nfor _ in range(4): rondas.append(rondas[-1]*3)\nrespuesta = Integer(rondas[-1])",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Se multiplica por tres",
+      "$3,\\ 9,\\ 27,\\ 81,\\ \\ldots$"
+     ],
+     "voz": "En cada ronda, cada persona lo manda a tres. Tres, nueve, veintisiete, ochenta y uno."
+    },
+    {
+     "lineas": [
+      "Ronda cinco",
+      "$3^5 = 243$"
+     ],
+     "voz": "En la quinta ronda son tres elevado a cinco: doscientas cuarenta y tres personas."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: doscientas cuarenta y tres. Cuando algo se multiplica por lo mismo en cada paso, piensa en potencias. Ojo: si sumas todas las rondas te dan trescientos sesenta y tres, pero eso es el total acumulado, no lo que pasa solo en la quinta. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Números",
+  "tema": "Precios terminados en 990",
+  "gancho": "El truco del 990 🛒",
+  "enunciado": "En el supermercado, Martina compra productos de <b>\\$1.990</b>, <b>\\$2.990</b>, <b>\\$990</b> y <b>\\$4.990</b>. Si paga con <b>\\$20.000</b>, ¿cuánto <b>vuelto</b> recibe?",
+  "alternativas": [
+   "\\$10.960",
+   "\\$9.000",
+   "\\$9.040",
+   "\\$8.960"
+  ],
+  "valores": [
+   "10960",
+   "9000",
+   "9040",
+   "8960"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Cada precio es $10$ menos que un número redondo: $$2.000 + 3.000 + 1.000 + 5.000 - 40 = 10.960$$",
+   "El vuelto es $$20.000 - 10.960 = 9.040$$"
+  ],
+  "trampa": "Redondear y olvidar restar los \\$40 (marcar B), o sumarlos en vez de restarlos (D).",
+  "clave": "Con precios terminados en 990, redondea hacia arriba y después <b>resta 10 por cada producto</b>.",
+  "verificacion": "total = 1990 + 2990 + 990 + 4990; respuesta = Integer(20000 - total)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Redondeamos y corregimos",
+      "$11.000 - 40 = 10.960$"
+     ],
+     "voz": "Cada precio es diez pesos menos que un número redondo. Once mil menos cuarenta: diez mil novecientos sesenta."
+    },
+    {
+     "lineas": [
+      "Vuelto",
+      "$20.000 - 10.960 = 9.040$"
+     ],
+     "voz": "Veinte mil menos eso: nueve mil cuarenta pesos de vuelto."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: nueve mil cuarenta pesos. Con precios terminados en noventa, redondea y luego corrige diez por cada producto. Si te quedas solo con el redondeo, te faltan cuarenta pesos, y en la PAES esa diferencia es otra alternativa. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Álgebra y funciones",
+  "tema": "Simplificación de fracciones algebraicas",
+  "gancho": "Factoriza y vuela 🚀",
+  "enunciado": "¿Cuál es el valor de la expresión $$\\frac{x^2 - 9}{x - 3}$$ cuando $x = 97$?",
+  "alternativas": [
+   "1",
+   "94",
+   "9.400",
+   "100"
+  ],
+  "valores": [
+   "1",
+   "94",
+   "9400",
+   "100"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "Se factoriza el numerador como suma por diferencia: $$\\frac{(x + 3)(x - 3)}{x - 3} = x + 3$$",
+   "Con $x = 97$: $$97 + 3 = 100$$"
+  ],
+  "trampa": "Calcular solo el numerador, $97^2 - 9 = 9.400$, y marcar C, o simplificar mal y quedarse con $x - 3 = 94$ (B).",
+  "clave": "Antes de reemplazar, <b>factoriza y simplifica</b>: $a^2 - b^2 = (a + b)(a - b)$.",
+  "verificacion": "x = symbols('x'); respuesta = ((x**2 - 9)/(x - 3)).subs(x, 97)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Factorizamos",
+      "$\\dfrac{(x+3)(x-3)}{x-3} = x + 3$"
+     ],
+     "voz": "Equis al cuadrado menos nueve es suma por diferencia: equis más tres por equis menos tres. Se simplifica y queda equis más tres."
+    },
+    {
+     "lineas": [
+      "Reemplazamos",
+      "$97 + 3 = 100$"
+     ],
+     "voz": "Noventa y siete más tres: cien."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: cien. Antes de reemplazar números grandes, factoriza y simplifica. Te ahorras calcular noventa y siete al cuadrado, y además evitas el error de quedarte con nueve mil cuatrocientos, que es solo el numerador. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Álgebra y funciones",
+  "tema": "Ceros de una función cuadrática",
+  "gancho": "¿Dónde corta al eje X? 📉",
+  "enunciado": "La gráfica de la función $$f(x) = x^2 - 2x - 15$$ corta al eje $X$ en dos puntos. ¿Cuál es la <b>distancia</b> entre esos dos puntos?",
+  "alternativas": [
+   "8",
+   "15",
+   "1",
+   "2"
+  ],
+  "valores": [
+   "8",
+   "15",
+   "1",
+   "2"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "Se iguala a cero y se factoriza: $$x^2 - 2x - 15 = (x - 5)(x + 3) = 0$$",
+   "Los ceros son $x = 5$ y $x = -3$; la distancia es $$5 - (-3) = 8$$"
+  ],
+  "trampa": "Restar $5 - 3 = 2$ olvidando el signo negativo y marcar D, o confundir con el vértice, $x = 1$ (C).",
+  "clave": "Los puntos donde la parábola corta al eje $X$ son las soluciones de $f(x) = 0$.",
+  "verificacion": "x = symbols('x'); r = solve(x**2 - 2*x - 15, x); respuesta = max(r) - min(r)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Igualamos a cero",
+      "$(x - 5)(x + 3) = 0$"
+     ],
+     "voz": "Cortar el eje equis es que efe de equis valga cero. Factorizamos: equis menos cinco por equis más tres."
+    },
+    {
+     "lineas": [
+      "Distancia",
+      "$5 - (-3) = 8$"
+     ],
+     "voz": "Los ceros son cinco y menos tres. La distancia entre ellos es ocho."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: ocho. Los cortes con el eje equis salen de igualar la función a cero. Cuidado con el menos tres: la distancia es cinco menos menos tres, no cinco menos tres. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Álgebra y funciones",
+  "tema": "Inecuación doble en contexto",
+  "gancho": "Plan de datos a tu medida 📶",
+  "enunciado": "Un plan de datos cobra <b>\\$5.000</b> fijos más <b>\\$800 por cada GB</b>. Josefa quiere gastar <b>entre \\$9.000 y \\$13.000</b>, ambos incluidos. ¿Cuántas cantidades <b>enteras</b> de GB puede contratar?",
+  "alternativas": [
+   "6",
+   "10",
+   "5",
+   "4"
+  ],
+  "valores": [
+   "6",
+   "10",
+   "5",
+   "4"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "Se plantea: $$9.000 \\le 5.000 + 800g \\le 13.000$$",
+   "Restando 5.000 y dividiendo por 800: $$5 \\le g \\le 10$$ Los enteros son 5, 6, 7, 8, 9 y 10: <b>6 valores</b>."
+  ],
+  "trampa": "Restar $10 - 5 = 5$ y marcar C, olvidando que ambos extremos se cuentan.",
+  "clave": "En una inecuación doble se hace la <b>misma operación en las tres partes</b>. Para contar enteros entre $a$ y $b$, inclusive: $b - a + 1$.",
+  "verificacion": "respuesta = Integer(len([g for g in range(0, 100) if 9000 <= 5000 + 800*g <= 13000]))",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Planteamos",
+      "$9.000 \\le 5.000 + 800g \\le 13.000$"
+     ],
+     "voz": "El costo es cinco mil más ochocientos por ge, y debe quedar entre nueve mil y trece mil."
+    },
+    {
+     "lineas": [
+      "Despejamos",
+      "$5 \\le g \\le 10$"
+     ],
+     "voz": "Restamos cinco mil y dividimos por ochocientos: ge va de cinco a diez. Son seis valores."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: seis. Al contar enteros entre dos números incluidos, se resta y se suma uno. Si solo restas, diez menos cinco, te sale cinco y dejas fuera un extremo. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Álgebra y funciones",
+  "tema": "Números pares consecutivos",
+  "gancho": "Tres pares seguidos 🔢",
+  "enunciado": "La suma de <b>tres números pares consecutivos</b> es <b>138</b>. ¿Cuál es el <b>mayor</b> de ellos?",
+  "alternativas": [
+   "44",
+   "48",
+   "47",
+   "46"
+  ],
+  "valores": [
+   "44",
+   "48",
+   "47",
+   "46"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "Si el menor es $n$, los otros son $n + 2$ y $n + 4$: $$n + (n + 2) + (n + 4) = 138$$",
+   "$$3n + 6 = 138 \\Rightarrow n = 44$$ El mayor es $44 + 4 = 48$."
+  ],
+  "trampa": "Responder con el menor (44, marcar A) o el del medio (46, marcar D), o usar consecutivos de 1 en 1 (C).",
+  "clave": "Pares (o impares) consecutivos van de 2 en 2: $n$, $n + 2$, $n + 4$. Fíjate qué número te preguntan.",
+  "verificacion": "n = symbols('n'); menor = solve(Eq(n + (n + 2) + (n + 4), 138), n)[0]; assert menor % 2 == 0; respuesta = menor + 4",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "De dos en dos",
+      "$n + (n+2) + (n+4) = 138$"
+     ],
+     "voz": "Si el menor es ene, los siguientes pares son ene más dos y ene más cuatro."
+    },
+    {
+     "lineas": [
+      "Despejamos",
+      "$3n + 6 = 138 \\Rightarrow n = 44$"
+     ],
+     "voz": "Tres ene más seis es ciento treinta y ocho, así que ene es cuarenta y cuatro. El mayor es cuarenta y ocho."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: cuarenta y ocho. Los pares consecutivos van de dos en dos. Y lee bien qué te preguntan: cuarenta y cuatro es el menor y cuarenta y seis el del medio, y los dos aparecen como alternativas. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Área de un deltoide: el volantín",
+  "gancho": "El volantín de septiembre 🪁",
+  "enunciado": "Un volantín tiene forma de <b>deltoide</b>, con diagonales de <b>60 cm</b> y <b>40 cm</b>. ¿Cuál es su <b>área</b>?",
+  "alternativas": [
+   "2.400 cm²",
+   "1.200 cm²",
+   "600 cm²",
+   "200 cm²"
+  ],
+  "valores": [
+   "2400",
+   "1200",
+   "600",
+   "200"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "El área de un deltoide (o de un rombo) es el producto de las diagonales dividido por 2: $$A = \\frac{d_1 \\cdot d_2}{2}$$",
+   "$$A = \\frac{60 \\cdot 40}{2} = 1.200 \\text{ cm}^2$$"
+  ],
+  "trampa": "Multiplicar las diagonales sin dividir por 2 (2.400, marcar A), o sumar las diagonales (D).",
+  "clave": "Deltoide y rombo: $A = \\dfrac{d_1 \\cdot d_2}{2}$, porque ocupan la mitad del rectángulo formado por sus diagonales.",
+  "verificacion": "d1, d2 = 60, 40; respuesta = Rational(d1*d2, 2)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Fórmula del deltoide",
+      "$A = \\dfrac{d_1 \\cdot d_2}{2}$"
+     ],
+     "voz": "El área de un deltoide es diagonal por diagonal, dividido en dos."
+    },
+    {
+     "lineas": [
+      "Reemplazamos",
+      "$\\dfrac{60 \\cdot 40}{2} = 1.200$"
+     ],
+     "voz": "Sesenta por cuarenta es dos mil cuatrocientos. La mitad: mil doscientos centímetros cuadrados."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: mil doscientos centímetros cuadrados. El volantín ocupa justo la mitad del rectángulo que forman sus diagonales. Por eso, si no divides por dos, te sale el doble: dos mil cuatrocientos. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Volumen de un prisma triangular",
+  "gancho": "¿Cuánto aire cabe en la carpa? ⛺",
+  "enunciado": "Una carpa tiene forma de <b>prisma triangular</b>. Su cara frontal es un triángulo de <b>2 m de base</b> y <b>1,5 m de altura</b>, y la carpa mide <b>3 m de largo</b>. ¿Cuál es su <b>volumen</b>?",
+  "alternativas": [
+   "1,5 m³",
+   "4,5 m³",
+   "9 m³",
+   "6,5 m³"
+  ],
+  "valores": [
+   "3/2",
+   "9/2",
+   "9",
+   "13/2"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "El área del triángulo frontal es $$\\frac{2 \\cdot 1{,}5}{2} = 1{,}5 \\text{ m}^2$$",
+   "El volumen del prisma es área basal por largo: $$1{,}5 \\cdot 3 = 4{,}5 \\text{ m}^3$$"
+  ],
+  "trampa": "Olvidar dividir por 2 el área del triángulo (9 m³, marcar C) o quedarse solo con el área (A).",
+  "clave": "Volumen de cualquier prisma: <b>área de la base × largo</b>. Si la base es un triángulo, su área lleva el «dividido por 2».",
+  "verificacion": "b, h, largo = 2, Rational(3, 2), 3; respuesta = b*h/2*largo",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Área del triángulo",
+      "$\\dfrac{2 \\cdot 1{,}5}{2} = 1{,}5$"
+     ],
+     "voz": "La cara frontal es un triángulo: dos por uno coma cinco, dividido en dos, da uno coma cinco metros cuadrados."
+    },
+    {
+     "lineas": [
+      "Por el largo",
+      "$1{,}5 \\cdot 3 = 4{,}5\\ \\text{m}^3$"
+     ],
+     "voz": "Lo multiplicamos por los tres metros de largo: cuatro coma cinco metros cúbicos."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: cuatro coma cinco metros cúbicos. Todo prisma es área basal por largo. El error típico es olvidar que el área del triángulo se divide por dos, y ahí te sale nueve. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Distancia entre dos puntos",
+  "gancho": "De la casa al liceo 🗺️",
+  "enunciado": "En un plano de la comuna, con unidades en kilómetros, la casa de Martina está en $(1, 2)$ y su liceo en $(7, 10)$. ¿Cuál es la <b>distancia en línea recta</b> entre ambos?",
+  "alternativas": [
+   "100 km",
+   "$4\\sqrt{13}$ km",
+   "10 km",
+   "14 km"
+  ],
+  "valores": [
+   "100",
+   "4*sqrt(13)",
+   "10",
+   "14"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Las diferencias son $7 - 1 = 6$ y $10 - 2 = 8$. Por Pitágoras: $$d = \\sqrt{6^2 + 8^2}$$",
+   "$$d = \\sqrt{36 + 64} = \\sqrt{100} = 10$$"
+  ],
+  "trampa": "Sumar las diferencias, $6 + 8 = 14$ (marcar D), u olvidar la raíz (A).",
+  "clave": "Distancia entre dos puntos: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$, que es Pitágoras en el plano.",
+  "verificacion": "respuesta = sqrt((7 - 1)**2 + (10 - 2)**2)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Diferencias",
+      "$\\Delta x = 6,\\ \\Delta y = 8$"
+     ],
+     "voz": "Restamos las coordenadas: seis en equis y ocho en ye."
+    },
+    {
+     "lineas": [
+      "Pitágoras",
+      "$\\sqrt{36 + 64} = 10$"
+     ],
+     "voz": "Treinta y seis más sesenta y cuatro es cien, y la raíz de cien es diez kilómetros."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: diez kilómetros. La distancia en línea recta es Pitágoras con las diferencias de coordenadas. Catorce sería caminar seis y después ocho por las calles, no en línea recta. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Geometría",
+  "tema": "Ángulos de un triángulo isósceles",
+  "gancho": "El techo de la casa 🏠",
+  "enunciado": "El frontón de un techo es un <b>triángulo isósceles</b>. El ángulo de la punta, entre los dos lados iguales, mide <b>40°</b>. ¿Cuánto mide <b>cada uno</b> de los otros dos ángulos?",
+  "alternativas": [
+   "40°",
+   "50°",
+   "140°",
+   "70°"
+  ],
+  "valores": [
+   "40",
+   "50",
+   "140",
+   "70"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "Los ángulos de un triángulo suman 180°: $$180° - 40° = 140°$$",
+   "En un isósceles, los ángulos basales son iguales: $$140° : 2 = 70°$$"
+  ],
+  "trampa": "Olvidar dividir por 2 y marcar C (140°), o creer que los tres ángulos son iguales a 40° (A).",
+  "clave": "Triángulo isósceles: los ángulos opuestos a los lados iguales son <b>iguales</b>. Siempre suman 180° en total.",
+  "verificacion": "a = symbols('a'); respuesta = solve(Eq(40 + 2*a, 180), a)[0]",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Suma 180°",
+      "$180° - 40° = 140°$"
+     ],
+     "voz": "Los tres ángulos suman ciento ochenta. Quitando los cuarenta de la punta, quedan ciento cuarenta."
+    },
+    {
+     "lineas": [
+      "Dos ángulos iguales",
+      "$140° : 2 = 70°$"
+     ],
+     "voz": "Como es isósceles, los otros dos son iguales: setenta grados cada uno."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: setenta grados. En un isósceles, los ángulos de la base son iguales. Ciento cuarenta es lo que suman los dos juntos, no cada uno. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Probabilidad y estadística",
+  "tema": "Diagrama de cajón",
+  "gancho": "¿Qué hay dentro de la caja? 📦",
+  "enunciado": "En un <b>diagrama de cajón</b> sobre el tiempo que demoran los estudiantes en llegar al liceo, el primer cuartil es <b>15 min</b> y el tercer cuartil es <b>35 min</b>. ¿Qué <b>porcentaje</b> de los estudiantes demora entre 15 y 35 minutos, aproximadamente?",
+  "alternativas": [
+   "20%",
+   "25%",
+   "75%",
+   "50%"
+  ],
+  "valores": [
+   "20",
+   "25",
+   "75",
+   "50"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "Bajo el primer cuartil queda el 25% de los datos y bajo el tercero, el 75%.",
+   "Entre ambos: $$75\\% - 25\\% = 50\\%$$"
+  ],
+  "trampa": "Confundir los cuartiles con porcentajes acumulados distintos (25% o 75%), o restar los minutos, $35 - 15 = 20$ (A).",
+  "clave": "La «caja» del diagrama va de $Q_1$ a $Q_3$ y siempre contiene cerca del <b>50% central</b> de los datos.",
+  "verificacion": "Q1, Q3 = 25, 75; respuesta = Integer(Q3 - Q1)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Los cuartiles",
+      "$Q_1 \\to 25\\%,\\ Q_3 \\to 75\\%$"
+     ],
+     "voz": "Bajo el primer cuartil está el veinticinco por ciento, y bajo el tercero, el setenta y cinco."
+    },
+    {
+     "lineas": [
+      "La caja",
+      "$75\\% - 25\\% = 50\\%$"
+     ],
+     "voz": "Entre los dos queda la mitad de los estudiantes: el cincuenta por ciento."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: cincuenta por ciento. La caja del diagrama siempre encierra la mitad central de los datos, sin importar los números. Y no restes los minutos: veinte es un tiempo, no un porcentaje. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Probabilidad y estadística",
+  "tema": "Probabilidad con ruleta",
+  "gancho": "Gira la ruleta 🎡",
+  "enunciado": "En una kermés, una ruleta circular tiene un sector <b>premiado</b> cuyo ángulo central mide <b>72°</b>. Si la ruleta se detiene al azar, ¿cuál es la probabilidad de ganar el premio?",
+  "alternativas": [
+   "$\\dfrac{1}{72}$",
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{18}{25}$",
+   "$\\dfrac{1}{5}$"
+  ],
+  "valores": [
+   "1/72",
+   "1/4",
+   "18/25",
+   "1/5"
+  ],
+  "correcta": 3,
+  "pasos": [
+   "La vuelta completa mide 360°, así que $$P = \\frac{72}{360}$$",
+   "Simplificando: $$\\frac{72}{360} = \\frac{1}{5}$$"
+  ],
+  "trampa": "Dividir por 100 en vez de 360 ($\\tfrac{72}{100}$, marcar C) o creer que solo un número de 72 sirve (A).",
+  "clave": "Con sectores circulares, la probabilidad es <b>ángulo del sector ÷ 360°</b>.",
+  "verificacion": "respuesta = Rational(72, 360)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Sobre la vuelta completa",
+      "$P = \\dfrac{72}{360}$"
+     ],
+     "voz": "Toda la ruleta mide trescientos sesenta grados. El sector premiado ocupa setenta y dos."
+    },
+    {
+     "lineas": [
+      "Simplificamos",
+      "$\\dfrac{72}{360} = \\dfrac{1}{5}$"
+     ],
+     "voz": "Setenta y dos trescientos sesentavos es lo mismo que un quinto."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la de: un quinto. En una ruleta, la probabilidad es el ángulo del sector dividido por trescientos sesenta. El error típico es dividir por cien, como si los grados fueran porcentajes. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Probabilidad y estadística",
+  "tema": "Porcentajes en una tabla de frecuencias",
+  "gancho": "¿Cómo llegas al liceo? 🚌",
+  "enunciado": "Se encuestó a <b>200 estudiantes</b> sobre cómo llegan al liceo: <b>Metro 80</b>, <b>micro 60</b>, <b>a pie 40</b> y <b>bicicleta 20</b>. ¿Qué porcentaje <b>no</b> usa ni Metro ni micro?",
+  "alternativas": [
+   "30%",
+   "70%",
+   "20%",
+   "60%"
+  ],
+  "valores": [
+   "30",
+   "70",
+   "20",
+   "60"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "No usan Metro ni micro los que van a pie o en bicicleta: $$40 + 20 = 60$$",
+   "Sobre el total: $$\\frac{60}{200} = 0{,}3 = 30\\%$$"
+  ],
+  "trampa": "Responder 60 (la cantidad de estudiantes, no el porcentaje, marcar D) o calcular el porcentaje de los que sí usan Metro o micro (B).",
+  "clave": "Porcentaje = $\\dfrac{\\text{parte}}{\\text{total}} \\cdot 100$. Lee si te piden cantidad o porcentaje.",
+  "verificacion": "datos = {'metro': 80, 'micro': 60, 'pie': 40, 'bici': 20}; total = sum(datos.values()); assert total == 200; respuesta = Rational(datos['pie'] + datos['bici'], total)*100",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Ni Metro ni micro",
+      "$40 + 20 = 60$"
+     ],
+     "voz": "Los que no usan ni Metro ni micro son los que van a pie o en bicicleta: sesenta."
+    },
+    {
+     "lineas": [
+      "Porcentaje",
+      "$\\dfrac{60}{200} = 30\\%$"
+     ],
+     "voz": "Sesenta de doscientos es el treinta por ciento."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: treinta por ciento. Primero identifica la parte, después divide por el total. Sesenta es la cantidad de estudiantes, y setenta por ciento es justo lo contrario de lo que te preguntan. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M1",
+  "eje": "Probabilidad y estadística",
+  "tema": "Rango intercuartílico",
+  "gancho": "¿Qué tan dispersos? 📊",
+  "enunciado": "En un ensayo PAES, los puntajes de un curso tienen <b>mínimo 410</b>, <b>Q1 = 520</b>, <b>mediana 610</b>, <b>Q3 = 700</b> y <b>máximo 850</b>. ¿Cuál es el <b>rango intercuartílico</b>?",
+  "alternativas": [
+   "180",
+   "610",
+   "90",
+   "440"
+  ],
+  "valores": [
+   "180",
+   "610",
+   "90",
+   "440"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "El rango intercuartílico es la diferencia entre el tercer y el primer cuartil: $$RIC = Q_3 - Q_1$$",
+   "$$RIC = 700 - 520 = 180$$"
+  ],
+  "trampa": "Calcular el rango, $850 - 410 = 440$ (marcar D), o restar $Q_3$ menos la mediana (C).",
+  "clave": "<b>Rango</b> = máximo − mínimo. <b>Rango intercuartílico</b> = $Q_3 - Q_1$: mide la dispersión del 50% central.",
+  "verificacion": "Q1, Q3 = 520, 700; respuesta = Integer(Q3 - Q1)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Tercer menos primer cuartil",
+      "$RIC = Q_3 - Q_1$"
+     ],
+     "voz": "El rango intercuartílico es el tercer cuartil menos el primero."
+    },
+    {
+     "lineas": [
+      "Reemplazamos",
+      "$700 - 520 = 180$"
+     ],
+     "voz": "Setecientos menos quinientos veinte: ciento ochenta puntos."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: ciento ochenta. No lo confundas con el rango, que es máximo menos mínimo y aquí da cuatrocientos cuarenta. El intercuartílico solo mira la mitad central, por eso no le afectan los puntajes extremos. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Números",
+  "tema": "Logaritmos: escala de pH",
+  "gancho": "¿Qué tan ácido es el limón? 🍋",
+  "enunciado": "El pH se define como $\\text{pH} = -\\log[H^+]$. El jugo de limón tiene <b>pH 2</b> y el jugo de tomate, <b>pH 4</b>. ¿Cuántas veces <b>mayor</b> es la concentración $[H^+]$ del limón que la del tomate?",
+  "alternativas": [
+   "20",
+   "2",
+   "100",
+   "1.000"
+  ],
+  "valores": [
+   "20",
+   "2",
+   "100",
+   "1000"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Despejando: $[H^+] = 10^{-\\text{pH}}$, así que $$\\text{limón: } 10^{-2},\\quad \\text{tomate: } 10^{-4}$$",
+   "$$\\frac{10^{-2}}{10^{-4}} = 10^{2} = 100$$"
+  ],
+  "trampa": "Restar o dividir los pH ($4 - 2$ o $4 : 2$) y marcar B, sin pasar a potencias de 10.",
+  "clave": "En escalas logarítmicas (pH, Richter, decibeles), <b>cada unidad es un factor 10</b>: $n$ unidades de diferencia son $10^n$ veces.",
+  "verificacion": "limon, tomate = Integer(10)**(-2), Integer(10)**(-4); assert -log(limon, 10) == 2; respuesta = limon/tomate",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Despejamos la concentración",
+      "$[H^+] = 10^{-\\text{pH}}$"
+     ],
+     "voz": "Si el pH es menos el logaritmo, la concentración es diez elevado a menos el pH."
+    },
+    {
+     "lineas": [
+      "Comparamos",
+      "$\\dfrac{10^{-2}}{10^{-4}} = 100$"
+     ],
+     "voz": "Diez a la menos dos dividido por diez a la menos cuatro es diez al cuadrado: cien."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: cien veces. En escalas logarítmicas cada unidad multiplica por diez, así que dos unidades de diferencia son cien veces. Si restas los pH te queda dos, y te olvidas de que la escala es logarítmica. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Geometría",
+  "tema": "Tangente en contexto: altura de una antena",
+  "gancho": "La antena del cerro 📡",
+  "enunciado": "Desde un punto ubicado a <b>30 m</b> de la base de una antena, se ve su punta con un ángulo de elevación $\\alpha$ tal que $\\tan\\alpha = 1{,}2$. ¿Cuál es la <b>altura</b> de la antena?",
+  "alternativas": [
+   "36 m",
+   "3,6 m",
+   "25 m",
+   "31,2 m"
+  ],
+  "valores": [
+   "36",
+   "18/5",
+   "25",
+   "156/5"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "La altura es el cateto <b>opuesto</b> y los 30 m son el cateto <b>adyacente</b>: $$\\tan\\alpha = \\frac{h}{30}$$",
+   "$$h = 30 \\cdot 1{,}2 = 36 \\text{ m}$$"
+  ],
+  "trampa": "Dividir $30 : 1{,}2 = 25$ y marcar C, o sumar $30 + 1{,}2$ (D).",
+  "clave": "$\\tan\\alpha = \\dfrac{\\text{opuesto}}{\\text{adyacente}}$: sirve cuando conoces la distancia horizontal y buscas una altura.",
+  "verificacion": "h = symbols('h'); respuesta = solve(Eq(h/30, Rational(6, 5)), h)[0]",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Opuesto sobre adyacente",
+      "$\\tan\\alpha = \\dfrac{h}{30}$"
+     ],
+     "voz": "La altura es el cateto opuesto al ángulo, y los treinta metros son el adyacente."
+    },
+    {
+     "lineas": [
+      "Despejamos",
+      "$h = 30 \\cdot 1{,}2 = 36$"
+     ],
+     "voz": "Treinta por uno coma dos: treinta y seis metros."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: treinta y seis metros. Con distancia horizontal y altura, la razón que manda es la tangente. Si divides en vez de multiplicar te sale veinticinco, y con una tangente mayor que uno la altura tiene que ser mayor que la distancia. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Probabilidad y estadística",
+  "tema": "Probabilidad con combinaciones: sorteo",
+  "gancho": "¿Le achuntas al sorteo? 🎟️",
+  "enunciado": "En un sorteo del curso se eligen al azar <b>2 números distintos</b> del 1 al 10, sin importar el orden. Si Ignacio apostó por un par de números, ¿cuál es la probabilidad de que <b>acierte los dos</b>?",
+  "alternativas": [
+   "$\\dfrac{1}{5}$",
+   "$\\dfrac{1}{100}$",
+   "$\\dfrac{1}{45}$",
+   "$\\dfrac{1}{90}$"
+  ],
+  "valores": [
+   "1/5",
+   "1/100",
+   "1/45",
+   "1/90"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Como no importa el orden, los pares posibles son $$\\binom{10}{2} = \\frac{10 \\cdot 9}{2} = 45$$",
+   "Solo uno es el de Ignacio: $$P = \\frac{1}{45}$$"
+  ],
+  "trampa": "Contar con orden, $10 \\cdot 9 = 90$ pares (marcar D), o permitir números repetidos, $10 \\cdot 10$ (B).",
+  "clave": "Si el orden <b>no</b> importa, se usan combinaciones: $\\binom{n}{k} = \\dfrac{n!}{k!\\,(n-k)!}$.",
+  "verificacion": "from itertools import combinations; casos = list(combinations(range(1, 11), 2)); respuesta = Rational(1, len(casos))",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Pares sin orden",
+      "$\\dbinom{10}{2} = 45$"
+     ],
+     "voz": "Como no importa el orden, contamos combinaciones de diez en dos: cuarenta y cinco pares."
+    },
+    {
+     "lineas": [
+      "Un solo par gana",
+      "$P = \\dfrac{1}{45}$"
+     ],
+     "voz": "Ignacio tiene uno de esos pares: la probabilidad es uno partido en cuarenta y cinco."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: uno partido en cuarenta y cinco. Si el orden no importa, usa combinaciones. Contar diez por nueve es contar el tres-siete distinto del siete-tres, y ahí cuentas cada par dos veces. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Álgebra y funciones",
+  "tema": "Intersección de rectas: planes de gimnasio",
+  "gancho": "¿Qué plan conviene? 🏋️",
+  "enunciado": "El gimnasio A cobra <b>\\$15.000</b> de matrícula más <b>\\$3.000</b> por clase: $y = 15.000 + 3.000x$. El gimnasio B no cobra matrícula y cobra <b>\\$6.000</b> por clase: $y = 6.000x$. ¿Con cuántas clases <b>cuestan lo mismo</b>?",
+  "alternativas": [
+   "5",
+   "2,5",
+   "10",
+   "$\\dfrac{5}{3}$"
+  ],
+  "valores": [
+   "5",
+   "5/2",
+   "10",
+   "5/3"
+  ],
+  "correcta": 0,
+  "pasos": [
+   "Las rectas se cortan donde los costos son iguales: $$15.000 + 3.000x = 6.000x$$",
+   "$$15.000 = 3.000x \\Rightarrow x = 5$$"
+  ],
+  "trampa": "Dividir $15.000 : 6.000 = 2{,}5$ (marcar B) o sumar las tarifas, $15.000 : 9.000$ (D).",
+  "clave": "El punto de intersección de dos rectas se obtiene <b>igualando sus ecuaciones</b>.",
+  "verificacion": "x, y = symbols('x y'); sol = solve([Eq(y, 15000 + 3000*x), Eq(y, 6000*x)], [x, y]); respuesta = sol[x]",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Igualamos",
+      "$15.000 + 3.000x = 6.000x$"
+     ],
+     "voz": "Los dos planes cuestan lo mismo donde las rectas se cortan. Igualamos."
+    },
+    {
+     "lineas": [
+      "Despejamos",
+      "$15.000 = 3.000x \\Rightarrow x = 5$"
+     ],
+     "voz": "Restamos tres mil equis: quince mil igual a tres mil equis. Equis vale cinco clases."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la a: cinco clases. Para encontrar dónde se cortan dos rectas, iguala las ecuaciones. Con cinco clases ambos cuestan treinta mil; con más clases conviene el gimnasio A. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Probabilidad y estadística",
+  "tema": "Variable aleatoria: tabla de probabilidades",
+  "gancho": "Completa la tabla 🎲",
+  "enunciado": "Una variable aleatoria $X$ toma los valores 0, 1, 2 y 3 con probabilidades <b>0,1</b>, <b>0,3</b>, $k$ y <b>0,2</b>, respectivamente. ¿Cuál es $P(X \\ge 2)$?",
+  "alternativas": [
+   "0,9",
+   "0,6",
+   "0,2",
+   "0,4"
+  ],
+  "valores": [
+   "9/10",
+   "3/5",
+   "1/5",
+   "2/5"
+  ],
+  "correcta": 1,
+  "pasos": [
+   "Las probabilidades suman 1: $$0{,}1 + 0{,}3 + k + 0{,}2 = 1 \\Rightarrow k = 0{,}4$$",
+   "$$P(X \\ge 2) = P(X = 2) + P(X = 3) = 0{,}4 + 0{,}2 = 0{,}6$$"
+  ],
+  "trampa": "Responder solo $k = 0{,}4$ (marcar D) o solo $P(X = 3) = 0{,}2$ (C).",
+  "clave": "En toda distribución de probabilidad, las probabilidades de todos los valores <b>suman 1</b>.",
+  "verificacion": "k = symbols('k'); kv = solve(Eq(Rational(1,10) + Rational(3,10) + k + Rational(2,10), 1), k)[0]; respuesta = kv + Rational(2, 10)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Todo suma uno",
+      "$0{,}6 + k = 1 \\Rightarrow k = 0{,}4$"
+     ],
+     "voz": "Las probabilidades suman uno. Cero coma uno, más cero coma tres, más cero coma dos es cero coma seis, así que ka es cero coma cuatro."
+    },
+    {
+     "lineas": [
+      "Mayor o igual a dos",
+      "$0{,}4 + 0{,}2 = 0{,}6$"
+     ],
+     "voz": "Mayor o igual a dos incluye el dos y el tres: cero coma seis."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la be: cero coma seis. Primero encuentra el dato que falta usando que todo suma uno. Después lee bien: mayor o igual a dos incluye el dos. Sigue a math paes punto c, ele."
+   }
+  }
+ },
+ {
+  "nivel": "M2",
+  "eje": "Probabilidad y estadística",
+  "tema": "Binomial: al menos un acierto",
+  "gancho": "Respondiendo al azar 🍀",
+  "enunciado": "Benja responde <b>al azar</b> 3 preguntas de 4 alternativas cada una (una correcta). ¿Cuál es la probabilidad de que acierte <b>al menos una</b>?",
+  "alternativas": [
+   "$\\dfrac{1}{64}$",
+   "$\\dfrac{3}{4}$",
+   "$\\dfrac{37}{64}$",
+   "$\\dfrac{27}{64}$"
+  ],
+  "valores": [
+   "1/64",
+   "3/4",
+   "37/64",
+   "27/64"
+  ],
+  "correcta": 2,
+  "pasos": [
+   "Es más fácil usar el complemento: la probabilidad de <b>no acertar ninguna</b> es $$\\left(\\frac{3}{4}\\right)^3 = \\frac{27}{64}$$",
+   "$$P = 1 - \\frac{27}{64} = \\frac{37}{64}$$"
+  ],
+  "trampa": "Sumar $\\tfrac{1}{4}$ tres veces y marcar B, o quedarse con la probabilidad de no acertar ninguna (D).",
+  "clave": "«Al menos uno» se calcula casi siempre como $1 - P(\\text{ninguno})$.",
+  "verificacion": "n, p = 3, Rational(1, 4); respuesta = sum(binomial(n, j)*p**j*(1 - p)**(n - j) for j in range(1, n + 1))",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Ninguna correcta",
+      "$\\left(\\dfrac{3}{4}\\right)^3 = \\dfrac{27}{64}$"
+     ],
+     "voz": "Usamos el complemento. Fallar una es tres cuartos, y fallar las tres es tres cuartos al cubo: veintisiete sesenta y cuatroavos."
+    },
+    {
+     "lineas": [
+      "Al menos una",
+      "$1 - \\dfrac{27}{64} = \\dfrac{37}{64}$"
+     ],
+     "voz": "Al menos una es uno menos eso: treinta y siete sesenta y cuatroavos."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta correcta es la ce: treinta y siete sesenta y cuatroavos. Al menos uno es uno menos la probabilidad de ninguno. Sumar un cuarto tres veces no funciona: con cuatro preguntas te daría uno, y adivinar no te asegura nada. Sigue a math paes punto c, ele."
+   }
+  }
+ }
+]

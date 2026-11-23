@@ -1,0 +1,40 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Dato: ¿descuento y después IVA, o al revés? Da lo mismo 🤯 Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Porcentajes #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "Descuento e IVA",
+  "intro_voz": "Dato PAES: ¿qué conviene, aplicar primero el descuento o primero el IVA?",
+  "titulo": "El orden no importa",
+  "pasos": [
+   {
+    "lineas": [
+     "Descuento de 20%",
+     "$\\times\\, 0{,}8$"
+    ],
+    "voz": "Un descuento de veinte por ciento es multiplicar por cero coma ocho."
+   },
+   {
+    "lineas": [
+     "IVA de 19%",
+     "$\\times\\, 1{,}19$"
+    ],
+    "voz": "Agregar el diecinueve por ciento de IVA es multiplicar por uno coma uno nueve."
+   },
+   {
+    "lineas": [
+     "Mismo resultado",
+     "$P \\cdot 0{,}8 \\cdot 1{,}19 = P \\cdot 1{,}19 \\cdot 0{,}8$"
+    ],
+    "voz": "Como la multiplicación es conmutativa, el orden no cambia el precio final."
+   }
+  ],
+  "remate": "Porcentajes sucesivos = factores que se multiplican",
+  "cierre": {
+   "voz": "Pero ojo: un veinte por ciento menos y un diecinueve por ciento más no es un uno por ciento menos. Se multiplican, no se restan. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-09"
+}

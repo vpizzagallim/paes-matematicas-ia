@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Proporcionalidad directa: receta de sopaipillas",
+ "gancho": "Sopaipillas para todo el curso 🌧️",
+ "enunciado": "Una receta usa <b>500 g de harina</b> para hacer <b>20 sopaipillas</b>. Manteniendo la proporción, ¿cuánta harina se necesita para <b>32 sopaipillas</b>?",
+ "alternativas": [
+  "1.280 g",
+  "640 g",
+  "800 g",
+  "512 g"
+ ],
+ "valores": [
+  "1280",
+  "640",
+  "800",
+  "512"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Harina por sopaipilla: $$500 : 20 = 25 \\text{ g}$$",
+  "Para 32 sopaipillas: $$25 \\cdot 32 = 800 \\text{ g}$$"
+ ],
+ "trampa": "Sumar la diferencia, $500 + 12 = 512$ (D), o armar mal la proporción, $\\dfrac{20 \\cdot 32}{1}$ (B).",
+ "clave": "En una proporción directa, si una cantidad se multiplica por $k$, la otra también: busca el <b>valor unitario</b>.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(Rational(500, 20), x/32), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Por cada sopaipilla",
+     "$500 : 20 = 25 \\text{ g}$"
+    ],
+    "voz": "Quinientos gramos para veinte sopaipillas son veinticinco gramos por cada una."
+   },
+   {
+    "lineas": [
+     "Para treinta y dos",
+     "$25 \\cdot 32 = 800 \\text{ g}$"
+    ],
+    "voz": "Veinticinco por treinta y dos: ochocientos gramos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: ochocientos gramos. En proporción directa, calcula primero cuánto va por unidad. Sumar doce gramos porque son doce sopaipillas más no tiene sentido: cada una lleva veinticinco. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "345"
+}

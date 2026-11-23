@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Exponentes fraccionarios",
+ "gancho": "Potencias con fracción 🧠",
+ "enunciado": "¿Cuál es el valor de $$27^{\\frac{2}{3}} + 16^{\\frac{3}{4}}$$?",
+ "alternativas": [
+  "12",
+  "17",
+  "30",
+  "26"
+ ],
+ "valores": [
+  "12",
+  "17",
+  "30",
+  "26"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "$$27^{\\frac{2}{3}} = \\left(\\sqrt[3]{27}\\right)^2 = 3^2 = 9$$",
+  "$$16^{\\frac{3}{4}} = \\left(\\sqrt[4]{16}\\right)^3 = 2^3 = 8$$ Suma: $9 + 8 = 17$."
+ ],
+ "trampa": "Multiplicar la base por la fracción: $27 \\cdot \\dfrac{2}{3} + 16 \\cdot \\dfrac{3}{4} = 30$ (C), o invertir raíz y potencia en alguno de los términos.",
+ "clave": "$a^{\\frac{m}{n}} = \\left(\\sqrt[n]{a}\\right)^m$: el <b>denominador</b> es la raíz y el numerador, la potencia.",
+ "verificacion": "respuesta = Integer(27)**Rational(2, 3) + Integer(16)**Rational(3, 4)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Primer término",
+     "$27^{\\frac{2}{3}} = 3^2 = 9$"
+    ],
+    "voz": "El denominador es la raíz: raíz cúbica de veintisiete es tres, y tres al cuadrado es nueve."
+   },
+   {
+    "lineas": [
+     "Segundo término",
+     "$16^{\\frac{3}{4}} = 2^3 = 8$"
+    ],
+    "voz": "Raíz cuarta de dieciséis es dos, y dos al cubo es ocho. Nueve más ocho: diecisiete."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: diecisiete. El denominador del exponente es la raíz y el numerador es la potencia. Saca primero la raíz: los números quedan chicos y no te equivocas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "357"
+}

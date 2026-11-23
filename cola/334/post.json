@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Perímetro de un rombo con sus diagonales",
+ "gancho": "El rombo escondido 💎",
+ "enunciado": "Las diagonales de un rombo miden <b>12 cm</b> y <b>16 cm</b>. ¿Cuál es el <b>perímetro</b> del rombo?",
+ "alternativas": [
+  "40 cm",
+  "56 cm",
+  "20 cm",
+  "96 cm"
+ ],
+ "valores": [
+  "40",
+  "56",
+  "20",
+  "96"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Las diagonales se cortan perpendicularmente en su punto medio, formando triángulos de catetos 6 y 8: $$\\ell = \\sqrt{6^2 + 8^2} = 10$$",
+  "El perímetro es $$4 \\cdot 10 = 40 \\text{ cm}$$"
+ ],
+ "trampa": "Sumar dos veces las diagonales, $2(12 + 16) = 56$ (B), o calcular el área en vez del perímetro, $12 \\cdot 16 : 2 = 96$ (D).",
+ "clave": "En un rombo, las diagonales se cortan en ángulo recto y por la mitad: el lado sale con <b>Pitágoras</b>.",
+ "verificacion": "d1, d2 = 12, 16; lado = sqrt(Rational(d1, 2)**2 + Rational(d2, 2)**2); respuesta = 4*lado",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Mitad de cada diagonal",
+     "$\\ell = \\sqrt{6^2 + 8^2} = 10$"
+    ],
+    "voz": "Las diagonales se cortan por la mitad y en ángulo recto. Con catetos seis y ocho, el lado mide diez."
+   },
+   {
+    "lineas": [
+     "Perímetro",
+     "$4 \\cdot 10 = 40 \\text{ cm}$"
+    ],
+    "voz": "Los cuatro lados son iguales: cuarenta centímetros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuarenta centímetros. En el rombo, las diagonales forman cuatro triángulos rectángulos. Usa las mitades: seis, ocho, diez, el trío pitagórico de siempre. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "334"
+}

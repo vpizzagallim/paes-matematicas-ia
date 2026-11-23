@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad experimental: la feria",
+ "gancho": "Sopaipillas en la feria 📊",
+ "enunciado": "En una feria, de <b>200 personas</b> que pasaron por un carro, <b>46</b> compraron sopaipillas. Usando esa frecuencia relativa, ¿cuántas compras se esperan si pasan <b>1.500 personas</b>?",
+ "alternativas": [
+  "23",
+  "460",
+  "690",
+  "345"
+ ],
+ "valores": [
+  "23",
+  "460",
+  "690",
+  "345"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Frecuencia relativa: $$\\frac{46}{200} = 0{,}23$$",
+  "Valor esperado de compras: $$0{,}23 \\cdot 1.500 = 345$$"
+ ],
+ "trampa": "Multiplicar $46 \\cdot 10$ sin ajustar la proporción (B), o dar el porcentaje como cantidad (A).",
+ "clave": "La <b>frecuencia relativa</b> de muchas repeticiones estima la probabilidad del evento.",
+ "verificacion": "f = Rational(46, 200); respuesta = f*1500",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Frecuencia relativa",
+     "$\\dfrac{46}{200} = 0{,}23$"
+    ],
+    "voz": "Cuarenta y seis de doscientos es cero coma dos tres: el veintitrés por ciento compró."
+   },
+   {
+    "lineas": [
+     "Estimación",
+     "$0{,}23 \\cdot 1.500 = 345$"
+    ],
+    "voz": "Si pasan mil quinientas personas, se esperan trescientas cuarenta y cinco compras."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: trescientas cuarenta y cinco. La frecuencia relativa sirve como probabilidad estimada. Primero sácala en decimal y después multiplícala por el nuevo total. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "349"
+}

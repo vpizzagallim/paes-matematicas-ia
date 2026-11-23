@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Variable aleatoria: tabla de probabilidades",
+ "gancho": "Completa la tabla 🎲",
+ "enunciado": "Una variable aleatoria $X$ toma los valores 0, 1, 2 y 3 con probabilidades <b>0,1</b>, <b>0,3</b>, $k$ y <b>0,2</b>, respectivamente. ¿Cuál es $P(X \\ge 2)$?",
+ "alternativas": [
+  "0,9",
+  "0,6",
+  "0,2",
+  "0,4"
+ ],
+ "valores": [
+  "9/10",
+  "3/5",
+  "1/5",
+  "2/5"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Las probabilidades suman 1: $$0{,}1 + 0{,}3 + k + 0{,}2 = 1 \\Rightarrow k = 0{,}4$$",
+  "$$P(X \\ge 2) = P(X = 2) + P(X = 3) = 0{,}4 + 0{,}2 = 0{,}6$$"
+ ],
+ "trampa": "Responder solo $k = 0{,}4$ (marcar D) o solo $P(X = 3) = 0{,}2$ (C).",
+ "clave": "En toda distribución de probabilidad, las probabilidades de todos los valores <b>suman 1</b>.",
+ "verificacion": "k = symbols('k'); kv = solve(Eq(Rational(1,10) + Rational(3,10) + k + Rational(2,10), 1), k)[0]; respuesta = kv + Rational(2, 10)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Todo suma uno",
+     "$0{,}6 + k = 1 \\Rightarrow k = 0{,}4$"
+    ],
+    "voz": "Las probabilidades suman uno. Cero coma uno, más cero coma tres, más cero coma dos es cero coma seis, así que ka es cero coma cuatro."
+   },
+   {
+    "lineas": [
+     "Mayor o igual a dos",
+     "$0{,}4 + 0{,}2 = 0{,}6$"
+    ],
+    "voz": "Mayor o igual a dos incluye el dos y el tres: cero coma seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cero coma seis. Primero encuentra el dato que falta usando que todo suma uno. Después lee bien: mayor o igual a dos incluye el dos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "329"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Lenguaje algebraico: el número pensado",
+ "gancho": "Adivina el número 🔢",
+ "enunciado": "Si al <b>triple</b> de un número se le restan <b>7</b>, se obtiene lo mismo que al sumarle <b>5</b> a su <b>doble</b>. ¿Cuál es el número?",
+ "alternativas": [
+  "26",
+  "12",
+  "-2",
+  "2"
+ ],
+ "valores": [
+  "26",
+  "12",
+  "-2",
+  "2"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Traducimos: $$3x - 7 = 2x + 5$$",
+  "Despejamos: $$3x - 2x = 5 + 7 \\Rightarrow x = 12$$"
+ ],
+ "trampa": "Escribir $3(x - 7) = 2x + 5$, que da 26 (A), o equivocarse con los signos al despejar (D o D).",
+ "clave": "«El triple de un número» es $3x$; si la resta es al triple, el paréntesis <b>no</b> va.",
+ "verificacion": "x = symbols('x'); respuesta = solve(Eq(3*x - 7, 2*x + 5), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Traducimos",
+     "$3x - 7 = 2x + 5$"
+    ],
+    "voz": "Triple del número menos siete, igual a doble del número más cinco."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$x = 5 + 7 = 12$"
+    ],
+    "voz": "Restamos dos equis y sumamos siete a ambos lados: equis vale doce."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: doce. Comprueba siempre: triple de doce es treinta y seis, menos siete, veintinueve. Doble de doce es veinticuatro, más cinco, veintinueve. Cuadra. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "359"
+}

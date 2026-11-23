@@ -1,0 +1,84 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "«Solo un capítulo y me duermo» 📺😴 Benja empezó a las 21:00. ¿A qué hora terminó? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Series #Maraton",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Veo un capítulo de mi serie y me acuesto temprano. Mañana hay ensayo.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "📺 «¿Sigues viendo?»<br>8 capítulos de 45 min",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.4
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "llora",
+   "voz": "¡¿Ya está saliendo el sol?!",
+   "efecto": "trombon",
+   "sacudir": true
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Benja, calcula a qué hora terminaste, y la próxima vez apaga la tele."
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Benja empieza a ver una serie a las <b>21:00</b> y ve <b>8 capítulos</b> de <b>45 minutos</b> cada uno, sin pausas. ¿A qué hora termina?",
+  "alternativas": [
+   "02:00",
+   "03:00",
+   "04:00",
+   "05:00"
+  ],
+  "valores": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "correcta": 1,
+  "verificacion": "minutos = 21*60 + 8*45; respuesta = Integer((minutos // 60) % 24)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Tiempo total",
+      "$8 \\cdot 45 = 360 \\text{ min} = 6 \\text{ h}$"
+     ],
+     "voz": "Ocho capítulos de cuarenta y cinco minutos son trescientos sesenta minutos: seis horas."
+    },
+    {
+     "lineas": [
+      "Sumamos",
+      "$21{:}00 + 6 \\text{ h} = 03{:}00$"
+     ],
+     "voz": "Nueve de la noche más seis horas: las tres de la madrugada."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: a las tres de la mañana. Ese era el capítulo uno, Benja."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-08"
+}

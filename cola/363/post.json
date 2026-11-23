@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Redondeo y truncamiento",
+ "gancho": "¿Redondear o truncar? ✂️",
+ "enunciado": "El número $7{,}48$ se <b>redondea</b> a la décima y también se <b>trunca</b> a la décima. ¿Cuál es la <b>diferencia</b> entre ambos resultados?",
+ "alternativas": [
+  "0",
+  "0,02",
+  "0,08",
+  "0,1"
+ ],
+ "valores": [
+  "0",
+  "1/50",
+  "2/25",
+  "1/10"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Redondeo a la décima: la centésima es 8, que es mayor o igual a 5, así que sube: $$7{,}48 \\to 7{,}5$$",
+  "Truncamiento: se cortan las cifras sobrantes: $$7{,}48 \\to 7{,}4$$ La diferencia es $$7{,}5 - 7{,}4 = 0{,}1$$"
+ ],
+ "trampa": "Creer que redondear y truncar dan lo mismo (A) o restar al número original, $7{,}48 - 7{,}4$ (C).",
+ "clave": "<b>Truncar</b> corta sin mirar la cifra siguiente; <b>redondear</b> sube una unidad si la cifra siguiente es 5 o más.",
+ "verificacion": "x = Rational(748, 100); red = floor(x*10 + Rational(1, 2))/Integer(10); tru = floor(x*10)/Integer(10); respuesta = red - tru",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Redondeo",
+     "$7{,}48 \\to 7{,}5$"
+    ],
+    "voz": "Para redondear a la décima miramos el ocho. Como es cinco o más, sube: siete coma cinco."
+   },
+   {
+    "lineas": [
+     "Truncamiento",
+     "$7{,}48 \\to 7{,}4$"
+    ],
+    "voz": "Truncar es cortar sin mirar nada: siete coma cuatro. La diferencia es cero coma uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cero coma uno. Truncar es cortar, redondear es mirar la cifra siguiente. En la PAES preguntan justamente por esa diferencia. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "363"
+}

@@ -1,0 +1,36 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: subraya las palabras clave del enunciado ✍️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: subraya las palabras clave de cada enunciado.",
+  "titulo": "Tip: palabras clave",
+  "pasos": [
+   {
+    "lineas": [
+     "Busca el «no»"
+    ],
+    "voz": "Palabras como «no», «excepto» o «siempre» cambian por completo la pregunta."
+   },
+   {
+    "lineas": [
+     "¿Qué te piden?"
+    ],
+    "voz": "Subraya lo que te piden: no es lo mismo el precio final que el descuento."
+   },
+   {
+    "lineas": [
+     "Revisa al final"
+    ],
+    "voz": "Antes de marcar, vuelve a leer la pregunta y confirma que respondiste eso."
+   }
+  ],
+  "remate": "Subraya lo clave ✅",
+  "cierre": {
+   "voz": "Leer bien también es matemática. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-04"
+}

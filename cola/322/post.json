@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Precios terminados en 990",
+ "gancho": "El truco del 990 🛒",
+ "enunciado": "En el supermercado, Martina compra productos de <b>\\$1.990</b>, <b>\\$2.990</b>, <b>\\$990</b> y <b>\\$4.990</b>. Si paga con <b>\\$20.000</b>, ¿cuánto <b>vuelto</b> recibe?",
+ "alternativas": [
+  "\\$10.960",
+  "\\$9.000",
+  "\\$9.040",
+  "\\$8.960"
+ ],
+ "valores": [
+  "10960",
+  "9000",
+  "9040",
+  "8960"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Cada precio es $10$ menos que un número redondo: $$2.000 + 3.000 + 1.000 + 5.000 - 40 = 10.960$$",
+  "El vuelto es $$20.000 - 10.960 = 9.040$$"
+ ],
+ "trampa": "Redondear y olvidar restar los \\$40 (marcar B), o sumarlos en vez de restarlos (D).",
+ "clave": "Con precios terminados en 990, redondea hacia arriba y después <b>resta 10 por cada producto</b>.",
+ "verificacion": "total = 1990 + 2990 + 990 + 4990; respuesta = Integer(20000 - total)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Redondeamos y corregimos",
+     "$11.000 - 40 = 10.960$"
+    ],
+    "voz": "Cada precio es diez pesos menos que un número redondo. Once mil menos cuarenta: diez mil novecientos sesenta."
+   },
+   {
+    "lineas": [
+     "Vuelto",
+     "$20.000 - 10.960 = 9.040$"
+    ],
+    "voz": "Veinte mil menos eso: nueve mil cuarenta pesos de vuelto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: nueve mil cuarenta pesos. Con precios terminados en noventa, redondea y luego corrige diez por cada producto. Si te quedas solo con el redondeo, te faltan cuarenta pesos, y en la PAES esa diferencia es otra alternativa. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "322"
+}

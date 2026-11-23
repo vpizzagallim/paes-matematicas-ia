@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Tabla de frecuencias relativas",
+ "gancho": "¿Cómo llegan al liceo? 🚲",
+ "enunciado": "En una encuesta a <b>240 estudiantes</b>: el <b>40%</b> llega en Metro, el <b>30%</b> en micro y el resto se reparte en partes iguales entre <b>bicicleta</b> y <b>caminando</b>. ¿Cuántos llegan <b>caminando</b>?",
+ "alternativas": [
+  "36",
+  "30",
+  "72",
+  "15"
+ ],
+ "valores": [
+  "36",
+  "30",
+  "72",
+  "15"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Queda $$100\\% - 40\\% - 30\\% = 30\\%$$ que se reparte en dos partes iguales: 15% cada una.",
+  "$$0{,}15 \\cdot 240 = 36$$"
+ ],
+ "trampa": "No repartir el 30% restante (C), o dar el porcentaje como número de estudiantes (D).",
+ "clave": "En una tabla de frecuencias relativas, los porcentajes <b>suman 100%</b>.",
+ "verificacion": "p = (100 - 40 - 30)/Integer(2); respuesta = Rational(p, 100)*240",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Lo que falta",
+     "$100 - 40 - 30 = 30\\%$"
+    ],
+    "voz": "Metro y micro suman setenta por ciento. Queda un treinta, que se reparte en dos: quince por ciento cada uno."
+   },
+   {
+    "lineas": [
+     "Caminando",
+     "$0{,}15 \\cdot 240 = 36$"
+    ],
+    "voz": "El quince por ciento de doscientos cuarenta es treinta y seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: treinta y seis estudiantes. Los porcentajes de una tabla siempre suman cien. Encuentra lo que falta, repártelo si te lo piden, y recién ahí pasa a cantidad. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "355"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Ceros de una función cuadrática",
+ "gancho": "¿Dónde corta al eje X? 📉",
+ "enunciado": "La gráfica de la función $$f(x) = x^2 - 2x - 15$$ corta al eje $X$ en dos puntos. ¿Cuál es la <b>distancia</b> entre esos dos puntos?",
+ "alternativas": [
+  "8",
+  "15",
+  "1",
+  "2"
+ ],
+ "valores": [
+  "8",
+  "15",
+  "1",
+  "2"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Se iguala a cero y se factoriza: $$x^2 - 2x - 15 = (x - 5)(x + 3) = 0$$",
+  "Los ceros son $x = 5$ y $x = -3$; la distancia es $$5 - (-3) = 8$$"
+ ],
+ "trampa": "Restar $5 - 3 = 2$ olvidando el signo negativo y marcar D, o confundir con el vértice, $x = 1$ (C).",
+ "clave": "Los puntos donde la parábola corta al eje $X$ son las soluciones de $f(x) = 0$.",
+ "verificacion": "x = symbols('x'); r = solve(x**2 - 2*x - 15, x); respuesta = max(r) - min(r)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Igualamos a cero",
+     "$(x - 5)(x + 3) = 0$"
+    ],
+    "voz": "Cortar el eje equis es que efe de equis valga cero. Factorizamos: equis menos cinco por equis más tres."
+   },
+   {
+    "lineas": [
+     "Distancia",
+     "$5 - (-3) = 8$"
+    ],
+    "voz": "Los ceros son cinco y menos tres. La distancia entre ellos es ocho."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: ocho. Los cortes con el eje equis salen de igualar la función a cero. Cuidado con el menos tres: la distancia es cinco menos menos tres, no cinco menos tres. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "310"
+}

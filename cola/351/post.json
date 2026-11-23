@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Suma de raíces semejantes",
+ "gancho": "Raíces que se pueden sumar ✨",
+ "enunciado": "¿Cuál es el valor de $$\\sqrt{50} + \\sqrt{18}$$?",
+ "alternativas": [
+  "$15\\sqrt{2}$",
+  "$8\\sqrt{2}$",
+  "$\\sqrt{68}$",
+  "$4\\sqrt{2}$"
+ ],
+ "valores": [
+  "15*sqrt(2)",
+  "8*sqrt(2)",
+  "sqrt(68)",
+  "4*sqrt(2)"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Se descompone cada raíz: $$\\sqrt{50} = \\sqrt{25 \\cdot 2} = 5\\sqrt{2}$$ $$\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$$",
+  "Ahora son semejantes: $$5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$$"
+ ],
+ "trampa": "Sumar los números dentro de la raíz, $\\sqrt{68}$ (C), o multiplicar los coeficientes, $15\\sqrt{2}$ (A).",
+ "clave": "Solo se suman raíces con el <b>mismo radicando</b>; antes, saca de la raíz los cuadrados perfectos.",
+ "verificacion": "respuesta = sqrt(50) + sqrt(18)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Descomponemos",
+     "$5\\sqrt{2} + 3\\sqrt{2}$"
+    ],
+    "voz": "Raíz de cincuenta es cinco raíz de dos, y raíz de dieciocho es tres raíz de dos."
+   },
+   {
+    "lineas": [
+     "Sumamos",
+     "$8\\sqrt{2}$"
+    ],
+    "voz": "Ahora tienen la misma raíz y se suman como términos semejantes: ocho raíz de dos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: ocho raíz de dos. Las raíces no se suman por dentro: raíz de cincuenta más raíz de dieciocho no es raíz de sesenta y ocho. Primero simplifica y después suma las semejantes. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "351"
+}

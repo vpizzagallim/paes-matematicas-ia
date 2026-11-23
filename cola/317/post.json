@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Inecuación doble en contexto",
+ "gancho": "Plan de datos a tu medida 📶",
+ "enunciado": "Un plan de datos cobra <b>\\$5.000</b> fijos más <b>\\$800 por cada GB</b>. Josefa quiere gastar <b>entre \\$9.000 y \\$13.000</b>, ambos incluidos. ¿Cuántas cantidades <b>enteras</b> de GB puede contratar?",
+ "alternativas": [
+  "6",
+  "10",
+  "5",
+  "4"
+ ],
+ "valores": [
+  "6",
+  "10",
+  "5",
+  "4"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Se plantea: $$9.000 \\le 5.000 + 800g \\le 13.000$$",
+  "Restando 5.000 y dividiendo por 800: $$5 \\le g \\le 10$$ Los enteros son 5, 6, 7, 8, 9 y 10: <b>6 valores</b>."
+ ],
+ "trampa": "Restar $10 - 5 = 5$ y marcar C, olvidando que ambos extremos se cuentan.",
+ "clave": "En una inecuación doble se hace la <b>misma operación en las tres partes</b>. Para contar enteros entre $a$ y $b$, inclusive: $b - a + 1$.",
+ "verificacion": "respuesta = Integer(len([g for g in range(0, 100) if 9000 <= 5000 + 800*g <= 13000]))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$9.000 \\le 5.000 + 800g \\le 13.000$"
+    ],
+    "voz": "El costo es cinco mil más ochocientos por ge, y debe quedar entre nueve mil y trece mil."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$5 \\le g \\le 10$"
+    ],
+    "voz": "Restamos cinco mil y dividimos por ochocientos: ge va de cinco a diez. Son seis valores."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: seis. Al contar enteros entre dos números incluidos, se resta y se suma uno. Si solo restas, diez menos cinco, te sale cinco y dejas fuera un extremo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "317"
+}

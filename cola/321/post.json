@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad con combinaciones: sorteo",
+ "gancho": "¿Le achuntas al sorteo? 🎟️",
+ "enunciado": "En un sorteo del curso se eligen al azar <b>2 números distintos</b> del 1 al 10, sin importar el orden. Si Ignacio apostó por un par de números, ¿cuál es la probabilidad de que <b>acierte los dos</b>?",
+ "alternativas": [
+  "$\\dfrac{1}{5}$",
+  "$\\dfrac{1}{100}$",
+  "$\\dfrac{1}{45}$",
+  "$\\dfrac{1}{90}$"
+ ],
+ "valores": [
+  "1/5",
+  "1/100",
+  "1/45",
+  "1/90"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Como no importa el orden, los pares posibles son $$\\binom{10}{2} = \\frac{10 \\cdot 9}{2} = 45$$",
+  "Solo uno es el de Ignacio: $$P = \\frac{1}{45}$$"
+ ],
+ "trampa": "Contar con orden, $10 \\cdot 9 = 90$ pares (marcar D), o permitir números repetidos, $10 \\cdot 10$ (B).",
+ "clave": "Si el orden <b>no</b> importa, se usan combinaciones: $\\binom{n}{k} = \\dfrac{n!}{k!\\,(n-k)!}$.",
+ "verificacion": "from itertools import combinations; casos = list(combinations(range(1, 11), 2)); respuesta = Rational(1, len(casos))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Pares sin orden",
+     "$\\dbinom{10}{2} = 45$"
+    ],
+    "voz": "Como no importa el orden, contamos combinaciones de diez en dos: cuarenta y cinco pares."
+   },
+   {
+    "lineas": [
+     "Un solo par gana",
+     "$P = \\dfrac{1}{45}$"
+    ],
+    "voz": "Ignacio tiene uno de esos pares: la probabilidad es uno partido en cuarenta y cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: uno partido en cuarenta y cinco. Si el orden no importa, usa combinaciones. Contar diez por nueve es contar el tres-siete distinto del siete-tres, y ahí cuentas cada par dos veces. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "321"
+}

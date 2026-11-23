@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Fracción de una fracción: el curso",
+ "gancho": "¿Cuántos usan Metro? 🚇",
+ "enunciado": "En un curso de <b>40 estudiantes</b>, $\\dfrac{3}{5}$ llega en Metro. De ellos, $\\dfrac{3}{4}$ hace <b>combinación</b> con micro. ¿Cuántos estudiantes del curso llegan en Metro y hacen combinación?",
+ "alternativas": [
+  "18",
+  "24",
+  "30",
+  "6"
+ ],
+ "valores": [
+  "18",
+  "24",
+  "30",
+  "6"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Llegan en Metro: $$\\frac{3}{5} \\cdot 40 = 24$$",
+  "De ellos, hacen combinación: $$\\frac{3}{4} \\cdot 24 = 18$$"
+ ],
+ "trampa": "Quedarse con los que llegan en Metro (B) o aplicar $\\dfrac{3}{4}$ al curso completo (C).",
+ "clave": "«Una fracción <b>de</b> otra» se resuelve multiplicando: $\\dfrac{3}{4} \\cdot \\dfrac{3}{5} = \\dfrac{9}{20}$ del total.",
+ "verificacion": "total = 40; metro = Rational(3, 5)*total; respuesta = Rational(3, 4)*metro",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "En Metro",
+     "$\\dfrac{3}{5} \\cdot 40 = 24$"
+    ],
+    "voz": "Tres quintos de cuarenta son veinticuatro estudiantes que llegan en Metro."
+   },
+   {
+    "lineas": [
+     "Con combinación",
+     "$\\dfrac{3}{4} \\cdot 24 = 18$"
+    ],
+    "voz": "Y tres cuartos de esos veinticuatro: dieciocho."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: dieciocho estudiantes. Cuando dice «de ellos», la segunda fracción se aplica a lo que quedó, no al total. Si usas los cuarenta, te sale treinta, que es otra alternativa. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "358"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Ecuación exponencial: seguidores",
+ "gancho": "Seguidores que se duplican 📱",
+ "enunciado": "Los seguidores de una cuenta de matemáticas se modelan por $$N(t) = 500 \\cdot 2^t$$ donde $t$ son semanas. ¿En qué semana la cuenta llega a <b>16.000 seguidores</b>?",
+ "alternativas": [
+  "32",
+  "5",
+  "6",
+  "4"
+ ],
+ "valores": [
+  "32",
+  "5",
+  "6",
+  "4"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "$$500 \\cdot 2^t = 16.000 \\Rightarrow 2^t = 32$$",
+  "Como $2^5 = 32$: $$t = 5$$"
+ ],
+ "trampa": "Responder $2^t = 32$ sin despejar el exponente (A), o contar mal las potencias de 2 (C o D).",
+ "clave": "En una ecuación exponencial, deja la potencia sola y escribe ambos lados con la <b>misma base</b>.",
+ "verificacion": "t = symbols('t'); respuesta = solve(Eq(500*2**t, 16000), t)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Aislamos la potencia",
+     "$2^t = 16.000 : 500 = 32$"
+    ],
+    "voz": "Dividimos dieciséis mil por quinientos: dos elevado a te es treinta y dos."
+   },
+   {
+    "lineas": [
+     "Misma base",
+     "$2^t = 2^5 \\Rightarrow t = 5$"
+    ],
+    "voz": "Treinta y dos es dos a la quinta, así que te vale cinco semanas."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: la semana cinco. Primero aísla la potencia y después iguala las bases. Treinta y dos es lo que vale la potencia, no el número de semanas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "350"
+}

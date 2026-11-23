@@ -1,0 +1,40 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Truco: multiplicar por 11 de cabeza en 2 segundos 🤯 Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "Por 11 sin calculadora",
+  "intro_voz": "Truco PAES: multiplicar un número de dos cifras por once, en dos segundos.",
+  "titulo": "Multiplicar por 11",
+  "pasos": [
+   {
+    "lineas": [
+     "Ejemplo",
+     "$23 \\cdot 11 = \\ ?$"
+    ],
+    "voz": "Tomamos veintitrés por once."
+   },
+   {
+    "lineas": [
+     "Separa y suma",
+     "$2 \\ \\_\\ 3 \\quad 2 + 3 = 5$"
+    ],
+    "voz": "Separa las cifras, el dos y el tres, y pon al medio su suma: cinco."
+   },
+   {
+    "lineas": [
+     "Listo",
+     "$23 \\cdot 11 = 253$"
+    ],
+    "voz": "Queda doscientos cincuenta y tres. Si la suma pasa de nueve, llevas uno a la primera cifra."
+   }
+  ],
+  "remate": "ab · 11 → a (a+b) b",
+  "cierre": {
+   "voz": "Prueba con setenta y cuatro: siete más cuatro es once, llevas uno, y queda ochocientos catorce. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-03"
+}

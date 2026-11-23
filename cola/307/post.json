@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Logaritmos: escala de pH",
+ "gancho": "¿Qué tan ácido es el limón? 🍋",
+ "enunciado": "El pH se define como $\\text{pH} = -\\log[H^+]$. El jugo de limón tiene <b>pH 2</b> y el jugo de tomate, <b>pH 4</b>. ¿Cuántas veces <b>mayor</b> es la concentración $[H^+]$ del limón que la del tomate?",
+ "alternativas": [
+  "20",
+  "2",
+  "100",
+  "1.000"
+ ],
+ "valores": [
+  "20",
+  "2",
+  "100",
+  "1000"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Despejando: $[H^+] = 10^{-\\text{pH}}$, así que $$\\text{limón: } 10^{-2},\\quad \\text{tomate: } 10^{-4}$$",
+  "$$\\frac{10^{-2}}{10^{-4}} = 10^{2} = 100$$"
+ ],
+ "trampa": "Restar o dividir los pH ($4 - 2$ o $4 : 2$) y marcar B, sin pasar a potencias de 10.",
+ "clave": "En escalas logarítmicas (pH, Richter, decibeles), <b>cada unidad es un factor 10</b>: $n$ unidades de diferencia son $10^n$ veces.",
+ "verificacion": "limon, tomate = Integer(10)**(-2), Integer(10)**(-4); assert -log(limon, 10) == 2; respuesta = limon/tomate",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Despejamos la concentración",
+     "$[H^+] = 10^{-\\text{pH}}$"
+    ],
+    "voz": "Si el pH es menos el logaritmo, la concentración es diez elevado a menos el pH."
+   },
+   {
+    "lineas": [
+     "Comparamos",
+     "$\\dfrac{10^{-2}}{10^{-4}} = 100$"
+    ],
+    "voz": "Diez a la menos dos dividido por diez a la menos cuatro es diez al cuadrado: cien."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cien veces. En escalas logarítmicas cada unidad multiplica por diez, así que dos unidades de diferencia son cien veces. Si restas los pH te queda dos, y te olvidas de que la escala es logarítmica. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "307"
+}

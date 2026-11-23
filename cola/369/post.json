@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Combinaciones con dos grupos",
+ "gancho": "Arma la directiva 🗳️",
+ "enunciado": "Para la directiva del centro de estudiantes postulan <b>6 mujeres</b> y <b>4 hombres</b>. ¿De cuántas formas se puede elegir una comisión de <b>2 mujeres y 1 hombre</b>?",
+ "alternativas": [
+  "60",
+  "24",
+  "120",
+  "19"
+ ],
+ "valores": [
+  "60",
+  "24",
+  "120",
+  "19"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Mujeres: $$\\binom{6}{2} = 15$$ Hombres: $$\\binom{4}{1} = 4$$",
+  "Por el principio multiplicativo: $$15 \\cdot 4 = 60$$"
+ ],
+ "trampa": "Contar las mujeres en orden, $6 \\cdot 5 \\cdot 4 = 120$ (C), o sumar en vez de multiplicar, $15 + 4$ (D).",
+ "clave": "Si el orden no importa, se usan <b>combinaciones</b>; si se eligen de grupos distintos, los resultados se <b>multiplican</b>.",
+ "verificacion": "respuesta = binomial(6, 2)*binomial(4, 1)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cada grupo",
+     "$\\dbinom{6}{2} = 15,\\quad \\dbinom{4}{1} = 4$"
+    ],
+    "voz": "Dos mujeres de seis: quince formas. Un hombre de cuatro: cuatro formas."
+   },
+   {
+    "lineas": [
+     "Multiplicamos",
+     "$15 \\cdot 4 = 60$"
+    ],
+    "voz": "Cada par de mujeres se combina con cada hombre: sesenta comisiones."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: sesenta. En una comisión el orden no importa, así que usa combinaciones. Y como eliges de los dos grupos a la vez, multiplica. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "369"
+}

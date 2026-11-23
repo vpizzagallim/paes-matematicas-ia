@@ -1,0 +1,405 @@
+[
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja puso la alarma a las 6:30 para estudiar… y apretó «5 minutitos más» 😴⏰ ¿A qué hora se levantó? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Alarma #CalculoMental",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Mañana me levanto tempranito a estudiar. Alarma a las seis y media.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "cartel": "⏰ 6:30 «cinco minutitos más»<br>Posponer: 9 min × 5 veces",
+    "efecto": "tictac",
+    "t_cartel": 0.1,
+    "dur_min": 2.4
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "¡¿Qué hora es?! ¡Nadie me despertó!",
+    "efecto": "trombon",
+    "sacudir": true
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Benja, la alarma sí te despertó. Calcula a qué hora te levantaste."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "La alarma de Benja suena a las <b>6:30</b>. Cada vez que la pospone, vuelve a sonar <b>9 minutos</b> después. Si la pospone <b>5 veces</b> y se levanta con el último sonido, ¿a qué hora se levanta?",
+   "alternativas": [
+    "6:44",
+    "7:15",
+    "7:24",
+    "7:45"
+   ],
+   "valores": [
+    "404",
+    "435",
+    "444",
+    "465"
+   ],
+   "correcta": 1,
+   "verificacion": "inicio = 6*60 + 30; t = inicio\nfor _ in range(5): t += 9\nrespuesta = Integer(t)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Minutos de más",
+       "$5 \\cdot 9 = 45\\ \\text{min}$"
+      ],
+      "voz": "Cinco veces nueve minutos: cuarenta y cinco minutos de más."
+     },
+     {
+      "lineas": [
+       "Sumamos a las 6:30",
+       "$6{:}30 + 0{:}45 = 7{:}15$"
+      ],
+      "voz": "Seis y media más cuarenta y cinco minutos: siete y cuarto."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la be: siete y cuarto. Cinco minutitos más salen caros, Benja."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1116-01"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Truco: el 8% de 50 es lo mismo que el 50% de 8 🤯 Porcentajes reversibles. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "8% de 50 en 2 segundos",
+   "intro_voz": "Truco PAES: calcular el ocho por ciento de cincuenta en dos segundos, sin calculadora.",
+   "titulo": "Porcentajes reversibles",
+   "pasos": [
+    {
+     "lineas": [
+      "¿8% de 50?",
+      "$\\dfrac{8}{100} \\cdot 50$"
+     ],
+     "voz": "El ocho por ciento de cincuenta parece difícil de cabeza."
+    },
+    {
+     "lineas": [
+      "Da vuelta los números",
+      "$50\\% \\text{ de } 8 = 4$"
+     ],
+     "voz": "Pero es igual al cincuenta por ciento de ocho, que es la mitad de ocho: cuatro."
+    },
+    {
+     "lineas": [
+      "¿Por qué funciona?",
+      "$\\dfrac{a \\cdot b}{100} = \\dfrac{b \\cdot a}{100}$"
+     ],
+     "voz": "Porque en los dos casos multiplicas los mismos números y divides por cien."
+    }
+   ],
+   "remate": "a% de b = b% de a",
+   "cierre": {
+    "voz": "Prueba con el dieciséis por ciento de veinticinco: es el veinticinco por ciento de dieciséis, o sea, cuatro. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1116-02"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: planifica cómo llegar 🗺️ #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: planifica cómo vas a llegar a rendir la prueba.",
+   "titulo": "Tip: el trayecto",
+   "pasos": [
+    {
+     "lineas": [
+      "¿Dónde rindes?"
+     ],
+     "voz": "Revisa con tiempo dónde te toca rendir, no la noche anterior."
+    },
+    {
+     "lineas": [
+      "Prueba el recorrido"
+     ],
+     "voz": "Si puedes, haz el trayecto antes, a la misma hora, para saber cuánto demoras."
+    },
+    {
+     "lineas": [
+      "Sal con margen"
+     ],
+     "voz": "Ese día sal con tiempo de sobra. Llegar corriendo te quita la calma."
+    }
+   ],
+   "remate": "Planifica el trayecto ✅",
+   "cierre": {
+    "voz": "Llegar tranquilo también suma puntos. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1116-03"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "«Una partidita y estudio» 🎮🔋 La mamá de Benja le quita el celular al 25%. ¿Cuántas horas jugó? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Gamer #FuncionAfin",
+  "escenas": [
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Una partidita corta y después estudio. Lo prometo.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🔋 Parte en 100%<br>Baja 15% por hora de juego",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.4
+   },
+   {
+    "fondo": "pieza",
+    "personaje": "benja",
+    "expresion": "llora",
+    "voz": "¡Mi mamá me quitó el celular cuando quedó en veinticinco por ciento!",
+    "efecto": "bocina",
+    "sacudir": true
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Tranquilo, Benja. Calcula cuántas horas jugaste."
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "La batería del celular de Benja parte en <b>100%</b> y baja <b>15%</b> por cada hora de juego. ¿Después de cuántas horas queda en <b>25%</b>?",
+   "alternativas": [
+    "4",
+    "$\\dfrac{5}{3}$",
+    "5",
+    "$\\dfrac{20}{3}$"
+   ],
+   "valores": [
+    "4",
+    "5/3",
+    "5",
+    "20/3"
+   ],
+   "correcta": 2,
+   "verificacion": "h = symbols('h'); respuesta = solve(Eq(100 - 15*h, 25), h)[0]",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Planteamos",
+       "$100 - 15h = 25$"
+      ],
+      "voz": "La batería es cien menos quince por las horas, y queremos que llegue a veinticinco."
+     },
+     {
+      "lineas": [
+       "Despejamos",
+       "$15h = 75 \\Rightarrow h = 5$"
+      ],
+      "voz": "Quince hache es setenta y cinco, así que hache vale cinco horas."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la ce: cinco horas. Una partidita, dijo."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1116-04"
+ },
+ {
+  "formato": "dato",
+  "musica": "rock",
+  "texto_post": "💡 Truco: 35² de cabeza en 3 segundos 🤯 Cuadrados que terminan en 5. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CalculoMental #TipsPAES",
+  "pizarra_dato": {
+   "cartel": "💡 TRUCO PAES",
+   "subtitulo": "35² sin calculadora",
+   "intro_voz": "Truco PAES: elevar al cuadrado un número que termina en cinco, en tres segundos.",
+   "titulo": "Cuadrados terminados en 5",
+   "pasos": [
+    {
+     "lineas": [
+      "Termina en 5",
+      "$35^2 = \\ ?$"
+     ],
+     "voz": "Tomamos treinta y cinco al cuadrado."
+    },
+    {
+     "lineas": [
+      "Multiplica por el siguiente",
+      "$3 \\cdot 4 = 12$"
+     ],
+     "voz": "Toma el tres y multiplícalo por el número que le sigue, el cuatro: doce."
+    },
+    {
+     "lineas": [
+      "Pega un 25 al final",
+      "$35^2 = 1.225$"
+     ],
+     "voz": "Al final siempre va veinticinco. Doce y veinticinco: mil doscientos veinticinco."
+    }
+   ],
+   "remate": "Termina en 5: n · (n + 1) y pega 25",
+   "cierre": {
+    "voz": "Prueba con sesenta y cinco: seis por siete, cuarenta y dos, y pegas veinticinco: cuatro mil doscientos veinticinco. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1116-05"
+ },
+ {
+  "formato": "cuenta",
+  "musica": "rock",
+  "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: lee las 4 alternativas antes de marcar 👀 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+  "pizarra_dato": {
+   "subtitulo": "Tip del día 👇",
+   "intro_voz": "Tip del día: lee todas las alternativas antes de marcar.",
+   "titulo": "Tip: las alternativas",
+   "pasos": [
+    {
+     "lineas": [
+      "Lee las cuatro"
+     ],
+     "voz": "Aunque creas tener la respuesta, lee las cuatro alternativas antes de marcar."
+    },
+    {
+     "lineas": [
+      "¿No aparece tu resultado?"
+     ],
+     "voz": "Si tu resultado no está, revisa signos, unidades y qué te preguntaban."
+    },
+    {
+     "lineas": [
+      "Ojo con las parecidas"
+     ],
+     "voz": "Las alternativas incorrectas suelen salir de errores típicos, por eso a veces parecen correctas."
+    }
+   ],
+   "remate": "Lee las 4 alternativas ✅",
+   "cierre": {
+    "voz": "Un segundo de revisión vale más que un punto perdido. Sigue a math paes punto c, ele."
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1116-06"
+ },
+ {
+  "formato": "sketch",
+  "musica": "payaso",
+  "texto_post": "Benja fue a la feria por «una palta» y volvió con kilo y medio 🥑😅 ¿Cuánto pagó? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Feria #Palta",
+  "escenas": [
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "feliz",
+    "entrada": "caminando",
+    "voz": "Mi mamá me mandó a la feria a comprar una palta.",
+    "efecto": "boing",
+    "t_efecto": 0.75
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "sorpresa",
+    "cartel": "🥑 «¿Le pongo kilo y medio, casero?»<br>Palta: \\$3.800 el kilo",
+    "efecto": "redoble",
+    "t_cartel": 0.1,
+    "dur_min": 2.4
+   },
+   {
+    "fondo": "aula",
+    "personaje": "benja",
+    "expresion": "nervioso",
+    "voz": "Le dije que sí… ¿y ahora cuánto le pago?",
+    "efecto": "tictac"
+   },
+   {
+    "fondo": "aula",
+    "personaje": "profe",
+    "expresion": "feliz",
+    "entrada": "derecha",
+    "cartel": "¿Lo sacas en 15 segundos? 🧠",
+    "t_cartel": 0.9,
+    "y_cartel": 700,
+    "voz": "Precio por kilo por cantidad de kilos, Benja. ¿Cuánto pagas?"
+   }
+  ],
+  "problema": {
+   "nivel": "M1",
+   "enunciado": "En la feria, la palta cuesta <b>\\$3.800 el kilo</b>. Si Benja compra <b>1,5 kg</b>, ¿cuánto paga?",
+   "alternativas": [
+    "\\$5.300",
+    "\\$5.700",
+    "≈ \\$2.533",
+    "\\$57.000"
+   ],
+   "valores": [
+    "5300",
+    "5700",
+    "7600/3",
+    "57000"
+   ],
+   "correcta": 1,
+   "verificacion": "respuesta = Rational(3800) * Rational(3, 2)",
+   "pizarra": {
+    "pasos": [
+     {
+      "lineas": [
+       "Un kilo y medio kilo",
+       "$3.800 + 1.900$"
+      ],
+      "voz": "Un kilo cuesta tres mil ochocientos y medio kilo, la mitad: mil novecientos."
+     },
+     {
+      "lineas": [
+       "Total",
+       "$3.800 \\cdot 1{,}5 = 5.700$"
+      ],
+      "voz": "Sumados dan cinco mil setecientos pesos."
+     }
+    ],
+    "cierre": {
+     "voz": "La respuesta es la be: cinco mil setecientos pesos. Y la próxima vez, pide por unidad, Benja."
+    }
+   }
+  },
+  "tipo": "especial",
+  "uid": "s1116-07"
+ }
+]

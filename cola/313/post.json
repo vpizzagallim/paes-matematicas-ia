@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad con ruleta",
+ "gancho": "Gira la ruleta 🎡",
+ "enunciado": "En una kermés, una ruleta circular tiene un sector <b>premiado</b> cuyo ángulo central mide <b>72°</b>. Si la ruleta se detiene al azar, ¿cuál es la probabilidad de ganar el premio?",
+ "alternativas": [
+  "$\\dfrac{1}{72}$",
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{18}{25}$",
+  "$\\dfrac{1}{5}$"
+ ],
+ "valores": [
+  "1/72",
+  "1/4",
+  "18/25",
+  "1/5"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "La vuelta completa mide 360°, así que $$P = \\frac{72}{360}$$",
+  "Simplificando: $$\\frac{72}{360} = \\frac{1}{5}$$"
+ ],
+ "trampa": "Dividir por 100 en vez de 360 ($\\tfrac{72}{100}$, marcar C) o creer que solo un número de 72 sirve (A).",
+ "clave": "Con sectores circulares, la probabilidad es <b>ángulo del sector ÷ 360°</b>.",
+ "verificacion": "respuesta = Rational(72, 360)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Sobre la vuelta completa",
+     "$P = \\dfrac{72}{360}$"
+    ],
+    "voz": "Toda la ruleta mide trescientos sesenta grados. El sector premiado ocupa setenta y dos."
+   },
+   {
+    "lineas": [
+     "Simplificamos",
+     "$\\dfrac{72}{360} = \\dfrac{1}{5}$"
+    ],
+    "voz": "Setenta y dos trescientos sesentavos es lo mismo que un quinto."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: un quinto. En una ruleta, la probabilidad es el ángulo del sector dividido por trescientos sesenta. El error típico es dividir por cien, como si los grados fueran porcentajes. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "313"
+}

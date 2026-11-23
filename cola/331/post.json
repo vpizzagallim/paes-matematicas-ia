@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "División con resto: viajes con la tarjeta",
+ "gancho": "¿Te alcanza para volver? 🚇",
+ "enunciado": "Martina carga <b>\\$5.000</b> en su tarjeta de transporte. Si cada viaje le cuesta <b>\\$760</b>, ¿cuántos <b>viajes completos</b> puede pagar con esa carga?",
+ "alternativas": [
+  "6",
+  "5",
+  "6,58",
+  "7"
+ ],
+ "valores": [
+  "6",
+  "5",
+  "329/50",
+  "7"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Se divide la carga por el valor del viaje: $$5.000 : 760 \\approx 6{,}58$$",
+  "Solo cuentan los viajes completos: $$6 \\cdot 760 = 4.560 \\le 5.000$$ y $$7 \\cdot 760 = 5.320 > 5.000$$"
+ ],
+ "trampa": "Redondear $6{,}58$ hacia arriba y marcar D, o dar el decimal como respuesta (C).",
+ "clave": "Cuando se pregunta por unidades <b>completas</b>, se toma la parte entera de la división, sin redondear hacia arriba.",
+ "verificacion": "carga, viaje = 5000, 760; n = 0\nwhile (n + 1)*viaje <= carga: n += 1\nrespuesta = Integer(n)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Dividimos",
+     "$5.000 : 760 \\approx 6{,}58$"
+    ],
+    "voz": "Cinco mil dividido en setecientos sesenta da seis coma cinco ocho."
+   },
+   {
+    "lineas": [
+     "Solo viajes completos",
+     "$6 \\cdot 760 = 4.560$"
+    ],
+    "voz": "Pero no existe medio viaje. Seis viajes cuestan cuatro mil quinientos sesenta, y el séptimo ya no alcanza."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: seis viajes. Si preguntan por cosas completas, te quedas con la parte entera. Redondear a siete te deja atrapado en el torniquete. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "331"
+}

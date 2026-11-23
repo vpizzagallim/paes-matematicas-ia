@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Simplificación de fracciones algebraicas",
+ "gancho": "Factoriza y vuela 🚀",
+ "enunciado": "¿Cuál es el valor de la expresión $$\\frac{x^2 - 9}{x - 3}$$ cuando $x = 97$?",
+ "alternativas": [
+  "1",
+  "94",
+  "9.400",
+  "100"
+ ],
+ "valores": [
+  "1",
+  "94",
+  "9400",
+  "100"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Se factoriza el numerador como suma por diferencia: $$\\frac{(x + 3)(x - 3)}{x - 3} = x + 3$$",
+  "Con $x = 97$: $$97 + 3 = 100$$"
+ ],
+ "trampa": "Calcular solo el numerador, $97^2 - 9 = 9.400$, y marcar C, o simplificar mal y quedarse con $x - 3 = 94$ (B).",
+ "clave": "Antes de reemplazar, <b>factoriza y simplifica</b>: $a^2 - b^2 = (a + b)(a - b)$.",
+ "verificacion": "x = symbols('x'); respuesta = ((x**2 - 9)/(x - 3)).subs(x, 97)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Factorizamos",
+     "$\\dfrac{(x+3)(x-3)}{x-3} = x + 3$"
+    ],
+    "voz": "Equis al cuadrado menos nueve es suma por diferencia: equis más tres por equis menos tres. Se simplifica y queda equis más tres."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$97 + 3 = 100$"
+    ],
+    "voz": "Noventa y siete más tres: cien."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cien. Antes de reemplazar números grandes, factoriza y simplifica. Te ahorras calcular noventa y siete al cuadrado, y además evitas el error de quedarte con nueve mil cuatrocientos, que es solo el numerador. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "303"
+}

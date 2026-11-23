@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Inecuación: compra con despacho",
+ "gancho": "¿Cuántas poleras alcanzan? 👕",
+ "enunciado": "Una tienda online vende poleras a <b>\\$6.990</b> cada una y cobra <b>\\$3.500</b> de despacho por pedido. Con <b>\\$50.000</b>, ¿cuál es la <b>máxima</b> cantidad de poleras que se pueden comprar en un pedido?",
+ "alternativas": [
+  "7",
+  "6",
+  "5",
+  "8"
+ ],
+ "valores": [
+  "7",
+  "6",
+  "5",
+  "8"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Con $n$ poleras: $$6.990n + 3.500 \\le 50.000$$",
+  "$$6.990n \\le 46.500 \\Rightarrow n \\le 6{,}65\\ldots$$ Como $n$ es entero, el máximo es 6."
+ ],
+ "trampa": "Olvidar el despacho, $50.000 : 6.990 \\approx 7{,}15$, y marcar A, o redondear $6{,}65$ hacia arriba (también B).",
+ "clave": "En una inecuación con objetos enteros, el máximo es la <b>parte entera</b> de la solución.",
+ "verificacion": "n = symbols('n', integer=True, positive=True); m = 0\nwhile 6990*(m + 1) + 3500 <= 50000: m += 1\nrespuesta = Integer(m)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$6.990n + 3.500 \\le 50.000$"
+    ],
+    "voz": "El total, poleras más despacho, no puede pasar de cincuenta mil."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$n \\le 6{,}65 \\Rightarrow 6$"
+    ],
+    "voz": "Ene es menor o igual a seis coma seis cinco. Como no se compran pedazos de polera, el máximo es seis."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: seis poleras. No olvides los cobros fijos como el despacho, y en cantidades enteras nunca redondees hacia arriba: con siete poleras te pasas del presupuesto. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "353"
+}

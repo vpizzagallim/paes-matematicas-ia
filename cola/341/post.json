@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Sector circular: la pizza",
+ "gancho": "¿Cuánta pizza te toca? 🍕",
+ "enunciado": "Una pizza circular de <b>40 cm de diámetro</b> se corta en <b>8 trozos iguales</b>. ¿Cuál es el <b>área</b> de un trozo?",
+ "alternativas": [
+  "$400\\pi$ cm²",
+  "$200\\pi$ cm²",
+  "$50\\pi$ cm²",
+  "$5\\pi$ cm²"
+ ],
+ "valores": [
+  "400*pi",
+  "200*pi",
+  "50*pi",
+  "5*pi"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "El radio es la mitad del diámetro: $r = 20$. Área total: $$\\pi \\cdot 20^2 = 400\\pi$$",
+  "Cada trozo es un octavo: $$\\frac{400\\pi}{8} = 50\\pi \\text{ cm}^2$$"
+ ],
+ "trampa": "Usar el diámetro como radio, $\\pi \\cdot 40^2 : 8 = 200\\pi$ (B), o dividir el perímetro, $40\\pi : 8$ (D).",
+ "clave": "Área de un sector: $\\dfrac{\\text{ángulo}}{360°} \\cdot \\pi r^2$. Siempre con el <b>radio</b>, no con el diámetro.",
+ "verificacion": "r = Rational(40, 2); respuesta = pi*r**2/8",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Área total",
+     "$\\pi \\cdot 20^2 = 400\\pi$"
+    ],
+    "voz": "El radio es veinte. El área de la pizza es pi por veinte al cuadrado: cuatrocientos pi."
+   },
+   {
+    "lineas": [
+     "Un trozo",
+     "$\\dfrac{400\\pi}{8} = 50\\pi$"
+    ],
+    "voz": "Dividida en ocho: cincuenta pi centímetros cuadrados por trozo."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cincuenta pi centímetros cuadrados. Si te dan el diámetro, divídelo por dos antes de usar la fórmula. Con el diámetro te sale una pizza cuatro veces más grande. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "341"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Binomial: al menos un acierto",
+ "gancho": "Respondiendo al azar 🍀",
+ "enunciado": "Benja responde <b>al azar</b> 3 preguntas de 4 alternativas cada una (una correcta). ¿Cuál es la probabilidad de que acierte <b>al menos una</b>?",
+ "alternativas": [
+  "$\\dfrac{1}{64}$",
+  "$\\dfrac{3}{4}$",
+  "$\\dfrac{37}{64}$",
+  "$\\dfrac{27}{64}$"
+ ],
+ "valores": [
+  "1/64",
+  "3/4",
+  "37/64",
+  "27/64"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Es más fácil usar el complemento: la probabilidad de <b>no acertar ninguna</b> es $$\\left(\\frac{3}{4}\\right)^3 = \\frac{27}{64}$$",
+  "$$P = 1 - \\frac{27}{64} = \\frac{37}{64}$$"
+ ],
+ "trampa": "Sumar $\\tfrac{1}{4}$ tres veces y marcar B, o quedarse con la probabilidad de no acertar ninguna (D).",
+ "clave": "«Al menos uno» se calcula casi siempre como $1 - P(\\text{ninguno})$.",
+ "verificacion": "n, p = 3, Rational(1, 4); respuesta = sum(binomial(n, j)*p**j*(1 - p)**(n - j) for j in range(1, n + 1))",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ninguna correcta",
+     "$\\left(\\dfrac{3}{4}\\right)^3 = \\dfrac{27}{64}$"
+    ],
+    "voz": "Usamos el complemento. Fallar una es tres cuartos, y fallar las tres es tres cuartos al cubo: veintisiete sesenta y cuatroavos."
+   },
+   {
+    "lineas": [
+     "Al menos una",
+     "$1 - \\dfrac{27}{64} = \\dfrac{37}{64}$"
+    ],
+    "voz": "Al menos una es uno menos eso: treinta y siete sesenta y cuatroavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: treinta y siete sesenta y cuatroavos. Al menos uno es uno menos la probabilidad de ninguno. Sumar un cuarto tres veces no funciona: con cuatro preguntas te daría uno, y adivinar no te asegura nada. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "330"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Área de un deltoide: el volantín",
+ "gancho": "El volantín de septiembre 🪁",
+ "enunciado": "Un volantín tiene forma de <b>deltoide</b>, con diagonales de <b>60 cm</b> y <b>40 cm</b>. ¿Cuál es su <b>área</b>?",
+ "alternativas": [
+  "2.400 cm²",
+  "1.200 cm²",
+  "600 cm²",
+  "200 cm²"
+ ],
+ "valores": [
+  "2400",
+  "1200",
+  "600",
+  "200"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "El área de un deltoide (o de un rombo) es el producto de las diagonales dividido por 2: $$A = \\frac{d_1 \\cdot d_2}{2}$$",
+  "$$A = \\frac{60 \\cdot 40}{2} = 1.200 \\text{ cm}^2$$"
+ ],
+ "trampa": "Multiplicar las diagonales sin dividir por 2 (2.400, marcar A), o sumar las diagonales (D).",
+ "clave": "Deltoide y rombo: $A = \\dfrac{d_1 \\cdot d_2}{2}$, porque ocupan la mitad del rectángulo formado por sus diagonales.",
+ "verificacion": "d1, d2 = 60, 40; respuesta = Rational(d1*d2, 2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Fórmula del deltoide",
+     "$A = \\dfrac{d_1 \\cdot d_2}{2}$"
+    ],
+    "voz": "El área de un deltoide es diagonal por diagonal, dividido en dos."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$\\dfrac{60 \\cdot 40}{2} = 1.200$"
+    ],
+    "voz": "Sesenta por cuarenta es dos mil cuatrocientos. La mitad: mil doscientos centímetros cuadrados."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: mil doscientos centímetros cuadrados. El volantín ocupa justo la mitad del rectángulo que forman sus diagonales. Por eso, si no divides por dos, te sale el doble: dos mil cuatrocientos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "305"
+}

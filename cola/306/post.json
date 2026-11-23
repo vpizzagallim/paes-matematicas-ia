@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Diagrama de cajón",
+ "gancho": "¿Qué hay dentro de la caja? 📦",
+ "enunciado": "En un <b>diagrama de cajón</b> sobre el tiempo que demoran los estudiantes en llegar al liceo, el primer cuartil es <b>15 min</b> y el tercer cuartil es <b>35 min</b>. ¿Qué <b>porcentaje</b> de los estudiantes demora entre 15 y 35 minutos, aproximadamente?",
+ "alternativas": [
+  "20%",
+  "25%",
+  "75%",
+  "50%"
+ ],
+ "valores": [
+  "20",
+  "25",
+  "75",
+  "50"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Bajo el primer cuartil queda el 25% de los datos y bajo el tercero, el 75%.",
+  "Entre ambos: $$75\\% - 25\\% = 50\\%$$"
+ ],
+ "trampa": "Confundir los cuartiles con porcentajes acumulados distintos (25% o 75%), o restar los minutos, $35 - 15 = 20$ (A).",
+ "clave": "La «caja» del diagrama va de $Q_1$ a $Q_3$ y siempre contiene cerca del <b>50% central</b> de los datos.",
+ "verificacion": "Q1, Q3 = 25, 75; respuesta = Integer(Q3 - Q1)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Los cuartiles",
+     "$Q_1 \\to 25\\%,\\ Q_3 \\to 75\\%$"
+    ],
+    "voz": "Bajo el primer cuartil está el veinticinco por ciento, y bajo el tercero, el setenta y cinco."
+   },
+   {
+    "lineas": [
+     "La caja",
+     "$75\\% - 25\\% = 50\\%$"
+    ],
+    "voz": "Entre los dos queda la mitad de los estudiantes: el cincuenta por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: cincuenta por ciento. La caja del diagrama siempre encierra la mitad central de los datos, sin importar los números. Y no restes los minutos: veinte es un tiempo, no un porcentaje. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "306"
+}

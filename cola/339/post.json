@@ -1,0 +1,50 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Sistema 2x2: monedas en la alcancía",
+ "gancho": "Rompe la alcancía 🐷",
+ "enunciado": "En una alcancía hay <b>30 monedas</b>, solo de <b>\\$100</b> y de <b>\\$500</b>, que suman <b>\\$7.400</b>. ¿Cuántas monedas de <b>\\$500</b> hay?",
+ "alternativas": [
+  "19",
+  "11",
+  "15",
+  "14,8"
+ ],
+ "valores": [
+  "19",
+  "11",
+  "15",
+  "74/5"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Con $x$ monedas de \\$100 e $y$ de \\$500: $$x + y = 30$$ $$100x + 500y = 7.400$$",
+  "Reemplazando $x = 30 - y$: $$3.000 + 400y = 7.400 \\Rightarrow y = 11$$"
+ ],
+ "trampa": "Responder las monedas de \\$100 (A), o dividir $7.400 : 500 = 14{,}8$ ignorando las otras monedas (D).",
+ "clave": "Un sistema 2x2 nace de dos datos distintos: <b>cantidad</b> de objetos y <b>valor</b> total.",
+ "verificacion": "x, y = symbols('x y'); s = solve([Eq(x + y, 30), Eq(100*x + 500*y, 7400)], [x, y]); respuesta = s[y]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$x + y = 30$",
+     "$100x + 500y = 7.400$"
+    ],
+    "voz": "Equis monedas de cien e ye de quinientos. Suman treinta monedas y siete mil cuatrocientos pesos."
+   },
+   {
+    "lineas": [
+     "Sustituimos",
+     "$3.000 + 400y = 7.400 \\Rightarrow y = 11$"
+    ],
+    "voz": "Reemplazando equis por treinta menos ye, queda cuatrocientos ye igual a cuatro mil cuatrocientos. Ye vale once."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: once monedas. Revisa qué incógnita te piden: once son las de quinientos y diecinueve las de cien. Elegir la otra es el error más típico. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "339"
+}

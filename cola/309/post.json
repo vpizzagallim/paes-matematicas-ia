@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Recargo por pagar en cuotas",
+ "gancho": "¿Contado o en cuotas? 📱",
+ "enunciado": "Un celular cuesta <b>\\$240.000</b> al contado, o bien <b>12 cuotas de \\$22.000</b>. ¿En qué <b>porcentaje</b> aumenta el precio si se paga en cuotas?",
+ "alternativas": [
+  "110%",
+  "10%",
+  "≈ 9,1%",
+  "24%"
+ ],
+ "valores": [
+  "110",
+  "10",
+  "100/11",
+  "24"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "En cuotas se paga $$12 \\cdot 22.000 = 264.000$$",
+  "El recargo es $24.000$, y se compara con el precio <b>original</b>: $$\\frac{24.000}{240.000} = 0{,}1 = 10\\%$$"
+ ],
+ "trampa": "Dividir el recargo por el precio en cuotas ($24.000 : 264.000 ≈ 9,1\\%$) y marcar C, o confundir el factor 1,1 con 110% (A).",
+ "clave": "El porcentaje de aumento siempre se calcula sobre el <b>valor inicial</b>: $\\dfrac{\\text{final} - \\text{inicial}}{\\text{inicial}}$.",
+ "verificacion": "contado, cuotas = 240000, 12*22000; respuesta = Rational(cuotas - contado, contado)*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Total en cuotas",
+     "$12 \\cdot 22.000 = 264.000$"
+    ],
+    "voz": "Doce cuotas de veintidós mil suman doscientos sesenta y cuatro mil pesos."
+   },
+   {
+    "lineas": [
+     "Recargo sobre el contado",
+     "$\\dfrac{24.000}{240.000} = 10\\%$"
+    ],
+    "voz": "Son veinticuatro mil pesos más. Sobre el precio al contado, eso es un diez por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: diez por ciento. El aumento porcentual se calcula sobre el valor inicial, no sobre el final. Si divides por el precio en cuotas te sale nueve coma uno, y ese no es el recargo que te cobra la tienda. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "309"
+}

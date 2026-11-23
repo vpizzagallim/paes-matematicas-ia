@@ -1,0 +1,84 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Grupo de estudio = 5 amigos y 3 pizzas 🍕📚 ¿Cuántos trozos sobran si todos comen lo mismo? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #GrupoDeEstudio #Pizza",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "¡Grupo de estudio en mi casa! Somos cinco y pedí tres pizzas.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🍕 3 pizzas × 8 trozos<br>👥 5 amigos, todos comen lo mismo",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.4
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Estudiamos cero minutos, pero la pizza la repartimos perfecto… creo.",
+   "efecto": "trombon",
+   "sacudir": true
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Benja, al menos la división te tiene que salir bien. ¿Cuántos trozos sobran?"
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Benja pide <b>3 pizzas</b> de <b>8 trozos</b> cada una para <b>5 amigos</b>. Si cada uno come la <b>misma cantidad</b> de trozos enteros, la mayor posible, ¿cuántos trozos <b>sobran</b>?",
+  "alternativas": [
+   "0",
+   "4",
+   "4,8",
+   "1"
+  ],
+  "valores": [
+   "0",
+   "4",
+   "24/5",
+   "1"
+  ],
+  "correcta": 1,
+  "verificacion": "total = 3*8; respuesta = Integer(total % 5)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Total de trozos",
+      "$3 \\cdot 8 = 24$"
+     ],
+     "voz": "Tres pizzas de ocho trozos: veinticuatro trozos."
+    },
+    {
+     "lineas": [
+      "Repartimos",
+      "$24 = 5 \\cdot 4 + 4$"
+     ],
+     "voz": "Cada uno come cuatro trozos, que son veinte, y sobran cuatro."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: sobran cuatro trozos. Y esos cuatro se los come Benja mientras «repasa»."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-02"
+}

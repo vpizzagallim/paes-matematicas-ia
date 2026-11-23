@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Suma de cuadrados con a + b y ab",
+ "gancho": "Sin calcular a ni b 🤯",
+ "enunciado": "Si $a + b = 7$ y $a \\cdot b = 10$, ¿cuál es el valor de $$a^2 + b^2$$?",
+ "alternativas": [
+  "39",
+  "69",
+  "49",
+  "29"
+ ],
+ "valores": [
+  "39",
+  "69",
+  "49",
+  "29"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Del cuadrado de binomio: $$(a + b)^2 = a^2 + 2ab + b^2$$",
+  "Despejando: $$a^2 + b^2 = 7^2 - 2 \\cdot 10 = 49 - 20 = 29$$"
+ ],
+ "trampa": "Creer que $a^2 + b^2 = (a + b)^2 = 49$ (C), o restar solo $ab$ una vez, $49 - 10 = 39$ (A).",
+ "clave": "$a^2 + b^2 = (a + b)^2 - 2ab$: no necesitas conocer $a$ ni $b$ por separado.",
+ "verificacion": "a, b = symbols('a b'); s = solve([Eq(a + b, 7), Eq(a*b, 10)], [a, b]); respuesta = s[0][0]**2 + s[0][1]**2",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cuadrado de binomio",
+     "$(a + b)^2 = a^2 + 2ab + b^2$"
+    ],
+    "voz": "Usamos el cuadrado de binomio: a más be al cuadrado es a cuadrado, más dos a be, más be cuadrado."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$49 - 2 \\cdot 10 = 29$"
+    ],
+    "voz": "Siete al cuadrado es cuarenta y nueve. Le restamos dos veces diez y quedan veintinueve."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: veintinueve. a cuadrado más be cuadrado no es lo mismo que a más be al cuadrado: falta restar dos a be. Ese es el error que la PAES espera que cometas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "365"
+}

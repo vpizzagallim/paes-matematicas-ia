@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Rango intercuartílico",
+ "gancho": "¿Qué tan dispersos? 📊",
+ "enunciado": "En un ensayo PAES, los puntajes de un curso tienen <b>mínimo 410</b>, <b>Q1 = 520</b>, <b>mediana 610</b>, <b>Q3 = 700</b> y <b>máximo 850</b>. ¿Cuál es el <b>rango intercuartílico</b>?",
+ "alternativas": [
+  "180",
+  "610",
+  "90",
+  "440"
+ ],
+ "valores": [
+  "180",
+  "610",
+  "90",
+  "440"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "El rango intercuartílico es la diferencia entre el tercer y el primer cuartil: $$RIC = Q_3 - Q_1$$",
+  "$$RIC = 700 - 520 = 180$$"
+ ],
+ "trampa": "Calcular el rango, $850 - 410 = 440$ (marcar D), o restar $Q_3$ menos la mediana (C).",
+ "clave": "<b>Rango</b> = máximo − mínimo. <b>Rango intercuartílico</b> = $Q_3 - Q_1$: mide la dispersión del 50% central.",
+ "verificacion": "Q1, Q3 = 520, 700; respuesta = Integer(Q3 - Q1)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Tercer menos primer cuartil",
+     "$RIC = Q_3 - Q_1$"
+    ],
+    "voz": "El rango intercuartílico es el tercer cuartil menos el primero."
+   },
+   {
+    "lineas": [
+     "Reemplazamos",
+     "$700 - 520 = 180$"
+    ],
+    "voz": "Setecientos menos quinientos veinte: ciento ochenta puntos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: ciento ochenta. No lo confundas con el rango, que es máximo menos mínimo y aquí da cuatrocientos cuarenta. El intercuartílico solo mira la mitad central, por eso no le afectan los puntajes extremos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "326"
+}

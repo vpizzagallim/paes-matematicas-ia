@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Volumen de un prisma triangular",
+ "gancho": "¿Cuánto aire cabe en la carpa? ⛺",
+ "enunciado": "Una carpa tiene forma de <b>prisma triangular</b>. Su cara frontal es un triángulo de <b>2 m de base</b> y <b>1,5 m de altura</b>, y la carpa mide <b>3 m de largo</b>. ¿Cuál es su <b>volumen</b>?",
+ "alternativas": [
+  "1,5 m³",
+  "4,5 m³",
+  "9 m³",
+  "6,5 m³"
+ ],
+ "valores": [
+  "3/2",
+  "9/2",
+  "9",
+  "13/2"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "El área del triángulo frontal es $$\\frac{2 \\cdot 1{,}5}{2} = 1{,}5 \\text{ m}^2$$",
+  "El volumen del prisma es área basal por largo: $$1{,}5 \\cdot 3 = 4{,}5 \\text{ m}^3$$"
+ ],
+ "trampa": "Olvidar dividir por 2 el área del triángulo (9 m³, marcar C) o quedarse solo con el área (A).",
+ "clave": "Volumen de cualquier prisma: <b>área de la base × largo</b>. Si la base es un triángulo, su área lleva el «dividido por 2».",
+ "verificacion": "b, h, largo = 2, Rational(3, 2), 3; respuesta = b*h/2*largo",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Área del triángulo",
+     "$\\dfrac{2 \\cdot 1{,}5}{2} = 1{,}5$"
+    ],
+    "voz": "La cara frontal es un triángulo: dos por uno coma cinco, dividido en dos, da uno coma cinco metros cuadrados."
+   },
+   {
+    "lineas": [
+     "Por el largo",
+     "$1{,}5 \\cdot 3 = 4{,}5\\ \\text{m}^3$"
+    ],
+    "voz": "Lo multiplicamos por los tres metros de largo: cuatro coma cinco metros cúbicos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuatro coma cinco metros cúbicos. Todo prisma es área basal por largo. El error típico es olvidar que el área del triángulo se divide por dos, y ahí te sale nueve. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "311"
+}

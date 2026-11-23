@@ -1,0 +1,83 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja imprimió las guías en el negocio de la esquina 🖨️ ¿Cuánto vuelto le dieron? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Guias #Vuelto",
+ "escenas": [
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Hoy sí que estudio. Voy a imprimir tres guías de matemática.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "🖨️ 3 guías × 18 páginas<br>\\$50 por página · paga con \\$5.000",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.4
+  },
+  {
+   "fondo": "aula",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "Me dieron el vuelto y ni lo conté. ¿Me lo habrán dado bien?",
+   "efecto": "bocina"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Cuéntalo, Benja. ¿Cuánto vuelto te tenían que dar?"
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Benja imprime <b>3 guías</b> de <b>18 páginas</b> cada una, a <b>\\$50 por página</b>. Si paga con <b>\\$5.000</b>, ¿cuánto <b>vuelto</b> recibe?",
+  "alternativas": [
+   "\\$2.300",
+   "\\$4.100",
+   "\\$2.700",
+   "\\$4.850"
+  ],
+  "valores": [
+   "2300",
+   "4100",
+   "2700",
+   "4850"
+  ],
+  "correcta": 0,
+  "verificacion": "paginas = 3*18; respuesta = Integer(5000 - 50*paginas)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Páginas y costo",
+      "$3 \\cdot 18 \\cdot 50 = 2.700$"
+     ],
+     "voz": "Tres guías de dieciocho páginas son cincuenta y cuatro páginas. A cincuenta pesos: dos mil setecientos."
+    },
+    {
+     "lineas": [
+      "Vuelto",
+      "$5.000 - 2.700 = 2.300$"
+     ],
+     "voz": "Cinco mil menos dos mil setecientos: dos mil trescientos de vuelto."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la a: dos mil trescientos pesos. Ahora solo falta que lea las guías."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-10"
+}

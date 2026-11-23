@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Porcentajes en una tabla de frecuencias",
+ "gancho": "¿Cómo llegas al liceo? 🚌",
+ "enunciado": "Se encuestó a <b>200 estudiantes</b> sobre cómo llegan al liceo: <b>Metro 80</b>, <b>micro 60</b>, <b>a pie 40</b> y <b>bicicleta 20</b>. ¿Qué porcentaje <b>no</b> usa ni Metro ni micro?",
+ "alternativas": [
+  "30%",
+  "70%",
+  "20%",
+  "60%"
+ ],
+ "valores": [
+  "30",
+  "70",
+  "20",
+  "60"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "No usan Metro ni micro los que van a pie o en bicicleta: $$40 + 20 = 60$$",
+  "Sobre el total: $$\\frac{60}{200} = 0{,}3 = 30\\%$$"
+ ],
+ "trampa": "Responder 60 (la cantidad de estudiantes, no el porcentaje, marcar D) o calcular el porcentaje de los que sí usan Metro o micro (B).",
+ "clave": "Porcentaje = $\\dfrac{\\text{parte}}{\\text{total}} \\cdot 100$. Lee si te piden cantidad o porcentaje.",
+ "verificacion": "datos = {'metro': 80, 'micro': 60, 'pie': 40, 'bici': 20}; total = sum(datos.values()); assert total == 200; respuesta = Rational(datos['pie'] + datos['bici'], total)*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Ni Metro ni micro",
+     "$40 + 20 = 60$"
+    ],
+    "voz": "Los que no usan ni Metro ni micro son los que van a pie o en bicicleta: sesenta."
+   },
+   {
+    "lineas": [
+     "Porcentaje",
+     "$\\dfrac{60}{200} = 30\\%$"
+    ],
+    "voz": "Sesenta de doscientos es el treinta por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: treinta por ciento. Primero identifica la parte, después divide por el total. Sesenta es la cantidad de estudiantes, y setenta por ciento es justo lo contrario de lo que te preguntan. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "319"
+}

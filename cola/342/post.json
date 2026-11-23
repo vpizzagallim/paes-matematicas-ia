@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Probabilidad y estadística",
+ "tema": "Regla aditiva con un dado",
+ "gancho": "Primo o mayor que 4 🎲",
+ "enunciado": "Se lanza un dado común de 6 caras. ¿Cuál es la probabilidad de obtener un número <b>primo</b> o un número <b>mayor que 4</b>?",
+ "alternativas": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{6}$",
+  "$\\dfrac{2}{3}$",
+  "$\\dfrac{5}{6}$"
+ ],
+ "valores": [
+  "1/2",
+  "1/6",
+  "2/3",
+  "5/6"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Primos: $\\{2, 3, 5\\}$. Mayores que 4: $\\{5, 6\\}$. El 5 está en ambos.",
+  "$$P = \\frac{3}{6} + \\frac{2}{6} - \\frac{1}{6} = \\frac{4}{6} = \\frac{2}{3}$$"
+ ],
+ "trampa": "Sumar sin restar la intersección, $\\dfrac{5}{6}$ (D), o calcular solo la intersección (B).",
+ "clave": "$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$: lo que está en ambos se cuenta <b>una vez</b>.",
+ "verificacion": "A = {2, 3, 5}; B = {x for x in range(1, 7) if x > 4}; respuesta = Rational(len(A | B), 6)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Los casos",
+     "$\\{2, 3, 5\\} \\cup \\{5, 6\\}$"
+    ],
+    "voz": "Primos: dos, tres y cinco. Mayores que cuatro: cinco y seis. Ojo, el cinco está en los dos."
+   },
+   {
+    "lineas": [
+     "Sin contar doble",
+     "$\\dfrac{3}{6} + \\dfrac{2}{6} - \\dfrac{1}{6} = \\dfrac{2}{3}$"
+    ],
+    "voz": "Tres más dos menos uno: cuatro casos de seis, o sea, dos tercios."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: dos tercios. Cuando dos eventos comparten resultados, réstalos una vez. Recuerda también que el uno no es primo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "342"
+}

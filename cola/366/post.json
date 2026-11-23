@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Recta y área con los ejes",
+ "gancho": "El triángulo de la recta 📐",
+ "enunciado": "La recta de ecuación $$2x + 3y = 12$$ forma un triángulo con los ejes coordenados. ¿Cuál es el <b>área</b> de ese triángulo?",
+ "alternativas": [
+  "24",
+  "6",
+  "10",
+  "12"
+ ],
+ "valores": [
+  "24",
+  "6",
+  "10",
+  "12"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Corte con el eje $X$ ($y = 0$): $x = 6$. Corte con el eje $Y$ ($x = 0$): $y = 4$.",
+  "El triángulo es rectángulo, con catetos 6 y 4: $$\\text{Área} = \\frac{6 \\cdot 4}{2} = 12$$"
+ ],
+ "trampa": "Olvidar dividir por 2 (A), o sumar los cortes, $6 + 4 = 10$ (C).",
+ "clave": "Para los cortes con los ejes: $y = 0$ da el corte con $X$; $x = 0$ da el corte con $Y$.",
+ "verificacion": "x, y = symbols('x y'); a = solve(Eq(2*x, 12), x)[0]; b = solve(Eq(3*y, 12), y)[0]; respuesta = a*b/2",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cortes con los ejes",
+     "$x = 6,\\quad y = 4$"
+    ],
+    "voz": "Con ye igual a cero, equis vale seis. Con equis igual a cero, ye vale cuatro."
+   },
+   {
+    "lineas": [
+     "Área",
+     "$\\dfrac{6 \\cdot 4}{2} = 12$"
+    ],
+    "voz": "Es un triángulo rectángulo de catetos seis y cuatro: el área es doce."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: doce. Una recta que corta ambos ejes forma un triángulo rectángulo con ellos. Busca los cortes, y el resto es base por altura partido en dos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "366"
+}

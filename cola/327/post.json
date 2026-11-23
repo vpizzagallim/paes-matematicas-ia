@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Álgebra y funciones",
+ "tema": "Intersección de rectas: planes de gimnasio",
+ "gancho": "¿Qué plan conviene? 🏋️",
+ "enunciado": "El gimnasio A cobra <b>\\$15.000</b> de matrícula más <b>\\$3.000</b> por clase: $y = 15.000 + 3.000x$. El gimnasio B no cobra matrícula y cobra <b>\\$6.000</b> por clase: $y = 6.000x$. ¿Con cuántas clases <b>cuestan lo mismo</b>?",
+ "alternativas": [
+  "5",
+  "2,5",
+  "10",
+  "$\\dfrac{5}{3}$"
+ ],
+ "valores": [
+  "5",
+  "5/2",
+  "10",
+  "5/3"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Las rectas se cortan donde los costos son iguales: $$15.000 + 3.000x = 6.000x$$",
+  "$$15.000 = 3.000x \\Rightarrow x = 5$$"
+ ],
+ "trampa": "Dividir $15.000 : 6.000 = 2{,}5$ (marcar B) o sumar las tarifas, $15.000 : 9.000$ (D).",
+ "clave": "El punto de intersección de dos rectas se obtiene <b>igualando sus ecuaciones</b>.",
+ "verificacion": "x, y = symbols('x y'); sol = solve([Eq(y, 15000 + 3000*x), Eq(y, 6000*x)], [x, y]); respuesta = sol[x]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Igualamos",
+     "$15.000 + 3.000x = 6.000x$"
+    ],
+    "voz": "Los dos planes cuestan lo mismo donde las rectas se cortan. Igualamos."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$15.000 = 3.000x \\Rightarrow x = 5$"
+    ],
+    "voz": "Restamos tres mil equis: quince mil igual a tres mil equis. Equis vale cinco clases."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cinco clases. Para encontrar dónde se cortan dos rectas, iguala las ecuaciones. Con cinco clases ambos cuestan treinta mil; con más clases conviene el gimnasio A. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "327"
+}

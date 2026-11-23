@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Área de un triángulo en el plano",
+ "gancho": "Triángulo en la cuadrícula 📐",
+ "enunciado": "Un triángulo tiene vértices en $A(0,\\ 0)$, $B(6,\\ 0)$ y $C(2,\\ 5)$. ¿Cuál es su <b>área</b>?",
+ "alternativas": [
+  "30",
+  "12",
+  "15",
+  "$\\dfrac{25}{2}$"
+ ],
+ "valores": [
+  "30",
+  "12",
+  "15",
+  "25/2"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "La base $AB$ está sobre el eje $X$ y mide 6. La altura es la distancia de $C$ al eje: 5.",
+  "$$\\text{Área} = \\frac{6 \\cdot 5}{2} = 15$$"
+ ],
+ "trampa": "Olvidar dividir por 2 (A), o usar como altura la coordenada $x$ de $C$ y además no dividir: $6 \\cdot 2 = 12$ (B).",
+ "clave": "Si un lado está sobre un eje, la <b>altura</b> es la otra coordenada del vértice opuesto.",
+ "verificacion": "A, B, C = Point(0, 0), Point(6, 0), Point(2, 5); respuesta = abs(Polygon(A, B, C).area)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Base y altura",
+     "$b = 6,\\quad h = 5$"
+    ],
+    "voz": "La base va de cero a seis sobre el eje equis: mide seis. La altura es la distancia del punto ce al eje: cinco."
+   },
+   {
+    "lineas": [
+     "Área",
+     "$\\dfrac{6 \\cdot 5}{2} = 15$"
+    ],
+    "voz": "Base por altura, dividido en dos: quince."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: quince. En el plano, busca un lado apoyado en un eje: así la base y la altura se leen directo. Y nunca olvides dividir por dos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "361"
+}

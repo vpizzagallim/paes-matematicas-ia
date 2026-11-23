@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Binomial: penales",
+ "gancho": "Tanda de penales ⚽",
+ "enunciado": "Una jugadora convierte cada penal con probabilidad <b>0,8</b>, de forma independiente. Si patea <b>3 penales</b>, ¿cuál es la probabilidad de que convierta <b>exactamente 2</b>?",
+ "alternativas": [
+  "0,384",
+  "0,096",
+  "0,128",
+  "0,64"
+ ],
+ "valores": [
+  "48/125",
+  "12/125",
+  "16/125",
+  "16/25"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Una secuencia como «gol, gol, falla» tiene probabilidad $$0{,}8^2 \\cdot 0{,}2 = 0{,}128$$",
+  "La falla puede estar en 3 posiciones: $$\\binom{3}{2} \\cdot 0{,}128 = 0{,}384$$"
+ ],
+ "trampa": "Olvidar las 3 posiciones de la falla (C), o calcular solo $0{,}8^2$ (D).",
+ "clave": "Binomial: $P(X = k) = \\dbinom{n}{k} p^k (1 - p)^{n - k}$. El combinatorio cuenta <b>en qué orden</b> pueden ocurrir.",
+ "verificacion": "n, p = 3, Rational(4, 5); respuesta = binomial(n, 2)*p**2*(1 - p)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Una secuencia",
+     "$0{,}8^2 \\cdot 0{,}2 = 0{,}128$"
+    ],
+    "voz": "Dos goles y una falla, en un orden fijo, tiene probabilidad cero coma uno dos ocho."
+   },
+   {
+    "lineas": [
+     "Tres órdenes posibles",
+     "$3 \\cdot 0{,}128 = 0{,}384$"
+    ],
+    "voz": "La falla puede ser en el primero, el segundo o el tercer penal: tres por eso, cero coma tres ocho cuatro."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cero coma tres ocho cuatro. En la binomial no olvides el combinatorio: cuenta todas las formas de ordenar los éxitos y los fracasos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "371"
+}

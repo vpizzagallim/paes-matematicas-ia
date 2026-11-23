@@ -1,0 +1,36 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: esta semana repasa, no aprendas materia nueva 📚 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: en la última semana, repasa lo que ya sabes.",
+  "titulo": "Tip: repasa lo que sabes",
+  "pasos": [
+   {
+    "lineas": [
+     "Nada de materia nueva"
+    ],
+    "voz": "A pocos días, aprender materia nueva desde cero suele generar más nervios que puntos."
+   },
+   {
+    "lineas": [
+     "Asegura lo que ya sabes"
+    ],
+    "voz": "Repasa los temas que ya dominas y los errores que ya cometiste en tus ensayos."
+   },
+   {
+    "lineas": [
+     "Ejercicios cortos"
+    ],
+    "voz": "Haz ejercicios cortos todos los días para mantener la mano."
+   }
+  ],
+  "remate": "Repasa, no empieces de cero ✅",
+  "cierre": {
+   "voz": "Lo que ya sabes también hay que cuidarlo. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-01"
+}

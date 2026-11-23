@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Varianza al multiplicar por una constante",
+ "gancho": "Datos multiplicados por 3 ✖️",
+ "enunciado": "Los datos $2,\\ 4,\\ 6,\\ 8$ tienen varianza <b>5</b>. Si cada dato se <b>multiplica por 3</b>, ¿cuál es la varianza de los nuevos datos?",
+ "alternativas": [
+  "45",
+  "15",
+  "8",
+  "5"
+ ],
+ "valores": [
+  "45",
+  "15",
+  "8",
+  "5"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "Al multiplicar cada dato por $k$, las distancias a la media se multiplican por $k$, y la varianza por $k^2$.",
+  "$$3^2 \\cdot 5 = 9 \\cdot 5 = 45$$"
+ ],
+ "trampa": "Multiplicar la varianza solo por 3 (B), o creer que no cambia, como pasa al <b>sumar</b> una constante (D).",
+ "clave": "Si $Y = kX$, entonces $\\text{Var}(Y) = k^2\\,\\text{Var}(X)$ y $\\sigma_Y = |k|\\,\\sigma_X$.",
+ "verificacion": "d = [3*v for v in [2, 4, 6, 8]]; m = Rational(sum(d), len(d)); respuesta = sum((v - m)**2 for v in d)/len(d)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Regla",
+     "$\\text{Var}(kX) = k^2\\,\\text{Var}(X)$"
+    ],
+    "voz": "Si multiplicas todos los datos por tres, las distancias a la media también se triplican, y la varianza, que usa cuadrados, se multiplica por nueve."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$9 \\cdot 5 = 45$"
+    ],
+    "voz": "Nueve por cinco: cuarenta y cinco."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: cuarenta y cinco. Sumar una constante no cambia la varianza, pero multiplicar sí, y por el cuadrado. La desviación estándar, en cambio, solo se multiplica por tres. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "367"
+}

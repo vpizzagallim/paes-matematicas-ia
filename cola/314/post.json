@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Tangente en contexto: altura de una antena",
+ "gancho": "La antena del cerro 📡",
+ "enunciado": "Desde un punto ubicado a <b>30 m</b> de la base de una antena, se ve su punta con un ángulo de elevación $\\alpha$ tal que $\\tan\\alpha = 1{,}2$. ¿Cuál es la <b>altura</b> de la antena?",
+ "alternativas": [
+  "36 m",
+  "3,6 m",
+  "25 m",
+  "31,2 m"
+ ],
+ "valores": [
+  "36",
+  "18/5",
+  "25",
+  "156/5"
+ ],
+ "correcta": 0,
+ "pasos": [
+  "La altura es el cateto <b>opuesto</b> y los 30 m son el cateto <b>adyacente</b>: $$\\tan\\alpha = \\frac{h}{30}$$",
+  "$$h = 30 \\cdot 1{,}2 = 36 \\text{ m}$$"
+ ],
+ "trampa": "Dividir $30 : 1{,}2 = 25$ y marcar C, o sumar $30 + 1{,}2$ (D).",
+ "clave": "$\\tan\\alpha = \\dfrac{\\text{opuesto}}{\\text{adyacente}}$: sirve cuando conoces la distancia horizontal y buscas una altura.",
+ "verificacion": "h = symbols('h'); respuesta = solve(Eq(h/30, Rational(6, 5)), h)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Opuesto sobre adyacente",
+     "$\\tan\\alpha = \\dfrac{h}{30}$"
+    ],
+    "voz": "La altura es el cateto opuesto al ángulo, y los treinta metros son el adyacente."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$h = 30 \\cdot 1{,}2 = 36$"
+    ],
+    "voz": "Treinta por uno coma dos: treinta y seis metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la a: treinta y seis metros. Con distancia horizontal y altura, la razón que manda es la tangente. Si divides en vez de multiplicar te sale veinticinco, y con una tangente mayor que uno la altura tiene que ser mayor que la distancia. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "314"
+}

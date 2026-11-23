@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Números",
+ "tema": "Interés simple: capital inicial",
+ "gancho": "¿Cuánto se depositó? 🏦",
+ "enunciado": "Un capital se invierte a <b>interés simple</b> con una tasa de <b>6% anual</b>. Después de <b>3 años</b>, el monto acumulado es <b>\\$1.180.000</b>. ¿Cuál fue el <b>capital inicial</b>?",
+ "alternativas": [
+  "\\$1.112.000",
+  "\\$967.600",
+  "\\$1.000.000",
+  "\\$990.758"
+ ],
+ "valores": [
+  "1112000",
+  "967600",
+  "1000000",
+  "990758"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Con interés simple: $$C(1 + 0{,}06 \\cdot 3) = 1.180.000$$",
+  "$$C \\cdot 1{,}18 = 1.180.000 \\Rightarrow C = 1.000.000$$"
+ ],
+ "trampa": "Restar el 18% al monto, $1.180.000 \\cdot 0{,}82$ (B), o restar solo un año de interés (A).",
+ "clave": "Interés simple: $M = C(1 + i \\cdot t)$. Para volver al capital se <b>divide</b>, no se resta el porcentaje.",
+ "verificacion": "C = symbols('C'); respuesta = solve(Eq(C*(1 + Rational(6, 100)*3), 1180000), C)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Planteamos",
+     "$C(1 + 0{,}06 \\cdot 3) = 1.180.000$"
+    ],
+    "voz": "En tres años, al seis por ciento simple, el capital crece un dieciocho por ciento."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$C = 1.180.000 : 1{,}18 = 1.000.000$"
+    ],
+    "voz": "Dividimos por uno coma uno ocho: el capital era un millón de pesos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: un millón de pesos. Para volver atrás desde el monto final se divide por el factor, no se resta el porcentaje. Restar el dieciocho por ciento te deja con menos plata de la que se depositó. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "343"
+}

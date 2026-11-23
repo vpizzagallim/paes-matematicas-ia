@@ -1,0 +1,83 @@
+{
+ "formato": "sketch",
+ "musica": "payaso",
+ "texto_post": "Benja ahorra para unas zapatillas 👟💸 ¿Cuántos días le faltan con el 20% de descuento? #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Ahorro #Porcentajes",
+ "escenas": [
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "feliz",
+   "entrada": "caminando",
+   "voz": "Voy a ahorrar mil quinientos diarios para mis zapatillas.",
+   "efecto": "boing",
+   "t_efecto": 0.75
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "sorpresa",
+   "cartel": "👟 \\$39.990<br>🔥 ¡20% de descuento!",
+   "efecto": "redoble",
+   "t_cartel": 0.1,
+   "dur_min": 2.4
+  },
+  {
+   "fondo": "pieza",
+   "personaje": "benja",
+   "expresion": "nervioso",
+   "voz": "¿Y ahora cuántos días me faltan?",
+   "efecto": "tictac"
+  },
+  {
+   "fondo": "aula",
+   "personaje": "profe",
+   "expresion": "feliz",
+   "entrada": "derecha",
+   "cartel": "¿Lo sacas en 15 segundos? 🧠",
+   "t_cartel": 0.9,
+   "y_cartel": 700,
+   "voz": "Primero el descuento, Benja. ¿Cuántos días necesitas?"
+  }
+ ],
+ "problema": {
+  "nivel": "M1",
+  "enunciado": "Unas zapatillas cuestan <b>\\$39.990</b> y tienen <b>20% de descuento</b>. Si Benja ahorra <b>\\$1.500 diarios</b>, ¿cuál es la <b>menor</b> cantidad de días que necesita para comprarlas?",
+  "alternativas": [
+   "21",
+   "22",
+   "27",
+   "26"
+  ],
+  "valores": [
+   "21",
+   "22",
+   "27",
+   "26"
+  ],
+  "correcta": 1,
+  "verificacion": "precio = Rational(39990)*Rational(80, 100); d = 0\nwhile d*1500 < precio: d += 1\nrespuesta = Integer(d)",
+  "pizarra": {
+   "pasos": [
+    {
+     "lineas": [
+      "Precio con descuento",
+      "$39.990 \\cdot 0{,}8 = 31.992$"
+     ],
+     "voz": "Con descuento se paga el ochenta por ciento: treinta y un mil novecientos noventa y dos."
+    },
+    {
+     "lineas": [
+      "Días de ahorro",
+      "$31.992 : 1.500 \\approx 21{,}3 \\Rightarrow 22$"
+     ],
+     "voz": "Dividido en mil quinientos da veintiuno coma tres. Con veintiún días no alcanza."
+    }
+   ],
+   "cierre": {
+    "voz": "La respuesta es la be: veintidós días. Aquí se redondea hacia arriba."
+   }
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-05"
+}

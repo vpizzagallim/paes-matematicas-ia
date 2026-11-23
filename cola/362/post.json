@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Geometría",
+ "tema": "Seno en contexto: volantín",
+ "gancho": "El volantín de septiembre 🪁",
+ "enunciado": "El hilo de un volantín mide <b>40 m</b>, está completamente estirado y forma un ángulo de <b>60°</b> con el suelo. Despreciando la altura de la mano, ¿a qué <b>altura</b> está el volantín?",
+ "alternativas": [
+  "$\\dfrac{40\\sqrt{3}}{3}$ m",
+  "$20\\sqrt{3}$ m",
+  "20 m",
+  "$40\\sqrt{3}$ m"
+ ],
+ "valores": [
+  "40*sqrt(3)/3",
+  "20*sqrt(3)",
+  "20",
+  "40*sqrt(3)"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "El hilo es la hipotenusa y la altura es el cateto <b>opuesto</b> al ángulo: $$h = 40 \\cdot \\text{sen}\\,60°$$",
+  "$$h = 40 \\cdot \\frac{\\sqrt{3}}{2} = 20\\sqrt{3} \\text{ m}$$"
+ ],
+ "trampa": "Usar coseno en vez de seno, $40 \\cdot \\cos 60° = 20$ (C), o multiplicar por $\\tan 60°$ (D).",
+ "clave": "Con la hipotenusa conocida: cateto opuesto = hipotenusa · seno; cateto adyacente = hipotenusa · coseno.",
+ "verificacion": "h = 40*sin(pi/3); respuesta = h",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Identificamos",
+     "$h = 40 \\cdot \\text{sen}\\,60°$"
+    ],
+    "voz": "El hilo es la hipotenusa, y la altura es el cateto opuesto al ángulo. Eso es seno."
+   },
+   {
+    "lineas": [
+     "Calculamos",
+     "$40 \\cdot \\dfrac{\\sqrt{3}}{2} = 20\\sqrt{3}$"
+    ],
+    "voz": "Seno de sesenta es raíz de tres partido en dos. La altura es veinte raíz de tres metros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: veinte raíz de tres metros. Fíjate qué lado conoces y cuál buscas. Hipotenusa y opuesto: seno. Si usas coseno te da veinte metros, que es la distancia por el suelo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "362"
+}

@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Distancia entre dos puntos",
+ "gancho": "De la casa al liceo 🗺️",
+ "enunciado": "En un plano de la comuna, con unidades en kilómetros, la casa de Martina está en $(1, 2)$ y su liceo en $(7, 10)$. ¿Cuál es la <b>distancia en línea recta</b> entre ambos?",
+ "alternativas": [
+  "100 km",
+  "$4\\sqrt{13}$ km",
+  "10 km",
+  "14 km"
+ ],
+ "valores": [
+  "100",
+  "4*sqrt(13)",
+  "10",
+  "14"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Las diferencias son $7 - 1 = 6$ y $10 - 2 = 8$. Por Pitágoras: $$d = \\sqrt{6^2 + 8^2}$$",
+  "$$d = \\sqrt{36 + 64} = \\sqrt{100} = 10$$"
+ ],
+ "trampa": "Sumar las diferencias, $6 + 8 = 14$ (marcar D), u olvidar la raíz (A).",
+ "clave": "Distancia entre dos puntos: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$, que es Pitágoras en el plano.",
+ "verificacion": "respuesta = sqrt((7 - 1)**2 + (10 - 2)**2)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Diferencias",
+     "$\\Delta x = 6,\\ \\Delta y = 8$"
+    ],
+    "voz": "Restamos las coordenadas: seis en equis y ocho en ye."
+   },
+   {
+    "lineas": [
+     "Pitágoras",
+     "$\\sqrt{36 + 64} = 10$"
+    ],
+    "voz": "Treinta y seis más sesenta y cuatro es cien, y la raíz de cien es diez kilómetros."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: diez kilómetros. La distancia en línea recta es Pitágoras con las diferencias de coordenadas. Catorce sería caminar seis y después ocho por las calles, no en línea recta. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "318"
+}

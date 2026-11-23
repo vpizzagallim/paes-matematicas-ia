@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Geometría",
+ "tema": "Ángulos de un triángulo isósceles",
+ "gancho": "El techo de la casa 🏠",
+ "enunciado": "El frontón de un techo es un <b>triángulo isósceles</b>. El ángulo de la punta, entre los dos lados iguales, mide <b>40°</b>. ¿Cuánto mide <b>cada uno</b> de los otros dos ángulos?",
+ "alternativas": [
+  "40°",
+  "50°",
+  "140°",
+  "70°"
+ ],
+ "valores": [
+  "40",
+  "50",
+  "140",
+  "70"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Los ángulos de un triángulo suman 180°: $$180° - 40° = 140°$$",
+  "En un isósceles, los ángulos basales son iguales: $$140° : 2 = 70°$$"
+ ],
+ "trampa": "Olvidar dividir por 2 y marcar C (140°), o creer que los tres ángulos son iguales a 40° (A).",
+ "clave": "Triángulo isósceles: los ángulos opuestos a los lados iguales son <b>iguales</b>. Siempre suman 180° en total.",
+ "verificacion": "a = symbols('a'); respuesta = solve(Eq(40 + 2*a, 180), a)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Suma 180°",
+     "$180° - 40° = 140°$"
+    ],
+    "voz": "Los tres ángulos suman ciento ochenta. Quitando los cuarenta de la punta, quedan ciento cuarenta."
+   },
+   {
+    "lineas": [
+     "Dos ángulos iguales",
+     "$140° : 2 = 70°$"
+    ],
+    "voz": "Como es isósceles, los otros dos son iguales: setenta grados cada uno."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: setenta grados. En un isósceles, los ángulos de la base son iguales. Ciento cuarenta es lo que suman los dos juntos, no cada uno. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "325"
+}

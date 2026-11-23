@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Eje de simetría de una parábola",
+ "gancho": "El espejo de la parábola 🪞",
+ "enunciado": "La parábola de una función cuadrática pasa por los puntos $(-1,\\ 5)$ y $(7,\\ 5)$. ¿Cuál es la ecuación de su <b>eje de simetría</b>?",
+ "alternativas": [
+  "$x = 6$",
+  "$x = 4$",
+  "$y = 5$",
+  "$x = 3$"
+ ],
+ "valores": [
+  "6",
+  "4",
+  "5",
+  "3"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Los dos puntos tienen la misma altura ($y = 5$), así que son simétricos respecto del eje.",
+  "El eje pasa por el punto medio de sus abscisas: $$x = \\frac{-1 + 7}{2} = 3$$"
+ ],
+ "trampa": "Restar en vez de sumar, $\\dfrac{7 - (-1)}{2} = 4$ (B), o confundir el eje con la recta $y = 5$ (C).",
+ "clave": "Dos puntos de una parábola con la <b>misma ordenada</b> están a igual distancia del eje de simetría.",
+ "verificacion": "a, b, c, x = symbols('a b c x')\nf = a*(x + 1)*(x - 7) + 5\nrespuesta = solve(diff(f, x), x)[0]",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Misma altura",
+     "$(-1,\\ 5)\\ \\text{y}\\ (7,\\ 5)$"
+    ],
+    "voz": "Los dos puntos están a la misma altura, cinco. Por eso son simétricos respecto del eje."
+   },
+   {
+    "lineas": [
+     "Punto medio",
+     "$x = \\dfrac{-1 + 7}{2} = 3$"
+    ],
+    "voz": "El eje pasa justo al medio: menos uno más siete, dividido en dos, da tres."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: equis igual a tres. Si dos puntos de una parábola tienen la misma altura, el eje de simetría está justo al medio. Y recuerda: el eje es vertical, siempre es equis igual a algo. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "346"
+}

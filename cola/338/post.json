@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Porcentaje de aumento: puntaje de ensayo",
+ "gancho": "¿Cuánto subiste? 📈",
+ "enunciado": "En el primer ensayo, Diego obtuvo <b>640 puntos</b> y en el segundo, <b>720 puntos</b>. ¿En qué <b>porcentaje</b> aumentó su puntaje?",
+ "alternativas": [
+  "≈ 11,1%",
+  "12,5%",
+  "80%",
+  "8%"
+ ],
+ "valores": [
+  "100/9",
+  "25/2",
+  "80",
+  "8"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "El aumento fue $$720 - 640 = 80$$ puntos.",
+  "Se compara con el puntaje <b>inicial</b>: $$\\frac{80}{640} = 0{,}125 = 12{,}5\\%$$"
+ ],
+ "trampa": "Dar los 80 puntos como si fueran porcentaje (C), o dividir por el puntaje final, $80 : 720$ (A).",
+ "clave": "Variación porcentual: $\\dfrac{\\text{final} - \\text{inicial}}{\\text{inicial}} \\cdot 100$.",
+ "verificacion": "ini, fin = 640, 720; respuesta = Rational(fin - ini, ini)*100",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Cuánto subió",
+     "$720 - 640 = 80$"
+    ],
+    "voz": "Diego subió ochenta puntos."
+   },
+   {
+    "lineas": [
+     "Sobre el inicial",
+     "$\\dfrac{80}{640} = 12{,}5\\%$"
+    ],
+    "voz": "Ochenta sobre seiscientos cuarenta, el puntaje inicial, es cero coma uno dos cinco: doce coma cinco por ciento."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: doce coma cinco por ciento. El porcentaje de aumento siempre se calcula sobre el valor de partida. Si divides por el final, te sale once coma uno, y eso no es lo que subiste. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "338"
+}

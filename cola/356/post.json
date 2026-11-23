@@ -1,0 +1,40 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Dato: dividir por 0,5 es multiplicar por 2 🤯 Y dividir por 0,25 es multiplicar por 4. Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Decimales #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 DATO PAES",
+  "subtitulo": "Dividir por un decimal",
+  "intro_voz": "Dato PAES: dividir por cero coma cinco no achica el número, lo duplica.",
+  "titulo": "Dividir por 0,5 y por 0,25",
+  "pasos": [
+   {
+    "lineas": [
+     "Cero coma cinco es un medio",
+     "$0{,}5 = \\dfrac{1}{2}$"
+    ],
+    "voz": "Cero coma cinco es lo mismo que un medio."
+   },
+   {
+    "lineas": [
+     "Dividir por un medio",
+     "$8 : 0{,}5 = 8 \\cdot 2 = 16$"
+    ],
+    "voz": "Y dividir por un medio es multiplicar por dos. Ocho dividido en cero coma cinco es dieciséis."
+   },
+   {
+    "lineas": [
+     "Con un cuarto",
+     "$8 : 0{,}25 = 8 \\cdot 4 = 32$"
+    ],
+    "voz": "Lo mismo con cero coma dos cinco, que es un cuarto: se multiplica por cuatro."
+   }
+  ],
+  "remate": "÷ 0,5 = × 2 · ÷ 0,25 = × 4",
+  "cierre": {
+   "voz": "Dividir por un número menor que uno siempre agranda el resultado. Si te achicó, revisa. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-07"
+}

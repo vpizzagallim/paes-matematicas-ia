@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Potencias en contexto: cadena de mensajes",
+ "gancho": "El meme que se viralizó 📲",
+ "enunciado": "Benja envía un meme a <b>3 amigos</b> (ronda 1). En la ronda 2, cada uno lo reenvía a <b>3 personas nuevas</b>, y así sucesivamente. ¿Cuántas personas reciben el meme <b>en la ronda 5</b>?",
+ "alternativas": [
+  "15",
+  "243",
+  "363",
+  "125"
+ ],
+ "valores": [
+  "15",
+  "243",
+  "363",
+  "125"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "En cada ronda el número de personas se multiplica por 3: $$3,\\ 9,\\ 27,\\ 81,\\ \\ldots$$",
+  "En la ronda 5: $$3^5 = 243$$"
+ ],
+ "trampa": "Multiplicar $3 \\cdot 5 = 15$ y marcar A, invertir la potencia ($5^3 = 125$) o sumar todas las rondas (363).",
+ "clave": "Si algo se multiplica por el mismo factor en cada etapa, después de $n$ etapas se usa una <b>potencia</b>: $a^n$.",
+ "verificacion": "rondas = [3]\nfor _ in range(4): rondas.append(rondas[-1]*3)\nrespuesta = Integer(rondas[-1])",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Se multiplica por tres",
+     "$3,\\ 9,\\ 27,\\ 81,\\ \\ldots$"
+    ],
+    "voz": "En cada ronda, cada persona lo manda a tres. Tres, nueve, veintisiete, ochenta y uno."
+   },
+   {
+    "lineas": [
+     "Ronda cinco",
+     "$3^5 = 243$"
+    ],
+    "voz": "En la quinta ronda son tres elevado a cinco: doscientas cuarenta y tres personas."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: doscientas cuarenta y tres. Cuando algo se multiplica por lo mismo en cada paso, piensa en potencias. Ojo: si sumas todas las rondas te dan trescientos sesenta y tres, pero eso es el total acumulado, no lo que pasa solo en la quinta. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "315"
+}

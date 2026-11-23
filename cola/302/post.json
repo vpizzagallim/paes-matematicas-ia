@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Números",
+ "tema": "Cambio de moneda con comisión",
+ "gancho": "Dólares para Mendoza ✈️",
+ "enunciado": "Sofía tiene <b>\\$190.000</b> para su viaje a Mendoza. La casa de cambio le cobra una <b>comisión de \\$9.500</b>, que se descuenta antes de cambiar, y vende cada dólar a <b>\\$950</b>. ¿Cuántos <b>dólares</b> recibe?",
+ "alternativas": [
+  "210",
+  "200",
+  "10",
+  "190"
+ ],
+ "valores": [
+  "210",
+  "200",
+  "10",
+  "190"
+ ],
+ "correcta": 3,
+ "pasos": [
+  "Primero se descuenta la comisión: $$190.000 - 9.500 = 180.500$$",
+  "Luego se divide por el valor del dólar: $$180.500 : 950 = 190$$"
+ ],
+ "trampa": "Olvidar la comisión y dividir $190.000 : 950 = 200$, marcando B, o sumarla en vez de restarla (A).",
+ "clave": "Cuando hay cobros previos, primero se ajusta el monto y después se convierte: <b>pesos ÷ precio del dólar</b>.",
+ "verificacion": "pesos, comision, dolar = 190000, 9500, 950; respuesta = Rational(pesos - comision, dolar)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "Descontamos la comisión",
+     "$190.000 - 9.500 = 180.500$"
+    ],
+    "voz": "Primero se descuenta la comisión: quedan ciento ochenta mil quinientos pesos."
+   },
+   {
+    "lineas": [
+     "Pasamos a dólares",
+     "$180.500 : 950 = 190$"
+    ],
+    "voz": "Cada dólar cuesta novecientos cincuenta. Dividimos y salen ciento noventa dólares."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la de: ciento noventa dólares. Para convertir pesos a dólares se divide por el precio del dólar, pero solo con la plata que realmente se cambia. Si olvidas la comisión te salen doscientos, y en la casa de cambio no te van a regalar esos diez dólares. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "302"
+}

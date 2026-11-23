@@ -1,0 +1,40 @@
+{
+ "formato": "dato",
+ "musica": "rock",
+ "texto_post": "💡 Truco: el promedio de datos que suben de a parejo, en 3 segundos 🤯 Guárdalo 📌 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #Promedio #TipsPAES",
+ "pizarra_dato": {
+  "cartel": "💡 TRUCO PAES",
+  "subtitulo": "Promedio en 3 segundos",
+  "intro_voz": "Truco PAES: sacar el promedio de muchos datos sin sumarlos todos.",
+  "titulo": "Datos que suben parejo",
+  "pasos": [
+   {
+    "lineas": [
+     "Ejemplo",
+     "$12,\\ 15,\\ 18,\\ 21,\\ 24$"
+    ],
+    "voz": "Estos datos suben de tres en tres."
+   },
+   {
+    "lineas": [
+     "Primero más último",
+     "$\\dfrac{12 + 24}{2} = 18$"
+    ],
+    "voz": "Cuando suben siempre lo mismo, el promedio es el primero más el último, dividido en dos: dieciocho."
+   },
+   {
+    "lineas": [
+     "¿Por qué?",
+     "$12 + 24 = 15 + 21 = 18 + 18$"
+    ],
+    "voz": "Porque los datos se emparejan desde las puntas y todos los pares suman lo mismo."
+   }
+  ],
+  "remate": "Si suben parejo: media = (primero + último) : 2",
+  "cierre": {
+   "voz": "Y en ese caso la media es igual a la mediana. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-11"
+}

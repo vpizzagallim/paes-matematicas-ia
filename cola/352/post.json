@@ -1,0 +1,36 @@
+{
+ "formato": "cuenta",
+ "musica": "rock",
+ "texto_post": "⏳ Cuenta regresiva PAES. Tip del día: estima antes de marcar 🎯 #PAES #PAES2027 #PAESMatematica #Matematica #Chile #ProfePi #CuentaRegresivaPAES #TipsPAES",
+ "pizarra_dato": {
+  "subtitulo": "Tip del día 👇",
+  "intro_voz": "Tip del día: antes de marcar, pregúntate si el resultado tiene sentido.",
+  "titulo": "Tip: ¿tiene sentido?",
+  "pasos": [
+   {
+    "lineas": [
+     "Estima el tamaño"
+    ],
+    "voz": "Antes de calcular, piensa más o menos cuánto debería dar."
+   },
+   {
+    "lineas": [
+     "Compara con la realidad"
+    ],
+    "voz": "Una probabilidad no pasa de uno, y un descuento no puede subir el precio."
+   },
+   {
+    "lineas": [
+     "Si no cuadra, revisa"
+    ],
+    "voz": "Si tu resultado es absurdo, busca el error antes de marcar."
+   }
+  ],
+  "remate": "Si no tiene sentido, revisa ✅",
+  "cierre": {
+   "voz": "Un resultado raro es una alarma, no una alternativa. Sigue a math paes punto c, ele."
+  }
+ },
+ "tipo": "especial",
+ "uid": "s1123-06"
+}

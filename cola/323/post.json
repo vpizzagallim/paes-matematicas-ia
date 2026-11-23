@@ -1,0 +1,49 @@
+{
+ "nivel": "M1",
+ "eje": "Álgebra y funciones",
+ "tema": "Números pares consecutivos",
+ "gancho": "Tres pares seguidos 🔢",
+ "enunciado": "La suma de <b>tres números pares consecutivos</b> es <b>138</b>. ¿Cuál es el <b>mayor</b> de ellos?",
+ "alternativas": [
+  "44",
+  "48",
+  "47",
+  "46"
+ ],
+ "valores": [
+  "44",
+  "48",
+  "47",
+  "46"
+ ],
+ "correcta": 1,
+ "pasos": [
+  "Si el menor es $n$, los otros son $n + 2$ y $n + 4$: $$n + (n + 2) + (n + 4) = 138$$",
+  "$$3n + 6 = 138 \\Rightarrow n = 44$$ El mayor es $44 + 4 = 48$."
+ ],
+ "trampa": "Responder con el menor (44, marcar A) o el del medio (46, marcar D), o usar consecutivos de 1 en 1 (C).",
+ "clave": "Pares (o impares) consecutivos van de 2 en 2: $n$, $n + 2$, $n + 4$. Fíjate qué número te preguntan.",
+ "verificacion": "n = symbols('n'); menor = solve(Eq(n + (n + 2) + (n + 4), 138), n)[0]; assert menor % 2 == 0; respuesta = menor + 4",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "De dos en dos",
+     "$n + (n+2) + (n+4) = 138$"
+    ],
+    "voz": "Si el menor es ene, los siguientes pares son ene más dos y ene más cuatro."
+   },
+   {
+    "lineas": [
+     "Despejamos",
+     "$3n + 6 = 138 \\Rightarrow n = 44$"
+    ],
+    "voz": "Tres ene más seis es ciento treinta y ocho, así que ene es cuarenta y cuatro. El mayor es cuarenta y ocho."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la be: cuarenta y ocho. Los pares consecutivos van de dos en dos. Y lee bien qué te preguntan: cuarenta y cuatro es el menor y cuarenta y seis el del medio, y los dos aparecen como alternativas. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "323"
+}

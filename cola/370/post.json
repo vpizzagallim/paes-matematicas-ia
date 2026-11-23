@@ -1,0 +1,49 @@
+{
+ "nivel": "M2",
+ "eje": "Probabilidad y estadística",
+ "tema": "Probabilidad condicional en tabla de doble entrada",
+ "gancho": "Preu y ensayo 📋",
+ "enunciado": "De <b>120 estudiantes</b>, <b>50</b> van a preuniversitario. De ellos, <b>35</b> superaron los 700 puntos en un ensayo. De los que <b>no</b> van, <b>21</b> superaron los 700 puntos. Si se elige al azar a alguien que superó los 700 puntos, ¿cuál es la probabilidad de que vaya a preuniversitario?",
+ "alternativas": [
+  "$\\dfrac{7}{10}$",
+  "$\\dfrac{7}{24}$",
+  "$\\dfrac{5}{8}$",
+  "$\\dfrac{3}{10}$"
+ ],
+ "valores": [
+  "7/10",
+  "7/24",
+  "5/8",
+  "3/10"
+ ],
+ "correcta": 2,
+ "pasos": [
+  "Superaron los 700 puntos: $$35 + 21 = 56$$",
+  "De esos 56, van a preuniversitario 35: $$P = \\frac{35}{56} = \\frac{5}{8}$$"
+ ],
+ "trampa": "Calcular al revés, $P(\\text{supera} \\mid \\text{preu}) = \\dfrac{35}{50}$ (A), o dividir por el total, $\\dfrac{35}{120}$ (B).",
+ "clave": "En $P(A \\mid B)$, el total de referencia es <b>solo el grupo B</b>, lo que ya se sabe que ocurrió.",
+ "verificacion": "preu_sup, nopreu_sup = 35, 21; respuesta = Rational(preu_sup, preu_sup + nopreu_sup)",
+ "pizarra": {
+  "pasos": [
+   {
+    "lineas": [
+     "El grupo dado",
+     "$35 + 21 = 56$"
+    ],
+    "voz": "Sabemos que la persona superó los setecientos. Ese grupo tiene treinta y cinco más veintiuno: cincuenta y seis."
+   },
+   {
+    "lineas": [
+     "Dentro del grupo",
+     "$\\dfrac{35}{56} = \\dfrac{5}{8}$"
+    ],
+    "voz": "De esos, treinta y cinco van al preu: treinta y cinco sobre cincuenta y seis, cinco octavos."
+   }
+  ],
+  "cierre": {
+   "voz": "La respuesta correcta es la ce: cinco octavos. En probabilidad condicional, lo que ya sabes reduce el total. Aquí el total no son los ciento veinte ni los cincuenta: son los cincuenta y seis que superaron los setecientos. Sigue a math paes punto c, ele."
+  }
+ },
+ "id": "370"
+}
